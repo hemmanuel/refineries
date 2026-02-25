@@ -254,7 +254,6 @@ const AIAnalyst: React.FC<AIAnalystProps> = ({ refineries }) => {
             </div>
             <div>
               <h1 className="text-xl font-bold text-gray-900">AI Analyst</h1>
-              <p className="text-sm text-gray-500">Powered by Gemini 3 Flash Preview • Access to full facility database</p>
             </div>
           </div>
           {selectedRefinery && (
