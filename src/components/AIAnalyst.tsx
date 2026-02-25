@@ -70,9 +70,9 @@ const AIAnalyst: React.FC<AIAnalystProps> = ({ refineries }) => {
         
         Guidelines:
         1. Be precise and cite specific refineries, companies, or PADD regions when answering.
-        2. CRITICAL: When you mention a specific refinery by name, you MUST enclose it in double brackets like this: [[Refinery Name]]. This allows the user to click and view its details.
-           Example: "The [[Marathon Garyville Refinery]] has a significant capacity..."
-        3. Do NOT include Markdown links or other citation formats inside the brackets. Just the plain name.
+        2. CRITICAL: When you mention a specific refinery by name, you MUST enclose it in TRIPLE CURLY BRACES like this: {{{Refinery Name}}}. This allows the user to click and view its details.
+           Example: "The {{{Marathon Garyville Refinery}}} has a significant capacity..."
+        3. Do NOT include Markdown links or other citation formats inside the braces. Just the plain name.
         4. You can perform calculations (e.g., total capacity for a specific company, average headcount in a region).
         5. If the user asks about "safety sensitive" or "turnaround" numbers, use the estimates provided in the data.
         6. If the data doesn't contain the answer, state that clearly based on the available dataset.
@@ -127,18 +127,16 @@ const AIAnalyst: React.FC<AIAnalystProps> = ({ refineries }) => {
 
   // Helper to parse message content and render citations
   const renderMessageContent = (content: string) => {
-    // Pre-process content to convert [[Citation]] to markdown links with a specific protocol
+    // Pre-process content to convert {{{Citation}}} to markdown links with a specific protocol
     // Also strip excessive newlines (more than 2) to fix spacing issues
     // And remove any markdown link syntax that might have been wrapped around the citation by the AI
     let processedContent = content
-      .replace(/\[\[(.*?)\]\]\(citation:.*?\)/g, '[[$1]]') // Fix double-processed links if AI tries to be smart
-      .replace(/\[\[(.*?)\]\]/g, (match, name) => `[${name}](citation:${encodeURIComponent(name)})`)
-      // Handle cases where AI outputs [Name](citation:Name) directly (hallucination of format)
-      .replace(/\[(.*?)\]\(citation:(.*?)\)/g, (match, name, target) => {
-          // Decode first to ensure we don't double encode if it was already encoded
-          const cleanTarget = decodeURIComponent(target);
-          return `[${name}](citation:${encodeURIComponent(cleanTarget)})`;
-      })
+      // Handle cases where AI outputs [Name](citation:Name) directly (hallucination of format) - we convert this to our target format first
+      .replace(/\[(.*?)\]\(citation:(.*?)\)/g, '{{{$1}}}') 
+      // Handle cases where AI outputs [[Name]] (old instruction hallucination)
+      .replace(/\[\[(.*?)\]\]/g, '{{{$1}}}')
+      // Now handle the canonical format: {{{Refinery Name}}} -> [Refinery Name](citation:Refinery%20Name)
+      .replace(/\{\{\{(.*?)\}\}\}/g, (match, name) => `[${name}](citation:${encodeURIComponent(name)})`)
       .replace(/\n{3,}/g, '\n\n');
 
     return (
