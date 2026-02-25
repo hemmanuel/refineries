@@ -3,6 +3,8 @@ import { Send, Bot, User, Loader2, Sparkles, AlertCircle, Search, MapPin, Factor
 import { type ParsedRefinery } from '../utils/data';
 import axios from 'axios';
 import RefineryDetail from './RefineryDetail';
+import ReactMarkdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
 
 interface AIAnalystProps {
   refineries: ParsedRefinery[];
@@ -124,23 +126,44 @@ const AIAnalyst: React.FC<AIAnalystProps> = ({ refineries }) => {
 
   // Helper to parse message content and render citations
   const renderMessageContent = (content: string) => {
-    const parts = content.split(/(\[\[.*?\]\])/g);
-    return parts.map((part, index) => {
-      if (part.startsWith('[[') && part.endsWith(']]')) {
-        const name = part.slice(2, -2);
-        return (
-          <button
-            key={index}
-            onClick={() => handleCitationClick(name)}
-            className="inline-flex items-center gap-1 px-1.5 py-0.5 mx-1 bg-blue-100 text-blue-700 rounded hover:bg-blue-200 transition-colors text-sm font-medium cursor-pointer"
-          >
-            <Sparkles className="w-3 h-3" />
-            {name}
-          </button>
-        );
-      }
-      return <span key={index}>{part}</span>;
-    });
+    // Pre-process content to convert [[Citation]] to markdown links with a specific protocol
+    const processedContent = content.replace(/\[\[(.*?)\]\]/g, '[$1](citation:$1)');
+
+    return (
+      <ReactMarkdown
+        remarkPlugins={[remarkGfm]}
+        components={{
+          a: ({ node, ...props }) => {
+            if (props.href?.startsWith('citation:')) {
+              const name = decodeURIComponent(props.href.replace('citation:', ''));
+              return (
+                <button
+                  onClick={() => handleCitationClick(name)}
+                  className="inline-flex items-center gap-1 px-1.5 py-0.5 mx-1 bg-blue-100 text-blue-700 rounded hover:bg-blue-200 transition-colors text-sm font-medium cursor-pointer align-middle"
+                >
+                  <Sparkles className="w-3 h-3" />
+                  {name}
+                </button>
+              );
+            }
+            return <a {...props} className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer" />;
+          },
+          p: ({ node, ...props }) => <p {...props} className="mb-2 last:mb-0" />,
+          ul: ({ node, ...props }) => <ul {...props} className="list-disc pl-4 mb-2" />,
+          ol: ({ node, ...props }) => <ol {...props} className="list-decimal pl-4 mb-2" />,
+          li: ({ node, ...props }) => <li {...props} className="mb-1" />,
+          h1: ({ node, ...props }) => <h1 {...props} className="text-xl font-bold mb-2 mt-4" />,
+          h2: ({ node, ...props }) => <h2 {...props} className="text-lg font-bold mb-2 mt-3" />,
+          h3: ({ node, ...props }) => <h3 {...props} className="text-md font-bold mb-1 mt-2" />,
+          table: ({ node, ...props }) => <div className="overflow-x-auto mb-4"><table {...props} className="min-w-full divide-y divide-gray-200 border border-gray-200" /></div>,
+          thead: ({ node, ...props }) => <thead {...props} className="bg-gray-50" />,
+          th: ({ node, ...props }) => <th {...props} className="px-3 py-2 text-left text-xs font-medium text-gray-500 uppercase tracking-wider border-b border-gray-200" />,
+          td: ({ node, ...props }) => <td {...props} className="px-3 py-2 whitespace-nowrap text-sm text-gray-500 border-b border-gray-200" />,
+        }}
+      >
+        {processedContent}
+      </ReactMarkdown>
+    );
   };
 
   return (
