@@ -62,7 +62,50 @@ const OshaDetail: React.FC<OshaDetailProps> = ({ refinery, year, data, onClose }
             <div className="bg-white border border-gray-200 rounded-lg p-4">
               <h3 className="text-sm font-semibold text-gray-900 mb-3 flex items-center gap-2">
                 <FileText className="w-4 h-4 text-gray-400" />
-                Detailed Metrics
+                Injury Breakdown
+              </h3>
+              <div className="space-y-3">
+                <div className="grid grid-cols-2 gap-x-8 gap-y-2 text-sm">
+                  <div className="flex justify-between">
+                    <span className="text-gray-600">Deaths</span>
+                    <span className="font-medium text-gray-900">{data.deaths || 0}</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="text-gray-600">Skin Disorders</span>
+                    <span className="font-medium text-gray-900">{data.skinDisorders || 0}</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="text-gray-600">Days Away (DAFW)</span>
+                    <span className="font-medium text-gray-900">{data.dafw || 0}</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="text-gray-600">Respiratory</span>
+                    <span className="font-medium text-gray-900">{data.respiratory || 0}</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="text-gray-600">Job Transfer (DJTR)</span>
+                    <span className="font-medium text-gray-900">{data.djtr || 0}</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="text-gray-600">Poisonings</span>
+                    <span className="font-medium text-gray-900">{data.poisonings || 0}</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="text-gray-600">Other Cases</span>
+                    <span className="font-medium text-gray-900">{data.other || 0}</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="text-gray-600">Hearing Loss</span>
+                    <span className="font-medium text-gray-900">{data.hearingLoss || 0}</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white border border-gray-200 rounded-lg p-4">
+              <h3 className="text-sm font-semibold text-gray-900 mb-3 flex items-center gap-2">
+                <Activity className="w-4 h-4 text-gray-400" />
+                Key Metrics
               </h3>
               <div className="space-y-3">
                 <div className="flex justify-between items-center py-2 border-b border-gray-50 last:border-0">
