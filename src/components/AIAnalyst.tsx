@@ -78,7 +78,7 @@ const AIAnalyst: React.FC<AIAnalystProps> = ({ refineries }) => {
       `;
 
       const response = await axios.post(
-        `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-pro:generateContent?key=${import.meta.env.VITE_GEMINI_API_KEY}`,
+        `https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent?key=${import.meta.env.VITE_GEMINI_API_KEY}`,
         {
           contents: [
             {
@@ -212,7 +212,7 @@ const AIAnalyst: React.FC<AIAnalystProps> = ({ refineries }) => {
             </div>
             <div>
               <h1 className="text-xl font-bold text-gray-900">AI Analyst</h1>
-              <p className="text-sm text-gray-500">Powered by Gemini 1.5 Pro • Access to full facility database</p>
+              <p className="text-sm text-gray-500">Powered by Gemini 3 Flash Preview • Access to full facility database</p>
             </div>
           </div>
           {selectedRefinery && (
