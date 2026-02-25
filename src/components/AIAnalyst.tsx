@@ -132,7 +132,7 @@ const AIAnalyst: React.FC<AIAnalystProps> = ({ refineries }) => {
     // And remove any markdown link syntax that might have been wrapped around the citation by the AI
     let processedContent = content
       .replace(/\[\[(.*?)\]\]\(citation:.*?\)/g, '[[$1]]') // Fix double-processed links if AI tries to be smart
-      .replace(/\[\[(.*?)\]\]/g, '[$1](citation:$1)')
+      .replace(/\[\[(.*?)\]\]/g, (match, name) => `[${name}](citation:${encodeURIComponent(name)})`)
       .replace(/\n{3,}/g, '\n\n');
 
     return (
