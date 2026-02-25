@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { type ParsedRefinery } from '../utils/data';
-import { X, Factory, Users, HardHat, Calendar, AlertCircle, ChevronRight, AlertTriangle } from 'lucide-react';
+import { X, Factory, Users, HardHat, Calendar, AlertCircle, ChevronRight, AlertTriangle, FileText } from 'lucide-react';
 import MetricExplanation from './MetricExplanation';
+import OshaDetail from './OshaDetail';
 
 interface RefineryDetailProps {
   refinery: ParsedRefinery | null;
@@ -11,6 +12,7 @@ interface RefineryDetailProps {
 
 const RefineryDetail: React.FC<RefineryDetailProps> = ({ refinery, onClose, mode = 'modal' }) => {
   const [selectedMetric, setSelectedMetric] = useState<'headcount' | 'turnaround' | 'safety' | null>(null);
+  const [selectedOshaYear, setSelectedOshaYear] = useState<number | null>(null);
 
   if (!refinery) return null;
 
@@ -169,7 +171,12 @@ const RefineryDetail: React.FC<RefineryDetailProps> = ({ refinery, onClose, mode
               <div className="border-t border-gray-200 pt-6">
                 <h3 className="text-lg font-bold text-gray-900 mb-4 flex items-center gap-2">
                   <AlertTriangle className="w-5 h-5 text-red-600" />
-                  Safety Performance (Estimated)
+                  Safety Performance
+                  {refinery.hasRealOshaData && (
+                    <span className="ml-2 text-xs font-medium bg-green-100 text-green-700 px-2 py-0.5 rounded-full border border-green-200">
+                      Official Data
+                    </span>
+                  )}
                 </h3>
                 
                 <div className="bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm">
@@ -183,8 +190,15 @@ const RefineryDetail: React.FC<RefineryDetailProps> = ({ refinery, onClose, mode
                     </thead>
                     <tbody className="bg-white divide-y divide-gray-200">
                       {refinery.oshaHistory.map((record) => (
-                        <tr key={record.year} className="hover:bg-gray-50">
-                          <td className="px-4 py-2 whitespace-nowrap text-sm font-medium text-gray-900">{record.year}</td>
+                        <tr 
+                          key={record.year} 
+                          className="hover:bg-gray-50 cursor-pointer transition-colors group"
+                          onClick={() => setSelectedOshaYear(record.year)}
+                        >
+                          <td className="px-4 py-2 whitespace-nowrap text-sm font-medium text-gray-900 flex items-center gap-2">
+                            <FileText className="w-3 h-3 text-gray-400 group-hover:text-blue-500" />
+                            {record.year}
+                          </td>
                           <td className="px-4 py-2 whitespace-nowrap text-sm text-gray-500">{record.recordableInjuries}</td>
                           <td className="px-4 py-2 whitespace-nowrap text-sm text-gray-500">{record.trir}</td>
                         </tr>
@@ -200,7 +214,9 @@ const RefineryDetail: React.FC<RefineryDetailProps> = ({ refinery, onClose, mode
                   </div>
                 )}
                 <p className="text-xs text-gray-400 mt-2 italic">
-                  * Data is estimated based on facility size and industry averages. Actual OSHA logs may vary.
+                  * {refinery.hasRealOshaData 
+                      ? "Data sourced from official OSHA Form 300A filings." 
+                      : "Data is estimated based on facility size and industry averages. Actual OSHA logs may vary."}
                 </p>
               </div>
             )}
@@ -225,6 +241,14 @@ const RefineryDetail: React.FC<RefineryDetailProps> = ({ refinery, onClose, mode
             )) || "No detailed explanation available."
           }
           onClose={() => setSelectedMetric(null)}
+        />
+      )}
+      {selectedOshaYear && refinery.oshaHistory && (
+        <OshaDetail
+          refinery={refinery}
+          year={selectedOshaYear}
+          data={refinery.oshaHistory.find(r => r.year === selectedOshaYear)!}
+          onClose={() => setSelectedOshaYear(null)}
         />
       )}
     </>

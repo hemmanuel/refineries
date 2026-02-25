@@ -24,6 +24,8 @@ export interface OshaYearData {
   year: number;
   recordableInjuries: number;
   trir: number;
+  dart?: number;
+  hoursWorked?: number;
   notes: string;
 }
 
@@ -42,6 +44,7 @@ export interface ParsedRefinery {
   estimate?: WorkforceEstimate;
   oshaHistory?: OshaYearData[];
   safetySummary?: string;
+  hasRealOshaData?: boolean;
 }
 
 // const CSV_URL = 'https://raw.githubusercontent.com/cpreid2/US-Refineries/master/Refineries_US.csv';
