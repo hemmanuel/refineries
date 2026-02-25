@@ -249,8 +249,8 @@ const AIAnalyst: React.FC<AIAnalystProps> = ({ refineries }) => {
       <div className="flex-1 flex flex-col h-full min-w-0 bg-gray-50">
         <div className="bg-white border-b border-gray-200 px-6 py-4 flex items-center justify-between shadow-sm flex-shrink-0">
           <div className="flex items-center gap-3">
-            <div className="bg-purple-100 p-2 rounded-lg">
-              <Sparkles className="w-6 h-6 text-purple-600" />
+            <div className="bg-blue-100 p-2 rounded-lg">
+              <Sparkles className="w-6 h-6 text-blue-600" />
             </div>
             <div>
               <h1 className="text-xl font-bold text-gray-900">AI Analyst</h1>
@@ -273,12 +273,12 @@ const AIAnalyst: React.FC<AIAnalystProps> = ({ refineries }) => {
               className={`flex items-start gap-4 ${msg.role === 'user' ? 'flex-row-reverse' : ''}`}
             >
               <div className={`w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0 ${
-                msg.role === 'user' ? 'bg-blue-100' : 'bg-purple-100'
+                msg.role === 'user' ? 'bg-blue-600' : 'bg-white border border-gray-200'
               }`}>
                 {msg.role === 'user' ? (
-                  <User className="w-6 h-6 text-blue-600" />
+                  <User className="w-6 h-6 text-white" />
                 ) : (
-                  <Bot className="w-6 h-6 text-purple-600" />
+                  <Bot className="w-6 h-6 text-blue-600" />
                 )}
               </div>
               
@@ -296,11 +296,11 @@ const AIAnalyst: React.FC<AIAnalystProps> = ({ refineries }) => {
           
           {isLoading && (
             <div className="flex items-start gap-4">
-              <div className="w-10 h-10 rounded-full bg-purple-100 flex items-center justify-center flex-shrink-0">
-                <Bot className="w-6 h-6 text-purple-600" />
+              <div className="w-10 h-10 rounded-full bg-white border border-gray-200 flex items-center justify-center flex-shrink-0">
+                <Bot className="w-6 h-6 text-blue-600" />
               </div>
               <div className="bg-white border border-gray-100 rounded-2xl rounded-tl-none px-6 py-4 shadow-sm flex items-center gap-2">
-                <Loader2 className="w-4 h-4 text-purple-600 animate-spin" />
+                <Loader2 className="w-4 h-4 text-blue-600 animate-spin" />
                 <span className="text-sm text-gray-500">Analyzing data...</span>
               </div>
             </div>
@@ -325,7 +325,7 @@ const AIAnalyst: React.FC<AIAnalystProps> = ({ refineries }) => {
               onChange={(e) => setInput(e.target.value)}
               onKeyDown={handleKeyDown}
               placeholder="Ask a question"
-              className="w-full pl-6 pr-14 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-purple-500 focus:border-transparent outline-none resize-none shadow-sm text-gray-700 placeholder-gray-400 overflow-hidden"
+              className="w-full pl-6 pr-14 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none resize-none shadow-sm text-gray-700 placeholder-gray-400 overflow-hidden"
               rows={1}
               disabled={isLoading}
               style={{ minHeight: '48px' }}
@@ -338,7 +338,7 @@ const AIAnalyst: React.FC<AIAnalystProps> = ({ refineries }) => {
             <button
               onClick={handleSendMessage}
               disabled={!input.trim() || isLoading}
-              className="absolute right-3 bottom-2 p-2 bg-purple-600 text-white rounded-lg hover:bg-purple-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+              className="absolute right-3 bottom-2 p-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
             >
               <Send className="w-5 h-5" />
             </button>
