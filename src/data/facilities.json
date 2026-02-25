@@ -25,6 +25,23 @@
     },
     "oshaHistory": [
       {
+        "year": 2024,
+        "recordableInjuries": 1,
+        "trir": 5.06,
+        "dart": 0,
+        "hoursWorked": 39525,
+        "deaths": 0,
+        "dafw": 0,
+        "djtr": 0,
+        "other": 1,
+        "hearingLoss": 0,
+        "poisonings": 0,
+        "respiratory": 0,
+        "skinDisorders": 0,
+        "otherIllnesses": 0,
+        "notes": "Official OSHA Data"
+      },
+      {
         "year": 2023,
         "recordableInjuries": 0,
         "trir": 0,
@@ -42,7 +59,7 @@
         "notes": "Official OSHA Data"
       }
     ],
-    "safetySummary": "Official OSHA data available for 1 years. Latest TRIR (2023): 0 (Industry Avg: ~0.6). Average TRIR: 0.00. Zero recordable incidents in latest reporting year.",
+    "safetySummary": "Official OSHA data available for 2 years. Latest TRIR (2024): 5.06 (Industry Avg: ~0.6). Average TRIR: 2.53. ",
     "hasRealOshaData": true
   },
   {
@@ -70,6 +87,23 @@
       }
     },
     "oshaHistory": [
+      {
+        "year": 2024,
+        "recordableInjuries": 4,
+        "trir": 1.12,
+        "dart": 0.84,
+        "hoursWorked": 714256,
+        "deaths": 0,
+        "dafw": 2,
+        "djtr": 1,
+        "other": 1,
+        "hearingLoss": 0,
+        "poisonings": 0,
+        "respiratory": 0,
+        "skinDisorders": 0,
+        "otherIllnesses": 0,
+        "notes": "Official OSHA Data"
+      },
       {
         "year": 2023,
         "recordableInjuries": 3,
@@ -207,7 +241,7 @@
         "notes": "Official OSHA Data"
       }
     ],
-    "safetySummary": "Official OSHA data available for 8 years. Latest TRIR (2023): 0.81 (Industry Avg: ~0.6). Average TRIR: 0.88. ",
+    "safetySummary": "Official OSHA data available for 9 years. Latest TRIR (2024): 1.12 (Industry Avg: ~0.6). Average TRIR: 0.90. ",
     "hasRealOshaData": true
   },
   {
@@ -235,6 +269,23 @@
       }
     },
     "oshaHistory": [
+      {
+        "year": 2024,
+        "recordableInjuries": 0,
+        "trir": 0,
+        "dart": 0,
+        "hoursWorked": 401399,
+        "deaths": 0,
+        "dafw": 0,
+        "djtr": 0,
+        "other": 0,
+        "hearingLoss": 0,
+        "poisonings": 0,
+        "respiratory": 0,
+        "skinDisorders": 0,
+        "otherIllnesses": 0,
+        "notes": "Official OSHA Data"
+      },
       {
         "year": 2023,
         "recordableInjuries": 1,
@@ -270,7 +321,7 @@
         "notes": "Official OSHA Data"
       }
     ],
-    "safetySummary": "Official OSHA data available for 2 years. Latest TRIR (2023): 0.47 (Industry Avg: ~0.6). Average TRIR: 0.23. ",
+    "safetySummary": "Official OSHA data available for 3 years. Latest TRIR (2024): 0 (Industry Avg: ~0.6). Average TRIR: 0.16. Zero recordable incidents in latest reporting year.",
     "hasRealOshaData": true
   },
   {
@@ -588,6 +639,23 @@
     },
     "oshaHistory": [
       {
+        "year": 2024,
+        "recordableInjuries": 0,
+        "trir": 0,
+        "dart": 0,
+        "hoursWorked": 543734,
+        "deaths": 0,
+        "dafw": 0,
+        "djtr": 0,
+        "other": 0,
+        "hearingLoss": 0,
+        "poisonings": 0,
+        "respiratory": 0,
+        "skinDisorders": 0,
+        "otherIllnesses": 0,
+        "notes": "Official OSHA Data"
+      },
+      {
         "year": 2023,
         "recordableInjuries": 1,
         "trir": 0.29,
@@ -673,7 +741,7 @@
         "notes": "Official OSHA Data"
       }
     ],
-    "safetySummary": "Official OSHA data available for 5 years. Latest TRIR (2023): 0.29 (Industry Avg: ~0.6). Average TRIR: 0.55. ",
+    "safetySummary": "Official OSHA data available for 6 years. Latest TRIR (2024): 0 (Industry Avg: ~0.6). Average TRIR: 0.46. Zero recordable incidents in latest reporting year.",
     "hasRealOshaData": true
   },
   {
@@ -1317,6 +1385,23 @@
     },
     "oshaHistory": [
       {
+        "year": 2024,
+        "recordableInjuries": 1,
+        "trir": 0.17,
+        "dart": 0,
+        "hoursWorked": 1192485,
+        "deaths": 0,
+        "dafw": 0,
+        "djtr": 0,
+        "other": 1,
+        "hearingLoss": 0,
+        "poisonings": 0,
+        "respiratory": 0,
+        "skinDisorders": 0,
+        "otherIllnesses": 0,
+        "notes": "Official OSHA Data"
+      },
+      {
         "year": 2023,
         "recordableInjuries": 1,
         "trir": 0.17,
@@ -1385,7 +1470,7 @@
         "notes": "Official OSHA Data"
       }
     ],
-    "safetySummary": "Official OSHA data available for 4 years. Latest TRIR (2023): 0.17 (Industry Avg: ~0.6). Average TRIR: 0.21. ",
+    "safetySummary": "Official OSHA data available for 5 years. Latest TRIR (2024): 0.17 (Industry Avg: ~0.6). Average TRIR: 0.20. ",
     "hasRealOshaData": true
   },
   {
@@ -1413,6 +1498,23 @@
       }
     },
     "oshaHistory": [
+      {
+        "year": 2024,
+        "recordableInjuries": 1,
+        "trir": 0.15,
+        "dart": 0,
+        "hoursWorked": 1348401,
+        "deaths": 0,
+        "dafw": 0,
+        "djtr": 0,
+        "other": 1,
+        "hearingLoss": 0,
+        "poisonings": 0,
+        "respiratory": 0,
+        "skinDisorders": 0,
+        "otherIllnesses": 0,
+        "notes": "Official OSHA Data"
+      },
       {
         "year": 2023,
         "recordableInjuries": 1,
@@ -1533,7 +1635,7 @@
         "notes": "Official OSHA Data"
       }
     ],
-    "safetySummary": "Official OSHA data available for 7 years. Latest TRIR (2023): 0.16 (Industry Avg: ~0.6). Average TRIR: 0.25. ",
+    "safetySummary": "Official OSHA data available for 8 years. Latest TRIR (2024): 0.15 (Industry Avg: ~0.6). Average TRIR: 0.24. ",
     "hasRealOshaData": true
   },
   {
@@ -1738,6 +1840,23 @@
     },
     "oshaHistory": [
       {
+        "year": 2024,
+        "recordableInjuries": 7,
+        "trir": 0.6,
+        "dart": 0.35,
+        "hoursWorked": 2316444,
+        "deaths": 0,
+        "dafw": 4,
+        "djtr": 0,
+        "other": 3,
+        "hearingLoss": 0,
+        "poisonings": 0,
+        "respiratory": 0,
+        "skinDisorders": 0,
+        "otherIllnesses": 0,
+        "notes": "Official OSHA Data"
+      },
+      {
         "year": 2023,
         "recordableInjuries": 3,
         "trir": 0.25,
@@ -1840,7 +1959,7 @@
         "notes": "Official OSHA Data"
       }
     ],
-    "safetySummary": "Official OSHA data available for 6 years. Latest TRIR (2023): 0.25 (Industry Avg: ~0.6). Average TRIR: 0.28. ",
+    "safetySummary": "Official OSHA data available for 7 years. Latest TRIR (2024): 0.6 (Industry Avg: ~0.6). Average TRIR: 0.33. ",
     "hasRealOshaData": true
   },
   {
@@ -1966,6 +2085,23 @@
     },
     "oshaHistory": [
       {
+        "year": 2024,
+        "recordableInjuries": 2,
+        "trir": 0.5,
+        "dart": 0.5,
+        "hoursWorked": 795992,
+        "deaths": 0,
+        "dafw": 0,
+        "djtr": 2,
+        "other": 0,
+        "hearingLoss": 0,
+        "poisonings": 0,
+        "respiratory": 0,
+        "skinDisorders": 0,
+        "otherIllnesses": 0,
+        "notes": "Official OSHA Data"
+      },
+      {
         "year": 2023,
         "recordableInjuries": 4,
         "trir": 1,
@@ -2085,7 +2221,7 @@
         "notes": "Official OSHA Data"
       }
     ],
-    "safetySummary": "Official OSHA data available for 7 years. Latest TRIR (2023): 1 (Industry Avg: ~0.6). Average TRIR: 0.44. ",
+    "safetySummary": "Official OSHA data available for 8 years. Latest TRIR (2024): 0.5 (Industry Avg: ~0.6). Average TRIR: 0.45. ",
     "hasRealOshaData": true
   },
   {
@@ -2113,6 +2249,23 @@
       }
     },
     "oshaHistory": [
+      {
+        "year": 2024,
+        "recordableInjuries": 0,
+        "trir": 0,
+        "dart": 0,
+        "hoursWorked": 924558,
+        "deaths": 0,
+        "dafw": 0,
+        "djtr": 0,
+        "other": 0,
+        "hearingLoss": 0,
+        "poisonings": 0,
+        "respiratory": 0,
+        "skinDisorders": 0,
+        "otherIllnesses": 0,
+        "notes": "Official OSHA Data"
+      },
       {
         "year": 2023,
         "recordableInjuries": 1,
@@ -2233,7 +2386,7 @@
         "notes": "Official OSHA Data"
       }
     ],
-    "safetySummary": "Official OSHA data available for 7 years. Latest TRIR (2023): 0.22 (Industry Avg: ~0.6). Average TRIR: 0.26. ",
+    "safetySummary": "Official OSHA data available for 8 years. Latest TRIR (2024): 0 (Industry Avg: ~0.6). Average TRIR: 0.23. Zero recordable incidents in latest reporting year.",
     "hasRealOshaData": true
   },
   {
@@ -2261,6 +2414,23 @@
       }
     },
     "oshaHistory": [
+      {
+        "year": 2024,
+        "recordableInjuries": 2,
+        "trir": 0.5,
+        "dart": 0.5,
+        "hoursWorked": 795992,
+        "deaths": 0,
+        "dafw": 0,
+        "djtr": 2,
+        "other": 0,
+        "hearingLoss": 0,
+        "poisonings": 0,
+        "respiratory": 0,
+        "skinDisorders": 0,
+        "otherIllnesses": 0,
+        "notes": "Official OSHA Data"
+      },
       {
         "year": 2023,
         "recordableInjuries": 4,
@@ -2381,7 +2551,7 @@
         "notes": "Official OSHA Data"
       }
     ],
-    "safetySummary": "Official OSHA data available for 7 years. Latest TRIR (2023): 1 (Industry Avg: ~0.6). Average TRIR: 0.44. ",
+    "safetySummary": "Official OSHA data available for 8 years. Latest TRIR (2024): 0.5 (Industry Avg: ~0.6). Average TRIR: 0.45. ",
     "hasRealOshaData": true
   },
   {
@@ -2672,6 +2842,23 @@
     },
     "oshaHistory": [
       {
+        "year": 2024,
+        "recordableInjuries": 2,
+        "trir": 0.35,
+        "dart": 0,
+        "hoursWorked": 1153843,
+        "deaths": 0,
+        "dafw": 0,
+        "djtr": 0,
+        "other": 2,
+        "hearingLoss": 0,
+        "poisonings": 0,
+        "respiratory": 0,
+        "skinDisorders": 0,
+        "otherIllnesses": 0,
+        "notes": "Official OSHA Data"
+      },
+      {
         "year": 2023,
         "recordableInjuries": 5,
         "trir": 0.87,
@@ -2689,7 +2876,7 @@
         "notes": "Official OSHA Data"
       }
     ],
-    "safetySummary": "Official OSHA data available for 1 years. Latest TRIR (2023): 0.87 (Industry Avg: ~0.6). Average TRIR: 0.87. ",
+    "safetySummary": "Official OSHA data available for 2 years. Latest TRIR (2024): 0.35 (Industry Avg: ~0.6). Average TRIR: 0.61. ",
     "hasRealOshaData": true
   },
   {
@@ -2805,6 +2992,23 @@
       }
     },
     "oshaHistory": [
+      {
+        "year": 2024,
+        "recordableInjuries": 4,
+        "trir": 0.59,
+        "dart": 0.29,
+        "hoursWorked": 1360571,
+        "deaths": 0,
+        "dafw": 0,
+        "djtr": 2,
+        "other": 2,
+        "hearingLoss": 0,
+        "poisonings": 0,
+        "respiratory": 0,
+        "skinDisorders": 0,
+        "otherIllnesses": 0,
+        "notes": "Official OSHA Data"
+      },
       {
         "year": 2023,
         "recordableInjuries": 1,
@@ -2942,7 +3146,7 @@
         "notes": "Official OSHA Data"
       }
     ],
-    "safetySummary": "Official OSHA data available for 8 years. Latest TRIR (2023): 0.16 (Industry Avg: ~0.6). Average TRIR: 0.30. ",
+    "safetySummary": "Official OSHA data available for 9 years. Latest TRIR (2024): 0.59 (Industry Avg: ~0.6). Average TRIR: 0.33. ",
     "hasRealOshaData": true
   },
   {
@@ -2970,6 +3174,23 @@
       }
     },
     "oshaHistory": [
+      {
+        "year": 2024,
+        "recordableInjuries": 0,
+        "trir": 0,
+        "dart": 0,
+        "hoursWorked": 1434415,
+        "deaths": 0,
+        "dafw": 0,
+        "djtr": 0,
+        "other": 0,
+        "hearingLoss": 0,
+        "poisonings": 0,
+        "respiratory": 0,
+        "skinDisorders": 0,
+        "otherIllnesses": 0,
+        "notes": "Official OSHA Data"
+      },
       {
         "year": 2023,
         "recordableInjuries": 1,
@@ -3107,7 +3328,7 @@
         "notes": "Official OSHA Data"
       }
     ],
-    "safetySummary": "Official OSHA data available for 8 years. Latest TRIR (2023): 0.12 (Industry Avg: ~0.6). Average TRIR: 0.35. ",
+    "safetySummary": "Official OSHA data available for 9 years. Latest TRIR (2024): 0 (Industry Avg: ~0.6). Average TRIR: 0.31. Zero recordable incidents in latest reporting year.",
     "hasRealOshaData": true
   },
   {
@@ -3135,6 +3356,23 @@
       }
     },
     "oshaHistory": [
+      {
+        "year": 2024,
+        "recordableInjuries": 0,
+        "trir": 0,
+        "dart": 0,
+        "hoursWorked": 1442516,
+        "deaths": 0,
+        "dafw": 0,
+        "djtr": 0,
+        "other": 0,
+        "hearingLoss": 0,
+        "poisonings": 0,
+        "respiratory": 0,
+        "skinDisorders": 0,
+        "otherIllnesses": 0,
+        "notes": "Official OSHA Data"
+      },
       {
         "year": 2023,
         "recordableInjuries": 1,
@@ -3238,7 +3476,7 @@
         "notes": "Official OSHA Data"
       }
     ],
-    "safetySummary": "Official OSHA data available for 6 years. Latest TRIR (2023): 0.15 (Industry Avg: ~0.6). Average TRIR: 0.13. ",
+    "safetySummary": "Official OSHA data available for 7 years. Latest TRIR (2024): 0 (Industry Avg: ~0.6). Average TRIR: 0.11. Zero recordable incidents in latest reporting year.",
     "hasRealOshaData": true
   },
   {
@@ -3266,6 +3504,23 @@
       }
     },
     "oshaHistory": [
+      {
+        "year": 2024,
+        "recordableInjuries": 0,
+        "trir": 0,
+        "dart": 0,
+        "hoursWorked": 1695010,
+        "deaths": 0,
+        "dafw": 0,
+        "djtr": 0,
+        "other": 0,
+        "hearingLoss": 0,
+        "poisonings": 0,
+        "respiratory": 0,
+        "skinDisorders": 0,
+        "otherIllnesses": 0,
+        "notes": "Official OSHA Data"
+      },
       {
         "year": 2023,
         "recordableInjuries": 1,
@@ -3386,7 +3641,7 @@
         "notes": "Official OSHA Data"
       }
     ],
-    "safetySummary": "Official OSHA data available for 7 years. Latest TRIR (2023): 0.11 (Industry Avg: ~0.6). Average TRIR: 0.29. ",
+    "safetySummary": "Official OSHA data available for 8 years. Latest TRIR (2024): 0 (Industry Avg: ~0.6). Average TRIR: 0.25. Zero recordable incidents in latest reporting year.",
     "hasRealOshaData": true
   },
   {
@@ -3415,6 +3670,23 @@
     },
     "oshaHistory": [
       {
+        "year": 2024,
+        "recordableInjuries": 14,
+        "trir": 0.77,
+        "dart": 0.28,
+        "hoursWorked": 3632369,
+        "deaths": 0,
+        "dafw": 1,
+        "djtr": 4,
+        "other": 9,
+        "hearingLoss": 8,
+        "poisonings": 0,
+        "respiratory": 0,
+        "skinDisorders": 0,
+        "otherIllnesses": 0,
+        "notes": "Official OSHA Data"
+      },
+      {
         "year": 2023,
         "recordableInjuries": 9,
         "trir": 0.47,
@@ -3432,7 +3704,7 @@
         "notes": "Official OSHA Data"
       }
     ],
-    "safetySummary": "Official OSHA data available for 1 years. Latest TRIR (2023): 0.47 (Industry Avg: ~0.6). Average TRIR: 0.47. ",
+    "safetySummary": "Official OSHA data available for 2 years. Latest TRIR (2024): 0.77 (Industry Avg: ~0.6). Average TRIR: 0.62. ",
     "hasRealOshaData": true
   },
   {
@@ -3548,6 +3820,23 @@
       }
     },
     "oshaHistory": [
+      {
+        "year": 2024,
+        "recordableInjuries": 12,
+        "trir": 2.29,
+        "dart": 1.72,
+        "hoursWorked": 1048812,
+        "deaths": 0,
+        "dafw": 5,
+        "djtr": 4,
+        "other": 3,
+        "hearingLoss": 0,
+        "poisonings": 0,
+        "respiratory": 0,
+        "skinDisorders": 0,
+        "otherIllnesses": 0,
+        "notes": "Official OSHA Data"
+      },
       {
         "year": 2023,
         "recordableInjuries": 5,
@@ -3668,7 +3957,7 @@
         "notes": "Official OSHA Data"
       }
     ],
-    "safetySummary": "Official OSHA data available for 7 years. Latest TRIR (2023): 0.99 (Industry Avg: ~0.6). Average TRIR: 2.01. ",
+    "safetySummary": "Official OSHA data available for 8 years. Latest TRIR (2024): 2.29 (Industry Avg: ~0.6). Average TRIR: 2.04. ",
     "hasRealOshaData": true
   },
   {
@@ -3916,6 +4205,23 @@
     },
     "oshaHistory": [
       {
+        "year": 2024,
+        "recordableInjuries": 1,
+        "trir": 0.13,
+        "dart": 0,
+        "hoursWorked": 1492457,
+        "deaths": 0,
+        "dafw": 0,
+        "djtr": 0,
+        "other": 1,
+        "hearingLoss": 0,
+        "poisonings": 0,
+        "respiratory": 0,
+        "skinDisorders": 0,
+        "otherIllnesses": 0,
+        "notes": "Official OSHA Data"
+      },
+      {
         "year": 2023,
         "recordableInjuries": 1,
         "trir": 0.13,
@@ -4052,7 +4358,7 @@
         "notes": "Official OSHA Data"
       }
     ],
-    "safetySummary": "Official OSHA data available for 8 years. Latest TRIR (2023): 0.13 (Industry Avg: ~0.6). Average TRIR: 0.34. ",
+    "safetySummary": "Official OSHA data available for 9 years. Latest TRIR (2024): 0.13 (Industry Avg: ~0.6). Average TRIR: 0.32. ",
     "hasRealOshaData": true
   },
   {
@@ -4168,6 +4474,23 @@
       }
     },
     "oshaHistory": [
+      {
+        "year": 2024,
+        "recordableInjuries": 0,
+        "trir": 0,
+        "dart": 0,
+        "hoursWorked": 255208,
+        "deaths": 0,
+        "dafw": 0,
+        "djtr": 0,
+        "other": 0,
+        "hearingLoss": 0,
+        "poisonings": 0,
+        "respiratory": 0,
+        "skinDisorders": 0,
+        "otherIllnesses": 0,
+        "notes": "Official OSHA Data"
+      },
       {
         "year": 2023,
         "recordableInjuries": 4,
@@ -4305,7 +4628,7 @@
         "notes": "Official OSHA Data"
       }
     ],
-    "safetySummary": "Official OSHA data available for 8 years. Latest TRIR (2023): 3.34 (Industry Avg: ~0.6). Average TRIR: 2.39. ",
+    "safetySummary": "Official OSHA data available for 9 years. Latest TRIR (2024): 0 (Industry Avg: ~0.6). Average TRIR: 2.13. Zero recordable incidents in latest reporting year.",
     "hasRealOshaData": true
   },
   {
@@ -4596,6 +4919,23 @@
     },
     "oshaHistory": [
       {
+        "year": 2024,
+        "recordableInjuries": 1,
+        "trir": 0.23,
+        "dart": 0.23,
+        "hoursWorked": 856370,
+        "deaths": 0,
+        "dafw": 0,
+        "djtr": 1,
+        "other": 0,
+        "hearingLoss": 0,
+        "poisonings": 0,
+        "respiratory": 0,
+        "skinDisorders": 0,
+        "otherIllnesses": 0,
+        "notes": "Official OSHA Data"
+      },
+      {
         "year": 2023,
         "recordableInjuries": 2,
         "trir": 0.44,
@@ -4698,7 +5038,7 @@
         "notes": "Official OSHA Data"
       }
     ],
-    "safetySummary": "Official OSHA data available for 6 years. Latest TRIR (2023): 0.44 (Industry Avg: ~0.6). Average TRIR: 1.00. ",
+    "safetySummary": "Official OSHA data available for 7 years. Latest TRIR (2024): 0.23 (Industry Avg: ~0.6). Average TRIR: 0.89. ",
     "hasRealOshaData": true
   },
   {
@@ -4726,6 +5066,23 @@
       }
     },
     "oshaHistory": [
+      {
+        "year": 2024,
+        "recordableInjuries": 0,
+        "trir": 0,
+        "dart": 0,
+        "hoursWorked": 1361318,
+        "deaths": 0,
+        "dafw": 0,
+        "djtr": 0,
+        "other": 0,
+        "hearingLoss": 0,
+        "poisonings": 0,
+        "respiratory": 0,
+        "skinDisorders": 0,
+        "otherIllnesses": 0,
+        "notes": "Official OSHA Data"
+      },
       {
         "year": 2023,
         "recordableInjuries": 2,
@@ -4829,7 +5186,7 @@
         "notes": "Official OSHA Data"
       }
     ],
-    "safetySummary": "Official OSHA data available for 6 years. Latest TRIR (2023): 0.31 (Industry Avg: ~0.6). Average TRIR: 0.10. ",
+    "safetySummary": "Official OSHA data available for 7 years. Latest TRIR (2024): 0 (Industry Avg: ~0.6). Average TRIR: 0.09. Zero recordable incidents in latest reporting year.",
     "hasRealOshaData": true
   },
   {
@@ -5034,6 +5391,23 @@
     },
     "oshaHistory": [
       {
+        "year": 2024,
+        "recordableInjuries": 4,
+        "trir": 0.32,
+        "dart": 0.32,
+        "hoursWorked": 2494451,
+        "deaths": 0,
+        "dafw": 2,
+        "djtr": 2,
+        "other": 0,
+        "hearingLoss": 0,
+        "poisonings": 0,
+        "respiratory": 0,
+        "skinDisorders": 0,
+        "otherIllnesses": 0,
+        "notes": "Official OSHA Data"
+      },
+      {
         "year": 2023,
         "recordableInjuries": 1,
         "trir": 0.08,
@@ -5119,7 +5493,7 @@
         "notes": "Official OSHA Data"
       }
     ],
-    "safetySummary": "Official OSHA data available for 5 years. Latest TRIR (2023): 0.08 (Industry Avg: ~0.6). Average TRIR: 0.11. ",
+    "safetySummary": "Official OSHA data available for 6 years. Latest TRIR (2024): 0.32 (Industry Avg: ~0.6). Average TRIR: 0.14. ",
     "hasRealOshaData": true
   },
   {
@@ -5147,6 +5521,23 @@
       }
     },
     "oshaHistory": [
+      {
+        "year": 2024,
+        "recordableInjuries": 4,
+        "trir": 0.37,
+        "dart": 0.09,
+        "hoursWorked": 2145778,
+        "deaths": 0,
+        "dafw": 1,
+        "djtr": 0,
+        "other": 3,
+        "hearingLoss": 0,
+        "poisonings": 0,
+        "respiratory": 0,
+        "skinDisorders": 0,
+        "otherIllnesses": 0,
+        "notes": "Official OSHA Data"
+      },
       {
         "year": 2023,
         "recordableInjuries": 3,
@@ -5284,7 +5675,7 @@
         "notes": "Official OSHA Data"
       }
     ],
-    "safetySummary": "Official OSHA data available for 8 years. Latest TRIR (2023): 0.3 (Industry Avg: ~0.6). Average TRIR: 0.14. ",
+    "safetySummary": "Official OSHA data available for 9 years. Latest TRIR (2024): 0.37 (Industry Avg: ~0.6). Average TRIR: 0.17. ",
     "hasRealOshaData": true
   },
   {
@@ -5400,6 +5791,23 @@
       }
     },
     "oshaHistory": [
+      {
+        "year": 2024,
+        "recordableInjuries": 1,
+        "trir": 0.53,
+        "dart": 0,
+        "hoursWorked": 379219,
+        "deaths": 0,
+        "dafw": 0,
+        "djtr": 0,
+        "other": 1,
+        "hearingLoss": 0,
+        "poisonings": 0,
+        "respiratory": 0,
+        "skinDisorders": 0,
+        "otherIllnesses": 0,
+        "notes": "Official OSHA Data"
+      },
       {
         "year": 2023,
         "recordableInjuries": 2,
@@ -5537,7 +5945,7 @@
         "notes": "Official OSHA Data"
       }
     ],
-    "safetySummary": "Official OSHA data available for 8 years. Latest TRIR (2023): 0.89 (Industry Avg: ~0.6). Average TRIR: 0.33. ",
+    "safetySummary": "Official OSHA data available for 9 years. Latest TRIR (2024): 0.53 (Industry Avg: ~0.6). Average TRIR: 0.35. ",
     "hasRealOshaData": true
   },
   {
@@ -5565,6 +5973,23 @@
       }
     },
     "oshaHistory": [
+      {
+        "year": 2024,
+        "recordableInjuries": 1,
+        "trir": 0.11,
+        "dart": 0,
+        "hoursWorked": 1750455,
+        "deaths": 0,
+        "dafw": 0,
+        "djtr": 0,
+        "other": 1,
+        "hearingLoss": 0,
+        "poisonings": 0,
+        "respiratory": 0,
+        "skinDisorders": 0,
+        "otherIllnesses": 0,
+        "notes": "Official OSHA Data"
+      },
       {
         "year": 2023,
         "recordableInjuries": 2,
@@ -5634,7 +6059,7 @@
         "notes": "Official OSHA Data"
       }
     ],
-    "safetySummary": "Official OSHA data available for 4 years. Latest TRIR (2023): 0.22 (Industry Avg: ~0.6). Average TRIR: 0.17. ",
+    "safetySummary": "Official OSHA data available for 5 years. Latest TRIR (2024): 0.11 (Industry Avg: ~0.6). Average TRIR: 0.16. ",
     "hasRealOshaData": true
   },
   {
@@ -5840,6 +6265,23 @@
     },
     "oshaHistory": [
       {
+        "year": 2024,
+        "recordableInjuries": 0,
+        "trir": 0,
+        "dart": 0,
+        "hoursWorked": 1261771,
+        "deaths": 0,
+        "dafw": 0,
+        "djtr": 0,
+        "other": 0,
+        "hearingLoss": 0,
+        "poisonings": 0,
+        "respiratory": 0,
+        "skinDisorders": 0,
+        "otherIllnesses": 0,
+        "notes": "Official OSHA Data"
+      },
+      {
         "year": 2023,
         "recordableInjuries": 2,
         "trir": 0.35,
@@ -5976,7 +6418,7 @@
         "notes": "Official OSHA Data"
       }
     ],
-    "safetySummary": "Official OSHA data available for 8 years. Latest TRIR (2023): 0.35 (Industry Avg: ~0.6). Average TRIR: 0.49. ",
+    "safetySummary": "Official OSHA data available for 9 years. Latest TRIR (2024): 0 (Industry Avg: ~0.6). Average TRIR: 0.43. Zero recordable incidents in latest reporting year.",
     "hasRealOshaData": true
   },
   {
@@ -6004,6 +6446,23 @@
       }
     },
     "oshaHistory": [
+      {
+        "year": 2024,
+        "recordableInjuries": 6,
+        "trir": 0.54,
+        "dart": 0.45,
+        "hoursWorked": 2233625,
+        "deaths": 0,
+        "dafw": 4,
+        "djtr": 1,
+        "other": 1,
+        "hearingLoss": 0,
+        "poisonings": 0,
+        "respiratory": 0,
+        "skinDisorders": 0,
+        "otherIllnesses": 0,
+        "notes": "Official OSHA Data"
+      },
       {
         "year": 2023,
         "recordableInjuries": 6,
@@ -6124,7 +6583,7 @@
         "notes": "Official OSHA Data"
       }
     ],
-    "safetySummary": "Official OSHA data available for 7 years. Latest TRIR (2023): 0.53 (Industry Avg: ~0.6). Average TRIR: 0.82. ",
+    "safetySummary": "Official OSHA data available for 8 years. Latest TRIR (2024): 0.54 (Industry Avg: ~0.6). Average TRIR: 0.78. ",
     "hasRealOshaData": true
   },
   {
@@ -6152,6 +6611,23 @@
       }
     },
     "oshaHistory": [
+      {
+        "year": 2024,
+        "recordableInjuries": 3,
+        "trir": 0.71,
+        "dart": 0.71,
+        "hoursWorked": 846434,
+        "deaths": 0,
+        "dafw": 2,
+        "djtr": 1,
+        "other": 0,
+        "hearingLoss": 0,
+        "poisonings": 0,
+        "respiratory": 0,
+        "skinDisorders": 0,
+        "otherIllnesses": 0,
+        "notes": "Official OSHA Data"
+      },
       {
         "year": 2023,
         "recordableInjuries": 1,
@@ -6238,7 +6714,7 @@
         "notes": "Official OSHA Data"
       }
     ],
-    "safetySummary": "Official OSHA data available for 5 years. Latest TRIR (2023): 0.25 (Industry Avg: ~0.6). Average TRIR: 0.37. ",
+    "safetySummary": "Official OSHA data available for 6 years. Latest TRIR (2024): 0.71 (Industry Avg: ~0.6). Average TRIR: 0.42. ",
     "hasRealOshaData": true
   },
   {
@@ -6346,6 +6822,23 @@
       }
     },
     "oshaHistory": [
+      {
+        "year": 2024,
+        "recordableInjuries": 4,
+        "trir": 1.56,
+        "dart": 1.17,
+        "hoursWorked": 513543,
+        "deaths": 0,
+        "dafw": 2,
+        "djtr": 1,
+        "other": 1,
+        "hearingLoss": 0,
+        "poisonings": 0,
+        "respiratory": 0,
+        "skinDisorders": 0,
+        "otherIllnesses": 0,
+        "notes": "Official OSHA Data"
+      },
       {
         "year": 2023,
         "recordableInjuries": 10,
@@ -6483,7 +6976,7 @@
         "notes": "Official OSHA Data"
       }
     ],
-    "safetySummary": "Official OSHA data available for 8 years. Latest TRIR (2023): 3.91 (Industry Avg: ~0.6). Average TRIR: 1.82. ",
+    "safetySummary": "Official OSHA data available for 9 years. Latest TRIR (2024): 1.56 (Industry Avg: ~0.6). Average TRIR: 1.79. ",
     "hasRealOshaData": true
   },
   {
@@ -6511,6 +7004,23 @@
       }
     },
     "oshaHistory": [
+      {
+        "year": 2024,
+        "recordableInjuries": 1,
+        "trir": 2.22,
+        "dart": 2.22,
+        "hoursWorked": 89985,
+        "deaths": 0,
+        "dafw": 1,
+        "djtr": 0,
+        "other": 0,
+        "hearingLoss": 0,
+        "poisonings": 0,
+        "respiratory": 0,
+        "skinDisorders": 0,
+        "otherIllnesses": 0,
+        "notes": "Official OSHA Data"
+      },
       {
         "year": 2023,
         "recordableInjuries": 1,
@@ -6648,7 +7158,7 @@
         "notes": "Official OSHA Data"
       }
     ],
-    "safetySummary": "Official OSHA data available for 8 years. Latest TRIR (2023): 2.29 (Industry Avg: ~0.6). Average TRIR: 1.15. ",
+    "safetySummary": "Official OSHA data available for 9 years. Latest TRIR (2024): 2.22 (Industry Avg: ~0.6). Average TRIR: 1.27. ",
     "hasRealOshaData": true
   },
   {
@@ -6722,6 +7232,23 @@
       }
     },
     "oshaHistory": [
+      {
+        "year": 2024,
+        "recordableInjuries": 5,
+        "trir": 1.12,
+        "dart": 0.45,
+        "hoursWorked": 893013,
+        "deaths": 0,
+        "dafw": 1,
+        "djtr": 1,
+        "other": 3,
+        "hearingLoss": 0,
+        "poisonings": 0,
+        "respiratory": 0,
+        "skinDisorders": 0,
+        "otherIllnesses": 0,
+        "notes": "Official OSHA Data"
+      },
       {
         "year": 2023,
         "recordableInjuries": 4,
@@ -6859,7 +7386,7 @@
         "notes": "Official OSHA Data"
       }
     ],
-    "safetySummary": "Official OSHA data available for 8 years. Latest TRIR (2023): 0.89 (Industry Avg: ~0.6). Average TRIR: 1.37. ",
+    "safetySummary": "Official OSHA data available for 9 years. Latest TRIR (2024): 1.12 (Industry Avg: ~0.6). Average TRIR: 1.35. ",
     "hasRealOshaData": true
   },
   {
@@ -6888,6 +7415,23 @@
     },
     "oshaHistory": [
       {
+        "year": 2024,
+        "recordableInjuries": 2,
+        "trir": 0.53,
+        "dart": 0.27,
+        "hoursWorked": 754155,
+        "deaths": 0,
+        "dafw": 1,
+        "djtr": 0,
+        "other": 1,
+        "hearingLoss": 0,
+        "poisonings": 0,
+        "respiratory": 0,
+        "skinDisorders": 0,
+        "otherIllnesses": 0,
+        "notes": "Official OSHA Data"
+      },
+      {
         "year": 2023,
         "recordableInjuries": 1,
         "trir": 0.48,
@@ -6905,7 +7449,7 @@
         "notes": "Official OSHA Data"
       }
     ],
-    "safetySummary": "Official OSHA data available for 1 years. Latest TRIR (2023): 0.48 (Industry Avg: ~0.6). Average TRIR: 0.48. ",
+    "safetySummary": "Official OSHA data available for 2 years. Latest TRIR (2024): 0.53 (Industry Avg: ~0.6). Average TRIR: 0.51. ",
     "hasRealOshaData": true
   },
   {
@@ -6933,6 +7477,23 @@
       }
     },
     "oshaHistory": [
+      {
+        "year": 2024,
+        "recordableInjuries": 0,
+        "trir": 0,
+        "dart": 0,
+        "hoursWorked": 657062,
+        "deaths": 0,
+        "dafw": 0,
+        "djtr": 0,
+        "other": 0,
+        "hearingLoss": 0,
+        "poisonings": 0,
+        "respiratory": 0,
+        "skinDisorders": 0,
+        "otherIllnesses": 0,
+        "notes": "Official OSHA Data"
+      },
       {
         "year": 2023,
         "recordableInjuries": 1,
@@ -7053,7 +7614,7 @@
         "notes": "Official OSHA Data"
       }
     ],
-    "safetySummary": "Official OSHA data available for 7 years. Latest TRIR (2023): 0.3 (Industry Avg: ~0.6). Average TRIR: 0.19. ",
+    "safetySummary": "Official OSHA data available for 8 years. Latest TRIR (2024): 0 (Industry Avg: ~0.6). Average TRIR: 0.17. Zero recordable incidents in latest reporting year.",
     "hasRealOshaData": true
   },
   {
@@ -7258,6 +7819,23 @@
     },
     "oshaHistory": [
       {
+        "year": 2024,
+        "recordableInjuries": 2,
+        "trir": 0.53,
+        "dart": 0.53,
+        "hoursWorked": 752141,
+        "deaths": 0,
+        "dafw": 1,
+        "djtr": 1,
+        "other": 0,
+        "hearingLoss": 0,
+        "poisonings": 0,
+        "respiratory": 0,
+        "skinDisorders": 0,
+        "otherIllnesses": 0,
+        "notes": "Official OSHA Data"
+      },
+      {
         "year": 2023,
         "recordableInjuries": 1,
         "trir": 0.28,
@@ -7394,7 +7972,7 @@
         "notes": "Official OSHA Data"
       }
     ],
-    "safetySummary": "Official OSHA data available for 8 years. Latest TRIR (2023): 0.28 (Industry Avg: ~0.6). Average TRIR: 0.66. ",
+    "safetySummary": "Official OSHA data available for 9 years. Latest TRIR (2024): 0.53 (Industry Avg: ~0.6). Average TRIR: 0.65. ",
     "hasRealOshaData": true
   },
   {
@@ -7537,6 +8115,23 @@
     },
     "oshaHistory": [
       {
+        "year": 2024,
+        "recordableInjuries": 0,
+        "trir": 0,
+        "dart": 0,
+        "hoursWorked": 792663,
+        "deaths": 0,
+        "dafw": 0,
+        "djtr": 0,
+        "other": 0,
+        "hearingLoss": 0,
+        "poisonings": 0,
+        "respiratory": 0,
+        "skinDisorders": 0,
+        "otherIllnesses": 0,
+        "notes": "Official OSHA Data"
+      },
+      {
         "year": 2023,
         "recordableInjuries": 0,
         "trir": 0,
@@ -7571,7 +8166,7 @@
         "notes": "Official OSHA Data"
       }
     ],
-    "safetySummary": "Official OSHA data available for 2 years. Latest TRIR (2023): 0 (Industry Avg: ~0.6). Average TRIR: 0.00. Zero recordable incidents in latest reporting year.",
+    "safetySummary": "Official OSHA data available for 3 years. Latest TRIR (2024): 0 (Industry Avg: ~0.6). Average TRIR: 0.00. Zero recordable incidents in latest reporting year.",
     "hasRealOshaData": true
   },
   {
@@ -7599,6 +8194,23 @@
       }
     },
     "oshaHistory": [
+      {
+        "year": 2024,
+        "recordableInjuries": 1,
+        "trir": 0.27,
+        "dart": 0.27,
+        "hoursWorked": 741683,
+        "deaths": 0,
+        "dafw": 1,
+        "djtr": 0,
+        "other": 0,
+        "hearingLoss": 0,
+        "poisonings": 0,
+        "respiratory": 0,
+        "skinDisorders": 0,
+        "otherIllnesses": 0,
+        "notes": "Official OSHA Data"
+      },
       {
         "year": 2023,
         "recordableInjuries": 1,
@@ -7685,7 +8297,7 @@
         "notes": "Official OSHA Data"
       }
     ],
-    "safetySummary": "Official OSHA data available for 5 years. Latest TRIR (2023): 0.28 (Industry Avg: ~0.6). Average TRIR: 0.17. ",
+    "safetySummary": "Official OSHA data available for 6 years. Latest TRIR (2024): 0.27 (Industry Avg: ~0.6). Average TRIR: 0.19. ",
     "hasRealOshaData": true
   },
   {
@@ -7713,6 +8325,23 @@
       }
     },
     "oshaHistory": [
+      {
+        "year": 2024,
+        "recordableInjuries": 6,
+        "trir": 1.08,
+        "dart": 0.18,
+        "hoursWorked": 1113999,
+        "deaths": 0,
+        "dafw": 0,
+        "djtr": 1,
+        "other": 5,
+        "hearingLoss": 0,
+        "poisonings": 0,
+        "respiratory": 0,
+        "skinDisorders": 0,
+        "otherIllnesses": 0,
+        "notes": "Official OSHA Data"
+      },
       {
         "year": 2023,
         "recordableInjuries": 4,
@@ -7748,7 +8377,7 @@
         "notes": "Official OSHA Data"
       }
     ],
-    "safetySummary": "Official OSHA data available for 2 years. Latest TRIR (2023): 0.61 (Industry Avg: ~0.6). Average TRIR: 0.35. ",
+    "safetySummary": "Official OSHA data available for 3 years. Latest TRIR (2024): 1.08 (Industry Avg: ~0.6). Average TRIR: 0.60. ",
     "hasRealOshaData": true
   },
   {
@@ -7776,6 +8405,23 @@
       }
     },
     "oshaHistory": [
+      {
+        "year": 2024,
+        "recordableInjuries": 2,
+        "trir": 0.48,
+        "dart": 0.24,
+        "hoursWorked": 838190,
+        "deaths": 0,
+        "dafw": 0,
+        "djtr": 1,
+        "other": 1,
+        "hearingLoss": 0,
+        "poisonings": 0,
+        "respiratory": 0,
+        "skinDisorders": 0,
+        "otherIllnesses": 0,
+        "notes": "Official OSHA Data"
+      },
       {
         "year": 2023,
         "recordableInjuries": 0,
@@ -7913,7 +8559,7 @@
         "notes": "Official OSHA Data"
       }
     ],
-    "safetySummary": "Official OSHA data available for 8 years. Latest TRIR (2023): 0 (Industry Avg: ~0.6). Average TRIR: 0.21. Zero recordable incidents in latest reporting year.",
+    "safetySummary": "Official OSHA data available for 9 years. Latest TRIR (2024): 0.48 (Industry Avg: ~0.6). Average TRIR: 0.24. ",
     "hasRealOshaData": true
   },
   {
@@ -7942,6 +8588,23 @@
     },
     "oshaHistory": [
       {
+        "year": 2024,
+        "recordableInjuries": 2,
+        "trir": 0.3,
+        "dart": 0,
+        "hoursWorked": 1322362,
+        "deaths": 0,
+        "dafw": 0,
+        "djtr": 0,
+        "other": 2,
+        "hearingLoss": 0,
+        "poisonings": 0,
+        "respiratory": 0,
+        "skinDisorders": 0,
+        "otherIllnesses": 0,
+        "notes": "Official OSHA Data"
+      },
+      {
         "year": 2023,
         "recordableInjuries": 7,
         "trir": 1.07,
@@ -8078,7 +8741,7 @@
         "notes": "Official OSHA Data"
       }
     ],
-    "safetySummary": "Official OSHA data available for 8 years. Latest TRIR (2023): 1.07 (Industry Avg: ~0.6). Average TRIR: 0.69. ",
+    "safetySummary": "Official OSHA data available for 9 years. Latest TRIR (2024): 0.3 (Industry Avg: ~0.6). Average TRIR: 0.65. ",
     "hasRealOshaData": true
   },
   {
@@ -8107,6 +8770,23 @@
     },
     "oshaHistory": [
       {
+        "year": 2024,
+        "recordableInjuries": 0,
+        "trir": 0,
+        "dart": 0,
+        "hoursWorked": 1311973,
+        "deaths": 0,
+        "dafw": 0,
+        "djtr": 0,
+        "other": 0,
+        "hearingLoss": 0,
+        "poisonings": 0,
+        "respiratory": 0,
+        "skinDisorders": 0,
+        "otherIllnesses": 0,
+        "notes": "Official OSHA Data"
+      },
+      {
         "year": 2023,
         "recordableInjuries": 7,
         "trir": 1.07,
@@ -8243,7 +8923,7 @@
         "notes": "Official OSHA Data"
       }
     ],
-    "safetySummary": "Official OSHA data available for 8 years. Latest TRIR (2023): 1.07 (Industry Avg: ~0.6). Average TRIR: 0.69. ",
+    "safetySummary": "Official OSHA data available for 9 years. Latest TRIR (2024): 0 (Industry Avg: ~0.6). Average TRIR: 0.61. Zero recordable incidents in latest reporting year.",
     "hasRealOshaData": true
   },
   {
@@ -8524,6 +9204,23 @@
     },
     "oshaHistory": [
       {
+        "year": 2024,
+        "recordableInjuries": 0,
+        "trir": 0,
+        "dart": 0,
+        "hoursWorked": 213028,
+        "deaths": 0,
+        "dafw": 0,
+        "djtr": 0,
+        "other": 0,
+        "hearingLoss": 0,
+        "poisonings": 0,
+        "respiratory": 0,
+        "skinDisorders": 0,
+        "otherIllnesses": 0,
+        "notes": "Official OSHA Data"
+      },
+      {
         "year": 2023,
         "recordableInjuries": 0,
         "trir": 0,
@@ -8575,7 +9272,7 @@
         "notes": "Official OSHA Data"
       }
     ],
-    "safetySummary": "Official OSHA data available for 3 years. Latest TRIR (2023): 0 (Industry Avg: ~0.6). Average TRIR: 0.11. Zero recordable incidents in latest reporting year.",
+    "safetySummary": "Official OSHA data available for 4 years. Latest TRIR (2024): 0 (Industry Avg: ~0.6). Average TRIR: 0.08. Zero recordable incidents in latest reporting year.",
     "hasRealOshaData": true
   },
   {
@@ -8603,6 +9300,23 @@
       }
     },
     "oshaHistory": [
+      {
+        "year": 2024,
+        "recordableInjuries": 8,
+        "trir": 2.52,
+        "dart": 1.89,
+        "hoursWorked": 634551,
+        "deaths": 0,
+        "dafw": 3,
+        "djtr": 3,
+        "other": 2,
+        "hearingLoss": 0,
+        "poisonings": 0,
+        "respiratory": 0,
+        "skinDisorders": 0,
+        "otherIllnesses": 0,
+        "notes": "Official OSHA Data"
+      },
       {
         "year": 2023,
         "recordableInjuries": 5,
@@ -8740,7 +9454,7 @@
         "notes": "Official OSHA Data"
       }
     ],
-    "safetySummary": "Official OSHA data available for 8 years. Latest TRIR (2023): 1.72 (Industry Avg: ~0.6). Average TRIR: 1.94. ",
+    "safetySummary": "Official OSHA data available for 9 years. Latest TRIR (2024): 2.52 (Industry Avg: ~0.6). Average TRIR: 2.00. ",
     "hasRealOshaData": true
   },
   {
@@ -8768,6 +9482,23 @@
       }
     },
     "oshaHistory": [
+      {
+        "year": 2024,
+        "recordableInjuries": 1,
+        "trir": 0.18,
+        "dart": 0.18,
+        "hoursWorked": 1103766,
+        "deaths": 0,
+        "dafw": 0,
+        "djtr": 1,
+        "other": 0,
+        "hearingLoss": 0,
+        "poisonings": 0,
+        "respiratory": 0,
+        "skinDisorders": 0,
+        "otherIllnesses": 0,
+        "notes": "Official OSHA Data"
+      },
       {
         "year": 2023,
         "recordableInjuries": 3,
@@ -8905,7 +9636,7 @@
         "notes": "Official OSHA Data"
       }
     ],
-    "safetySummary": "Official OSHA data available for 8 years. Latest TRIR (2023): 0.55 (Industry Avg: ~0.6). Average TRIR: 0.34. ",
+    "safetySummary": "Official OSHA data available for 9 years. Latest TRIR (2024): 0.18 (Industry Avg: ~0.6). Average TRIR: 0.33. ",
     "hasRealOshaData": true
   },
   {
@@ -8933,6 +9664,23 @@
       }
     },
     "oshaHistory": [
+      {
+        "year": 2024,
+        "recordableInjuries": 32,
+        "trir": 4.39,
+        "dart": 1.78,
+        "hoursWorked": 1458052,
+        "deaths": 0,
+        "dafw": 12,
+        "djtr": 1,
+        "other": 19,
+        "hearingLoss": 0,
+        "poisonings": 0,
+        "respiratory": 3,
+        "skinDisorders": 1,
+        "otherIllnesses": 0,
+        "notes": "Official OSHA Data"
+      },
       {
         "year": 2023,
         "recordableInjuries": 16,
@@ -9053,7 +9801,7 @@
         "notes": "Official OSHA Data"
       }
     ],
-    "safetySummary": "Official OSHA data available for 7 years. Latest TRIR (2023): 2.29 (Industry Avg: ~0.6). Average TRIR: 3.00. ",
+    "safetySummary": "Official OSHA data available for 8 years. Latest TRIR (2024): 4.39 (Industry Avg: ~0.6). Average TRIR: 3.18. ",
     "hasRealOshaData": true
   },
   {
@@ -9081,6 +9829,23 @@
       }
     },
     "oshaHistory": [
+      {
+        "year": 2024,
+        "recordableInjuries": 0,
+        "trir": 0,
+        "dart": 0,
+        "hoursWorked": 654194,
+        "deaths": 0,
+        "dafw": 0,
+        "djtr": 0,
+        "other": 0,
+        "hearingLoss": 0,
+        "poisonings": 0,
+        "respiratory": 0,
+        "skinDisorders": 0,
+        "otherIllnesses": 0,
+        "notes": "Official OSHA Data"
+      },
       {
         "year": 2023,
         "recordableInjuries": 4,
@@ -9201,7 +9966,7 @@
         "notes": "Official OSHA Data"
       }
     ],
-    "safetySummary": "Official OSHA data available for 7 years. Latest TRIR (2023): 1.26 (Industry Avg: ~0.6). Average TRIR: 0.51. ",
+    "safetySummary": "Official OSHA data available for 8 years. Latest TRIR (2024): 0 (Industry Avg: ~0.6). Average TRIR: 0.44. Zero recordable incidents in latest reporting year.",
     "hasRealOshaData": true
   },
   {
@@ -9229,6 +9994,23 @@
       }
     },
     "oshaHistory": [
+      {
+        "year": 2024,
+        "recordableInjuries": 2,
+        "trir": 0.77,
+        "dart": 0.39,
+        "hoursWorked": 516344,
+        "deaths": 0,
+        "dafw": 0,
+        "djtr": 1,
+        "other": 1,
+        "hearingLoss": 0,
+        "poisonings": 0,
+        "respiratory": 0,
+        "skinDisorders": 0,
+        "otherIllnesses": 0,
+        "notes": "Official OSHA Data"
+      },
       {
         "year": 2023,
         "recordableInjuries": 0,
@@ -9315,7 +10097,7 @@
         "notes": "Official OSHA Data"
       }
     ],
-    "safetySummary": "Official OSHA data available for 5 years. Latest TRIR (2023): 0 (Industry Avg: ~0.6). Average TRIR: 0.63. Zero recordable incidents in latest reporting year.",
+    "safetySummary": "Official OSHA data available for 6 years. Latest TRIR (2024): 0.77 (Industry Avg: ~0.6). Average TRIR: 0.65. ",
     "hasRealOshaData": true
   },
   {
@@ -9432,6 +10214,23 @@
     },
     "oshaHistory": [
       {
+        "year": 2024,
+        "recordableInjuries": 1,
+        "trir": 0.14,
+        "dart": 0.14,
+        "hoursWorked": 1464176,
+        "deaths": 0,
+        "dafw": 1,
+        "djtr": 0,
+        "other": 0,
+        "hearingLoss": 0,
+        "poisonings": 0,
+        "respiratory": 0,
+        "skinDisorders": 0,
+        "otherIllnesses": 0,
+        "notes": "Official OSHA Data"
+      },
+      {
         "year": 2023,
         "recordableInjuries": 1,
         "trir": 0.14,
@@ -9517,7 +10316,7 @@
         "notes": "Official OSHA Data"
       }
     ],
-    "safetySummary": "Official OSHA data available for 5 years. Latest TRIR (2023): 0.14 (Industry Avg: ~0.6). Average TRIR: 0.28. ",
+    "safetySummary": "Official OSHA data available for 6 years. Latest TRIR (2024): 0.14 (Industry Avg: ~0.6). Average TRIR: 0.26. ",
     "hasRealOshaData": true
   },
   {
@@ -9545,6 +10344,23 @@
       }
     },
     "oshaHistory": [
+      {
+        "year": 2024,
+        "recordableInjuries": 20,
+        "trir": 2.37,
+        "dart": 1.42,
+        "hoursWorked": 1687964,
+        "deaths": 0,
+        "dafw": 4,
+        "djtr": 8,
+        "other": 8,
+        "hearingLoss": 6,
+        "poisonings": 0,
+        "respiratory": 0,
+        "skinDisorders": 0,
+        "otherIllnesses": 1,
+        "notes": "Official OSHA Data"
+      },
       {
         "year": 2023,
         "recordableInjuries": 8,
@@ -9580,7 +10396,7 @@
         "notes": "Official OSHA Data"
       }
     ],
-    "safetySummary": "Official OSHA data available for 2 years. Latest TRIR (2023): 0.92 (Industry Avg: ~0.6). Average TRIR: 0.63. ",
+    "safetySummary": "Official OSHA data available for 3 years. Latest TRIR (2024): 2.37 (Industry Avg: ~0.6). Average TRIR: 1.21. ",
     "hasRealOshaData": true
   },
   {
@@ -9845,6 +10661,23 @@
     },
     "oshaHistory": [
       {
+        "year": 2024,
+        "recordableInjuries": 1,
+        "trir": 0.29,
+        "dart": 0.29,
+        "hoursWorked": 700936,
+        "deaths": 0,
+        "dafw": 1,
+        "djtr": 0,
+        "other": 0,
+        "hearingLoss": 0,
+        "poisonings": 0,
+        "respiratory": 0,
+        "skinDisorders": 0,
+        "otherIllnesses": 0,
+        "notes": "Official OSHA Data"
+      },
+      {
         "year": 2023,
         "recordableInjuries": 0,
         "trir": 0,
@@ -9981,7 +10814,7 @@
         "notes": "Official OSHA Data"
       }
     ],
-    "safetySummary": "Official OSHA data available for 8 years. Latest TRIR (2023): 0 (Industry Avg: ~0.6). Average TRIR: 0.40. Zero recordable incidents in latest reporting year.",
+    "safetySummary": "Official OSHA data available for 9 years. Latest TRIR (2024): 0.29 (Industry Avg: ~0.6). Average TRIR: 0.38. ",
     "hasRealOshaData": true
   },
   {
@@ -10186,6 +11019,23 @@
     },
     "oshaHistory": [
       {
+        "year": 2024,
+        "recordableInjuries": 3,
+        "trir": 0.14,
+        "dart": 0.1,
+        "hoursWorked": 4163118,
+        "deaths": 0,
+        "dafw": 2,
+        "djtr": 0,
+        "other": 1,
+        "hearingLoss": 0,
+        "poisonings": 0,
+        "respiratory": 0,
+        "skinDisorders": 0,
+        "otherIllnesses": 0,
+        "notes": "Official OSHA Data"
+      },
+      {
         "year": 2023,
         "recordableInjuries": 3,
         "trir": 0.14,
@@ -10305,7 +11155,7 @@
         "notes": "Official OSHA Data"
       }
     ],
-    "safetySummary": "Official OSHA data available for 7 years. Latest TRIR (2023): 0.14 (Industry Avg: ~0.6). Average TRIR: 0.17. ",
+    "safetySummary": "Official OSHA data available for 8 years. Latest TRIR (2024): 0.14 (Industry Avg: ~0.6). Average TRIR: 0.17. ",
     "hasRealOshaData": true
   },
   {
@@ -10333,6 +11183,23 @@
       }
     },
     "oshaHistory": [
+      {
+        "year": 2024,
+        "recordableInjuries": 0,
+        "trir": 0,
+        "dart": 0,
+        "hoursWorked": 2797134,
+        "deaths": 0,
+        "dafw": 0,
+        "djtr": 0,
+        "other": 0,
+        "hearingLoss": 0,
+        "poisonings": 0,
+        "respiratory": 0,
+        "skinDisorders": 0,
+        "otherIllnesses": 0,
+        "notes": "Official OSHA Data"
+      },
       {
         "year": 2023,
         "recordableInjuries": 3,
@@ -10470,7 +11337,7 @@
         "notes": "Official OSHA Data"
       }
     ],
-    "safetySummary": "Official OSHA data available for 8 years. Latest TRIR (2023): 0.25 (Industry Avg: ~0.6). Average TRIR: 0.10. ",
+    "safetySummary": "Official OSHA data available for 9 years. Latest TRIR (2024): 0 (Industry Avg: ~0.6). Average TRIR: 0.09. Zero recordable incidents in latest reporting year.",
     "hasRealOshaData": true
   },
   {
@@ -10499,6 +11366,23 @@
     },
     "oshaHistory": [
       {
+        "year": 2024,
+        "recordableInjuries": 5,
+        "trir": 0.52,
+        "dart": 0.31,
+        "hoursWorked": 1926988,
+        "deaths": 0,
+        "dafw": 1,
+        "djtr": 2,
+        "other": 2,
+        "hearingLoss": 0,
+        "poisonings": 0,
+        "respiratory": 0,
+        "skinDisorders": 0,
+        "otherIllnesses": 0,
+        "notes": "Official OSHA Data"
+      },
+      {
         "year": 2023,
         "recordableInjuries": 3,
         "trir": 0.27,
@@ -10533,7 +11417,7 @@
         "notes": "Official OSHA Data"
       }
     ],
-    "safetySummary": "Official OSHA data available for 2 years. Latest TRIR (2023): 0.27 (Industry Avg: ~0.6). Average TRIR: 0.27. ",
+    "safetySummary": "Official OSHA data available for 3 years. Latest TRIR (2024): 0.52 (Industry Avg: ~0.6). Average TRIR: 0.35. ",
     "hasRealOshaData": true
   },
   {
@@ -10562,6 +11446,23 @@
     },
     "oshaHistory": [
       {
+        "year": 2024,
+        "recordableInjuries": 5,
+        "trir": 0.52,
+        "dart": 0.31,
+        "hoursWorked": 1926988,
+        "deaths": 0,
+        "dafw": 1,
+        "djtr": 2,
+        "other": 2,
+        "hearingLoss": 0,
+        "poisonings": 0,
+        "respiratory": 0,
+        "skinDisorders": 0,
+        "otherIllnesses": 0,
+        "notes": "Official OSHA Data"
+      },
+      {
         "year": 2023,
         "recordableInjuries": 3,
         "trir": 0.27,
@@ -10596,7 +11497,7 @@
         "notes": "Official OSHA Data"
       }
     ],
-    "safetySummary": "Official OSHA data available for 2 years. Latest TRIR (2023): 0.27 (Industry Avg: ~0.6). Average TRIR: 0.27. ",
+    "safetySummary": "Official OSHA data available for 3 years. Latest TRIR (2024): 0.52 (Industry Avg: ~0.6). Average TRIR: 0.35. ",
     "hasRealOshaData": true
   },
   {
@@ -10712,6 +11613,23 @@
       }
     },
     "oshaHistory": [
+      {
+        "year": 2024,
+        "recordableInjuries": 0,
+        "trir": 0,
+        "dart": 0,
+        "hoursWorked": 1227362,
+        "deaths": 0,
+        "dafw": 0,
+        "djtr": 0,
+        "other": 0,
+        "hearingLoss": 0,
+        "poisonings": 0,
+        "respiratory": 0,
+        "skinDisorders": 0,
+        "otherIllnesses": 0,
+        "notes": "Official OSHA Data"
+      },
       {
         "year": 2023,
         "recordableInjuries": 2,
@@ -10849,7 +11767,7 @@
         "notes": "Official OSHA Data"
       }
     ],
-    "safetySummary": "Official OSHA data available for 8 years. Latest TRIR (2023): 0.3 (Industry Avg: ~0.6). Average TRIR: 0.20. ",
+    "safetySummary": "Official OSHA data available for 9 years. Latest TRIR (2024): 0 (Industry Avg: ~0.6). Average TRIR: 0.18. Zero recordable incidents in latest reporting year.",
     "hasRealOshaData": true
   },
   {
@@ -10877,6 +11795,23 @@
       }
     },
     "oshaHistory": [
+      {
+        "year": 2024,
+        "recordableInjuries": 0,
+        "trir": 0,
+        "dart": 0,
+        "hoursWorked": 83774,
+        "deaths": 0,
+        "dafw": 0,
+        "djtr": 0,
+        "other": 0,
+        "hearingLoss": 0,
+        "poisonings": 0,
+        "respiratory": 0,
+        "skinDisorders": 0,
+        "otherIllnesses": 0,
+        "notes": "Official OSHA Data"
+      },
       {
         "year": 2019,
         "recordableInjuries": 1,
@@ -10946,7 +11881,7 @@
         "notes": "Official OSHA Data"
       }
     ],
-    "safetySummary": "Official OSHA data available for 4 years. Latest TRIR (2019): 2.15 (Industry Avg: ~0.6). Average TRIR: 2.35. ",
+    "safetySummary": "Official OSHA data available for 5 years. Latest TRIR (2024): 0 (Industry Avg: ~0.6). Average TRIR: 1.88. Zero recordable incidents in latest reporting year.",
     "hasRealOshaData": true
   },
   {
@@ -10974,6 +11909,23 @@
       }
     },
     "oshaHistory": [
+      {
+        "year": 2024,
+        "recordableInjuries": 0,
+        "trir": 0,
+        "dart": 0,
+        "hoursWorked": 111534,
+        "deaths": 0,
+        "dafw": 0,
+        "djtr": 0,
+        "other": 0,
+        "hearingLoss": 0,
+        "poisonings": 0,
+        "respiratory": 0,
+        "skinDisorders": 0,
+        "otherIllnesses": 0,
+        "notes": "Official OSHA Data"
+      },
       {
         "year": 2022,
         "recordableInjuries": 3,
@@ -11009,7 +11961,7 @@
         "notes": "Official OSHA Data"
       }
     ],
-    "safetySummary": "Official OSHA data available for 2 years. Latest TRIR (2022): 5.13 (Industry Avg: ~0.6). Average TRIR: 2.56. ",
+    "safetySummary": "Official OSHA data available for 3 years. Latest TRIR (2024): 0 (Industry Avg: ~0.6). Average TRIR: 1.71. Zero recordable incidents in latest reporting year.",
     "hasRealOshaData": true
   },
   {
@@ -11125,6 +12077,23 @@
       }
     },
     "oshaHistory": [
+      {
+        "year": 2024,
+        "recordableInjuries": 5,
+        "trir": 0.29,
+        "dart": 0,
+        "hoursWorked": 3499039,
+        "deaths": 0,
+        "dafw": 0,
+        "djtr": 0,
+        "other": 5,
+        "hearingLoss": 0,
+        "poisonings": 0,
+        "respiratory": 0,
+        "skinDisorders": 0,
+        "otherIllnesses": 0,
+        "notes": "Official OSHA Data"
+      },
       {
         "year": 2023,
         "recordableInjuries": 8,
@@ -11245,7 +12214,7 @@
         "notes": "Official OSHA Data"
       }
     ],
-    "safetySummary": "Official OSHA data available for 7 years. Latest TRIR (2023): 0.47 (Industry Avg: ~0.6). Average TRIR: 0.46. ",
+    "safetySummary": "Official OSHA data available for 8 years. Latest TRIR (2024): 0.29 (Industry Avg: ~0.6). Average TRIR: 0.44. ",
     "hasRealOshaData": true
   },
   {
@@ -11273,6 +12242,23 @@
       }
     },
     "oshaHistory": [
+      {
+        "year": 2024,
+        "recordableInjuries": 2,
+        "trir": 0.13,
+        "dart": 0.13,
+        "hoursWorked": 3137182,
+        "deaths": 0,
+        "dafw": 1,
+        "djtr": 1,
+        "other": 0,
+        "hearingLoss": 0,
+        "poisonings": 0,
+        "respiratory": 0,
+        "skinDisorders": 0,
+        "otherIllnesses": 0,
+        "notes": "Official OSHA Data"
+      },
       {
         "year": 2023,
         "recordableInjuries": 1,
@@ -11393,7 +12379,7 @@
         "notes": "Official OSHA Data"
       }
     ],
-    "safetySummary": "Official OSHA data available for 7 years. Latest TRIR (2023): 0.06 (Industry Avg: ~0.6). Average TRIR: 0.54. ",
+    "safetySummary": "Official OSHA data available for 8 years. Latest TRIR (2024): 0.13 (Industry Avg: ~0.6). Average TRIR: 0.49. ",
     "hasRealOshaData": true
   },
   {
@@ -11509,6 +12495,23 @@
       }
     },
     "oshaHistory": [
+      {
+        "year": 2024,
+        "recordableInjuries": 3,
+        "trir": 0.8,
+        "dart": 0.53,
+        "hoursWorked": 751768,
+        "deaths": 0,
+        "dafw": 0,
+        "djtr": 2,
+        "other": 1,
+        "hearingLoss": 0,
+        "poisonings": 0,
+        "respiratory": 0,
+        "skinDisorders": 0,
+        "otherIllnesses": 0,
+        "notes": "Official OSHA Data"
+      },
       {
         "year": 2023,
         "recordableInjuries": 2,
@@ -11646,7 +12649,7 @@
         "notes": "Official OSHA Data"
       }
     ],
-    "safetySummary": "Official OSHA data available for 8 years. Latest TRIR (2023): 0.55 (Industry Avg: ~0.6). Average TRIR: 0.55. ",
+    "safetySummary": "Official OSHA data available for 9 years. Latest TRIR (2024): 0.8 (Industry Avg: ~0.6). Average TRIR: 0.58. ",
     "hasRealOshaData": true
   },
   {
@@ -11763,6 +12766,23 @@
     },
     "oshaHistory": [
       {
+        "year": 2024,
+        "recordableInjuries": 0,
+        "trir": 0,
+        "dart": 0,
+        "hoursWorked": 2084701,
+        "deaths": 0,
+        "dafw": 0,
+        "djtr": 0,
+        "other": 0,
+        "hearingLoss": 0,
+        "poisonings": 0,
+        "respiratory": 0,
+        "skinDisorders": 0,
+        "otherIllnesses": 0,
+        "notes": "Official OSHA Data"
+      },
+      {
         "year": 2023,
         "recordableInjuries": 0,
         "trir": 0,
@@ -11865,7 +12885,7 @@
         "notes": "Official OSHA Data"
       }
     ],
-    "safetySummary": "Official OSHA data available for 6 years. Latest TRIR (2023): 0 (Industry Avg: ~0.6). Average TRIR: 0.14. Zero recordable incidents in latest reporting year.",
+    "safetySummary": "Official OSHA data available for 7 years. Latest TRIR (2024): 0 (Industry Avg: ~0.6). Average TRIR: 0.12. Zero recordable incidents in latest reporting year.",
     "hasRealOshaData": true
   },
   {
@@ -11893,6 +12913,23 @@
       }
     },
     "oshaHistory": [
+      {
+        "year": 2024,
+        "recordableInjuries": 2,
+        "trir": 0.23,
+        "dart": 0.23,
+        "hoursWorked": 1732480,
+        "deaths": 0,
+        "dafw": 0,
+        "djtr": 2,
+        "other": 0,
+        "hearingLoss": 0,
+        "poisonings": 0,
+        "respiratory": 0,
+        "skinDisorders": 0,
+        "otherIllnesses": 0,
+        "notes": "Official OSHA Data"
+      },
       {
         "year": 2023,
         "recordableInjuries": 7,
@@ -11996,7 +13033,7 @@
         "notes": "Official OSHA Data"
       }
     ],
-    "safetySummary": "Official OSHA data available for 6 years. Latest TRIR (2023): 0.83 (Industry Avg: ~0.6). Average TRIR: 0.46. ",
+    "safetySummary": "Official OSHA data available for 7 years. Latest TRIR (2024): 0.23 (Industry Avg: ~0.6). Average TRIR: 0.42. ",
     "hasRealOshaData": true
   },
   {
@@ -12289,6 +13326,23 @@
     },
     "oshaHistory": [
       {
+        "year": 2024,
+        "recordableInjuries": 0,
+        "trir": 0,
+        "dart": 0,
+        "hoursWorked": 1496779,
+        "deaths": 0,
+        "dafw": 0,
+        "djtr": 0,
+        "other": 0,
+        "hearingLoss": 0,
+        "poisonings": 0,
+        "respiratory": 0,
+        "skinDisorders": 0,
+        "otherIllnesses": 0,
+        "notes": "Official OSHA Data"
+      },
+      {
         "year": 2023,
         "recordableInjuries": 3,
         "trir": 0.43,
@@ -12340,7 +13394,7 @@
         "notes": "Official OSHA Data"
       }
     ],
-    "safetySummary": "Official OSHA data available for 3 years. Latest TRIR (2023): 0.43 (Industry Avg: ~0.6). Average TRIR: 0.32. ",
+    "safetySummary": "Official OSHA data available for 4 years. Latest TRIR (2024): 0 (Industry Avg: ~0.6). Average TRIR: 0.24. Zero recordable incidents in latest reporting year.",
     "hasRealOshaData": true
   },
   {
@@ -12545,6 +13599,23 @@
     },
     "oshaHistory": [
       {
+        "year": 2024,
+        "recordableInjuries": 0,
+        "trir": 0,
+        "dart": 0,
+        "hoursWorked": 770733,
+        "deaths": 0,
+        "dafw": 0,
+        "djtr": 0,
+        "other": 0,
+        "hearingLoss": 0,
+        "poisonings": 0,
+        "respiratory": 0,
+        "skinDisorders": 0,
+        "otherIllnesses": 0,
+        "notes": "Official OSHA Data"
+      },
+      {
         "year": 2023,
         "recordableInjuries": 1,
         "trir": 0.25,
@@ -12681,7 +13752,7 @@
         "notes": "Official OSHA Data"
       }
     ],
-    "safetySummary": "Official OSHA data available for 8 years. Latest TRIR (2023): 0.25 (Industry Avg: ~0.6). Average TRIR: 0.23. ",
+    "safetySummary": "Official OSHA data available for 9 years. Latest TRIR (2024): 0 (Industry Avg: ~0.6). Average TRIR: 0.20. Zero recordable incidents in latest reporting year.",
     "hasRealOshaData": true
   },
   {
@@ -12841,6 +13912,23 @@
     },
     "oshaHistory": [
       {
+        "year": 2024,
+        "recordableInjuries": 0,
+        "trir": 0,
+        "dart": 0,
+        "hoursWorked": 930715,
+        "deaths": 0,
+        "dafw": 0,
+        "djtr": 0,
+        "other": 0,
+        "hearingLoss": 0,
+        "poisonings": 0,
+        "respiratory": 0,
+        "skinDisorders": 0,
+        "otherIllnesses": 0,
+        "notes": "Official OSHA Data"
+      },
+      {
         "year": 2023,
         "recordableInjuries": 0,
         "trir": 0,
@@ -12926,7 +14014,7 @@
         "notes": "Official OSHA Data"
       }
     ],
-    "safetySummary": "Official OSHA data available for 5 years. Latest TRIR (2023): 0 (Industry Avg: ~0.6). Average TRIR: 0.65. Zero recordable incidents in latest reporting year.",
+    "safetySummary": "Official OSHA data available for 6 years. Latest TRIR (2024): 0 (Industry Avg: ~0.6). Average TRIR: 0.54. Zero recordable incidents in latest reporting year.",
     "hasRealOshaData": true
   },
   {
@@ -13430,6 +14518,23 @@
     },
     "oshaHistory": [
       {
+        "year": 2024,
+        "recordableInjuries": 1,
+        "trir": 0.27,
+        "dart": 0.27,
+        "hoursWorked": 737162,
+        "deaths": 0,
+        "dafw": 0,
+        "djtr": 1,
+        "other": 0,
+        "hearingLoss": 0,
+        "poisonings": 0,
+        "respiratory": 0,
+        "skinDisorders": 0,
+        "otherIllnesses": 0,
+        "notes": "Official OSHA Data"
+      },
+      {
         "year": 2023,
         "recordableInjuries": 2,
         "trir": 0.57,
@@ -13515,7 +14620,7 @@
         "notes": "Official OSHA Data"
       }
     ],
-    "safetySummary": "Official OSHA data available for 5 years. Latest TRIR (2023): 0.57 (Industry Avg: ~0.6). Average TRIR: 0.35. ",
+    "safetySummary": "Official OSHA data available for 6 years. Latest TRIR (2024): 0.27 (Industry Avg: ~0.6). Average TRIR: 0.34. ",
     "hasRealOshaData": true
   },
   {
@@ -13632,6 +14737,23 @@
     },
     "oshaHistory": [
       {
+        "year": 2024,
+        "recordableInjuries": 0,
+        "trir": 0,
+        "dart": 0,
+        "hoursWorked": 1159033,
+        "deaths": 0,
+        "dafw": 0,
+        "djtr": 0,
+        "other": 0,
+        "hearingLoss": 0,
+        "poisonings": 0,
+        "respiratory": 0,
+        "skinDisorders": 0,
+        "otherIllnesses": 0,
+        "notes": "Official OSHA Data"
+      },
+      {
         "year": 2023,
         "recordableInjuries": 2,
         "trir": 0.23,
@@ -13666,7 +14788,7 @@
         "notes": "Official OSHA Data"
       }
     ],
-    "safetySummary": "Official OSHA data available for 2 years. Latest TRIR (2023): 0.23 (Industry Avg: ~0.6). Average TRIR: 0.20. ",
+    "safetySummary": "Official OSHA data available for 3 years. Latest TRIR (2024): 0 (Industry Avg: ~0.6). Average TRIR: 0.13. Zero recordable incidents in latest reporting year.",
     "hasRealOshaData": true
   },
   {
@@ -13694,6 +14816,23 @@
       }
     },
     "oshaHistory": [
+      {
+        "year": 2024,
+        "recordableInjuries": 0,
+        "trir": 0,
+        "dart": 0,
+        "hoursWorked": 560576,
+        "deaths": 0,
+        "dafw": 0,
+        "djtr": 0,
+        "other": 0,
+        "hearingLoss": 0,
+        "poisonings": 0,
+        "respiratory": 0,
+        "skinDisorders": 0,
+        "otherIllnesses": 0,
+        "notes": "Official OSHA Data"
+      },
       {
         "year": 2023,
         "recordableInjuries": 1,
@@ -13780,7 +14919,7 @@
         "notes": "Official OSHA Data"
       }
     ],
-    "safetySummary": "Official OSHA data available for 5 years. Latest TRIR (2023): 0.36 (Industry Avg: ~0.6). Average TRIR: 0.14. ",
+    "safetySummary": "Official OSHA data available for 6 years. Latest TRIR (2024): 0 (Industry Avg: ~0.6). Average TRIR: 0.12. Zero recordable incidents in latest reporting year.",
     "hasRealOshaData": true
   },
   {
@@ -13808,6 +14947,23 @@
       }
     },
     "oshaHistory": [
+      {
+        "year": 2024,
+        "recordableInjuries": 2,
+        "trir": 0.42,
+        "dart": 0.21,
+        "hoursWorked": 953234,
+        "deaths": 0,
+        "dafw": 0,
+        "djtr": 1,
+        "other": 1,
+        "hearingLoss": 0,
+        "poisonings": 0,
+        "respiratory": 0,
+        "skinDisorders": 0,
+        "otherIllnesses": 0,
+        "notes": "Official OSHA Data"
+      },
       {
         "year": 2023,
         "recordableInjuries": 2,
@@ -13911,7 +15067,7 @@
         "notes": "Official OSHA Data"
       }
     ],
-    "safetySummary": "Official OSHA data available for 6 years. Latest TRIR (2023): 0.39 (Industry Avg: ~0.6). Average TRIR: 0.29. ",
+    "safetySummary": "Official OSHA data available for 7 years. Latest TRIR (2024): 0.42 (Industry Avg: ~0.6). Average TRIR: 0.31. ",
     "hasRealOshaData": true
   },
   {
@@ -14142,6 +15298,23 @@
     },
     "oshaHistory": [
       {
+        "year": 2024,
+        "recordableInjuries": 3,
+        "trir": 1.02,
+        "dart": 1.02,
+        "hoursWorked": 590391,
+        "deaths": 0,
+        "dafw": 1,
+        "djtr": 2,
+        "other": 0,
+        "hearingLoss": 0,
+        "poisonings": 0,
+        "respiratory": 0,
+        "skinDisorders": 0,
+        "otherIllnesses": 0,
+        "notes": "Official OSHA Data"
+      },
+      {
         "year": 2023,
         "recordableInjuries": 1,
         "trir": 0.39,
@@ -14176,7 +15349,7 @@
         "notes": "Official OSHA Data"
       }
     ],
-    "safetySummary": "Official OSHA data available for 2 years. Latest TRIR (2023): 0.39 (Industry Avg: ~0.6). Average TRIR: 0.43. ",
+    "safetySummary": "Official OSHA data available for 3 years. Latest TRIR (2024): 1.02 (Industry Avg: ~0.6). Average TRIR: 0.63. ",
     "hasRealOshaData": true
   },
   {
@@ -14204,6 +15377,23 @@
       }
     },
     "oshaHistory": [
+      {
+        "year": 2024,
+        "recordableInjuries": 0,
+        "trir": 0,
+        "dart": 0,
+        "hoursWorked": 292170,
+        "deaths": 0,
+        "dafw": 0,
+        "djtr": 0,
+        "other": 0,
+        "hearingLoss": 0,
+        "poisonings": 0,
+        "respiratory": 0,
+        "skinDisorders": 0,
+        "otherIllnesses": 0,
+        "notes": "Official OSHA Data"
+      },
       {
         "year": 2023,
         "recordableInjuries": 0,
@@ -14239,7 +15429,7 @@
         "notes": "Official OSHA Data"
       }
     ],
-    "safetySummary": "Official OSHA data available for 2 years. Latest TRIR (2023): 0 (Industry Avg: ~0.6). Average TRIR: 0.00. Zero recordable incidents in latest reporting year.",
+    "safetySummary": "Official OSHA data available for 3 years. Latest TRIR (2024): 0 (Industry Avg: ~0.6). Average TRIR: 0.00. Zero recordable incidents in latest reporting year.",
     "hasRealOshaData": true
   },
   {
@@ -14491,6 +15681,23 @@
     },
     "oshaHistory": [
       {
+        "year": 2024,
+        "recordableInjuries": 3,
+        "trir": 0.14,
+        "dart": 0.1,
+        "hoursWorked": 4163118,
+        "deaths": 0,
+        "dafw": 2,
+        "djtr": 0,
+        "other": 1,
+        "hearingLoss": 0,
+        "poisonings": 0,
+        "respiratory": 0,
+        "skinDisorders": 0,
+        "otherIllnesses": 0,
+        "notes": "Official OSHA Data"
+      },
+      {
         "year": 2023,
         "recordableInjuries": 3,
         "trir": 0.14,
@@ -14610,7 +15817,7 @@
         "notes": "Official OSHA Data"
       }
     ],
-    "safetySummary": "Official OSHA data available for 7 years. Latest TRIR (2023): 0.14 (Industry Avg: ~0.6). Average TRIR: 0.17. ",
+    "safetySummary": "Official OSHA data available for 8 years. Latest TRIR (2024): 0.14 (Industry Avg: ~0.6). Average TRIR: 0.17. ",
     "hasRealOshaData": true
   },
   {
@@ -15521,6 +16728,23 @@
     },
     "oshaHistory": [
       {
+        "year": 2024,
+        "recordableInjuries": 2,
+        "trir": 0.76,
+        "dart": 0.38,
+        "hoursWorked": 527408,
+        "deaths": 0,
+        "dafw": 1,
+        "djtr": 0,
+        "other": 1,
+        "hearingLoss": 0,
+        "poisonings": 0,
+        "respiratory": 0,
+        "skinDisorders": 0,
+        "otherIllnesses": 0,
+        "notes": "Official OSHA Data"
+      },
+      {
         "year": 2023,
         "recordableInjuries": 1,
         "trir": 0.41,
@@ -15555,7 +16779,7 @@
         "notes": "Official OSHA Data"
       }
     ],
-    "safetySummary": "Official OSHA data available for 2 years. Latest TRIR (2023): 0.41 (Industry Avg: ~0.6). Average TRIR: 0.20. ",
+    "safetySummary": "Official OSHA data available for 3 years. Latest TRIR (2024): 0.76 (Industry Avg: ~0.6). Average TRIR: 0.39. ",
     "hasRealOshaData": true
   },
   {
@@ -15936,6 +17160,23 @@
     },
     "oshaHistory": [
       {
+        "year": 2024,
+        "recordableInjuries": 4,
+        "trir": 0.32,
+        "dart": 0.32,
+        "hoursWorked": 2494451,
+        "deaths": 0,
+        "dafw": 2,
+        "djtr": 2,
+        "other": 0,
+        "hearingLoss": 0,
+        "poisonings": 0,
+        "respiratory": 0,
+        "skinDisorders": 0,
+        "otherIllnesses": 0,
+        "notes": "Official OSHA Data"
+      },
+      {
         "year": 2023,
         "recordableInjuries": 1,
         "trir": 0.08,
@@ -16021,7 +17262,7 @@
         "notes": "Official OSHA Data"
       }
     ],
-    "safetySummary": "Official OSHA data available for 5 years. Latest TRIR (2023): 0.08 (Industry Avg: ~0.6). Average TRIR: 0.11. ",
+    "safetySummary": "Official OSHA data available for 6 years. Latest TRIR (2024): 0.32 (Industry Avg: ~0.6). Average TRIR: 0.14. ",
     "hasRealOshaData": true
   },
   {
@@ -16227,66 +17468,24 @@
     "oshaHistory": [
       {
         "year": 2024,
-        "recordableInjuries": 3,
-        "trir": 0.6,
-        "notes": "Estimated"
-      },
-      {
-        "year": 2023,
-        "recordableInjuries": 4,
-        "trir": 0.8,
-        "notes": "Estimated"
-      },
-      {
-        "year": 2022,
-        "recordableInjuries": 3,
-        "trir": 0.6,
-        "notes": "Estimated"
-      },
-      {
-        "year": 2021,
-        "recordableInjuries": 2,
-        "trir": 0.4,
-        "notes": "Estimated"
-      },
-      {
-        "year": 2020,
-        "recordableInjuries": 4,
-        "trir": 0.8,
-        "notes": "Estimated"
-      },
-      {
-        "year": 2019,
-        "recordableInjuries": 3,
-        "trir": 0.6,
-        "notes": "Estimated"
-      },
-      {
-        "year": 2018,
-        "recordableInjuries": 2,
-        "trir": 0.4,
-        "notes": "Estimated"
-      },
-      {
-        "year": 2017,
-        "recordableInjuries": 3,
-        "trir": 0.6,
-        "notes": "Estimated"
-      },
-      {
-        "year": 2016,
-        "recordableInjuries": 4,
-        "trir": 0.8,
-        "notes": "Estimated"
-      },
-      {
-        "year": 2015,
-        "recordableInjuries": 2,
-        "trir": 0.4,
-        "notes": "Estimated"
+        "recordableInjuries": 0,
+        "trir": 0,
+        "dart": 0,
+        "hoursWorked": 2022,
+        "deaths": 0,
+        "dafw": 0,
+        "djtr": 0,
+        "other": 0,
+        "hearingLoss": 0,
+        "poisonings": 0,
+        "respiratory": 0,
+        "skinDisorders": 0,
+        "otherIllnesses": 0,
+        "notes": "Official OSHA Data"
       }
     ],
-    "safetySummary": "Based on industry averages for petrochemical plants and assuming a moderate incident rate, the estimated recordable injuries for Eastman Chemical's Longview facility range between 2 and 4 per year. The TRIR is estimated to fluctuate between 0.4 and 0.8, reflecting typical variations in annual safety performance."
+    "safetySummary": "Official OSHA data available for 1 years. Latest TRIR (2024): 0 (Industry Avg: ~0.6). Average TRIR: 0.00. Zero recordable incidents in latest reporting year.",
+    "hasRealOshaData": true
   },
   {
     "name": "Chocolate Bayou",

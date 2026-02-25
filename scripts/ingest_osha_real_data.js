@@ -14,6 +14,7 @@ const TEMP_DIR = path.join(__dirname, '../src/data/raw_osha');
 
 // OSHA ITA Data URLs
 const DATA_URLS = [
+  { year: 2024, url: 'https://www.osha.gov/sites/default/files/ITA_300A_Summary_Data_2024_through_08-31-2025.zip' },
   { year: 2023, url: 'https://www.osha.gov/sites/default/files/ITA_300A_Summary_Data_2023_through_12-31-2024.zip' },
   { year: 2022, url: 'https://www.osha.gov/sites/default/files/ITA-data-cy2022.zip' },
   { year: 2021, url: 'https://www.osha.gov/sites/default/files/ITA-data-cy2021.zip' },
