@@ -1,6 +1,6 @@
 import React, { useMemo, useState, useRef, useEffect } from 'react';
 import { type ParsedRefinery, PADD_NAMES } from '../utils/data';
-import { Users, Factory, Calendar, HardHat, TrendingUp, Filter, Map, ChevronRight } from 'lucide-react';
+import { Users, Factory, Calendar, HardHat, TrendingUp, Filter, Map, ChevronRight, AlertTriangle } from 'lucide-react';
 import RefineryDetail from './RefineryDetail';
 import CompanyProfile from './CompanyProfile';
 import MetricExplanation from './MetricExplanation';
@@ -98,6 +98,20 @@ const Dashboard: React.FC<DashboardProps> = ({ padd, refineries, onPaddSelect, o
   const largestRefineries = useMemo(() => {
     return [...filteredRefineries]
       .sort((a, b) => b.capacity - a.capacity)
+      .slice(0, 5);
+  }, [filteredRefineries]);
+
+  const safetyIncidents = useMemo(() => {
+    // Filter for refineries that have official OSHA data
+    const withData = filteredRefineries.filter(r => r.hasRealOshaData && r.oshaHistory && r.oshaHistory.length > 0);
+    
+    // Sort by latest year's recordable injuries (or average if multiple years)
+    return withData
+      .sort((a, b) => {
+        const aLatest = a.oshaHistory![0];
+        const bLatest = b.oshaHistory![0];
+        return bLatest.recordableInjuries - aLatest.recordableInjuries;
+      })
       .slice(0, 5);
   }, [filteredRefineries]);
 
@@ -332,6 +346,50 @@ const Dashboard: React.FC<DashboardProps> = ({ padd, refineries, onPaddSelect, o
                 </button>
               ))}
             </div>
+          </div>
+
+          {/* Safety Performance (High Incidents) */}
+          <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-200 lg:col-span-3">
+            <div className="flex items-center gap-2 mb-4">
+              <AlertTriangle className="w-5 h-5 text-red-600" />
+              <h2 className="text-lg font-semibold text-gray-900">Highest Reported Incidents</h2>
+            </div>
+            {safetyIncidents.length > 0 ? (
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">
+                {safetyIncidents.map((refinery, idx) => {
+                  const latest = refinery.oshaHistory![0];
+                  return (
+                    <button 
+                      key={refinery.id} 
+                      onClick={() => setSelectedRefinery(refinery)}
+                      className="flex flex-col p-3 bg-red-50 rounded-lg border border-red-100 hover:border-red-300 hover:shadow-md transition-all text-left group"
+                    >
+                      <div className="flex items-center gap-2 mb-2">
+                        <span className="w-6 h-6 flex items-center justify-center bg-white shadow-sm rounded-full text-xs font-bold text-red-600 group-hover:bg-red-600 group-hover:text-white transition-colors">
+                          {idx + 1}
+                        </span>
+                        <span className="font-medium text-gray-900 truncate group-hover:text-red-600 transition-colors" title={refinery.name}>
+                          {refinery.name}
+                        </span>
+                      </div>
+                      <div className="text-xs text-gray-500 truncate" title={refinery.company}>
+                        {refinery.company}
+                      </div>
+                      <div className="mt-2 flex items-center justify-between">
+                        <div className="text-xs text-gray-500">Year: {latest.year}</div>
+                        <div className="text-sm font-bold text-red-700">
+                          {latest.recordableInjuries} Injuries
+                        </div>
+                      </div>
+                    </button>
+                  );
+                })}
+              </div>
+            ) : (
+              <div className="text-center py-8 text-gray-500 bg-gray-50 rounded-lg border border-gray-100 border-dashed">
+                No official incident data available for the current selection.
+              </div>
+            )}
           </div>
 
           {/* PADD Breakdown */}
