@@ -324,7 +324,7 @@ const AIAnalyst: React.FC<AIAnalystProps> = ({ refineries }) => {
               value={input}
               onChange={(e) => setInput(e.target.value)}
               onKeyDown={handleKeyDown}
-              placeholder="Ask about specific refineries, regional trends, or workforce estimates..."
+              placeholder="Ask a question"
               className="w-full pl-6 pr-14 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-purple-500 focus:border-transparent outline-none resize-none shadow-sm text-gray-700 placeholder-gray-400 overflow-hidden"
               rows={1}
               disabled={isLoading}
