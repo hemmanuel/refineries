@@ -188,7 +188,7 @@ const AIAnalyst: React.FC<AIAnalystProps> = ({ refineries }) => {
   return (
     <div className="h-full w-full bg-gray-50 flex overflow-hidden">
       {/* Left Sidebar - Refinery List */}
-      <div className="w-96 bg-white border-r border-gray-200 flex flex-col h-full flex-shrink-0">
+      <div className="hidden md:flex w-96 bg-white border-r border-gray-200 flex-col h-full flex-shrink-0">
         <div className="p-4 border-b border-gray-200">
           <h2 className="text-lg font-semibold text-gray-900 mb-3">Refineries</h2>
           <div className="relative">
