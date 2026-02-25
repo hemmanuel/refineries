@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { type ParsedRefinery } from '../utils/data';
-import { X, Factory, Users, HardHat, Calendar, AlertCircle, ChevronRight } from 'lucide-react';
+import { X, Factory, Users, HardHat, Calendar, AlertCircle, ChevronRight, AlertTriangle } from 'lucide-react';
 import MetricExplanation from './MetricExplanation';
 
 interface RefineryDetailProps {
@@ -164,6 +164,46 @@ const RefineryDetail: React.FC<RefineryDetailProps> = ({ refinery, onClose, mode
                 </div>
               )}
             </div>
+
+            {refinery.oshaHistory && refinery.oshaHistory.length > 0 && (
+              <div className="border-t border-gray-200 pt-6">
+                <h3 className="text-lg font-bold text-gray-900 mb-4 flex items-center gap-2">
+                  <AlertTriangle className="w-5 h-5 text-red-600" />
+                  Safety Performance (Estimated)
+                </h3>
+                
+                <div className="bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm">
+                  <table className="min-w-full divide-y divide-gray-200">
+                    <thead className="bg-gray-50">
+                      <tr>
+                        <th scope="col" className="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Year</th>
+                        <th scope="col" className="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Recordable Injuries</th>
+                        <th scope="col" className="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">TRIR</th>
+                      </tr>
+                    </thead>
+                    <tbody className="bg-white divide-y divide-gray-200">
+                      {refinery.oshaHistory.map((record) => (
+                        <tr key={record.year} className="hover:bg-gray-50">
+                          <td className="px-4 py-2 whitespace-nowrap text-sm font-medium text-gray-900">{record.year}</td>
+                          <td className="px-4 py-2 whitespace-nowrap text-sm text-gray-500">{record.recordableInjuries}</td>
+                          <td className="px-4 py-2 whitespace-nowrap text-sm text-gray-500">{record.trir}</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+                {refinery.safetySummary && (
+                  <div className="mt-4 bg-red-50 border border-red-100 rounded-lg p-4">
+                    <p className="text-sm text-red-800">
+                      <span className="font-semibold">Analysis:</span> {refinery.safetySummary}
+                    </p>
+                  </div>
+                )}
+                <p className="text-xs text-gray-400 mt-2 italic">
+                  * Data is estimated based on facility size and industry averages. Actual OSHA logs may vary.
+                </p>
+              </div>
+            )}
           </div>
         </div>
       </div>

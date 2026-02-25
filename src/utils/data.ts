@@ -20,6 +20,13 @@ export interface Refinery {
   QUANTITY: string;
 }
 
+export interface OshaYearData {
+  year: number;
+  recordableInjuries: number;
+  trir: number;
+  notes: string;
+}
+
 export interface ParsedRefinery {
   id: string;
   name: string;
@@ -33,6 +40,8 @@ export interface ParsedRefinery {
   lng: number;
   type?: 'Oil Refinery' | 'Petrochemical Plant';
   estimate?: WorkforceEstimate;
+  oshaHistory?: OshaYearData[];
+  safetySummary?: string;
 }
 
 // const CSV_URL = 'https://raw.githubusercontent.com/cpreid2/US-Refineries/master/Refineries_US.csv';
