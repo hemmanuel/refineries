@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect, useMemo } from 'react';
-import { Send, Bot, User, Loader2, Sparkles, AlertCircle, ChevronLeft, Search, MapPin, Factory } from 'lucide-react';
+import { Send, Bot, User, Loader2, Sparkles, AlertCircle, Search, MapPin, Factory } from 'lucide-react';
 import { type ParsedRefinery } from '../utils/data';
 import axios from 'axios';
 import RefineryDetail from './RefineryDetail';
@@ -21,7 +21,6 @@ const AIAnalyst: React.FC<AIAnalystProps> = ({ refineries }) => {
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [selectedRefinery, setSelectedRefinery] = useState<ParsedRefinery | null>(null);
-  const [sidebarOpen, setSidebarOpen] = useState(false);
   const [searchTerm, setSearchTerm] = useState('');
   const messagesEndRef = useRef<HTMLDivElement>(null);
 
