@@ -1,6 +1,6 @@
-import React, { useMemo, useState, useRef, useEffect } from 'react';
-import { type ParsedRefinery, PADD_NAMES } from '../utils/data';
-import { Calculator, DollarSign, TrendingUp } from 'lucide-react';
+import React, { useMemo, useState } from 'react';
+import { type ParsedRefinery } from '../utils/data';
+import { Calculator, DollarSign } from 'lucide-react';
 import Select from './Select';
 
 interface PricingStrategyProps {

@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { fetchRefineries, type ParsedRefinery, PADD_NAMES } from './utils/data';
 import Map from './components/Map';
 import Dashboard from './components/Dashboard';
 import PricingStrategy from './components/PricingStrategy';
 import OperatorsExplorer from './components/OperatorsExplorer';
-import { Loader2, LayoutGrid } from 'lucide-react';
+import { Loader2 } from 'lucide-react';
 
 type View = 'map' | 'dashboard' | 'pricing' | 'operators';
 
@@ -31,21 +31,6 @@ function App() {
 
     loadData();
   }, []);
-
-  const handleSelectPadd = (padd: number) => {
-    setSelectedPadd(padd);
-    setView('dashboard');
-  };
-
-  const handleViewAll = () => {
-    setSelectedPadd('all');
-    setView('dashboard');
-  };
-
-  const handleBackToMap = () => {
-    setView('map');
-    setSelectedPadd(null);
-  };
 
   if (loading) {
     return (
@@ -129,7 +114,6 @@ function App() {
           <Dashboard 
             padd={selectedPadd!} 
             refineries={refineries} 
-            onBack={() => setView('map')}
             onPaddSelect={(padd) => { setSelectedPadd(padd); setView('dashboard'); }}
             onViewOperators={() => setView('operators')}
           />

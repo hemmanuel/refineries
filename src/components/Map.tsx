@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useMemo } from 'react';
-import { MapContainer, TileLayer, Marker, useMap, GeoJSON } from 'react-leaflet';
+import { MapContainer, TileLayer, Marker, GeoJSON } from 'react-leaflet';
 import { type ParsedRefinery, getPaddColor, PADD_STATES, PADD_CENTERS } from '../utils/data';
 import L from 'leaflet';
 

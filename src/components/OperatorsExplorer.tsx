@@ -1,5 +1,6 @@
 import React, { useMemo, useState } from 'react';
-import { ArrowLeft, Users, Factory, Calendar, HardHat, AlertCircle, Calculator, TrendingUp, Filter, DollarSign, Map, ChevronLeft, Search, Droplet, MapPin, ChevronDown, ChevronUp } from 'lucide-react';
+import { type ParsedRefinery } from '../utils/data';
+import { Users, Factory, ChevronLeft, Search, Droplet, MapPin, ChevronDown, ChevronUp } from 'lucide-react';
 import RefineryDetail from './RefineryDetail';
 
 interface OperatorsExplorerProps {

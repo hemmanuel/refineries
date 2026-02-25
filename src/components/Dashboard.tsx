@@ -1,6 +1,6 @@
 import React, { useMemo, useState, useRef, useEffect } from 'react';
 import { type ParsedRefinery, PADD_NAMES } from '../utils/data';
-import { ArrowLeft, Users, Factory, Calendar, HardHat, AlertCircle, Calculator, TrendingUp, Filter, DollarSign, Map, ChevronRight } from 'lucide-react';
+import { Users, Factory, Calendar, HardHat, TrendingUp, Filter, Map, ChevronRight } from 'lucide-react';
 import RefineryDetail from './RefineryDetail';
 import CompanyProfile from './CompanyProfile';
 import MetricExplanation from './MetricExplanation';
@@ -9,12 +9,11 @@ import Select from './Select';
 interface DashboardProps {
   padd: number | 'all';
   refineries: ParsedRefinery[];
-  onBack: () => void;
   onPaddSelect: (padd: number) => void;
   onViewOperators?: () => void;
 }
 
-const Dashboard: React.FC<DashboardProps> = ({ padd, refineries, onBack, onPaddSelect, onViewOperators }) => {
+const Dashboard: React.FC<DashboardProps> = ({ padd, refineries, onPaddSelect, onViewOperators }) => {
   const [selectedRefinery, setSelectedRefinery] = useState<ParsedRefinery | null>(null);
   const [selectedCompanyProfile, setSelectedCompanyProfile] = useState<string | null>(null);
   const [selectedAggregateMetric, setSelectedAggregateMetric] = useState<'headcount' | 'turnaround' | 'safety' | null>(null);

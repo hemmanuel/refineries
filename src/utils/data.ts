@@ -36,7 +36,6 @@ export interface ParsedRefinery {
 }
 
 // const CSV_URL = 'https://raw.githubusercontent.com/cpreid2/US-Refineries/master/Refineries_US.csv';
-const CACHE_KEY = 'us_refineries_data_v3'; 
 
 const normalizeCompanyName = (name: string): string => {
   const n = name.toLowerCase();
