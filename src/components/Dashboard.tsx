@@ -1,0 +1,483 @@
+import React, { useMemo, useState, useRef, useEffect } from 'react';
+import { type ParsedRefinery, PADD_NAMES } from '../utils/data';
+import { ArrowLeft, Users, Factory, Calendar, HardHat, AlertCircle, Calculator, TrendingUp, Filter, DollarSign, Map, ChevronRight } from 'lucide-react';
+import RefineryDetail from './RefineryDetail';
+import CompanyProfile from './CompanyProfile';
+import MetricExplanation from './MetricExplanation';
+import Select from './Select';
+
+interface DashboardProps {
+  padd: number | 'all';
+  refineries: ParsedRefinery[];
+  onBack: () => void;
+  onPaddSelect: (padd: number) => void;
+  onViewOperators?: () => void;
+}
+
+const Dashboard: React.FC<DashboardProps> = ({ padd, refineries, onBack, onPaddSelect, onViewOperators }) => {
+  const [selectedRefinery, setSelectedRefinery] = useState<ParsedRefinery | null>(null);
+  const [selectedCompanyProfile, setSelectedCompanyProfile] = useState<string | null>(null);
+  const [selectedAggregateMetric, setSelectedAggregateMetric] = useState<'headcount' | 'turnaround' | 'safety' | null>(null);
+  const scrollContainerRef = useRef<HTMLDivElement>(null);
+
+  // Scroll to top when padd changes
+  useEffect(() => {
+    if (scrollContainerRef.current) {
+      scrollContainerRef.current.scrollTop = 0;
+    }
+  }, [padd]);
+  
+  // Filters State
+  const [minCapacity, setMinCapacity] = useState<number>(0);
+  const [selectedCompany, setSelectedCompany] = useState<string>('all');
+
+  const filteredRefineries = useMemo(() => {
+    let filtered = refineries;
+    
+    // Filter by PADD
+    if (padd !== 'all') {
+      filtered = filtered.filter(r => r.padd === padd);
+    }
+
+    // Filter by Capacity
+    if (minCapacity > 0) {
+      filtered = filtered.filter(r => r.capacity >= minCapacity);
+    }
+
+    // Filter by Company
+    if (selectedCompany !== 'all') {
+      filtered = filtered.filter(r => r.company === selectedCompany);
+    }
+
+    return filtered;
+  }, [refineries, padd, minCapacity, selectedCompany]);
+
+  const stats = useMemo(() => {
+    return filteredRefineries.reduce((acc, curr) => {
+      const est = curr.estimate || {
+        totalHeadcount: 0,
+        turnaroundHeadcount: 0,
+        safetySensitive: 0
+      };
+      
+      return {
+        count: acc.count + 1,
+        capacity: acc.capacity + curr.capacity,
+        headcount: acc.headcount + (est.totalHeadcount || 0),
+        turnaround: acc.turnaround + (est.turnaroundHeadcount || 0),
+        safety: acc.safety + (est.safetySensitive || 0)
+      };
+    }, {
+      count: 0,
+      capacity: 0,
+      headcount: 0,
+      turnaround: 0,
+      safety: 0
+    });
+  }, [filteredRefineries]);
+
+  const uniqueCompanies = useMemo(() => {
+    const companies = new Set(refineries.map(r => r.company));
+    return Array.from(companies).sort();
+  }, [refineries]);
+
+  const topCompanies = useMemo(() => {
+    const companyStats = filteredRefineries.reduce((acc, curr) => {
+      if (!acc[curr.company]) {
+        acc[curr.company] = { count: 0, capacity: 0 };
+      }
+      acc[curr.company].count++;
+      acc[curr.company].capacity += curr.capacity;
+      return acc;
+    }, {} as Record<string, { count: number, capacity: number }>);
+
+    return Object.entries(companyStats)
+      .sort(([, a], [, b]) => b.capacity - a.capacity)
+      .slice(0, 5);
+  }, [filteredRefineries]);
+
+  const largestRefineries = useMemo(() => {
+    return [...filteredRefineries]
+      .sort((a, b) => b.capacity - a.capacity)
+      .slice(0, 5);
+  }, [filteredRefineries]);
+
+  const paddStats = useMemo(() => {
+    const stats: Record<number, { count: number, capacity: number, headcount: number, turnaround: number, safety: number }> = {
+      1: { count: 0, capacity: 0, headcount: 0, turnaround: 0, safety: 0 },
+      2: { count: 0, capacity: 0, headcount: 0, turnaround: 0, safety: 0 },
+      3: { count: 0, capacity: 0, headcount: 0, turnaround: 0, safety: 0 },
+      4: { count: 0, capacity: 0, headcount: 0, turnaround: 0, safety: 0 },
+      5: { count: 0, capacity: 0, headcount: 0, turnaround: 0, safety: 0 },
+    };
+
+    filteredRefineries.forEach(r => {
+      if (stats[r.padd]) {
+        const est = r.estimate || { totalHeadcount: 0, turnaroundHeadcount: 0, safetySensitive: 0 };
+        stats[r.padd].count++;
+        stats[r.padd].capacity += r.capacity;
+        stats[r.padd].headcount += (est.totalHeadcount || 0);
+        stats[r.padd].turnaround += (est.turnaroundHeadcount || 0);
+        stats[r.padd].safety += (est.safetySensitive || 0);
+      }
+    });
+
+    const totalUSCapacity = filteredRefineries.reduce((acc, curr) => acc + curr.capacity, 0);
+
+    return { stats, totalUSCapacity };
+  }, [filteredRefineries]);
+
+  const title = padd === 'all' ? 'All US Refineries' : `PADD ${padd} - ${PADD_NAMES[padd as number]}`;
+
+  const getAggregateExplanation = (metric: 'headcount' | 'turnaround' | 'safety') => {
+    const regionName = padd === 'all' ? 'the United States' : `PADD ${padd} (${PADD_NAMES[padd as number]})`;
+    const count = stats.count;
+    const capacity = stats.capacity;
+    const value = metric === 'headcount' ? stats.headcount : metric === 'turnaround' ? stats.turnaround : stats.safety;
+    
+    // Calculate aggregate ratio
+    const ratio = (value / (capacity / 1000)).toFixed(2);
+
+    if (metric === 'headcount') {
+      return `This figure represents the estimated total workforce across all ${count} refineries in ${regionName}. \n\nIt is the sum of full-time employees (FTEs) and long-term contractors. \n\nAggregate Metric: ~${ratio} personnel per 1,000 bpd of capacity. This reflects the overall operational intensity of the region's refining infrastructure.`;
+    }
+    if (metric === 'turnaround') {
+       const multiplier = (stats.turnaround / stats.headcount).toFixed(1);
+      return `This figure represents the aggregated peak turnaround workforce opportunity in ${regionName}. \n\nIt is the sum of the estimated peak headcount required for major maintenance events. \n\nAggregate Metric: ~${multiplier}x the steady-state workforce. This represents the total size of the seasonal/contractor workforce pool.`;
+    }
+    if (metric === 'safety') {
+       const percentage = ((stats.safety / stats.headcount) * 100).toFixed(0);
+      return `This figure estimates the total number of personnel in safety-sensitive roles across ${regionName}. \n\nAggregate Metric: ~${percentage}% of the total workforce. This segment represents the high-priority target audience for safety-critical cognitive assessments.`;
+    }
+    return '';
+  };
+
+  return (
+    <div ref={scrollContainerRef} className="h-full w-full bg-gray-50 overflow-y-auto p-8">
+      <div className="max-w-7xl mx-auto">
+        <h1 className="text-3xl font-bold text-gray-900 mb-8">{title}</h1>
+
+        {/* Filters */}
+        <div className="bg-white p-4 rounded-xl shadow-sm border border-gray-200 mb-8 flex flex-wrap items-center gap-4">
+          <div className="flex items-center gap-2 text-gray-500 mr-2">
+            <Filter className="w-4 h-4" />
+            <span className="text-sm font-medium">Filters:</span>
+          </div>
+          
+          <Select 
+            value={selectedCompany}
+            onChange={(val) => setSelectedCompany(val)}
+            options={[
+              { value: 'all', label: 'All Companies' },
+              ...uniqueCompanies.map(c => ({ value: c, label: c }))
+            ]}
+            className="min-w-[200px]"
+          />
+
+          <Select 
+            value={minCapacity}
+            onChange={(val) => setMinCapacity(Number(val))}
+            options={[
+              { value: 0, label: 'Any Capacity' },
+              { value: 50000, label: '50k+ bpd' },
+              { value: 100000, label: '100k+ bpd' },
+              { value: 250000, label: '250k+ bpd' },
+              { value: 500000, label: '500k+ bpd' },
+            ]}
+            className="min-w-[140px]"
+          />
+
+          <div className="ml-auto text-sm text-gray-500">
+            Showing {filteredRefineries.length} of {refineries.length} refineries
+          </div>
+        </div>
+
+        {/* Stats Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6 mb-12">
+          <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
+            <div className="flex items-center gap-3 mb-2 text-gray-500">
+              <Factory className="w-5 h-5" />
+              <span className="text-sm font-medium">Refineries</span>
+            </div>
+            <div className="text-2xl font-bold text-gray-900">{stats.count}</div>
+          </div>
+
+          <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
+            <div className="flex items-center gap-3 mb-2 text-gray-500">
+              <div className="w-5 h-5 font-mono font-bold text-xs flex items-center justify-center border border-current rounded">BPD</div>
+              <span className="text-sm font-medium">Total Capacity</span>
+            </div>
+            <div className="text-2xl font-bold text-gray-900">{(stats.capacity / 1000000).toFixed(2)}M</div>
+            <div className="text-xs text-gray-400 mt-1">Barrels Per Day</div>
+          </div>
+
+          <button 
+            onClick={() => setSelectedAggregateMetric('headcount')}
+            className="bg-white p-6 rounded-xl shadow-sm border border-gray-200 hover:border-blue-400 hover:shadow-md transition-all text-left group relative"
+          >
+            <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity">
+              <ChevronRight className="w-5 h-5 text-blue-400" />
+            </div>
+            <div className="flex items-center gap-3 mb-2 text-blue-600">
+              <Users className="w-5 h-5" />
+              <span className="text-sm font-medium">Total Headcount</span>
+            </div>
+            <div className="text-2xl font-bold text-gray-900 group-hover:text-blue-600 transition-colors">{stats.headcount.toLocaleString()}</div>
+            <div className="text-xs text-gray-400 mt-1">Est. FTE + Contractors</div>
+          </button>
+
+          <button 
+            onClick={() => setSelectedAggregateMetric('turnaround')}
+            className="bg-white p-6 rounded-xl shadow-sm border border-gray-200 hover:border-orange-400 hover:shadow-md transition-all text-left group relative"
+          >
+            <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity">
+              <ChevronRight className="w-5 h-5 text-orange-400" />
+            </div>
+            <div className="flex items-center gap-3 mb-2 text-orange-600">
+              <Calendar className="w-5 h-5" />
+              <span className="text-sm font-medium">Turnaround Peak</span>
+            </div>
+            <div className="text-2xl font-bold text-gray-900 group-hover:text-orange-600 transition-colors">{stats.turnaround.toLocaleString()}</div>
+            <div className="text-xs text-gray-400 mt-1">Est. Seasonal Workers</div>
+          </button>
+
+          <button 
+            onClick={() => setSelectedAggregateMetric('safety')}
+            className="bg-white p-6 rounded-xl shadow-sm border border-gray-200 hover:border-green-400 hover:shadow-md transition-all text-left group relative"
+          >
+            <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity">
+              <ChevronRight className="w-5 h-5 text-green-400" />
+            </div>
+            <div className="flex items-center gap-3 mb-2 text-green-600">
+              <HardHat className="w-5 h-5" />
+              <span className="text-sm font-medium">Safety Sensitive</span>
+            </div>
+            <div className="text-2xl font-bold text-gray-900 group-hover:text-green-600 transition-colors">{stats.safety.toLocaleString()}</div>
+            <div className="text-xs text-gray-400 mt-1">Est. Critical Roles</div>
+          </button>
+        </div>
+
+        {/* Market Analysis Section */}
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-8">
+          {/* Top Companies */}
+          <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-200 lg:col-span-3">
+            <div className="flex items-center justify-between mb-4">
+              <button 
+                onClick={onViewOperators}
+                className={`flex items-center gap-2 ${onViewOperators ? 'cursor-pointer hover:opacity-80' : ''}`}
+              >
+                <TrendingUp className="w-5 h-5 text-green-600" />
+                <h2 className="text-lg font-semibold text-gray-900">Major Operators</h2>
+              </button>
+              {onViewOperators && (
+                <button 
+                  onClick={onViewOperators}
+                  className="text-sm text-blue-600 hover:text-blue-800 font-medium hover:underline"
+                >
+                  View All
+                </button>
+              )}
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">
+              {topCompanies.map(([company, data], idx) => (
+                <button 
+                  key={company} 
+                  onClick={() => setSelectedCompanyProfile(company)}
+                  className="flex flex-col p-3 bg-gray-50 rounded-lg border border-gray-100 hover:border-blue-300 hover:shadow-md transition-all text-left group"
+                >
+                  <div className="flex items-center gap-2 mb-2">
+                    <span className="w-6 h-6 flex items-center justify-center bg-white shadow-sm rounded-full text-xs font-bold text-blue-600 group-hover:bg-blue-600 group-hover:text-white transition-colors">
+                      {idx + 1}
+                    </span>
+                    <span className="font-medium text-gray-900 truncate group-hover:text-blue-600 transition-colors" title={company}>
+                      {company}
+                    </span>
+                  </div>
+                  <div className="text-xs text-gray-500">
+                    {data.count} sites
+                  </div>
+                  <div className="text-sm font-mono font-medium text-gray-700">
+                    {(data.capacity / 1000).toFixed(0)}k bpd
+                  </div>
+                </button>
+              ))}
+            </div>
+          </div>
+          {/* Largest Refineries */}
+          <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-200 lg:col-span-3">
+            <div className="flex items-center gap-2 mb-4">
+              <Factory className="w-5 h-5 text-blue-600" />
+              <h2 className="text-lg font-semibold text-gray-900">Largest Refineries</h2>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">
+              {largestRefineries.map((refinery, idx) => (
+                <button 
+                  key={refinery.id} 
+                  onClick={() => setSelectedRefinery(refinery)}
+                  className="flex flex-col p-3 bg-gray-50 rounded-lg border border-gray-100 hover:border-blue-300 hover:shadow-md transition-all text-left group"
+                >
+                  <div className="flex items-center gap-2 mb-2">
+                    <span className="w-6 h-6 flex items-center justify-center bg-white shadow-sm rounded-full text-xs font-bold text-blue-600 group-hover:bg-blue-600 group-hover:text-white transition-colors">
+                      {idx + 1}
+                    </span>
+                    <span className="font-medium text-gray-900 truncate group-hover:text-blue-600 transition-colors" title={refinery.name}>
+                      {refinery.name}
+                    </span>
+                  </div>
+                  <div className="text-xs text-gray-500 truncate" title={refinery.company}>
+                    {refinery.company}
+                  </div>
+                  <div className="text-sm font-mono font-medium text-gray-700">
+                    {(refinery.capacity / 1000).toFixed(0)}k bpd
+                  </div>
+                </button>
+              ))}
+            </div>
+          </div>
+
+          {/* PADD Breakdown */}
+          {padd === 'all' && (
+            <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-200 lg:col-span-3">
+              <div className="flex items-center gap-2 mb-4">
+                <Map className="w-5 h-5 text-purple-600" />
+                <h2 className="text-lg font-semibold text-gray-900">Regional Breakdown (PADD)</h2>
+              </div>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">
+                {[1, 2, 3, 4, 5].map((paddNum) => {
+                  const data = paddStats.stats[paddNum];
+                  const percentOfUS = paddStats.totalUSCapacity > 0 
+                    ? (data.capacity / paddStats.totalUSCapacity) * 100 
+                    : 0;
+                  
+                  return (
+                    <button 
+                      key={paddNum} 
+                      onClick={() => onPaddSelect(paddNum)}
+                      className="flex flex-col p-4 bg-gray-50 rounded-lg border border-gray-100 hover:shadow-md hover:border-blue-300 transition-all text-left group"
+                    >
+                      <div className="flex flex-col mb-3 pb-3 border-b border-gray-200 w-full">
+                        <span className="text-lg font-bold text-gray-900 uppercase group-hover:text-blue-600 transition-colors">{PADD_NAMES[paddNum]}</span>
+                        <span className="text-xs font-medium text-gray-500 tracking-wide">PADD {paddNum}</span>
+                      </div>
+                      
+                      <div className="space-y-2 w-full">
+                        <div className="flex justify-between items-center text-sm">
+                          <span className="text-gray-500">Refineries</span>
+                          <span className="font-medium text-gray-900">{data.count}</span>
+                        </div>
+                        <div className="flex justify-between items-center text-sm">
+                          <span className="text-gray-500">Capacity</span>
+                          <div className="text-right">
+                            <span className="font-mono font-medium text-gray-900 block">
+                              {data.capacity >= 1000000 
+                                ? `${(data.capacity / 1000000).toFixed(2)}M` 
+                                : `${(data.capacity / 1000).toFixed(0)}k`}
+                            </span>
+                            <span className="text-xs text-gray-400 block">{percentOfUS.toFixed(1)}% of Total</span>
+                          </div>
+                        </div>
+                        <div className="flex justify-between items-center text-sm">
+                          <span className="text-gray-500">Headcount</span>
+                          <span className="font-medium text-blue-600">{data.headcount.toLocaleString()}</span>
+                        </div>
+                        <div className="flex justify-between items-center text-sm">
+                          <span className="text-gray-500">Turnaround</span>
+                          <span className="font-medium text-orange-600">{data.turnaround.toLocaleString()}</span>
+                        </div>
+                        <div className="flex justify-between items-center text-sm">
+                          <span className="text-gray-500">Safety</span>
+                          <span className="font-medium text-green-600">{data.safety.toLocaleString()}</span>
+                        </div>
+                      </div>
+                    </button>
+                  );
+                })}
+              </div>
+            </div>
+          )}
+        </div>
+
+        {/* Refinery List */}
+        <div className="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden">
+          <div className="p-6 border-b border-gray-200">
+            <h2 className="text-lg font-semibold text-gray-900">Refineries in Region</h2>
+          </div>
+          <div className="overflow-x-auto">
+            <table className="w-full text-left text-sm">
+              <thead className="bg-gray-50 text-gray-600 font-medium border-b border-gray-200">
+                <tr>
+                  <th className="px-6 py-4">Name</th>
+                  <th className="px-6 py-4">Company</th>
+                  <th className="px-6 py-4">State</th>
+                  <th className="px-6 py-4 text-right">Capacity (bpd)</th>
+                  <th className="px-6 py-4 text-right">Est. Headcount</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-gray-100">
+                {filteredRefineries.map((refinery) => (
+                  <tr 
+                    key={refinery.id} 
+                    onClick={() => setSelectedRefinery(refinery)}
+                    className="hover:bg-gray-50 transition-colors cursor-pointer group"
+                  >
+                    <td className="px-6 py-4 font-medium text-gray-900 group-hover:text-blue-600 transition-colors">{refinery.name}</td>
+                    <td className="px-6 py-4 text-gray-600">{refinery.company}</td>
+                    <td className="px-6 py-4 text-gray-600">{refinery.state}</td>
+                    <td className="px-6 py-4 text-right font-mono">{refinery.capacity.toLocaleString()}</td>
+                    <td className="px-6 py-4 text-right font-mono">
+                      {refinery.estimate?.totalHeadcount ? refinery.estimate.totalHeadcount.toLocaleString() : '-'}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      {selectedCompanyProfile && (
+        <CompanyProfile
+          companyName={selectedCompanyProfile}
+          refineries={filteredRefineries} // Pass filtered refineries to respect current view (PADD/All)
+          onClose={() => setSelectedCompanyProfile(null)}
+          onSelectRefinery={(refinery) => {
+            setSelectedRefinery(refinery);
+          }}
+        />
+      )}
+
+      {selectedRefinery && (
+        <RefineryDetail 
+          refinery={selectedRefinery} 
+          onClose={() => setSelectedRefinery(null)} 
+        />
+      )}
+
+      {selectedAggregateMetric && (
+        <MetricExplanation
+          refinery={{
+            name: padd === 'all' ? 'All US Refineries' : `PADD ${padd} Region`,
+            company: 'Aggregate Industry Data',
+            state: 'United States',
+            padd: typeof padd === 'number' ? padd : 0,
+            capacity: stats.capacity,
+            lat: 0,
+            lng: 0,
+            id: 'aggregate',
+            type: 'Oil Refinery'
+          }}
+          metric={selectedAggregateMetric}
+          value={
+            selectedAggregateMetric === 'headcount' ? stats.headcount :
+            selectedAggregateMetric === 'turnaround' ? stats.turnaround :
+            stats.safety
+          }
+          explanation={getAggregateExplanation(selectedAggregateMetric)}
+          onClose={() => setSelectedAggregateMetric(null)}
+        />
+      )}
+    </div>
+  );
+};
+
+export default Dashboard;

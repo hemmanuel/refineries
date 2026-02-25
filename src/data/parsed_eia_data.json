@@ -1,0 +1,926 @@
+[
+  {
+    "company": "Goodway Refining LLC",
+    "city": "Atmore",
+    "state": "Alabama",
+    "capacity": 4100,
+    "name": "Goodway Refining LLC - Atmore"
+  },
+  {
+    "company": "Hunt Refining Co",
+    "city": "Tuscaloosa",
+    "state": "Alabama",
+    "capacity": 50000,
+    "name": "Hunt Refining Co - Tuscaloosa"
+  },
+  {
+    "company": "Vertex Refining Alabama LLC",
+    "city": "Saraland",
+    "state": "Alabama",
+    "capacity": 88000,
+    "name": "Vertex Refining Alabama LLC - Saraland"
+  },
+  {
+    "company": "ConocoPhillips Alaska Inc",
+    "city": "Prudhoe Bay",
+    "state": "Alaska",
+    "capacity": 15000,
+    "name": "ConocoPhillips Alaska Inc - Prudhoe Bay"
+  },
+  {
+    "company": "Hilcorp North Slope LLC",
+    "city": "Prudhoe Bay",
+    "state": "Alaska",
+    "capacity": 6500,
+    "name": "Hilcorp North Slope LLC - Prudhoe Bay"
+  },
+  {
+    "company": "Petro Star Inc",
+    "city": "North Pole",
+    "state": "Alaska",
+    "capacity": 24000,
+    "name": "Petro Star Inc - North Pole"
+  },
+  {
+    "company": "Petro Star Inc",
+    "city": "Valdez",
+    "state": "Alaska",
+    "capacity": 62500,
+    "name": "Petro Star Inc - Valdez"
+  },
+  {
+    "company": "Tesoro Alaska Company LLC",
+    "city": "Kenai",
+    "state": "Alaska",
+    "capacity": 68000,
+    "name": "Tesoro Alaska Company LLC - Kenai"
+  },
+  {
+    "company": "Cross Oil Refining & Marketing Inc",
+    "city": "Smackover",
+    "state": "Arkansas",
+    "capacity": 7500,
+    "name": "Cross Oil Refining & Marketing Inc - Smackover"
+  },
+  {
+    "company": "Lion Oil Co",
+    "city": "El Dorado",
+    "state": "Arkansas",
+    "capacity": 83000,
+    "name": "Lion Oil Co - El Dorado"
+  },
+  {
+    "company": "Chevron USA Inc",
+    "city": "El Segundo",
+    "state": "California",
+    "capacity": 285000,
+    "name": "Chevron USA Inc - El Segundo"
+  },
+  {
+    "company": "Chevron USA Inc",
+    "city": "Richmond",
+    "state": "California",
+    "capacity": 245271,
+    "name": "Chevron USA Inc - Richmond"
+  },
+  {
+    "company": "Kern Oil & Refining Co",
+    "city": "Bakersfield",
+    "state": "California",
+    "capacity": 26000,
+    "name": "Kern Oil & Refining Co - Bakersfield"
+  },
+  {
+    "company": "Lunday Thagard Co",
+    "city": "South Gate",
+    "state": "California",
+    "capacity": 8500,
+    "name": "Lunday Thagard Co - South Gate"
+  },
+  {
+    "company": "Martinez Refining Co LLC",
+    "city": "Martinez",
+    "state": "California",
+    "capacity": 156400,
+    "name": "Martinez Refining Co LLC - Martinez"
+  },
+  {
+    "company": "Phillips 66 Company",
+    "city": "Wilmington",
+    "state": "California",
+    "capacity": 138700,
+    "name": "Phillips 66 Company - Wilmington"
+  },
+  {
+    "company": "San Joaquin Refining Co Inc",
+    "city": "Bakersfield",
+    "state": "California",
+    "capacity": 15000,
+    "name": "San Joaquin Refining Co Inc - Bakersfield"
+  },
+  {
+    "company": "Talley Asphalt Products Inc",
+    "city": "Kern",
+    "state": "California",
+    "capacity": 1700,
+    "name": "Talley Asphalt Products Inc - Kern"
+  },
+  {
+    "company": "Tesoro Refining & Marketing Co",
+    "city": "Carson",
+    "state": "California",
+    "capacity": 365000,
+    "name": "Tesoro Refining & Marketing Co - Carson"
+  },
+  {
+    "company": "Torrance Refining Co LLC",
+    "city": "Torrance",
+    "state": "California",
+    "capacity": 160000,
+    "name": "Torrance Refining Co LLC - Torrance"
+  },
+  {
+    "company": "Ultramar Inc",
+    "city": "Wilmington",
+    "state": "California",
+    "capacity": 85000,
+    "name": "Ultramar Inc - Wilmington"
+  },
+  {
+    "company": "Valero Refining Co California",
+    "city": "Benicia",
+    "state": "California",
+    "capacity": 145000,
+    "name": "Valero Refining Co California - Benicia"
+  },
+  {
+    "company": "Valero Refining Co California",
+    "city": "Wilmington",
+    "state": "California",
+    "capacity": 6300,
+    "name": "Valero Refining Co California - Wilmington"
+  },
+  {
+    "company": "Suncor Energy (USA) Inc",
+    "city": "Commerce City East",
+    "state": "Colorado",
+    "capacity": 36000,
+    "name": "Suncor Energy (USA) Inc - Commerce City East"
+  },
+  {
+    "company": "Suncor Energy (USA) Inc",
+    "city": "Commerce City West",
+    "state": "Colorado",
+    "capacity": 67000,
+    "name": "Suncor Energy (USA) Inc - Commerce City West"
+  },
+  {
+    "company": "Delaware City Refining Co LLC",
+    "city": "Delaware City",
+    "state": "Delaware",
+    "capacity": 171000,
+    "name": "Delaware City Refining Co LLC - Delaware City"
+  },
+  {
+    "company": "Par Hawaii Refining LLC",
+    "city": "Kapolei",
+    "state": "Hawaii",
+    "capacity": 93500,
+    "name": "Par Hawaii Refining LLC - Kapolei"
+  },
+  {
+    "company": "ExxonMobil Refining & Supply Co",
+    "city": "Joliet",
+    "state": "Illinois",
+    "capacity": 264000,
+    "name": "ExxonMobil Refining & Supply Co - Joliet"
+  },
+  {
+    "company": "Marathon Petroleum Co LP",
+    "city": "Robinson",
+    "state": "Illinois",
+    "capacity": 253000,
+    "name": "Marathon Petroleum Co LP - Robinson"
+  },
+  {
+    "company": "PDV Midwest Refining LLC",
+    "city": "Lemont",
+    "state": "Illinois",
+    "capacity": 188023,
+    "name": "PDV Midwest Refining LLC - Lemont"
+  },
+  {
+    "company": "WRB Refining LP",
+    "city": "Wood River",
+    "state": "Illinois",
+    "capacity": 345000,
+    "name": "WRB Refining LP - Wood River"
+  },
+  {
+    "company": "BP Products North America Inc",
+    "city": "Whiting",
+    "state": "Indiana",
+    "capacity": 435000,
+    "name": "BP Products North America Inc - Whiting"
+  },
+  {
+    "company": "Countrymark Refining & Logistics LLC",
+    "city": "Mount Vernon",
+    "state": "Indiana",
+    "capacity": 34500,
+    "name": "Countrymark Refining & Logistics LLC - Mount Vernon"
+  },
+  {
+    "company": "CHS McPherson Refinery Inc",
+    "city": "McPherson",
+    "state": "Kansas",
+    "capacity": 114200,
+    "name": "CHS McPherson Refinery Inc - McPherson"
+  },
+  {
+    "company": "CVR Refining CVL LLC",
+    "city": "Coffeyville",
+    "state": "Kansas",
+    "capacity": 132000,
+    "name": "CVR Refining CVL LLC - Coffeyville"
+  },
+  {
+    "company": "HF Sinclair El Dorado Refining LLC",
+    "city": "El Dorado",
+    "state": "Kansas",
+    "capacity": 162000,
+    "name": "HF Sinclair El Dorado Refining LLC - El Dorado"
+  },
+  {
+    "company": "Marathon Petroleum Co LP",
+    "city": "Catlettsburg",
+    "state": "Kentucky",
+    "capacity": 300000,
+    "name": "Marathon Petroleum Co LP - Catlettsburg"
+  },
+  {
+    "company": "Alon Refining Krotz Springs Inc",
+    "city": "Krotz Springs",
+    "state": "Louisiana",
+    "capacity": 80000,
+    "name": "Alon Refining Krotz Springs Inc - Krotz Springs"
+  },
+  {
+    "company": "Calcasieu Refining Co",
+    "city": "Lake Charles",
+    "state": "Louisiana",
+    "capacity": 135500,
+    "name": "Calcasieu Refining Co - Lake Charles"
+  },
+  {
+    "company": "Calumet Cotton Valley Refining LLC",
+    "city": "Cotton Valley",
+    "state": "Louisiana",
+    "capacity": 13020,
+    "name": "Calumet Cotton Valley Refining LLC - Cotton Valley"
+  },
+  {
+    "company": "Calumet Princeton Refining LLC",
+    "city": "Princeton",
+    "state": "Louisiana",
+    "capacity": 8300,
+    "name": "Calumet Princeton Refining LLC - Princeton"
+  },
+  {
+    "company": "Calumet Shreveport Refining LLC",
+    "city": "Shreveport",
+    "state": "Louisiana",
+    "capacity": 57000,
+    "name": "Calumet Shreveport Refining LLC - Shreveport"
+  },
+  {
+    "company": "Chalmette Refining LLC",
+    "city": "Chalmette",
+    "state": "Louisiana",
+    "capacity": 190000,
+    "name": "Chalmette Refining LLC - Chalmette"
+  },
+  {
+    "company": "Citgo Petroleum Corp",
+    "city": "Lake Charles",
+    "state": "Louisiana",
+    "capacity": 459800,
+    "name": "Citgo Petroleum Corp - Lake Charles"
+  },
+  {
+    "company": "Excel Paralubes",
+    "city": "Westlake",
+    "state": "Louisiana",
+    "capacity": 0,
+    "name": "Excel Paralubes - Westlake"
+  },
+  {
+    "company": "ExxonMobil Refining & Supply Co",
+    "city": "Baton Rouge",
+    "state": "Louisiana",
+    "capacity": 522500,
+    "name": "ExxonMobil Refining & Supply Co - Baton Rouge"
+  },
+  {
+    "company": "Marathon Petroleum Co LP",
+    "city": "Garyville",
+    "state": "Louisiana",
+    "capacity": 606000,
+    "name": "Marathon Petroleum Co LP - Garyville"
+  },
+  {
+    "company": "Phillips 66 Company",
+    "city": "Westlake",
+    "state": "Louisiana",
+    "capacity": 263700,
+    "name": "Phillips 66 Company - Westlake"
+  },
+  {
+    "company": "Placid Refining Co",
+    "city": "Port Allen",
+    "state": "Louisiana",
+    "capacity": 75000,
+    "name": "Placid Refining Co - Port Allen"
+  },
+  {
+    "company": "Shell Oil Products US",
+    "city": "Norco",
+    "state": "Louisiana",
+    "capacity": 231827,
+    "name": "Shell Oil Products US - Norco"
+  },
+  {
+    "company": "Valero Refining - Meraux LLC",
+    "city": "Meraux",
+    "state": "Louisiana",
+    "capacity": 125000,
+    "name": "Valero Refining - Meraux LLC - Meraux"
+  },
+  {
+    "company": "Valero Refining New Orleans LLC",
+    "city": "Norco",
+    "state": "Louisiana",
+    "capacity": 215000,
+    "name": "Valero Refining New Orleans LLC - Norco"
+  },
+  {
+    "company": "Marathon Petroleum Co LP",
+    "city": "Detroit",
+    "state": "Michigan",
+    "capacity": 144000,
+    "name": "Marathon Petroleum Co LP - Detroit"
+  },
+  {
+    "company": "Flint Hills Resources LP",
+    "city": "Saint Paul",
+    "state": "Minnesota",
+    "capacity": 335000,
+    "name": "Flint Hills Resources LP - Saint Paul"
+  },
+  {
+    "company": "St Paul Park Refining Co LLC",
+    "city": "Saint Paul",
+    "state": "Minnesota",
+    "capacity": 105000,
+    "name": "St Paul Park Refining Co LLC - Saint Paul"
+  },
+  {
+    "company": "Chevron USA Inc",
+    "city": "Pascagoula",
+    "state": "Mississippi",
+    "capacity": 356440,
+    "name": "Chevron USA Inc - Pascagoula"
+  },
+  {
+    "company": "Ergon Refining Inc",
+    "city": "Vicksburg",
+    "state": "Mississippi",
+    "capacity": 26500,
+    "name": "Ergon Refining Inc - Vicksburg"
+  },
+  {
+    "company": "Hunt Southland Refining Co",
+    "city": "Sandersville",
+    "state": "Mississippi",
+    "capacity": 11000,
+    "name": "Hunt Southland Refining Co - Sandersville"
+  },
+  {
+    "company": "Calumet Montana Refining LLC",
+    "city": "Great Falls",
+    "state": "Montana",
+    "capacity": 15000,
+    "name": "Calumet Montana Refining LLC - Great Falls"
+  },
+  {
+    "company": "Cenex Harvest States Coop",
+    "city": "Laurel",
+    "state": "Montana",
+    "capacity": 62500,
+    "name": "Cenex Harvest States Coop - Laurel"
+  },
+  {
+    "company": "Par Montana LLC",
+    "city": "Billings",
+    "state": "Montana",
+    "capacity": 61500,
+    "name": "Par Montana LLC - Billings"
+  },
+  {
+    "company": "Phillips 66 Company",
+    "city": "Billings",
+    "state": "Montana",
+    "capacity": 66000,
+    "name": "Phillips 66 Company - Billings"
+  },
+  {
+    "company": "Foreland Refining Corp",
+    "city": "Ely",
+    "state": "Nevada",
+    "capacity": 2000,
+    "name": "Foreland Refining Corp - Ely"
+  },
+  {
+    "company": "CPI Operations LLC",
+    "city": "Paulsboro",
+    "state": "New Jersey",
+    "capacity": 0,
+    "name": "CPI Operations LLC - Paulsboro"
+  },
+  {
+    "company": "Paulsboro Refining Co LLC",
+    "city": "Paulsboro",
+    "state": "New Jersey",
+    "capacity": 100000,
+    "name": "Paulsboro Refining Co LLC - Paulsboro"
+  },
+  {
+    "company": "Phillips 66 Company",
+    "city": "Linden",
+    "state": "New Jersey",
+    "capacity": 258500,
+    "name": "Phillips 66 Company - Linden"
+  },
+  {
+    "company": "HF Sinclair Navajo Refining LLC",
+    "city": "Artesia",
+    "state": "New Mexico",
+    "capacity": 110000,
+    "name": "HF Sinclair Navajo Refining LLC - Artesia"
+  },
+  {
+    "company": "Tesoro Refining & Marketing Co",
+    "city": "Mandan",
+    "state": "North Dakota",
+    "capacity": 71000,
+    "name": "Tesoro Refining & Marketing Co - Mandan"
+  },
+  {
+    "company": "Lima Refining Company",
+    "city": "Lima",
+    "state": "Ohio",
+    "capacity": 183000,
+    "name": "Lima Refining Company - Lima"
+  },
+  {
+    "company": "Marathon Petroleum Co LP",
+    "city": "Canton",
+    "state": "Ohio",
+    "capacity": 100000,
+    "name": "Marathon Petroleum Co LP - Canton"
+  },
+  {
+    "company": "Ohio Refining Company LLC",
+    "city": "Toledo",
+    "state": "Ohio",
+    "capacity": 150800,
+    "name": "Ohio Refining Company LLC - Toledo"
+  },
+  {
+    "company": "Toledo Refining Co LLC",
+    "city": "Toledo",
+    "state": "Ohio",
+    "capacity": 172800,
+    "name": "Toledo Refining Co LLC - Toledo"
+  },
+  {
+    "company": "CVR Refining WYN LLC",
+    "city": "Wynnewood",
+    "state": "Oklahoma",
+    "capacity": 74500,
+    "name": "CVR Refining WYN LLC - Wynnewood"
+  },
+  {
+    "company": "HF Sinclair Tulsa Refining LLC",
+    "city": "Tulsa East",
+    "state": "Oklahoma",
+    "capacity": 70300,
+    "name": "HF Sinclair Tulsa Refining LLC - Tulsa East"
+  },
+  {
+    "company": "HF Sinclair Tulsa Refining LLC",
+    "city": "Tulsa West",
+    "state": "Oklahoma",
+    "capacity": 85000,
+    "name": "HF Sinclair Tulsa Refining LLC - Tulsa West"
+  },
+  {
+    "company": "Phillips 66 Company",
+    "city": "Ponca City",
+    "state": "Oklahoma",
+    "capacity": 216700,
+    "name": "Phillips 66 Company - Ponca City"
+  },
+  {
+    "company": "Valero Refining Co Oklahoma",
+    "city": "Ardmore",
+    "state": "Oklahoma",
+    "capacity": 86000,
+    "name": "Valero Refining Co Oklahoma - Ardmore"
+  },
+  {
+    "company": "American Refining Group Inc",
+    "city": "Bradford",
+    "state": "Pennsylvania",
+    "capacity": 11000,
+    "name": "American Refining Group Inc - Bradford"
+  },
+  {
+    "company": "Monroe Energy LLC",
+    "city": "Trainer",
+    "state": "Pennsylvania",
+    "capacity": 190000,
+    "name": "Monroe Energy LLC - Trainer"
+  },
+  {
+    "company": "United Refining Co",
+    "city": "Warren",
+    "state": "Pennsylvania",
+    "capacity": 67000,
+    "name": "United Refining Co - Warren"
+  },
+  {
+    "company": "Valero Ref Company Tennessee LLC",
+    "city": "Memphis",
+    "state": "Tennessee",
+    "capacity": 180000,
+    "name": "Valero Ref Company Tennessee LLC - Memphis"
+  },
+  {
+    "company": "Alon USA Energy Inc",
+    "city": "Big Spring",
+    "state": "Texas",
+    "capacity": 73000,
+    "name": "Alon USA Energy Inc - Big Spring"
+  },
+  {
+    "company": "Buckeye Texas Processing LLC",
+    "city": "Corpus Christi",
+    "state": "Texas",
+    "capacity": 60000,
+    "name": "Buckeye Texas Processing LLC - Corpus Christi"
+  },
+  {
+    "company": "Citgo Refining & Chemical Inc",
+    "city": "Corpus Christi",
+    "state": "Texas",
+    "capacity": 165000,
+    "name": "Citgo Refining & Chemical Inc - Corpus Christi"
+  },
+  {
+    "company": "Deer Park Refining LP",
+    "city": "Deer Park",
+    "state": "Texas",
+    "capacity": 312500,
+    "name": "Deer Park Refining LP - Deer Park"
+  },
+  {
+    "company": "Delek Refining LTD",
+    "city": "Tyler",
+    "state": "Texas",
+    "capacity": 74000,
+    "name": "Delek Refining LTD - Tyler"
+  },
+  {
+    "company": "Diamond Shamrock Refining Co LP",
+    "city": "Sunray",
+    "state": "Texas",
+    "capacity": 195000,
+    "name": "Diamond Shamrock Refining Co LP - Sunray"
+  },
+  {
+    "company": "Diamond Shamrock Refining Co LP",
+    "city": "Three Rivers",
+    "state": "Texas",
+    "capacity": 89000,
+    "name": "Diamond Shamrock Refining Co LP - Three Rivers"
+  },
+  {
+    "company": "Enterprise Prod Texas Operating LLC",
+    "city": "Mont Belvieu",
+    "state": "Texas",
+    "capacity": 0,
+    "name": "Enterprise Prod Texas Operating LLC - Mont Belvieu"
+  },
+  {
+    "company": "Equistar Chemicals LP",
+    "city": "Channelview",
+    "state": "Texas",
+    "capacity": 0,
+    "name": "Equistar Chemicals LP - Channelview"
+  },
+  {
+    "company": "ExxonMobil Refining & Supply Co",
+    "city": "Baytown",
+    "state": "Texas",
+    "capacity": 564440,
+    "name": "ExxonMobil Refining & Supply Co - Baytown"
+  },
+  {
+    "company": "ExxonMobil Refining & Supply Co",
+    "city": "Beaumont",
+    "state": "Texas",
+    "capacity": 612000,
+    "name": "ExxonMobil Refining & Supply Co - Beaumont"
+  },
+  {
+    "company": "Flint Hills Resources LP",
+    "city": "Corpus Christi East",
+    "state": "Texas",
+    "capacity": 87500,
+    "name": "Flint Hills Resources LP - Corpus Christi East"
+  },
+  {
+    "company": "Flint Hills Resources LP",
+    "city": "Corpus Christi West",
+    "state": "Texas",
+    "capacity": 268500,
+    "name": "Flint Hills Resources LP - Corpus Christi West"
+  },
+  {
+    "company": "Hartree Refining LLC",
+    "city": "Channelview",
+    "state": "Texas",
+    "capacity": 45000,
+    "name": "Hartree Refining LLC - Channelview"
+  },
+  {
+    "company": "Houston Refining LP",
+    "city": "Houston",
+    "state": "Texas",
+    "capacity": 263776,
+    "name": "Houston Refining LP - Houston"
+  },
+  {
+    "company": "Kinder Morgan Crude & Condensate",
+    "city": "Galena Park",
+    "state": "Texas",
+    "capacity": 105000,
+    "name": "Kinder Morgan Crude & Condensate - Galena Park"
+  },
+  {
+    "company": "Lazarus Energy LLC",
+    "city": "Nixon",
+    "state": "Texas",
+    "capacity": 14000,
+    "name": "Lazarus Energy LLC - Nixon"
+  },
+  {
+    "company": "Magellan Processing LP",
+    "city": "Corpus Christi",
+    "state": "Texas",
+    "capacity": 50000,
+    "name": "Magellan Processing LP - Corpus Christi"
+  },
+  {
+    "company": "Marathon Petroleum Co LP",
+    "city": "Galveston Bay",
+    "state": "Texas",
+    "capacity": 631000,
+    "name": "Marathon Petroleum Co LP - Galveston Bay"
+  },
+  {
+    "company": "Motiva Enterprises LLC",
+    "city": "Port Arthur",
+    "state": "Texas",
+    "capacity": 640500,
+    "name": "Motiva Enterprises LLC - Port Arthur"
+  },
+  {
+    "company": "Pasadena Performance Products LLC",
+    "city": "Pasadena",
+    "state": "Texas",
+    "capacity": 0,
+    "name": "Pasadena Performance Products LLC - Pasadena"
+  },
+  {
+    "company": "Pasadena Refining Systems Inc",
+    "city": "Pasadena",
+    "state": "Texas",
+    "capacity": 118750,
+    "name": "Pasadena Refining Systems Inc - Pasadena"
+  },
+  {
+    "company": "Petromax Refining Co LLC",
+    "city": "Houston",
+    "state": "Texas",
+    "capacity": 25000,
+    "name": "Petromax Refining Co LLC - Houston"
+  },
+  {
+    "company": "Phillips 66 Company",
+    "city": "Sweeny",
+    "state": "Texas",
+    "capacity": 264500,
+    "name": "Phillips 66 Company - Sweeny"
+  },
+  {
+    "company": "Premcor Refining Group Inc",
+    "city": "Port Arthur",
+    "state": "Texas",
+    "capacity": 380000,
+    "name": "Premcor Refining Group Inc - Port Arthur"
+  },
+  {
+    "company": "Targa Downstream LLC",
+    "city": "Mont Belvieu",
+    "state": "Texas",
+    "capacity": 0,
+    "name": "Targa Downstream LLC - Mont Belvieu"
+  },
+  {
+    "company": "Texas International Terminals",
+    "city": "Galveston",
+    "state": "Texas",
+    "capacity": 45000,
+    "name": "Texas International Terminals - Galveston"
+  },
+  {
+    "company": "The San Antonio Refinery LLC",
+    "city": "San Antonio",
+    "state": "Texas",
+    "capacity": 20000,
+    "name": "The San Antonio Refinery LLC - San Antonio"
+  },
+  {
+    "company": "TotalEnergies Petrochem & Refg USA",
+    "city": "Port Arthur",
+    "state": "Texas",
+    "capacity": 238000,
+    "name": "TotalEnergies Petrochem & Refg USA - Port Arthur"
+  },
+  {
+    "company": "Trecora Hydrocarbons LLC",
+    "city": "Silsbee",
+    "state": "Texas",
+    "capacity": 0,
+    "name": "Trecora Hydrocarbons LLC - Silsbee"
+  },
+  {
+    "company": "Valero Refining Co Texas LP",
+    "city": "Corpus Christi",
+    "state": "Texas",
+    "capacity": 290000,
+    "name": "Valero Refining Co Texas LP - Corpus Christi"
+  },
+  {
+    "company": "Valero Refining Co Texas LP",
+    "city": "Houston",
+    "state": "Texas",
+    "capacity": 205000,
+    "name": "Valero Refining Co Texas LP - Houston"
+  },
+  {
+    "company": "Valero Refining Co Texas LP",
+    "city": "Texas City",
+    "state": "Texas",
+    "capacity": 225000,
+    "name": "Valero Refining Co Texas LP - Texas City"
+  },
+  {
+    "company": "Western Refining Company LP",
+    "city": "El Paso",
+    "state": "Texas",
+    "capacity": 133000,
+    "name": "Western Refining Company LP - El Paso"
+  },
+  {
+    "company": "WRB Refining LP",
+    "city": "Borger",
+    "state": "Texas",
+    "capacity": 149000,
+    "name": "WRB Refining LP - Borger"
+  },
+  {
+    "company": "Big West Oil Co",
+    "city": "North Salt Lake",
+    "state": "Utah",
+    "capacity": 31664,
+    "name": "Big West Oil Co - North Salt Lake"
+  },
+  {
+    "company": "Chevron USA Inc",
+    "city": "Salt Lake City",
+    "state": "Utah",
+    "capacity": 54720,
+    "name": "Chevron USA Inc - Salt Lake City"
+  },
+  {
+    "company": "HF Sinclair Woods Cross Refining LLC",
+    "city": "Woods Cross",
+    "state": "Utah",
+    "capacity": 39330,
+    "name": "HF Sinclair Woods Cross Refining LLC - Woods Cross"
+  },
+  {
+    "company": "Silver Eagle Refining",
+    "city": "Woods Cross",
+    "state": "Utah",
+    "capacity": 15000,
+    "name": "Silver Eagle Refining - Woods Cross"
+  },
+  {
+    "company": "Tesoro Refining & Marketing Co",
+    "city": "Salt Lake City",
+    "state": "Utah",
+    "capacity": 68000,
+    "name": "Tesoro Refining & Marketing Co - Salt Lake City"
+  },
+  {
+    "company": "BP Products North America Inc",
+    "city": "Ferndale",
+    "state": "Washington",
+    "capacity": 238500,
+    "name": "BP Products North America Inc - Ferndale"
+  },
+  {
+    "company": "HF Sinclair Puget Sound Refg LLC",
+    "city": "Anacortes",
+    "state": "Washington",
+    "capacity": 145000,
+    "name": "HF Sinclair Puget Sound Refg LLC - Anacortes"
+  },
+  {
+    "company": "Phillips 66 Company",
+    "city": "Ferndale",
+    "state": "Washington",
+    "capacity": 105000,
+    "name": "Phillips 66 Company - Ferndale"
+  },
+  {
+    "company": "Tesoro Refining & Marketing Co",
+    "city": "Anacortes",
+    "state": "Washington",
+    "capacity": 119000,
+    "name": "Tesoro Refining & Marketing Co - Anacortes"
+  },
+  {
+    "company": "US Oil & Refining Co",
+    "city": "Tacoma",
+    "state": "Washington",
+    "capacity": 40700,
+    "name": "US Oil & Refining Co - Tacoma"
+  },
+  {
+    "company": "Ergon West Virginia Inc",
+    "city": "Newell",
+    "state": "West Virginia",
+    "capacity": 22300,
+    "name": "Ergon West Virginia Inc - Newell"
+  },
+  {
+    "company": "Superior Refining Company LLC",
+    "city": "Superior",
+    "state": "Wisconsin",
+    "capacity": 45932,
+    "name": "Superior Refining Company LLC - Superior"
+  },
+  {
+    "company": "HF Sinclair Casper Refining Company",
+    "city": "Evansville",
+    "state": "Wyoming",
+    "capacity": 31000,
+    "name": "HF Sinclair Casper Refining Company - Evansville"
+  },
+  {
+    "company": "HF Sinclair Wyoming Refining Co",
+    "city": "Sinclair",
+    "state": "Wyoming",
+    "capacity": 75000,
+    "name": "HF Sinclair Wyoming Refining Co - Sinclair"
+  },
+  {
+    "company": "Silver Eagle Refining",
+    "city": "Evanston",
+    "state": "Wyoming",
+    "capacity": 3000,
+    "name": "Silver Eagle Refining - Evanston"
+  },
+  {
+    "company": "Wyoming Refining Co",
+    "city": "Newcastle",
+    "state": "Wyoming",
+    "capacity": 18000,
+    "name": "Wyoming Refining Co - Newcastle"
+  }
+]

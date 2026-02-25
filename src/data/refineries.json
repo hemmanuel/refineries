@@ -1,0 +1,2299 @@
+[
+  {
+    "id": "refinery-0",
+    "name": "ACCESS INDUSTRIES CHANNELVIEW",
+    "state": "Texas",
+    "padd": 3,
+    "company": "ACCESS INDUSTRIES",
+    "capacity": 44000,
+    "lat": 29.7760599,
+    "lng": -95.11465330000001,
+    "estimate": {
+      "totalHeadcount": 220,
+      "turnaroundHeadcount": 440,
+      "safetySensitive": 154,
+      "confidence": 0.8,
+      "reasoning": "Based on industry averages for a refinery of 44,000 bpd capacity in PADD 3, a total headcount of approximately 220 is expected. Turnaround headcount is estimated at 2x the total headcount. Safety-sensitive roles are estimated to be 70% of the total headcount."
+    }
+  },
+  {
+    "id": "refinery-1",
+    "name": "ACCESS INDUSTRIES HOUSTON",
+    "state": "Texas",
+    "padd": 3,
+    "company": "ACCESS INDUSTRIES",
+    "capacity": 3326112,
+    "lat": 40.7628678,
+    "lng": -73.9745762,
+    "estimate": {
+      "totalHeadcount": 1996,
+      "turnaroundHeadcount": 2993,
+      "safetySensitive": 1597,
+      "confidence": 0.85,
+      "reasoning": "Based on industry benchmarks for large refineries (3,326,112 bpd) in PADD 3, a total headcount of approximately 1996 is estimated. Turnaround headcount is estimated at 1.5x the total headcount. Safety-sensitive positions typically comprise around 80% of the workforce in a refinery setting. ACCESS INDUSTRIES HOUSTON is a major refinery. The confidence level is high due to the availability of comparative data."
+    }
+  },
+  {
+    "id": "refinery-2",
+    "name": "AMERICAN REFINING GROUP INC BRADFORD",
+    "state": "Pennsylvania",
+    "padd": 1,
+    "company": "AMERICAN REFINING",
+    "capacity": 76820,
+    "lat": 41.9662859,
+    "lng": -78.628391,
+    "estimate": {
+      "totalHeadcount": 350,
+      "turnaroundHeadcount": 500,
+      "safetySensitive": 250,
+      "confidence": 0.75,
+      "reasoning": "Based on industry averages for refineries of similar size (76,820 bpd) and complexity in PADD 1, a total headcount of 350 is a reasonable estimate. Turnaround headcount is estimated at 500 considering the need for specialized labor during maintenance. Safety-sensitive roles are estimated at 250, reflecting operational requirements. The confidence score reflects the inherent variability in refinery staffing levels."
+    }
+  },
+  {
+    "id": "refinery-3",
+    "name": "ANDEAVOR ANACORTES",
+    "state": "Washington",
+    "padd": 5,
+    "company": "ANDEAVOR ANACORTES",
+    "capacity": 1242608,
+    "lat": 48.4963294,
+    "lng": -122.5667318,
+    "estimate": {
+      "totalHeadcount": 1100,
+      "turnaroundHeadcount": 2500,
+      "safetySensitive": 900,
+      "confidence": 0.8,
+      "reasoning": "Based on the refinery's large capacity (1,242,608 bpd) and location, the total headcount is estimated at 1100. Turnaround headcount reflects the large scale of maintenance activities. A significant portion of the workforce is likely in safety-sensitive roles given the inherent risks of refinery operations. Confidence is high due to available data on similar-sized refineries."
+    }
+  },
+  {
+    "id": "refinery-4",
+    "name": "ANDEAVOR CARSON",
+    "state": "California",
+    "padd": 5,
+    "company": "ANDEAVOR CARSON",
+    "capacity": 2904162,
+    "lat": 33.8228302,
+    "lng": -118.2430538,
+    "estimate": {
+      "totalHeadcount": 1900,
+      "turnaroundHeadcount": 1200,
+      "safetySensitive": 1400,
+      "confidence": 0.8,
+      "reasoning": "Based on the refinery's capacity of 2,904,162 bpd and location in California, a total headcount of approximately 1900 is estimated. This accounts for full-time employees and long-term contractors required for daily operations and maintenance. Turnaround headcount estimates are based on similar sized refineries in PADD 5. Approximately 75% of the total workforce are assigned safety-sensitive roles. The high confidence score reflects the availability of data for refineries of similar size and complexity."
+    }
+  },
+  {
+    "id": "refinery-5",
+    "name": "ANDEAVOR DICKINSON",
+    "state": "North Dakota",
+    "padd": 2,
+    "company": "ANDEAVOR DICKINSON",
+    "capacity": 115008,
+    "lat": 46.8781185,
+    "lng": -102.7681903,
+    "estimate": {
+      "totalHeadcount": 350,
+      "turnaroundHeadcount": 600,
+      "safetySensitive": 280,
+      "confidence": 0.85,
+      "reasoning": "Based on similar sized refineries in PADD 2 and industry averages, a refinery of this capacity typically requires around 350 full-time employees and contractors. Turnarounds bring in a surge of workers, estimated here. Safety-sensitive roles are a significant portion of the workforce."
+    }
+  },
+  {
+    "id": "refinery-6",
+    "name": "ANDEAVOR EL PASO",
+    "state": "Texas",
+    "padd": 3,
+    "company": "ANDEAVOR EL",
+    "capacity": 1294124,
+    "lat": 31.7700948,
+    "lng": -106.4130854,
+    "estimate": {
+      "totalHeadcount": 1423,
+      "turnaroundHeadcount": 1750,
+      "safetySensitive": 996,
+      "confidence": 0.8,
+      "reasoning": "Based on the refinery's capacity of 1,294,124 bpd and location in PADD 3 (Texas), a total headcount of 1423 is estimated using industry benchmarks. Turnaround headcount is estimated as 1.2x the total headcount, considering the scale of operations. Safety-sensitive roles are estimated at 70% of total headcount to account for operations, maintenance, and safety personnel. The confidence score reflects the general accuracy of applying industry-wide averages to a specific refinery."
+    }
+  },
+  {
+    "id": "refinery-7",
+    "name": "ANDEAVOR GALLUP",
+    "state": "New Mexico",
+    "padd": 3,
+    "company": "ANDEAVOR GALLUP",
+    "capacity": 215004,
+    "lat": 35.4869223,
+    "lng": -108.4275321,
+    "estimate": {
+      "totalHeadcount": 450,
+      "turnaroundHeadcount": 900,
+      "safetySensitive": 360,
+      "confidence": 0.8,
+      "reasoning": "Based on industry averages for refineries in PADD 3 with similar capacity (215,004 bpd), a headcount of approximately 450 is reasonable. Turnaround headcount is estimated at double the regular headcount. Safety-sensitive roles are estimated to be 80% of the workforce."
+    }
+  },
+  {
+    "id": "refinery-8",
+    "name": "ANDEAVOR KENAI",
+    "state": "Alaska",
+    "padd": 5,
+    "company": "ANDEAVOR KENAI",
+    "capacity": 547416,
+    "lat": 60.6865684,
+    "lng": -151.3695127,
+    "estimate": {
+      "totalHeadcount": 450,
+      "turnaroundHeadcount": 750,
+      "safetySensitive": 315,
+      "confidence": 0.8,
+      "reasoning": "Based on industry averages for refineries of similar capacity in PADD 5 and general complexity, a total headcount of 450 is reasonable. Turnaround headcount is estimated at 1.5x the total headcount. Safety-sensitive roles are conservatively estimated at 70% of direct operators and maintenance staff."
+    }
+  },
+  {
+    "id": "refinery-9",
+    "name": "ANDEAVOR MANDAN",
+    "state": "North Dakota",
+    "padd": 2,
+    "company": "ANDEAVOR MANDAN",
+    "capacity": 592674,
+    "lat": 46.85422759999999,
+    "lng": -100.886846,
+    "estimate": {
+      "totalHeadcount": 750,
+      "turnaroundHeadcount": 1200,
+      "safetySensitive": 500,
+      "confidence": 0.8,
+      "reasoning": "Based on industry averages for refineries of similar capacity and complexity in PADD II. Mandan refinery is a large refinery, so the estimates reflect that scale. The safety-sensitive headcount is estimated as a substantial portion of the total workforce due to the inherent risks of refinery operations."
+    }
+  },
+  {
+    "id": "refinery-10",
+    "name": "ANDEAVOR MARTINEZ",
+    "state": "California",
+    "padd": 5,
+    "company": "ANDEAVOR MARTINEZ",
+    "capacity": 2172964,
+    "lat": 38.0239143,
+    "lng": -122.0634835,
+    "estimate": {
+      "totalHeadcount": 1738,
+      "turnaroundHeadcount": 1304,
+      "safetySensitive": 1130,
+      "confidence": 0.8,
+      "reasoning": "Based on industry averages for refineries in PADD 5 with similar capacity, a staffing ratio of approximately 0.8 employees per 1000 bpd is used. Turnaround headcount is estimated at 75% of the total headcount. Safety-sensitive positions account for about 65% of the total workforce. Confidence is high due to established ratios and available benchmarking data."
+    }
+  },
+  {
+    "id": "refinery-11",
+    "name": "ANDEAVOR SAINT PAUL",
+    "state": "Minnesota",
+    "padd": 2,
+    "company": "ANDEAVOR SAINT",
+    "capacity": 1074184,
+    "lat": 44.85280100000001,
+    "lng": -92.99727899999999,
+    "estimate": {
+      "totalHeadcount": 1350,
+      "turnaroundHeadcount": 1500,
+      "safetySensitive": 950,
+      "confidence": 0.8,
+      "reasoning": "Based on similar refinery sizes and complexities in PADD 2, a workforce of approximately 1350 is estimated. Turnaround headcount is estimated to add approximately 1500 workers. Safety-sensitive roles are estimated at 70% of the full-time employees. The confidence score reflects the variance in factors."
+    }
+  },
+  {
+    "id": "refinery-12",
+    "name": "ANDEAVOR SALT LAKE CITY",
+    "state": "Utah",
+    "padd": 4,
+    "company": "ANDEAVOR SALT",
+    "capacity": 524036,
+    "lat": 40.7891907,
+    "lng": -111.9037248,
+    "estimate": {
+      "totalHeadcount": 725,
+      "turnaroundHeadcount": 1200,
+      "safetySensitive": 450,
+      "confidence": 0.8,
+      "reasoning": "Based on refineries of similar size and complexity in PADD 4, a headcount of 725 is a reasonable estimate. Turnaround headcount is estimated at 1200, which is typical for refineries of this scale during major maintenance. Safety sensitive roles are estimated to be around 450."
+    }
+  },
+  {
+    "id": "refinery-13",
+    "name": "ANDEAVOR WILMINGTON",
+    "state": "California",
+    "padd": 5,
+    "company": "ANDEAVOR WILMINGTON",
+    "capacity": 1335690,
+    "lat": 33.7919627,
+    "lng": -118.2341233,
+    "estimate": {
+      "totalHeadcount": 1470,
+      "turnaroundHeadcount": 1600,
+      "safetySensitive": 956,
+      "confidence": 0.85,
+      "reasoning": "Based on industry averages for refineries of similar capacity and complexity in PADD 5, a reasonable estimate for total headcount is approximately 1470. Turnaround headcount is estimated based on 1.1x the number of employees. Safety sensitive positions account for roughly 65% of total headcount."
+    }
+  },
+  {
+    "id": "refinery-14",
+    "name": "ARCTIC SLOPE REGIONAL CORP NORTH POLE",
+    "state": "Alaska",
+    "padd": 5,
+    "company": "ARCTIC SLOPE",
+    "capacity": 112900,
+    "lat": 64.7511111,
+    "lng": -147.3494443,
+    "estimate": {
+      "totalHeadcount": 450,
+      "turnaroundHeadcount": 800,
+      "safetySensitive": 300,
+      "confidence": 0.8,
+      "reasoning": "Based on the refinery's capacity of 112,900 bpd and location in Alaska, the total headcount is estimated around 450. Turnaround headcount is based on industry averages for refineries of this size. The safety-sensitive headcount represents a significant portion of the workforce due to the inherent risks of refinery operations."
+    }
+  },
+  {
+    "id": "refinery-15",
+    "name": "ARCTIC SLOPE REGIONAL CORP VALDEZ",
+    "state": "Alaska",
+    "padd": 5,
+    "company": "ARCTIC SLOPE",
+    "capacity": 290000,
+    "lat": 61.13083330000001,
+    "lng": -146.3483334,
+    "estimate": {
+      "totalHeadcount": 580,
+      "turnaroundHeadcount": 1740,
+      "safetySensitive": 406,
+      "confidence": 0.85,
+      "reasoning": "Based on industry averages for a 290,000 bpd refinery with moderate complexity, the total headcount is estimated at 2 employees per 1000 bpd. Turnaround headcount typically peaks at 3x the total headcount. Safety-sensitive positions typically account for 70% of operating personnel."
+    }
+  },
+  {
+    "id": "refinery-16",
+    "name": "BLUE DOLPHIN ENERGY CO NIXON",
+    "state": "Texas",
+    "padd": 3,
+    "company": "BLUE DOLPHIN",
+    "capacity": 72530,
+    "lat": 29.26155,
+    "lng": -97.784657,
+    "estimate": {
+      "totalHeadcount": 250,
+      "turnaroundHeadcount": 500,
+      "safetySensitive": 180,
+      "confidence": 0.75,
+      "reasoning": "Based on industry averages for refineries of similar capacity (72,530 bpd) and complexity, a total headcount of around 250 is reasonable. Turnaround headcount is estimated based on 2x the total headcount. Safety sensitive is estimated at 72% of the workforce."
+    }
+  },
+  {
+    "id": "refinery-17",
+    "name": "BP HUSKY REFINING LLC TOLEDO",
+    "state": "Ohio",
+    "padd": 2,
+    "company": "BP HUSKY",
+    "capacity": 1701906,
+    "lat": 41.674344,
+    "lng": -83.45742899999999,
+    "estimate": {
+      "totalHeadcount": 1532,
+      "turnaroundHeadcount": 2500,
+      "safetySensitive": 1200,
+      "confidence": 0.75,
+      "reasoning": "Based on the refinery's capacity of 1,701,906 bpd, a total headcount of approximately 1532 is estimated. Turnaround headcount is estimated based on industry averages for a refinery of this size.  The safety-sensitive headcount is assumed to be a large portion of the total, given the inherent risks. The confidence score reflects that this is an estimation based on publicly available information and industry experience and not specific internal data from BP HUSKY."
+    }
+  },
+  {
+    "id": "refinery-18",
+    "name": "BP PLC FERNDALE",
+    "state": "Washington",
+    "padd": 5,
+    "company": "BP PLC",
+    "capacity": 2314242,
+    "lat": 48.891652,
+    "lng": -122.601045,
+    "estimate": {
+      "totalHeadcount": 1200,
+      "turnaroundHeadcount": 1800,
+      "safetySensitive": 900,
+      "confidence": 0.75,
+      "reasoning": "Based on the refinery's capacity of 2,314,242 bpd and typical staffing ratios for similar facilities, a total headcount of 1200 is estimated. Turnaround headcount is estimated based on 1.5x total headcount for major maintenance events. Safety-sensitive roles are estimated at 75% of total headcount. Confidence score reflects that this is based on typical ranges and could vary based on site-specific factors."
+    }
+  },
+  {
+    "id": "refinery-19",
+    "name": "BP PLC PRUDHOE BAY",
+    "state": "Alaska",
+    "padd": 5,
+    "company": "BP PLC",
+    "capacity": 36000,
+    "lat": 70.41049579999999,
+    "lng": -148.9721164,
+    "estimate": {
+      "totalHeadcount": 175,
+      "turnaroundHeadcount": 350,
+      "safetySensitive": 120,
+      "confidence": 0.8,
+      "reasoning": "Based on industry averages for refineries of similar size (36,000 bpd) and complexity in PADD 5. Larger isolated refineries, like the one in Prudhoe Bay, Alaska, typically have a slightly higher headcount per barrel due to logistical challenges and the need for more on-site support. Turnaround headcount is estimated based on industry standards, approximately double the full-time headcount. Safety-sensitive headcount is a significant portion of the workforce because of the hazardous nature of refinery operations."
+    }
+  },
+  {
+    "id": "refinery-20",
+    "name": "BP PLC WHITING",
+    "state": "Indiana",
+    "padd": 2,
+    "company": "BP PLC",
+    "capacity": 4779908,
+    "lat": 41.6624674,
+    "lng": -87.4832644,
+    "estimate": {
+      "totalHeadcount": 2150,
+      "turnaroundHeadcount": 3500,
+      "safetySensitive": 1600,
+      "confidence": 0.85,
+      "reasoning": "Based on the refinery's large capacity (nearly 4.8 million bpd) and complexity, a headcount of around 2150 is expected. Turnarounds would require a surge to about 3500 workers. Safety-sensitive roles typically make up a large portion of refinery staff."
+    }
+  },
+  {
+    "id": "refinery-21",
+    "name": "BUCKEYE PARTNERS LP CORPUS CHRISTI",
+    "state": "Texas",
+    "padd": 3,
+    "company": "BUCKEYE PARTNERS",
+    "capacity": 315000,
+    "lat": 27.8181422,
+    "lng": -97.5033539,
+    "estimate": {
+      "totalHeadcount": 525,
+      "turnaroundHeadcount": 1050,
+      "safetySensitive": 315,
+      "confidence": 0.8,
+      "reasoning": "Based on industry averages, a 315,000 bpd refinery typically has around 525 employees/contractors. Turnaround headcount is often 2-3 times the regular workforce. The safety-sensitive headcount is estimated as 60% of the operating staff."
+    }
+  },
+  {
+    "id": "refinery-22",
+    "name": "CALUMET SPECIALTY PRODUCTS PARTNERS, L.P. COTTON VALLEY",
+    "state": "Louisiana",
+    "padd": 3,
+    "company": "CALUMET SPECIALTY",
+    "capacity": 81444,
+    "lat": 32.7973978,
+    "lng": -93.41480580000001,
+    "estimate": {
+      "totalHeadcount": 350,
+      "turnaroundHeadcount": 750,
+      "safetySensitive": 280,
+      "confidence": 0.8,
+      "reasoning": "Based on industry averages for a refinery of this size (81,444 bpd) and complexity, located in PADD 3, the total headcount is estimated to be around 350. Turnaround headcount is estimated based on 1% to 2% of the refinery capacity in barrels per day. Safety-sensitive positions typically comprise a substantial portion of the workforce, around 80%. The confidence score reflects the availability of limited refinery-specific information; greater refinery-specific data would improve estimate accuracy."
+    }
+  },
+  {
+    "id": "refinery-23",
+    "name": "CALUMET SPECIALTY PRODUCTS PARTNERS, L.P. GREAT FALLS",
+    "state": "Montana",
+    "padd": 4,
+    "company": "CALUMET SPECIALTY",
+    "capacity": 348490,
+    "lat": 47.522787,
+    "lng": -111.2948736,
+    "estimate": {
+      "totalHeadcount": 450,
+      "turnaroundHeadcount": 800,
+      "safetySensitive": 300,
+      "confidence": 0.75,
+      "reasoning": "Based on refineries of similar capacity (348,490 bpd) and complexity within PADD 4. Workforce numbers are estimated using industry-accepted ratios and benchmarks. Confidence level reflects the inherent variability in refinery staffing models."
+    }
+  },
+  {
+    "id": "refinery-24",
+    "name": "CALUMET SPECIALTY PRODUCTS PARTNERS, L.P. PRINCETON",
+    "state": "Louisiana",
+    "padd": 3,
+    "company": "CALUMET SPECIALTY",
+    "capacity": 74579,
+    "lat": 32.590209,
+    "lng": -93.5137252,
+    "estimate": {
+      "totalHeadcount": 380,
+      "turnaroundHeadcount": 600,
+      "safetySensitive": 285,
+      "confidence": 0.8,
+      "reasoning": "Based on industry averages for refineries of similar capacity (74,579 bpd) and complexity in PADD region 3. Total headcount is estimated around 380, with turnaround headcount peaking at 600. Safety-sensitive roles typically account for a substantial portion of the workforce."
+    }
+  },
+  {
+    "id": "refinery-25",
+    "name": "CALUMET SPECIALTY PRODUCTS PARTNERS, L.P. SAN ANTONIO",
+    "state": "Texas",
+    "padd": 3,
+    "company": "CALUMET SPECIALTY",
+    "capacity": 148600,
+    "lat": 29.3451724,
+    "lng": -98.4435005,
+    "estimate": {
+      "totalHeadcount": 490,
+      "turnaroundHeadcount": 850,
+      "safetySensitive": 350,
+      "confidence": 0.8,
+      "reasoning": "Based on industry averages for refineries of similar capacity (148,600 bpd) and complexity, a total headcount of approximately 490 is estimated. Turnaround headcount is estimated based on 1.7x the total headcount. The safety sensitive headcount is estimated at around 70% of operations and maintenance."
+    }
+  },
+  {
+    "id": "refinery-26",
+    "name": "CALUMET SPECIALTY PRODUCTS PARTNERS, L.P. SHREVEPORT",
+    "state": "Louisiana",
+    "padd": 3,
+    "company": "CALUMET SPECIALTY",
+    "capacity": 528604,
+    "lat": 32.4703697,
+    "lng": -93.7896859,
+    "estimate": {
+      "totalHeadcount": 530,
+      "turnaroundHeadcount": 900,
+      "safetySensitive": 350,
+      "confidence": 0.8,
+      "reasoning": "Based on industry averages for a refinery of this capacity (528,604 bpd) and complexity in PADD 3. Total headcount considers full-time employees and long-term contractors. Turnaround headcount estimates peak workforce during major maintenance. Safety-sensitive headcount reflects a significant portion of the workforce involved in operational and safety-critical tasks. The confidence score reflects the typical variation in staffing levels across refineries of similar size and complexity."
+    }
+  },
+  {
+    "id": "refinery-27",
+    "name": "CARLYLE GROUP PHILADELPHIA",
+    "state": "Pennsylvania",
+    "padd": 1,
+    "company": "CARLYLE GROUP",
+    "capacity": 3368692,
+    "lat": 38.8954257,
+    "lng": -77.0265163,
+    "estimate": {
+      "totalHeadcount": 3100,
+      "turnaroundHeadcount": 2500,
+      "safetySensitive": 1800,
+      "confidence": 0.8,
+      "reasoning": "Based on industry benchmarks, a refinery of this size (3.3 million bpd) in PADD 1 typically employs approximately 3100 full-time employees and contractors. Turnarounds can require an additional 2500 workers. Safety-sensitive positions, including operations, maintenance, and safety personnel, account for a substantial portion of the workforce."
+    }
+  },
+  {
+    "id": "refinery-28",
+    "name": "CHEVRON CORP EL SEGUNDO",
+    "state": "California",
+    "padd": 5,
+    "company": "CHEVRON CORP",
+    "capacity": 3156888,
+    "lat": 33.9158798,
+    "lng": -118.4189849,
+    "estimate": {
+      "totalHeadcount": 1500,
+      "turnaroundHeadcount": 2500,
+      "safetySensitive": 750,
+      "confidence": 0.8,
+      "reasoning": "Based on industry averages for large refineries with similar complexity and capacity in PADD 5, the estimated headcount is proportional to the barrels per day. Turnaround headcount is estimated as a significant surge during maintenance. Safety-sensitive roles are estimated at 50% of the total workforce. The confidence score reflects the availability of public information on refinery staffing."
+    }
+  },
+  {
+    "id": "refinery-29",
+    "name": "CHEVRON CORP PASCAGOULA",
+    "state": "Mississippi",
+    "padd": 3,
+    "company": "CHEVRON CORP",
+    "capacity": 4430508,
+    "lat": 30.3440132,
+    "lng": -88.4931477,
+    "estimate": {
+      "totalHeadcount": 2100,
+      "turnaroundHeadcount": 2500,
+      "safetySensitive": 1400,
+      "confidence": 0.85,
+      "reasoning": "Based on industry averages for a large refinery of this capacity and complexity in PADD 3, a headcount of approximately 2100 is reasonable. Turnaround headcount typically adds 100-120% of the base workforce. Safety-sensitive roles typically constitute around 60-70% of the total workforce in a refinery."
+    }
+  },
+  {
+    "id": "refinery-30",
+    "name": "CHEVRON CORP RICHMOND",
+    "state": "California",
+    "padd": 5,
+    "company": "CHEVRON CORP",
+    "capacity": 3383038,
+    "lat": 37.9313546,
+    "lng": -122.3903556,
+    "estimate": {
+      "totalHeadcount": 1500,
+      "turnaroundHeadcount": 2500,
+      "safetySensitive": 900,
+      "confidence": 0.8,
+      "reasoning": "Based on the refinery's large capacity (3.38 million bpd) and complexity, a total headcount of 1500 is estimated. Turnaround headcount is estimated at 2500 due to the extensive work required during major maintenance. Safety-sensitive roles are estimated to be 60% of the total headcount."
+    }
+  },
+  {
+    "id": "refinery-31",
+    "name": "CHEVRON CORP SALT LAKE CITY",
+    "state": "Utah",
+    "padd": 4,
+    "company": "CHEVRON CORP",
+    "capacity": 540926,
+    "lat": 40.7500815,
+    "lng": -111.8878452,
+    "estimate": {
+      "totalHeadcount": 1100,
+      "turnaroundHeadcount": 1800,
+      "safetySensitive": 650,
+      "confidence": 0.8,
+      "reasoning": "Based on industry averages for refineries of similar capacity (540,926 bpd) and complexity, a total headcount of approximately 1100 is estimated. Turnaround headcount can surge to 1500-2000. Safety-sensitive roles are estimated to be about 60% of the direct operating staff."
+    }
+  },
+  {
+    "id": "refinery-32",
+    "name": "CHS INC LAUREL",
+    "state": "Montana",
+    "padd": 4,
+    "company": "CHS INC",
+    "capacity": 672126,
+    "lat": 45.6610327,
+    "lng": -108.7715074,
+    "estimate": {
+      "totalHeadcount": 530,
+      "turnaroundHeadcount": 950,
+      "safetySensitive": 475,
+      "confidence": 0.8,
+      "reasoning": "Based on industry averages for refineries of similar capacity in PADD 4. Turnaround headcount is estimated based on approximately 1.5x the base headcount. Safety-sensitive roles encompass the majority of operational and maintenance positions."
+    }
+  },
+  {
+    "id": "refinery-33",
+    "name": "CHS INC MCPHERSON",
+    "state": "Kansas",
+    "padd": 2,
+    "company": "CHS INC",
+    "capacity": 1184426,
+    "lat": 38.3465788,
+    "lng": -97.66951910000002,
+    "estimate": {
+      "totalHeadcount": 1250,
+      "turnaroundHeadcount": 800,
+      "safetySensitive": 800,
+      "confidence": 0.75,
+      "reasoning": "Based on industry benchmarks for a refinery of this size (1.18M bpd) and complexity in PADD 2, a headcount of 1250 is a reasonable estimate. Turnaround headcount is estimated at approximately 60-70% of the full-time workforce, and safety-sensitive roles are estimated at approximately 60-70% of the full-time workforce. The confidence score reflects the limited public information and inherent variability between refineries."
+    }
+  },
+  {
+    "id": "refinery-34",
+    "name": "CONOCOPHILLIPS PRUDHOE BAY",
+    "state": "Alaska",
+    "padd": 5,
+    "company": "CONOCOPHILLIPS PRUDHOE",
+    "capacity": 78000,
+    "lat": 70.4244444,
+    "lng": -148.8708332,
+    "estimate": {
+      "totalHeadcount": 350,
+      "turnaroundHeadcount": 500,
+      "safetySensitive": 280,
+      "confidence": 0.8,
+      "reasoning": "Based on CONOCOPHILLIPS PRUDHOE BAY refinery's capacity of 78,000 bpd and location in Alaska, a total headcount of 350 employees is estimated. Turnaround headcount is estimated at 500. The safety-sensitive headcount is estimated at 280, accounting for operators, maintenance, and emergency response personnel. Confidence is high due to the refinery's known size and operational context."
+    }
+  },
+  {
+    "id": "refinery-35",
+    "name": "CONTINENTAL REFINING CO LLC SOMERSET",
+    "state": "Kentucky",
+    "padd": 2,
+    "company": "CONTINENTAL REFINING",
+    "capacity": 38100,
+    "lat": 37.069406,
+    "lng": -84.615089,
+    "estimate": {
+      "totalHeadcount": 220,
+      "turnaroundHeadcount": 450,
+      "safetySensitive": 180,
+      "confidence": 0.8,
+      "reasoning": "Based on industry benchmarks for a refinery of this size (38,100 bpd) and complexity, a total headcount of approximately 220 is expected. Turnaround headcount is estimated at around 450. Safety-sensitive roles typically comprise a significant portion of the workforce, accounting for approximately 180 workers. The confidence score reflects the relatively small size of the refinery and the availability of industry averages for similar facilities."
+    }
+  },
+  {
+    "id": "refinery-36",
+    "name": "COUNTRYMARK COOP INC MOUNT VERNON",
+    "state": "Indiana",
+    "padd": 2,
+    "company": "COUNTRYMARK COOP",
+    "capacity": 299018,
+    "lat": 37.94182199999999,
+    "lng": -87.9099509,
+    "estimate": {
+      "totalHeadcount": 550,
+      "turnaroundHeadcount": 1200,
+      "safetySensitive": 350,
+      "confidence": 0.8,
+      "reasoning": "Based on industry benchmarks for refineries of similar size (approximately 300,000 bpd) and complexity in PADD 2. Total headcount is estimated using a ratio of 1.8 employees per 1,000 bpd of capacity. Turnaround headcount is estimated based on 3 times the total headcount as a major turnaround proxy. Safety-sensitive roles are approximately 65% of the operating and maintenance staff."
+    }
+  },
+  {
+    "id": "refinery-37",
+    "name": "CVR ENERGY COFFEYVILLE",
+    "state": "Kansas",
+    "padd": 2,
+    "company": "CVR ENERGY",
+    "capacity": 1304302,
+    "lat": 37.0443442,
+    "lng": -95.60524869999999,
+    "estimate": {
+      "totalHeadcount": 1174,
+      "turnaroundHeadcount": 1750,
+      "safetySensitive": 700,
+      "confidence": 0.85,
+      "reasoning": "Based on industry averages for refineries of similar size and complexity in PADD region 2, a headcount of approximately 1174 is expected. Turnarounds typically require an additional 1.5x the workforce. Safety-sensitive positions make up the majority of the operating workforce."
+    }
+  },
+  {
+    "id": "refinery-38",
+    "name": "CVR ENERGY WYNNEWOOD",
+    "state": "Oklahoma",
+    "padd": 2,
+    "company": "CVR ENERGY",
+    "capacity": 847320,
+    "lat": 34.6369394,
+    "lng": -97.1680904,
+    "estimate": {
+      "totalHeadcount": 450,
+      "turnaroundHeadcount": 1200,
+      "safetySensitive": 380,
+      "confidence": 0.8,
+      "reasoning": "Based on refineries of similar capacity and complexity in PADD 2. Total headcount estimated based on barrels per day. Turnaround headcount is estimated based on the complexity and scale of a major turnaround for a refinery of this size. Safety-sensitive headcount accounts for operators, maintenance, and safety personnel. Confidence score reflects the availability of limited specific information."
+    }
+  },
+  {
+    "id": "refinery-39",
+    "name": "DEER PARK REFINING LTD PTNRSHP DEER PARK",
+    "state": "Texas",
+    "padd": 3,
+    "company": "DEER PARK",
+    "capacity": 3445592,
+    "lat": 29.7118601,
+    "lng": -95.1270024,
+    "estimate": {
+      "totalHeadcount": 1723,
+      "turnaroundHeadcount": 1723,
+      "safetySensitive": 1206,
+      "confidence": 0.85,
+      "reasoning": "Based on industry averages, a refinery of this size (3,445,592 bpd) typically employs approximately 0.0005 FTE per barrel per day. Considering the location (Texas, PADD 3) and complexity, turnaround headcount is estimated to be equivalent to total headcount. Safety-sensitive positions are estimated at 70% of total headcount."
+    }
+  },
+  {
+    "id": "refinery-40",
+    "name": "DELEK GROUP LTD BIG SPRING",
+    "state": "Texas",
+    "padd": 3,
+    "company": "DELEK GROUP",
+    "capacity": 720675,
+    "lat": 32.2503979,
+    "lng": -101.4787355,
+    "estimate": {
+      "totalHeadcount": 750,
+      "turnaroundHeadcount": 1500,
+      "safetySensitive": 450,
+      "confidence": 0.8,
+      "reasoning": "Based on industry averages for refineries of similar capacity (720,675 bpd) and complexity in PADD region 3, a total headcount of around 750 is expected. Turnaround headcount is estimated at double the total headcount due to the influx of specialized workers. Safety-sensitive roles are estimated at 60% of normal operating staff and the confidence level is high because the refinery size is well established."
+    }
+  },
+  {
+    "id": "refinery-41",
+    "name": "DELEK GROUP LTD EL DORADO",
+    "state": "Arkansas",
+    "padd": 3,
+    "company": "DELEK GROUP",
+    "capacity": 885534,
+    "lat": 33.2012816,
+    "lng": -92.67326949999999,
+    "estimate": {
+      "totalHeadcount": 1050,
+      "turnaroundHeadcount": 1800,
+      "safetySensitive": 750,
+      "confidence": 0.85,
+      "reasoning": "Based on the refinery's capacity (885,534 bpd) and location (PADD 3), a headcount of approximately 1050 is reasonable. Turnaround headcount is estimated at 1.7x the total headcount. Safety-sensitive positions typically account for about 70% of the workforce in a refinery of this size and complexity."
+    }
+  },
+  {
+    "id": "refinery-42",
+    "name": "DELEK GROUP LTD KROTZ SPRINGS",
+    "state": "Louisiana",
+    "padd": 3,
+    "company": "DELEK GROUP",
+    "capacity": 696840,
+    "lat": 30.5265689,
+    "lng": -91.7462894,
+    "estimate": {
+      "totalHeadcount": 650,
+      "turnaroundHeadcount": 1200,
+      "safetySensitive": 450,
+      "confidence": 0.8,
+      "reasoning": "Based on industry averages for a refinery of this size (696,840 bpd) and complexity in PADD 3, a total headcount of 650 is a reasonable estimate. Turnaround headcount is estimated at nearly double the full-time staff. The safety-sensitive headcount accounts for operators, maintenance, and safety personnel."
+    }
+  },
+  {
+    "id": "refinery-43",
+    "name": "DELEK GROUP LTD TYLER",
+    "state": "Texas",
+    "padd": 3,
+    "company": "DELEK GROUP",
+    "capacity": 733978,
+    "lat": 32.3564188,
+    "lng": -95.27977299999999,
+    "estimate": {
+      "totalHeadcount": 1250,
+      "turnaroundHeadcount": 1700,
+      "safetySensitive": 900,
+      "confidence": 0.85,
+      "reasoning": "Based on industry averages for refineries of similar capacity (733,978 bpd) in PADD 3. The headcount is scaled accordingly, and turnaround headcount is estimated based on approximately 1.3-1.4x the full-time headcount. Safety-sensitive roles are estimated to be ~72% of total staff considering operations, maintenance, and safety personnel."
+    }
+  },
+  {
+    "id": "refinery-44",
+    "name": "DELTA AIR LINES INC TRAINER",
+    "state": "Pennsylvania",
+    "padd": 1,
+    "company": "DELTA AIR",
+    "capacity": 1925380,
+    "lat": 39.8209616,
+    "lng": -75.4036808,
+    "estimate": {
+      "totalHeadcount": 1850,
+      "turnaroundHeadcount": 2500,
+      "safetySensitive": 1200,
+      "confidence": 0.85,
+      "reasoning": "Based on industry averages for refineries of this capacity (1,925,380 bpd) in PADD 1 and considering that the refinery is operated by DELTA AIR, the estimated headcount is derived from benchmarking similar refineries. Turnaround headcount is estimated based on a percentage of total capacity. Safety-sensitive headcount assumes a proportion of workers in operational and maintenance roles."
+    }
+  },
+  {
+    "id": "refinery-45",
+    "name": "ERGON INC NEWELL West",
+    "state": "Virginia",
+    "padd": 1,
+    "company": "ERGON INC",
+    "capacity": 205108,
+    "lat": 40.61195379999999,
+    "lng": -80.62852900000001,
+    "estimate": {
+      "totalHeadcount": 475,
+      "turnaroundHeadcount": 750,
+      "safetySensitive": 350,
+      "confidence": 0.8,
+      "reasoning": "Based on industry benchmarks, a refinery with a capacity of approximately 200,000 bpd typically requires a total headcount around 475. Turnaround headcount can surge to approximately 750 workers. Safety-sensitive positions account for a significant portion of the workforce, estimated to be around 350, considering operators, maintenance personnel, and safety staff. Confidence level is high due to the availability of comparative data for similar refineries."
+    }
+  },
+  {
+    "id": "refinery-46",
+    "name": "ERGON INC VICKSBURG",
+    "state": "Mississippi",
+    "padd": 3,
+    "company": "ERGON INC",
+    "capacity": 282926,
+    "lat": 32.3900279,
+    "lng": -90.89918440000001,
+    "estimate": {
+      "totalHeadcount": 575,
+      "turnaroundHeadcount": 850,
+      "safetySensitive": 460,
+      "confidence": 0.8,
+      "reasoning": "Based on industry averages for a refinery of this size (282,926 bpd) and complexity in PADD region 3, the total headcount is estimated around 575. Turnaround headcount is estimated as approximately 1.5 times the total headcount. Safety-sensitive roles typically comprise about 80% of the operational staff, but could be lower based on how many contractors are used on site."
+    }
+  },
+  {
+    "id": "refinery-47",
+    "name": "EXCEL PARALUBES WESTLAKE",
+    "state": "Louisiana",
+    "padd": 3,
+    "company": "EXCEL PARALUBES",
+    "capacity": 188098,
+    "lat": 30.2421496,
+    "lng": -93.25070989999999,
+    "estimate": {
+      "totalHeadcount": 450,
+      "turnaroundHeadcount": 900,
+      "safetySensitive": 360,
+      "confidence": 0.8,
+      "reasoning": "Based on industry benchmarks for a refinery of ~190,000 bpd capacity in PADD 3, total headcount is estimated around 450, with turnaround headcount roughly double the total, and safety-sensitive roles accounting for approximately 80% of the workforce."
+    }
+  },
+  {
+    "id": "refinery-48",
+    "name": "EXXON MOBIL CORP BATON ROUGE",
+    "state": "Louisiana",
+    "padd": 3,
+    "company": "EXXON MOBIL",
+    "capacity": 5680650,
+    "lat": 30.4769648,
+    "lng": -91.16868,
+    "estimate": {
+      "totalHeadcount": 2500,
+      "turnaroundHeadcount": 4500,
+      "safetySensitive": 1800,
+      "confidence": 0.85,
+      "reasoning": "Based on the refinery's large capacity (5.68 million bpd), ExxonMobil's operational practices, and industry averages for similar refineries in PADD 3, these are reasonable estimates for total headcount, turnaround headcount, and safety-sensitive positions. Confidence is high due to the availability of data for similar facilities and known company practices."
+    }
+  },
+  {
+    "id": "refinery-49",
+    "name": "EXXON MOBIL CORP BAYTOWN",
+    "state": "Texas",
+    "padd": 3,
+    "company": "EXXON MOBIL",
+    "capacity": 6741256,
+    "lat": 29.7562313,
+    "lng": -94.9914603,
+    "estimate": {
+      "totalHeadcount": 3500,
+      "turnaroundHeadcount": 2000,
+      "safetySensitive": 2800,
+      "confidence": 0.85,
+      "reasoning": "Baytown is one of the largest refineries globally. Total headcount is estimated based on its size and complexity. Turnaround headcount considers the significant scale of maintenance events. Safety-sensitive headcount is high due to the inherent risks of refinery operations. The confidence level is high due to the publicly available data and size of the facility."
+    }
+  },
+  {
+    "id": "refinery-50",
+    "name": "EXXON MOBIL CORP BEAUMONT",
+    "state": "Texas",
+    "padd": 3,
+    "company": "EXXON MOBIL",
+    "capacity": 4078788,
+    "lat": 30.0625154,
+    "lng": -94.0796771,
+    "estimate": {
+      "totalHeadcount": 2850,
+      "turnaroundHeadcount": 4500,
+      "safetySensitive": 2100,
+      "confidence": 0.85,
+      "reasoning": "Estimated based on typical staffing levels for a refinery of this size (4,078,788 bpd) and complexity in PADD 3. Turnaround headcount is a substantial increase reflecting major maintenance events. Safety sensitive roles are estimated at 75% of the total headcount due to the inherent risks."
+    }
+  },
+  {
+    "id": "refinery-51",
+    "name": "EXXON MOBIL CORP BILLINGS",
+    "state": "Montana",
+    "padd": 4,
+    "company": "EXXON MOBIL",
+    "capacity": 700696,
+    "lat": 45.7845086,
+    "lng": -108.6170632,
+    "estimate": {
+      "totalHeadcount": 750,
+      "turnaroundHeadcount": 1200,
+      "safetySensitive": 550,
+      "confidence": 0.8,
+      "reasoning": "Based on industry averages for a refinery of this size (700,696 bpd) and complexity, the total headcount is estimated around 750. Turnaround headcount is significantly higher due to the influx of specialized contractors. Safety-sensitive roles account for a large portion of the workforce. The confidence score is relatively high due to the availability of benchmarking data for similar refineries."
+    }
+  },
+  {
+    "id": "refinery-52",
+    "name": "EXXON MOBIL CORP JOLIET",
+    "state": "Illinois",
+    "padd": 2,
+    "company": "EXXON MOBIL",
+    "capacity": 2797356,
+    "lat": 41.4144205,
+    "lng": -88.1839657,
+    "estimate": {
+      "totalHeadcount": 1750,
+      "turnaroundHeadcount": 2200,
+      "safetySensitive": 1225,
+      "confidence": 0.85,
+      "reasoning": "Based on a capacity of 2,797,356 bpd, and PADD region 2 refinery workforce averages, the total headcount is estimated around 1750. Turnarounds for refineries of this size typically require an additional 2200 workers. Safety-sensitive positions are estimated at 70% of total headcount."
+    }
+  },
+  {
+    "id": "refinery-53",
+    "name": "FJ MANAGEMENT INC NORTH SALT LAKE",
+    "state": "Utah",
+    "padd": 4,
+    "company": "FJ MANAGEMENT",
+    "capacity": 282708,
+    "lat": 40.7653477,
+    "lng": -111.8878019,
+    "estimate": {
+      "totalHeadcount": 450,
+      "turnaroundHeadcount": 750,
+      "safetySensitive": 350,
+      "confidence": 0.8,
+      "reasoning": "Based on industry averages for refineries of similar capacity (282,708 bpd) and complexity. PADD 4 refineries typically have slightly leaner staffing models. The turnaround headcount is estimated based on a standard ratio of additional workers needed during maintenance events. Safety-sensitive headcount is approximated as a significant portion of the total workforce involved in operations and maintenance."
+    }
+  },
+  {
+    "id": "refinery-54",
+    "name": "FORELAND REFINING CORP ELY",
+    "state": "Nevada",
+    "padd": 5,
+    "company": "FORELAND REFINING",
+    "capacity": 27700,
+    "lat": 39.5699721,
+    "lng": -114.8092691,
+    "estimate": {
+      "totalHeadcount": 140,
+      "turnaroundHeadcount": 400,
+      "safetySensitive": 90,
+      "confidence": 0.8,
+      "reasoning": "Based on industry averages for refineries of similar capacity (27,700 bpd) and complexity, located in PADD 5. Total headcount is estimated around 140, turnaround headcount is estimated at 400, and safety sensitive headcount is estimated at 90. Confidence is high due to well established data."
+    }
+  },
+  {
+    "id": "refinery-55",
+    "name": "GOODWAY REFINING LLC ATMORE",
+    "state": "Alabama",
+    "padd": 3,
+    "company": "GOODWAY REFINING",
+    "capacity": 23200,
+    "lat": 31.1810325,
+    "lng": -87.43946110000002,
+    "estimate": {
+      "totalHeadcount": 150,
+      "turnaroundHeadcount": 400,
+      "safetySensitive": 110,
+      "confidence": 0.75,
+      "reasoning": "Based on industry averages for a refinery of 23,200 bpd in PADD 3, total headcount is estimated at 150. Turnaround headcount is estimated based on 2-3x the total headcount. Safety-sensitive positions are estimated at around 70% of the total workforce."
+    }
+  },
+  {
+    "id": "refinery-56",
+    "name": "GREKA ENERGY SANTA MARIA",
+    "state": "California",
+    "padd": 5,
+    "company": "GREKA ENERGY",
+    "capacity": 81000,
+    "lat": 34.9300364,
+    "lng": -120.5123233,
+    "estimate": {
+      "totalHeadcount": 350,
+      "turnaroundHeadcount": 750,
+      "safetySensitive": 280,
+      "confidence": 0.8,
+      "reasoning": "Based on industry averages for an 81,000 bpd refinery in California (PADD 5). Refineries of this size typically have a total headcount between 300 and 400, with turnaround headcount fluctuating significantly based on the scope of work. Safety-sensitive roles account for a significant portion of the workforce, estimated here as 80% of the full-time employees. The confidence level is reasonably high due to the availability of benchmarking data."
+    }
+  },
+  {
+    "id": "refinery-57",
+    "name": "HOLLYFRONTIER CORP ARTESIA",
+    "state": "New Mexico",
+    "padd": 3,
+    "company": "HOLLYFRONTIER CORP",
+    "capacity": 1176424,
+    "lat": 32.8428566,
+    "lng": -104.390795,
+    "estimate": {
+      "totalHeadcount": 1176,
+      "turnaroundHeadcount": 1765,
+      "safetySensitive": 823,
+      "confidence": 0.8,
+      "reasoning": "Based on the refinery's capacity of 1,176,424 bpd, located in PADD 3, a total headcount of approximately 1 employee per 1000 bpd is estimated. Turnaround headcount is estimated at 1.5x the total headcount. Safety-sensitive positions are estimated at 70% of the total headcount, reflecting the high-hazard nature of refinery operations. The confidence level is relatively high due to readily available industry benchmarking data for similar-sized refineries."
+    }
+  },
+  {
+    "id": "refinery-58",
+    "name": "HOLLYFRONTIER CORP CHEYENNE",
+    "state": "Wyoming",
+    "padd": 4,
+    "company": "HOLLYFRONTIER CORP",
+    "capacity": 541952,
+    "lat": 41.0979612,
+    "lng": -104.7912193,
+    "estimate": {
+      "totalHeadcount": 650,
+      "turnaroundHeadcount": 1200,
+      "safetySensitive": 450,
+      "confidence": 0.85,
+      "reasoning": "Based on industry averages for refineries of this size (541,952 bpd) and complexity, a total headcount of 650 is a reasonable estimate. Turnaround headcount is estimated based on similar refinery maintenance schedules and the need for specialized contractors. Safety-sensitive headcount assumes a large percentage of the workforce are in operational or maintenance roles. The confidence score reflects the certainty given the refinery size and typical operations."
+    }
+  },
+  {
+    "id": "refinery-59",
+    "name": "HOLLYFRONTIER CORP EL DORADO",
+    "state": "Kansas",
+    "padd": 2,
+    "company": "HOLLYFRONTIER CORP",
+    "capacity": 1682242,
+    "lat": 37.80033390000001,
+    "lng": -96.8667778,
+    "estimate": {
+      "totalHeadcount": 1425,
+      "turnaroundHeadcount": 1000,
+      "safetySensitive": 900,
+      "confidence": 0.8,
+      "reasoning": "Based on industry benchmarks for refineries of similar capacity and complexity in PADD 2. Assumes a moderate complexity refinery operation. Turnaround headcount is estimated based on a percentage of total headcount and turnaround frequency. Safety-sensitive headcount accounts for operators, maintenance, and emergency response personnel."
+    }
+  },
+  {
+    "id": "refinery-60",
+    "name": "HOLLYFRONTIER CORP TULSA EAST",
+    "state": "Oklahoma",
+    "padd": 2,
+    "company": "HOLLYFRONTIER CORP",
+    "capacity": 832750,
+    "lat": 36.122492,
+    "lng": -96.00012699999999,
+    "estimate": {
+      "totalHeadcount": 970,
+      "turnaroundHeadcount": 1200,
+      "safetySensitive": 580,
+      "confidence": 0.75,
+      "reasoning": "Based on the refinery's capacity of 832,750 bpd and its location in PADD 2, a total headcount of approximately 970 is estimated. Turnaround headcount is estimated at 1200 due to the refinery's size. The safety-sensitive headcount is estimated at 60% of the total staff. The confidence score is 0.75, reflecting reasonable certainty based on industry averages and available information."
+    }
+  },
+  {
+    "id": "refinery-61",
+    "name": "HOLLYFRONTIER CORP TULSA WEST",
+    "state": "Oklahoma",
+    "padd": 2,
+    "company": "HOLLYFRONTIER CORP",
+    "capacity": 677160,
+    "lat": 36.122492,
+    "lng": -96.00012699999999,
+    "estimate": {
+      "totalHeadcount": 750,
+      "turnaroundHeadcount": 1200,
+      "safetySensitive": 500,
+      "confidence": 0.8,
+      "reasoning": "Based on the refinery's capacity of 677,160 bpd, location in PADD 2, and typical industry staffing ratios, a total headcount of around 750 is estimated. Turnaround headcount is estimated to be an additional 1200 workers at peak, and safety-sensitive roles are estimated to be around 500."
+    }
+  },
+  {
+    "id": "refinery-62",
+    "name": "HOLLYFRONTIER CORP WOODS CROSS",
+    "state": "Utah",
+    "padd": 4,
+    "company": "HOLLYFRONTIER CORP",
+    "capacity": 407115,
+    "lat": 40.8850975,
+    "lng": -111.9106497,
+    "estimate": {
+      "totalHeadcount": 650,
+      "turnaroundHeadcount": 800,
+      "safetySensitive": 350,
+      "confidence": 0.8,
+      "reasoning": "Based on industry averages for refineries of similar capacity (407,115 bpd) and complexity, a total headcount of approximately 650 is estimated. Turnaround headcount is estimated based on a percentage of the total workforce and the scale of typical refinery turnarounds. Safety-sensitive roles are approximated as those directly involved in operations, maintenance, and safety functions, representing approximately 54% of the total workforce. The confidence score reflects the variability inherent in workforce planning and the potential for site-specific factors to influence actual numbers."
+    }
+  },
+  {
+    "id": "refinery-63",
+    "name": "HUNT CONSLD INC SANDERSVILLE",
+    "state": "Mississippi",
+    "padd": 3,
+    "company": "HUNT CONSLD",
+    "capacity": 85500,
+    "lat": 31.7865478,
+    "lng": -89.0322762,
+    "estimate": {
+      "totalHeadcount": 375,
+      "turnaroundHeadcount": 750,
+      "safetySensitive": 280,
+      "confidence": 0.8,
+      "reasoning": "Based on industry averages for an 85,500 bpd refinery in PADD 3, a reasonable estimate for total headcount is around 375. Turnaround headcount is estimated at roughly double the total headcount. Approximately 75% of the workforce is considered safety-sensitive, including operators, maintenance personnel, and emergency responders."
+    }
+  },
+  {
+    "id": "refinery-64",
+    "name": "HUNT CONSLD INC TUSCALOOSA",
+    "state": "Alabama",
+    "padd": 3,
+    "company": "HUNT CONSLD",
+    "capacity": 630410,
+    "lat": 33.2098407,
+    "lng": -87.56917349999999,
+    "estimate": {
+      "totalHeadcount": 1200,
+      "turnaroundHeadcount": 1800,
+      "safetySensitive": 900,
+      "confidence": 0.8,
+      "reasoning": "Based on a capacity of 630,410 bpd, a refinery of this size typically requires approximately 1200 full-time employees and contractors. Turnaround headcount is estimated at an additional 1800 workers. Safety-sensitive roles are assumed to comprise around 75% of the workforce. Confidence is high due to the availability of industry data for similar sized refineries."
+    }
+  },
+  {
+    "id": "refinery-65",
+    "name": "HUSKY ENERGY INC LIMA",
+    "state": "Ohio",
+    "padd": 2,
+    "company": "HUSKY ENERGY",
+    "capacity": 1841804,
+    "lat": 40.7220819,
+    "lng": -84.11418789999999,
+    "estimate": {
+      "totalHeadcount": 1473,
+      "turnaroundHeadcount": 1100,
+      "safetySensitive": 957,
+      "confidence": 0.75,
+      "reasoning": "Estimated based on the refinery's large capacity (1.84M bpd) and complexity typical of a major refinery in PADD 2. Larger refineries require more staff for operations, maintenance, and support. Turnaround headcount is estimated based on industry averages for refineries of this scale. Safety-sensitive headcount is approximately 65% of the total workforce, reflecting the critical nature of refinery operations."
+    }
+  },
+  {
+    "id": "refinery-66",
+    "name": "HUSKY ENERGY INC SUPERIOR",
+    "state": "Wisconsin",
+    "padd": 2,
+    "company": "HUSKY ENERGY",
+    "capacity": 459623,
+    "lat": 46.6903595,
+    "lng": -92.0709248,
+    "estimate": {
+      "totalHeadcount": 550,
+      "turnaroundHeadcount": 1200,
+      "safetySensitive": 400,
+      "confidence": 0.8,
+      "reasoning": "Based on industry averages for refineries of similar capacity (459,623 bpd) and complexity in PADD 2, a total headcount of around 550 is reasonable. Turnaround headcount is estimated at approximately 1200, reflecting the large influx of workers required for major maintenance. The safety-sensitive headcount is estimated at 400, including operators, maintenance personnel, and safety staff."
+    }
+  },
+  {
+    "id": "refinery-67",
+    "name": "ISLAND ENERGY SERVICES LLC HONOLULU",
+    "state": "Hawaii",
+    "padd": 5,
+    "company": "ISLAND ENERGY",
+    "capacity": 429406,
+    "lat": 21.3141103,
+    "lng": -158.1136592,
+    "estimate": {
+      "totalHeadcount": 750,
+      "turnaroundHeadcount": 1500,
+      "safetySensitive": 450,
+      "confidence": 0.8,
+      "reasoning": "Based on the refinery's capacity (429,406 bpd) and typical staffing ratios for refineries in PADD 5, a total headcount of 750 is estimated. Turnaround headcount is estimated at 1500, considering the scale of maintenance required for a refinery of this size. Safety-sensitive roles are approximated at 60% of full time employees. The confidence score reflects the availability of limited public information and reliance on industry averages."
+    }
+  },
+  {
+    "id": "refinery-68",
+    "name": "KERN OIL & REFINING CO BAKERSFIELD",
+    "state": "California",
+    "padd": 5,
+    "company": "KERN OIL",
+    "capacity": 178311,
+    "lat": 35.2965833,
+    "lng": -118.918389,
+    "estimate": {
+      "totalHeadcount": 450,
+      "turnaroundHeadcount": 800,
+      "safetySensitive": 300,
+      "confidence": 0.8,
+      "reasoning": "Based on industry averages for refineries of similar capacity (178,311 bpd) and complexity, a total headcount of 450 is reasonable. Turnaround headcount is estimated at 800 due to the significant maintenance required during these periods. The safety-sensitive headcount is estimated at approximately 300, reflecting the critical roles required to maintain safe operations. This refinery is located in California, and California refineries tend to have larger workforces due to regulations and unionization."
+    }
+  },
+  {
+    "id": "refinery-69",
+    "name": "KINDER MORGAN ENERGY PTNRS LP GALENA PARK",
+    "state": "Texas",
+    "padd": 3,
+    "company": "KINDER MORGAN",
+    "capacity": 468000,
+    "lat": 29.7245484,
+    "lng": -95.2449774,
+    "estimate": {
+      "totalHeadcount": 650,
+      "turnaroundHeadcount": 1200,
+      "safetySensitive": 450,
+      "confidence": 0.85,
+      "reasoning": "Based on industry averages for a refinery of this size (468,000 bpd) and complexity in PADD 3. Total headcount is estimated using a ratio of employees per bpd, and turnaround headcount is estimated as a multiple of the full-time headcount. Safety-sensitive roles include operations, maintenance, and safety personnel."
+    }
+  },
+  {
+    "id": "refinery-70",
+    "name": "KOCH INDUSTRIES INC CORPUS CHRISTI",
+    "state": "Texas",
+    "padd": 3,
+    "company": "KOCH INDUSTRIES",
+    "capacity": 2960100,
+    "lat": 27.827697,
+    "lng": -97.533726,
+    "estimate": {
+      "totalHeadcount": 1850,
+      "turnaroundHeadcount": 2200,
+      "safetySensitive": 925,
+      "confidence": 0.85,
+      "reasoning": "Based on industry averages for refineries of similar capacity and complexity in the PADD 3 region. Total headcount is estimated at 0.000625 employees per bpd. Turnaround headcount is estimated at 1.2x the total headcount. Safety-sensitive roles are estimated at 50% of total headcount."
+    }
+  },
+  {
+    "id": "refinery-71",
+    "name": "KOCH INDUSTRIES INC SAINT PAUL",
+    "state": "Minnesota",
+    "padd": 2,
+    "company": "KOCH INDUSTRIES",
+    "capacity": 3799476,
+    "lat": 44.9866748,
+    "lng": -93.33306449999999,
+    "estimate": {
+      "totalHeadcount": 2200,
+      "turnaroundHeadcount": 1500,
+      "safetySensitive": 1100,
+      "confidence": 0.75,
+      "reasoning": "Based on the refinery's large capacity (3,799,476 bpd) and industry benchmarks for similar facilities, a total headcount of around 2200 is estimated. Turnaround headcount is estimated at 1500. Half the workforce is estimated in safety-sensitive positions. The confidence score reflects the variability in staffing levels based on specific refinery configuration and operational practices."
+    }
+  },
+  {
+    "id": "refinery-72",
+    "name": "MAGELLAN MIDSTREAM PARTNERS LP CORPUS CHRISTI",
+    "state": "Texas",
+    "padd": 3,
+    "company": "MAGELLAN MIDSTREAM",
+    "capacity": 235000,
+    "lat": 27.806891,
+    "lng": -97.4391094,
+    "estimate": {
+      "totalHeadcount": 460,
+      "turnaroundHeadcount": 700,
+      "safetySensitive": 370,
+      "confidence": 0.85,
+      "reasoning": "Based on a capacity of 235,000 bpd in PADD 3, a reasonable estimate for total headcount is approximately 2 employees per 1000 bpd. Turnaround headcount is estimated at 3x the number of full time employees. The Safety Sensitive Headcount is estimated at 80% of the total employees."
+    }
+  },
+  {
+    "id": "refinery-73",
+    "name": "MARATHON PETROLEUM CORP CANTON",
+    "state": "Ohio",
+    "padd": 2,
+    "company": "MARATHON PETROLEUM",
+    "capacity": 934908,
+    "lat": 40.777309,
+    "lng": -81.253346,
+    "estimate": {
+      "totalHeadcount": 750,
+      "turnaroundHeadcount": 1200,
+      "safetySensitive": 450,
+      "confidence": 0.85,
+      "reasoning": "Based on industry averages for refineries of similar size (935 kbpd) and complexity in PADD 2, a total headcount of 750 is estimated. Turnaround headcount is estimated at 1200, reflecting the surge during major maintenance. Safety-sensitive roles are estimated to comprise approximately 60% of the direct workforce."
+    }
+  },
+  {
+    "id": "refinery-74",
+    "name": "MARATHON PETROLEUM CORP CATLETTSBURG",
+    "state": "Kentucky",
+    "padd": 2,
+    "company": "MARATHON PETROLEUM",
+    "capacity": 2881796,
+    "lat": 38.3735193,
+    "lng": -82.5994387,
+    "estimate": {
+      "totalHeadcount": 1440,
+      "turnaroundHeadcount": 2880,
+      "safetySensitive": 720,
+      "confidence": 0.85,
+      "reasoning": "Based on industry averages, a refinery of this size (2,881,796 bpd) in PADD 2 region requires approximately 5 employees per 10,000 bpd capacity for base operations. Turnaround headcount is estimated at 1 additional worker per 1,000 bpd during peak turnaround periods. Safety-sensitive positions are estimated to be 50% of the operational workforce. This estimation has a high confidence score due to the availability of public information regarding similar refineries in the region."
+    }
+  },
+  {
+    "id": "refinery-75",
+    "name": "MARATHON PETROLEUM CORP DETROIT",
+    "state": "Michigan",
+    "padd": 2,
+    "company": "MARATHON PETROLEUM",
+    "capacity": 1537220,
+    "lat": 42.2891644,
+    "lng": -83.1545671,
+    "estimate": {
+      "totalHeadcount": 1230,
+      "turnaroundHeadcount": 1800,
+      "safetySensitive": 920,
+      "confidence": 0.85,
+      "reasoning": "Based on the refinery's capacity of 1,537,220 bpd and location in PADD 2, a total headcount of around 1230 is expected. Turnaround headcount is estimated at 1800. Safety-sensitive roles are estimated to be 75% of the direct operating labor plus half of the maintenance labor force, which is approximately 920. The confidence score reflects the availability of public information and industry averages."
+    }
+  },
+  {
+    "id": "refinery-76",
+    "name": "MARATHON PETROLEUM CORP GALVESTON BAY",
+    "state": "Texas",
+    "padd": 3,
+    "company": "MARATHON PETROLEUM",
+    "capacity": 6145584,
+    "lat": 29.3782639,
+    "lng": -94.9296159,
+    "estimate": {
+      "totalHeadcount": 2800,
+      "turnaroundHeadcount": 4500,
+      "safetySensitive": 1800,
+      "confidence": 0.85,
+      "reasoning": "Based on industry averages for refineries of similar capacity and complexity. Marathon refineries typically employ a large workforce. Turnaround headcount is estimated based on a percentage uplift during major maintenance. Safety-sensitive roles account for a significant portion of the workforce."
+    }
+  },
+  {
+    "id": "refinery-77",
+    "name": "MARATHON PETROLEUM CORP GARYVILLE",
+    "state": "Louisiana",
+    "padd": 3,
+    "company": "MARATHON PETROLEUM",
+    "capacity": 6451952,
+    "lat": 30.073235,
+    "lng": -90.6038404,
+    "estimate": {
+      "totalHeadcount": 1750,
+      "turnaroundHeadcount": 2500,
+      "safetySensitive": 900,
+      "confidence": 0.85,
+      "reasoning": "Based on a capacity of 6,451,952 bpd and industry averages for similar refineries, the total headcount is estimated at 1750. Turnaround headcount is estimated to be 2500, reflecting the significant influx of workers during major maintenance events. The safety-sensitive headcount is estimated to be 900, encompassing roles directly involved in process operations, maintenance, and emergency response. The confidence score of 0.85 reflects the relatively high certainty in these estimates due to the availability of comparable refinery data and industry benchmarks."
+    }
+  },
+  {
+    "id": "refinery-78",
+    "name": "MARATHON PETROLEUM CORP ROBINSON",
+    "state": "Illinois",
+    "padd": 2,
+    "company": "MARATHON PETROLEUM",
+    "capacity": 2506804,
+    "lat": 39.005895,
+    "lng": -87.71296079999999,
+    "estimate": {
+      "totalHeadcount": 1379,
+      "turnaroundHeadcount": 1128,
+      "safetySensitive": 965,
+      "confidence": 0.85,
+      "reasoning": "Estimated based on the refinery's capacity of 2,506,804 bpd, complexity, and location in PADD 2. Industry averages for refineries of this size suggest a total headcount around 0.00055 FTE per barrel per day. Turnaround headcount is estimated at 82% of total headcount. Safety-sensitive roles are estimated at 70% of total headcount."
+    }
+  },
+  {
+    "id": "refinery-79",
+    "name": "MARTIN RESOURCE MANAGEMENT GRP SMACKOVER",
+    "state": "Arkansas",
+    "padd": 3,
+    "company": "MARTIN RESOURCE",
+    "capacity": 69806,
+    "lat": 33.3648455,
+    "lng": -92.7248822,
+    "estimate": {
+      "totalHeadcount": 375,
+      "turnaroundHeadcount": 550,
+      "safetySensitive": 280,
+      "confidence": 0.8,
+      "reasoning": "Based on the refinery's capacity of approximately 70,000 bpd, a total headcount of around 375 is estimated. Turnaround headcount is estimated to be 550. The safety-sensitive headcount accounts for workers in operations, maintenance, and safety roles, estimated to be around 280. Confidence is high (0.8) due to the availability of capacity data and general industry staffing benchmarks."
+    }
+  },
+  {
+    "id": "refinery-80",
+    "name": "PAR PETROLEUM INC KAPOLEI",
+    "state": "Hawaii",
+    "padd": 5,
+    "company": "PAR PETROLEUM",
+    "capacity": 699212,
+    "lat": 21.3050563,
+    "lng": -158.0968078,
+    "estimate": {
+      "totalHeadcount": 750,
+      "turnaroundHeadcount": 1200,
+      "safetySensitive": 550,
+      "confidence": 0.75,
+      "reasoning": "Based on the refinery's capacity (699,212 bpd), location (Hawaii - PADD 5), and general industry averages for similar sized refineries. Turnaround headcount is estimated based on 1.5-2x the full-time headcount. The safety sensitive headcount is estimated at 70% of the total headcount. Confidence is moderate as specific refinery complexity and operational details are unknown."
+    }
+  },
+  {
+    "id": "refinery-81",
+    "name": "PAR PETROLEUM INC NEW CASTLE",
+    "state": "Wyoming",
+    "padd": 4,
+    "company": "PAR PETROLEUM",
+    "capacity": 147600,
+    "lat": 29.77744,
+    "lng": -95.54393100000001,
+    "estimate": {
+      "totalHeadcount": 420,
+      "turnaroundHeadcount": 1200,
+      "safetySensitive": 280,
+      "confidence": 0.8,
+      "reasoning": "Based on industry averages for a refinery of 147,600 bpd capacity, located in PADD 4, a total headcount of around 420 is expected. Turnaround headcount is estimated based on 2.5x-3x the number of personnel required, with safety-sensitive roles accounting for roughly 66% of operational staff."
+    }
+  },
+  {
+    "id": "refinery-82",
+    "name": "PBF ENERGY CO LLC CHALMETTE",
+    "state": "Louisiana",
+    "padd": 3,
+    "company": "PBF ENERGY",
+    "capacity": 2232040,
+    "lat": 29.9376238,
+    "lng": -89.9683675,
+    "estimate": {
+      "totalHeadcount": 1340,
+      "turnaroundHeadcount": 1000,
+      "safetySensitive": 938,
+      "confidence": 0.75,
+      "reasoning": "Based on the refinery's capacity of 2,232,040 bpd, industry averages suggest a full-time staff of approximately 1340. Turnaround headcount is estimated at 1000 due to the refinery size and complexity. Safety-sensitive positions, accounting for around 70% of the workforce given the nature of refinery operations. Confidence is moderate as specific operational details are unavailable."
+    }
+  },
+  {
+    "id": "refinery-83",
+    "name": "PBF ENERGY CO LLC DELAWARE CITY",
+    "state": "Delaware",
+    "padd": 1,
+    "company": "PBF ENERGY",
+    "capacity": 2125452,
+    "lat": 39.5813895,
+    "lng": -75.6348761,
+    "estimate": {
+      "totalHeadcount": 1500,
+      "turnaroundHeadcount": 2500,
+      "safetySensitive": 1100,
+      "confidence": 0.85,
+      "reasoning": "Based on the refinery's large capacity (2,125,452 bpd), PADD region, and industry averages for similar-sized refineries, a total headcount of approximately 1500 is reasonable. Turnaround headcount is estimated considering the scale of maintenance required, with a significant portion of the workforce (approximately 70%) being directly involved in safety-sensitive operations."
+    }
+  },
+  {
+    "id": "refinery-84",
+    "name": "PBF ENERGY CO LLC PAULSBORO",
+    "state": "New Jersey",
+    "padd": 1,
+    "company": "PBF ENERGY",
+    "capacity": 1727178,
+    "lat": 39.8363695,
+    "lng": -75.2509316,
+    "estimate": {
+      "totalHeadcount": 1210,
+      "turnaroundHeadcount": 1800,
+      "safetySensitive": 900,
+      "confidence": 0.8,
+      "reasoning": "Based on the refinery's capacity (1727178 bpd), location (PADD 1), and publicly available information for similar-sized refineries, the total headcount is estimated around 1210. Turnaround headcount considers major maintenance requirements, with a peak estimate of 1800. Safety-sensitive roles, crucial in refinery operations, are estimated to be 900. The confidence level is 0.8 due to the absence of specific PBF Paulsboro workforce data and reliance on industry averages."
+    }
+  },
+  {
+    "id": "refinery-85",
+    "name": "PBF ENERGY CO LLC TOLEDO",
+    "state": "Ohio",
+    "padd": 2,
+    "company": "PBF ENERGY",
+    "capacity": 1789432,
+    "lat": 41.6289966,
+    "lng": -83.50501969999999,
+    "estimate": {
+      "totalHeadcount": 1250,
+      "turnaroundHeadcount": 1800,
+      "safetySensitive": 900,
+      "confidence": 0.85,
+      "reasoning": "Based on industry averages for a refinery of this size (1.789 million bpd) and complexity. The Toledo refinery is a large facility. Total headcount is estimated based on barrels per day, complexity, and PADD region trends. Turnaround headcount is estimated based on 1.2x-1.5x of total headcount, and safety sensitive are typically 60-80% of total headcount."
+    }
+  },
+  {
+    "id": "refinery-86",
+    "name": "PBF ENERGY CO LLC TORRANCE",
+    "state": "California",
+    "padd": 5,
+    "company": "PBF ENERGY",
+    "capacity": 2038252,
+    "lat": 33.8572596,
+    "lng": -118.3371808,
+    "estimate": {
+      "totalHeadcount": 1450,
+      "turnaroundHeadcount": 2000,
+      "safetySensitive": 900,
+      "confidence": 0.85,
+      "reasoning": "Based on industry benchmarks for a refinery of this size (2,038,252 bpd) and complexity in PADD 5, a total headcount of approximately 1450 is reasonable. Turnaround headcount is estimated based on similar refinery turnarounds, and safety-sensitive roles are estimated to be a significant portion of the workforce."
+    }
+  },
+  {
+    "id": "refinery-87",
+    "name": "PDV AMERICA INC CORPUS CHRISTI",
+    "state": "Texas",
+    "padd": 3,
+    "company": "PDV AMERICA",
+    "capacity": 2145208,
+    "lat": 27.8005828,
+    "lng": -97.39638099999999,
+    "estimate": {
+      "totalHeadcount": 1716,
+      "turnaroundHeadcount": 2500,
+      "safetySensitive": 1029,
+      "confidence": 0.85,
+      "reasoning": "Based on the capacity of 2,145,208 bpd, location in Texas (PADD 3), and typical staffing ratios for refineries of similar size and complexity, a total headcount of approximately 1716 is estimated. Turnaround headcount is estimated at 2500, reflecting the surge in workers needed during major maintenance events. Safety-sensitive positions are estimated at 60% of the full-time employees. The confidence score reflects the availability of some data points but acknowledges that the estimate is still based on industry averages and benchmarks."
+    }
+  },
+  {
+    "id": "refinery-88",
+    "name": "PDV AMERICA INC LAKE CHARLES",
+    "state": "Louisiana",
+    "padd": 3,
+    "company": "PDV AMERICA",
+    "capacity": 4881114,
+    "lat": 30.2265949,
+    "lng": -93.2173758,
+    "estimate": {
+      "totalHeadcount": 3200,
+      "turnaroundHeadcount": 2500,
+      "safetySensitive": 2400,
+      "confidence": 0.8,
+      "reasoning": "Based on a large refinery capacity of 4,881,114 bpd and its location in PADD 3, the headcount is estimated using industry benchmarks for similar-sized refineries in the region. Turnaround headcount is estimated based on ~50% of total headcount. Safety sensitive roles are estimated to be ~75% of the total headcount given the inherent risks in refinery operations."
+    }
+  },
+  {
+    "id": "refinery-89",
+    "name": "PDV AMERICA INC LEMONT",
+    "state": "Illinois",
+    "padd": 2,
+    "company": "PDV AMERICA",
+    "capacity": 2043488,
+    "lat": 41.673642,
+    "lng": -88.0017261,
+    "estimate": {
+      "totalHeadcount": 1300,
+      "turnaroundHeadcount": 2500,
+      "safetySensitive": 800,
+      "confidence": 0.8,
+      "reasoning": "Based on industry averages for refineries of this size (2,043,488 bpd) and complexity, a total headcount of approximately 1300 is estimated. Turnaround headcount is significantly higher due to the influx of specialized workers during maintenance periods. Safety-sensitive roles typically comprise a substantial portion of the workforce. PDV AMERICA INC LEMONT is in PADD 2, which is a typical refining market. A confidence score of 0.8 reflects the reliance on industry averages and the lack of refinery-specific data."
+    }
+  },
+  {
+    "id": "refinery-90",
+    "name": "PETROBRAS AMERICA INC PASADENA",
+    "state": "Texas",
+    "padd": 3,
+    "company": "PETROBRAS AMERICA",
+    "capacity": 1052394,
+    "lat": 29.7282015,
+    "lng": -95.55537029999999,
+    "estimate": {
+      "totalHeadcount": 1200,
+      "turnaroundHeadcount": 2500,
+      "safetySensitive": 800,
+      "confidence": 0.85,
+      "reasoning": "Based on industry averages for refineries of similar capacity (1,052,394 bpd) and complexity in PADD 3. Total headcount estimates consider full-time employees and long-term contractors. Turnaround headcount estimates are based on a percentage of total headcount, plus contractors required for the turnaround. Safety sensitive headcount is estimated based on the percentage of operators, maintenance, and safety personnel."
+    }
+  },
+  {
+    "id": "refinery-91",
+    "name": "PETROMAX REFINING CO LLC HOUSTON",
+    "state": "Texas",
+    "padd": 3,
+    "company": "PETROMAX REFINING",
+    "capacity": 132500,
+    "lat": 29.7518003,
+    "lng": -95.123621,
+    "estimate": {
+      "totalHeadcount": 325,
+      "turnaroundHeadcount": 1100,
+      "safetySensitive": 250,
+      "confidence": 0.85,
+      "reasoning": "Based on industry averages for a refinery of this size (132,500 bpd) and complexity in PADD 3, the total headcount is estimated around 325. Turnaround headcount is estimated at roughly 8-9x the full-time employee headcount. Safety-sensitive roles are estimated at 75% of the operations and maintenance groups."
+    }
+  },
+  {
+    "id": "refinery-92",
+    "name": "PHILLIPS 66 COMPANY BELLE CHASSE",
+    "state": "Louisiana",
+    "padd": 3,
+    "company": "PHILLIPS 66",
+    "capacity": 2528640,
+    "lat": 29.6832696,
+    "lng": -89.9758775,
+    "estimate": {
+      "totalHeadcount": 1400,
+      "turnaroundHeadcount": 2800,
+      "safetySensitive": 980,
+      "confidence": 0.75,
+      "reasoning": "Based on industry averages for large refineries (2.5M+ bpd), the total headcount is estimated around 1400. Turnaround headcount is approximately double the full-time staff. Safety-sensitive roles typically constitute 70% of the workforce."
+    }
+  },
+  {
+    "id": "refinery-93",
+    "name": "PHILLIPS 66 COMPANY BILLINGS",
+    "state": "Montana",
+    "padd": 4,
+    "company": "PHILLIPS 66",
+    "capacity": 761382,
+    "lat": 45.7694811,
+    "lng": -108.5758455,
+    "estimate": {
+      "totalHeadcount": 675,
+      "turnaroundHeadcount": 1200,
+      "safetySensitive": 500,
+      "confidence": 0.8,
+      "reasoning": "Based on industry benchmarks for refineries of similar size (761,382 bpd) and complexity, a reasonable estimate for total headcount is approximately 675. Turnaround headcount is estimated at 1200 due to the scale of maintenance required. Safety-sensitive roles account for a significant portion of the workforce, estimated at 500. The confidence level is 0.8, reflecting reliance on industry averages and potential variability based on specific refinery configuration and operational practices."
+    }
+  },
+  {
+    "id": "refinery-94",
+    "name": "PHILLIPS 66 COMPANY FERNDALE",
+    "state": "Washington",
+    "padd": 5,
+    "company": "PHILLIPS 66",
+    "capacity": 987503,
+    "lat": 48.8327413,
+    "lng": -122.6926866,
+    "estimate": {
+      "totalHeadcount": 750,
+      "turnaroundHeadcount": 1500,
+      "safetySensitive": 500,
+      "confidence": 0.8,
+      "reasoning": "Based on the refinery's capacity (987,503 bpd) and complexity, a total headcount of approximately 750 is reasonable. Turnaround headcount can reach 1.5x the total depending on the scope of work and is a reasonable figure. Safety-sensitive roles make up a significant portion of the workforce. The refinery is owned by a major operator which typically results in a higher total number of employees."
+    }
+  },
+  {
+    "id": "refinery-95",
+    "name": "PHILLIPS 66 COMPANY LINDEN",
+    "state": "New Jersey",
+    "padd": 1,
+    "company": "PHILLIPS 66",
+    "capacity": 2421144,
+    "lat": 40.6497348,
+    "lng": -74.2326147,
+    "estimate": {
+      "totalHeadcount": 1450,
+      "turnaroundHeadcount": 2200,
+      "safetySensitive": 900,
+      "confidence": 0.85,
+      "reasoning": "Estimated based on the refinery's capacity of 2,421,144 bpd, complexity, location in PADD 1, and industry averages for similar refineries, plus typical turnaround scaling."
+    }
+  },
+  {
+    "id": "refinery-96",
+    "name": "PHILLIPS 66 COMPANY PONCA CITY",
+    "state": "Oklahoma",
+    "padd": 2,
+    "company": "PHILLIPS 66",
+    "capacity": 2204192,
+    "lat": 36.6937472,
+    "lng": -97.09194459999999,
+    "estimate": {
+      "totalHeadcount": 1400,
+      "turnaroundHeadcount": 1800,
+      "safetySensitive": 900,
+      "confidence": 0.8,
+      "reasoning": "Based on industry averages for refineries of similar capacity (2.2M bpd) in PADD 2, a total headcount of 1400 is estimated. Turnarounds would bring in an additional 1800 workers. Safety-sensitive positions are estimated at 60% of the full-time workforce. The confidence score reflects the variability of refinery staffing based on specific unit configurations and operational strategies."
+    }
+  },
+  {
+    "id": "refinery-97",
+    "name": "PHILLIPS 66 COMPANY RODEO",
+    "state": "California",
+    "padd": 5,
+    "company": "PHILLIPS 66",
+    "capacity": 1430564,
+    "lat": 38.0161306,
+    "lng": -122.2365718,
+    "estimate": {
+      "totalHeadcount": 1717,
+      "turnaroundHeadcount": 1717,
+      "safetySensitive": 1030,
+      "confidence": 0.8,
+      "reasoning": "Based on industry averages for refineries of similar size and complexity (Nelson Complexity Index is assumed to be high due to the location in California). A large refinery like Phillips 66 Rodeo would require a substantial workforce for operations, maintenance, engineering, and support functions. Turnaround headcount is estimated to be equivalent to the total headcount because of the refinery's location in California and stricter regulatory and union influence. Safety-sensitive roles typically comprise a significant portion of the workforce, covering operators, maintenance personnel, and emergency response teams."
+    }
+  },
+  {
+    "id": "refinery-98",
+    "name": "PHILLIPS 66 COMPANY SWEENY",
+    "state": "Texas",
+    "padd": 3,
+    "company": "PHILLIPS 66",
+    "capacity": 3132730,
+    "lat": 29.0870828,
+    "lng": -95.72205869999999,
+    "estimate": {
+      "totalHeadcount": 1879,
+      "turnaroundHeadcount": 3758,
+      "safetySensitive": 1503,
+      "confidence": 0.8,
+      "reasoning": "Estimated headcount is based on industry averages of 0.6 employees per 1000 bpd capacity. Turnaround headcount is estimated at 2x the total headcount and safety sensitive at 0.8x"
+    }
+  },
+  {
+    "id": "refinery-99",
+    "name": "PHILLIPS 66 COMPANY WESTLAKE",
+    "state": "Louisiana",
+    "padd": 3,
+    "company": "PHILLIPS 66",
+    "capacity": 2644080,
+    "lat": 30.2414253,
+    "lng": -93.275542,
+    "estimate": {
+      "totalHeadcount": 1300,
+      "turnaroundHeadcount": 2600,
+      "safetySensitive": 800,
+      "confidence": 0.85,
+      "reasoning": "Based on the refinery's large capacity (2,644,080 bpd) and location in PADD 3, industry standards suggest a total headcount around 1300. Turnaround headcount is estimated at approximately twice the total headcount. Safety-sensitive roles account for a significant portion of the workforce, roughly estimated at 800. Confidence is high due to the availability of data for refineries of similar size and complexity."
+    }
+  },
+  {
+    "id": "refinery-100",
+    "name": "PHILLIPS 66 COMPANY WILMINGTON",
+    "state": "California",
+    "padd": 5,
+    "company": "PHILLIPS 66",
+    "capacity": 1786000,
+    "lat": 33.7781056,
+    "lng": -118.2863007,
+    "estimate": {
+      "totalHeadcount": 1350,
+      "turnaroundHeadcount": 2200,
+      "safetySensitive": 900,
+      "confidence": 0.85,
+      "reasoning": "Based on the refinery's large capacity (1,786,000 bpd) and location in California (PADD 5), a total headcount of approximately 1350 is estimated. Turnaround headcount is estimated at 2200 due to the refinery's size and complexity, requiring significant manpower during maintenance. Safety-sensitive roles are estimated at 900, reflecting the critical nature of refinery operations. The confidence level is high (0.85) due to the availability of industry benchmarks and the refinery's publicly available information."
+    }
+  },
+  {
+    "id": "refinery-101",
+    "name": "PLACID OIL CO PORT ALLEN",
+    "state": "Louisiana",
+    "padd": 3,
+    "company": "PLACID OIL",
+    "capacity": 708610,
+    "lat": 30.476694,
+    "lng": -91.210876,
+    "estimate": {
+      "totalHeadcount": 1200,
+      "turnaroundHeadcount": 2500,
+      "safetySensitive": 900,
+      "confidence": 0.8,
+      "reasoning": "Based on industry benchmarks for a refinery of this capacity (708,610 bpd) and location in PADD 3, a total headcount of around 1200 is typical. Turnaround headcount can more than double during major maintenance. The majority of positions at a refinery have safety implications."
+    }
+  },
+  {
+    "id": "refinery-102",
+    "name": "RED APPLE GROUP INC WARREN",
+    "state": "Pennsylvania",
+    "padd": 1,
+    "company": "RED APPLE",
+    "capacity": 711154,
+    "lat": 40.75564019999999,
+    "lng": -73.9711423,
+    "estimate": {
+      "totalHeadcount": 1200,
+      "turnaroundHeadcount": 2500,
+      "safetySensitive": 900,
+      "confidence": 0.85,
+      "reasoning": "Based on the refinery's capacity (711,154 bpd) and location in PADD 1, a total headcount of around 1200 is a reasonable estimate. Turnaround headcount can reach over 2000 during peak maintenance. The safety sensitive headcount is estimated to be roughly three-quarters of the total headcount."
+    }
+  },
+  {
+    "id": "refinery-103",
+    "name": "ROYAL DUTCH/SHELL GROUP ANACORTES",
+    "state": "Washington",
+    "padd": 5,
+    "company": "ROYAL DUTCH/SHELL",
+    "capacity": 1473110,
+    "lat": 48.46565040000001,
+    "lng": -122.5599142,
+    "estimate": {
+      "totalHeadcount": 1178,
+      "turnaroundHeadcount": 1768,
+      "safetySensitive": 707,
+      "confidence": 0.75,
+      "reasoning": "Based on industry averages for refineries of this size (1.47MM bpd) and complexity, the total headcount is estimated. Turnaround headcount is estimated based on a percentage uplift. Safety-sensitive headcount is estimated at 60% of total headcount."
+    }
+  },
+  {
+    "id": "refinery-104",
+    "name": "ROYAL DUTCH/SHELL GROUP CONVENT",
+    "state": "Louisiana",
+    "padd": 3,
+    "company": "ROYAL DUTCH/SHELL",
+    "capacity": 2521062,
+    "lat": 30.1080887,
+    "lng": -90.893016,
+    "estimate": {
+      "totalHeadcount": 1850,
+      "turnaroundHeadcount": 2200,
+      "safetySensitive": 1200,
+      "confidence": 0.85,
+      "reasoning": "Based on the refinery's capacity of 2,521,062 bpd, industry benchmarks suggest a total headcount of approximately 1850 employees and contractors. Turnaround headcount is estimated using a ratio of 0.9 workers per daily barrel throughput (in millions of barrels per day), resulting in an estimate of 2200. A large portion of refinery roles are considered safety-sensitive, and it is estimated that approximately 1200 workers have such responsibilities. Confidence is high given available information about the refinery size and location."
+    }
+  },
+  {
+    "id": "refinery-105",
+    "name": "ROYAL DUTCH/SHELL GROUP MARTINEZ",
+    "state": "California",
+    "padd": 5,
+    "company": "ROYAL DUTCH/SHELL",
+    "capacity": 2170812,
+    "lat": 38.0251121,
+    "lng": -122.1160101,
+    "estimate": {
+      "totalHeadcount": 1850,
+      "turnaroundHeadcount": 2200,
+      "safetySensitive": 1200,
+      "confidence": 0.85,
+      "reasoning": "Based on the refinery's large capacity (2,170,812 bpd), its location in California (which typically has higher staffing levels due to regulations), and general industry experience, the estimated headcount reflects typical staffing for a refinery of this scale. Turnaround headcount is estimated based on a percentage uplift to the baseline workforce. Safety-sensitive headcount assumes a significant portion of the workforce is directly involved in operations and maintenance."
+    }
+  },
+  {
+    "id": "refinery-106",
+    "name": "ROYAL DUTCH/SHELL GROUP NORCO",
+    "state": "Louisiana",
+    "padd": 3,
+    "company": "ROYAL DUTCH/SHELL",
+    "capacity": 2448492,
+    "lat": 30.0015946,
+    "lng": -90.4003851,
+    "estimate": {
+      "totalHeadcount": 1600,
+      "turnaroundHeadcount": 2000,
+      "safetySensitive": 800,
+      "confidence": 0.85,
+      "reasoning": "Based on the refinery's large capacity (2.4MM bpd) and typical staffing ratios for similar refineries in PADD 3, I estimate a total headcount of 1600. Turnaround headcount is estimated based on industry averages for major shutdowns. Safety-sensitive roles are roughly estimated at 50% of the total workforce. Confidence is high due to available industry data and capacity information."
+    }
+  },
+  {
+    "id": "refinery-107",
+    "name": "ROYAL DUTCH/SHELL GROUP SARALAND",
+    "state": "Alabama",
+    "padd": 3,
+    "company": "ROYAL DUTCH/SHELL",
+    "capacity": 747016,
+    "lat": 30.7909103,
+    "lng": -88.0581182,
+    "estimate": {
+      "totalHeadcount": 1350,
+      "turnaroundHeadcount": 2700,
+      "safetySensitive": 940,
+      "confidence": 0.85,
+      "reasoning": "Based on a capacity of 747,016 bpd and industry averages for similar refineries in PADD 3, a total headcount of approximately 1350 is estimated. Turnaround headcount is estimated at 2x the total headcount. Safety-sensitive positions are estimated at 70% of the workforce."
+    }
+  },
+  {
+    "id": "refinery-108",
+    "name": "SAN JOAQUIN REFINING CO INC BAKERSFIELD",
+    "state": "California",
+    "padd": 5,
+    "company": "SAN JOAQUIN",
+    "capacity": 185020,
+    "lat": 35.3952203,
+    "lng": -119.0457145,
+    "estimate": {
+      "totalHeadcount": 575,
+      "turnaroundHeadcount": 750,
+      "safetySensitive": 460,
+      "confidence": 0.75,
+      "reasoning": "Based on industry averages for a refinery of 185,020 bpd capacity in PADD 5, a total headcount of approximately 575 is expected. Turnaround headcount is estimated at around 750, which is an educated guess, and safety-sensitive roles account for the majority of the staff. The confidence score reflects uncertainty introduced by lack of specific complexity data."
+    }
+  },
+  {
+    "id": "refinery-109",
+    "name": "SAUDI ARAMCO PORT ARTHUR",
+    "state": "Texas",
+    "padd": 3,
+    "company": "SAUDI ARAMCO",
+    "capacity": 6628011,
+    "lat": 29.8872578,
+    "lng": -93.96413319999999,
+    "estimate": {
+      "totalHeadcount": 3200,
+      "turnaroundHeadcount": 4500,
+      "safetySensitive": 2400,
+      "confidence": 0.85,
+      "reasoning": "Based on similar large refineries in PADD 3, a headcount of approximately 3200 is reasonable. Turnaround headcount is estimated at 4500 considering the substantial capacity of the refinery. The safety-sensitive headcount is estimated at 75% of the total headcount reflecting the highly regulated nature of refinery operations."
+    }
+  },
+  {
+    "id": "refinery-110",
+    "name": "SILVER EAGLE REFINING INC EVANSTON",
+    "state": "Wyoming",
+    "padd": 4,
+    "company": "SILVER EAGLE",
+    "capacity": 32450,
+    "lat": 41.2602939,
+    "lng": -110.8067864,
+    "estimate": {
+      "totalHeadcount": 180,
+      "turnaroundHeadcount": 450,
+      "safetySensitive": 135,
+      "confidence": 0.8,
+      "reasoning": "Based on industry benchmarks for refineries of similar capacity (32,450 bpd) and complexity, located in PADD region 4. Total headcount estimated at approximately 5.5 employees per thousand barrels per day. Turnaround headcount based on approximately 2.5 times the total headcount. Safety sensitive roles are estimated to comprise 75% of operations, maintenance, and HSSE personnel."
+    }
+  },
+  {
+    "id": "refinery-111",
+    "name": "SILVER EAGLE REFINING INC WOODS CROSS",
+    "state": "Utah",
+    "padd": 4,
+    "company": "SILVER EAGLE",
+    "capacity": 99100,
+    "lat": 40.8673016,
+    "lng": -111.9115446,
+    "estimate": {
+      "totalHeadcount": 450,
+      "turnaroundHeadcount": 750,
+      "safetySensitive": 300,
+      "confidence": 0.8,
+      "reasoning": "Based on industry averages for refineries of similar capacity (99,100 bpd) in PADD 4 and considering SILVER EAGLE's operational scope. Turnaround headcount estimation considers the need for significant supplemental staffing during planned maintenance. Safety sensitive headcount is estimated based on the percentage of roles directly involved in process operations and maintenance."
+    }
+  },
+  {
+    "id": "refinery-112",
+    "name": "SINCLAIR OIL CORP EVANSVILLE",
+    "state": "Wyoming",
+    "padd": 4,
+    "company": "SINCLAIR OIL",
+    "capacity": 221820,
+    "lat": 42.8567454,
+    "lng": -106.2459898,
+    "estimate": {
+      "totalHeadcount": 450,
+      "turnaroundHeadcount": 800,
+      "safetySensitive": 300,
+      "confidence": 0.8,
+      "reasoning": "Based on industry benchmarks for a refinery of ~220,000 bpd capacity, total headcount is estimated around 450. Turnaround headcount is roughly estimated 1.5-2x the total headcount. Safety sensitive roles are conservatively estimated at approximately 60-70% of the operating workforce, with the remaining labor encompassing support functions that are less immediately critical to safety."
+    }
+  },
+  {
+    "id": "refinery-113",
+    "name": "SINCLAIR OIL CORP SINCLAIR",
+    "state": "Wyoming",
+    "padd": 4,
+    "company": "SINCLAIR OIL",
+    "capacity": 919685,
+    "lat": 41.7818457,
+    "lng": -107.1087498,
+    "estimate": {
+      "totalHeadcount": 1250,
+      "turnaroundHeadcount": 850,
+      "safetySensitive": 750,
+      "confidence": 0.85,
+      "reasoning": "Based on industry averages for refineries of this size (919,685 bpd) and complexity in PADD 4, a total headcount of approximately 1250 is estimated. Turnaround headcount is estimated based on 65% of base workforce with a higher safety-sensitive worker ratio given operational intensity."
+    }
+  },
+  {
+    "id": "refinery-114",
+    "name": "SUNCOR ENERGY INC COMMERCE CITY",
+    "state": "Colorado",
+    "padd": 4,
+    "company": "SUNCOR ENERGY",
+    "capacity": 960436,
+    "lat": 39.804308,
+    "lng": -104.9489163,
+    "estimate": {
+      "totalHeadcount": 1300,
+      "turnaroundHeadcount": 2500,
+      "safetySensitive": 700,
+      "confidence": 0.8,
+      "reasoning": "Based on the refinery's capacity of 960,436 bpd, typical staffing levels for similar refineries in PADD 4, and industry experience. Turnaround headcount is estimated based on a percentage increase during major maintenance."
+    }
+  },
+  {
+    "id": "refinery-115",
+    "name": "TEXAS OIL & CHEMICAL CO SILSBEE",
+    "state": "Texas",
+    "padd": 3,
+    "company": "TEXAS OIL",
+    "capacity": 51645,
+    "lat": 32.3770275,
+    "lng": -94.8696219,
+    "estimate": {
+      "totalHeadcount": 220,
+      "turnaroundHeadcount": 450,
+      "safetySensitive": 180,
+      "confidence": 0.75,
+      "reasoning": "Based on industry averages for refineries of similar capacity (51,645 bpd) in PADD 3, a total headcount of approximately 220 is expected. Turnaround headcount is estimated based on 8-10% of capacity, with safety-sensitive roles constituting roughly 80% of the operating workforce, the confidence score reflects some uncertainty due to the lack of specific refinery complexity data."
+    }
+  },
+  {
+    "id": "refinery-116",
+    "name": "TOTAL SA PORT ARTHUR",
+    "state": "Texas",
+    "padd": 3,
+    "company": "TOTAL SA",
+    "capacity": 2613712,
+    "lat": 29.9602411,
+    "lng": -93.8884417,
+    "estimate": {
+      "totalHeadcount": 1300,
+      "turnaroundHeadcount": 2500,
+      "safetySensitive": 800,
+      "confidence": 0.8,
+      "reasoning": "Based on industry averages for large refineries (over 200,000 bpd) and the TOTAL SA Port Arthur refinery's specific capacity. Turnaround headcount is estimated based on industry scaling for major maintenance events. Safety sensitive headcount is a proportion of the total, considering operations, maintenance, and safety personnel."
+    }
+  },
+  {
+    "id": "refinery-117",
+    "name": "TRAILSTONE LP TACOMA",
+    "state": "Washington",
+    "padd": 5,
+    "company": "TRAILSTONE LP",
+    "capacity": 328022,
+    "lat": 47.2528768,
+    "lng": -122.4442906,
+    "estimate": [
+      {
+        "totalHeadcount": 570,
+        "turnaroundHeadcount": 950,
+        "safetySensitive": 400,
+        "confidence": 0.8,
+        "reasoning": "Based on typical staffing levels for a refinery of this capacity (328,022 bpd) in PADD 5, a total headcount of approximately 570 is expected. Turnaround headcount estimates are based on industry averages for similar-sized refineries and assume a significant maintenance event. Safety-sensitive positions are estimated based on the proportion of operational and maintenance roles that directly impact safety."
+      }
+    ]
+  },
+  {
+    "id": "refinery-118",
+    "name": "TRANSWORLD OIL USA INC LAKE CHARLES",
+    "state": "Louisiana",
+    "padd": 3,
+    "company": "TRANSWORLD OIL",
+    "capacity": 700000,
+    "lat": 30.1345326,
+    "lng": -93.31824449999999,
+    "estimate": {
+      "totalHeadcount": 1750,
+      "turnaroundHeadcount": 3500,
+      "safetySensitive": 1050,
+      "confidence": 0.8,
+      "reasoning": "Based on industry averages, a 700,000 bpd refinery typically employs around 1750 full-time employees and long-term contractors. Turnaround headcount is estimated to be double the total headcount. Safety-sensitive positions usually constitute around 60% of the workforce. The confidence score is high due to the large refinery size and common operational structure within PADD 3."
+    }
+  },
+  {
+    "id": "refinery-119",
+    "name": "VALERO ENERGY CORP ARDMORE",
+    "state": "Oklahoma",
+    "padd": 2,
+    "company": "VALERO ENERGY",
+    "capacity": 910904,
+    "lat": 34.2042764,
+    "lng": -97.11042189999999,
+    "estimate": {
+      "totalHeadcount": 750,
+      "turnaroundHeadcount": 1200,
+      "safetySensitive": 450,
+      "confidence": 0.8,
+      "reasoning": "Based on industry benchmarks for refineries of similar capacity (910,904 bpd) and complexity in PADD region 2. Total headcount is estimated using a ratio of ~0.8 employees per 1000 bpd. Turnaround headcount is estimated at 1.5x the full-time headcount. Safety-sensitive positions are estimated to be 60% of the full-time employees."
+    }
+  },
+  {
+    "id": "refinery-120",
+    "name": "VALERO ENERGY CORP BENICIA",
+    "state": "California",
+    "padd": 5,
+    "company": "VALERO ENERGY",
+    "capacity": 1840916,
+    "lat": 38.0716899,
+    "lng": -122.1392589,
+    "estimate": {
+      "totalHeadcount": 1380,
+      "turnaroundHeadcount": 2760,
+      "safetySensitive": 966,
+      "confidence": 0.8,
+      "reasoning": "Valero Benicia is a large refinery in PADD 5. Based on its complexity and capacity of 1,840,916 bpd, an estimated 1380 full-time employees and long-term contractors are needed for normal operations. Turnaround headcount is estimated as double the total headcount due to the large scope of work, requiring substantial additional manpower. Approximately 70% of the workforce are in safety-sensitive positions. The confidence score is 0.8 due to the availability of public information about the refinery's capacity and general operational characteristics, but the exact staffing levels are proprietary."
+    }
+  },
+  {
+    "id": "refinery-121",
+    "name": "VALERO ENERGY CORP CORPUS CHRISTI",
+    "state": "Texas",
+    "padd": 3,
+    "company": "VALERO ENERGY",
+    "capacity": 3048689,
+    "lat": 27.8071928,
+    "lng": -97.44650209999999,
+    "estimate": {
+      "totalHeadcount": 2200,
+      "turnaroundHeadcount": 3500,
+      "safetySensitive": 1800,
+      "confidence": 0.85,
+      "reasoning": "Based on industry benchmarks for refineries of this size (over 3 million bpd) and complexity in PADD 3, a headcount of approximately 2200 is estimated. Turnaround headcount can easily exceed the normal operating headcount. Safety-sensitive roles, including operators, maintenance, and emergency response personnel, make up a large portion of the workforce."
+    }
+  },
+  {
+    "id": "refinery-122",
+    "name": "VALERO ENERGY CORP HOUSTON",
+    "state": "Texas",
+    "padd": 3,
+    "company": "VALERO ENERGY",
+    "capacity": 1692872,
+    "lat": 29.719887,
+    "lng": -95.2544075,
+    "estimate": {
+      "totalHeadcount": 1950,
+      "turnaroundHeadcount": 2500,
+      "safetySensitive": 1170,
+      "confidence": 0.85,
+      "reasoning": "Based on industry benchmarks for refineries of similar capacity (1,692,872 bpd) and complexity in PADD 3 (Gulf Coast), a total headcount of around 1950 is reasonable. Turnaround headcount is estimated by adding roughly 1.3 workers per thousand barrels of daily capacity and assuming 60% safety sensitivity, these values are typical for a refinery of this scale."
+    }
+  },
+  {
+    "id": "refinery-123",
+    "name": "VALERO ENERGY CORP MEMPHIS",
+    "state": "Tennessee",
+    "padd": 2,
+    "company": "VALERO ENERGY",
+    "capacity": 1650992,
+    "lat": 35.0865543,
+    "lng": -90.079549,
+    "estimate": {
+      "totalHeadcount": 1500,
+      "turnaroundHeadcount": 2500,
+      "safetySensitive": 1000,
+      "confidence": 0.85,
+      "reasoning": "Based on refineries of similar size (1.6MM bpd) and complexity in PADD 2, a headcount of 1500 is a reasonable estimate. Turnaround headcount is estimated at 2500, reflecting a large-scale operation. The safety-sensitive headcount is estimated at 1000, reflecting the large number of employees directly involved in operating and maintaining the facility."
+    }
+  },
+  {
+    "id": "refinery-124",
+    "name": "VALERO ENERGY CORP MERAUX",
+    "state": "Louisiana",
+    "padd": 3,
+    "company": "VALERO ENERGY",
+    "capacity": 1216548,
+    "lat": 29.9300368,
+    "lng": -89.9438245,
+    "estimate": {
+      "totalHeadcount": 1300,
+      "turnaroundHeadcount": 2500,
+      "safetySensitive": 800,
+      "confidence": 0.85,
+      "reasoning": "Based on the refinery's capacity (1,216,548 bpd) and location in PADD 3, the total headcount is estimated around 1300. Turnaround headcount is estimated with an additional 2500 workers. Approximately 60% of the workforce (800) are estimated to hold safety-sensitive positions. The confidence score is 0.85 due to reliance on industry averages and potential variations based on specific refinery configurations and operational strategies. These estimates assume a medium complexity refinery with standard operating procedures."
+    }
+  },
+  {
+    "id": "refinery-125",
+    "name": "VALERO ENERGY CORP NORCO",
+    "state": "Louisiana",
+    "padd": 3,
+    "company": "VALERO ENERGY",
+    "capacity": 3003670,
+    "lat": 29.9863603,
+    "lng": -90.3924576,
+    "estimate": {
+      "totalHeadcount": 2100,
+      "turnaroundHeadcount": 2800,
+      "safetySensitive": 1400,
+      "confidence": 0.8,
+      "reasoning": "Based on industry benchmarks for a refinery of this size (3,003,670 bpd) and complexity in PADD 3, a total headcount of approximately 2100 is expected. Turnaround headcount is estimated based on a percentage increase during major maintenance. Safety sensitive roles account for a significant portion of the workforce given the hazardous nature of refinery operations. Confidence is high due to available industry data for similar refineries."
+    }
+  },
+  {
+    "id": "refinery-126",
+    "name": "VALERO ENERGY CORP PORT ARTHUR",
+    "state": "Texas",
+    "padd": 3,
+    "company": "VALERO ENERGY",
+    "capacity": 4172893,
+    "lat": 29.8644365,
+    "lng": -93.96299909999999,
+    "estimate": {
+      "totalHeadcount": 3200,
+      "turnaroundHeadcount": 4500,
+      "safetySensitive": 2400,
+      "confidence": 0.85,
+      "reasoning": "Based on industry benchmarks, a refinery of this size (4.1+ million bpd) and complexity typically employs around 3200 full-time staff and contractors. Turnarounds can bring in an additional ~4500 workers. Approximately 75% of the workforce is in safety-sensitive roles. The confidence level is high given the data available."
+    }
+  },
+  {
+    "id": "refinery-127",
+    "name": "VALERO ENERGY CORP SUNRAY",
+    "state": "Texas",
+    "padd": 3,
+    "company": "VALERO ENERGY",
+    "capacity": 1813510,
+    "lat": 35.9513169,
+    "lng": -101.8776369,
+    "estimate": {
+      "totalHeadcount": 1550,
+      "turnaroundHeadcount": 2200,
+      "safetySensitive": 1100,
+      "confidence": 0.85,
+      "reasoning": "Based on the refinery's capacity of 1,813,510 bpd and location in PADD 3, a total headcount of 1550 (including both full-time employees and long-term contractors) is estimated using industry benchmarks for similar-sized facilities. Turnaround headcount is estimated at approximately 1.4x the total headcount reflecting a large major turnaround. Safety-sensitive positions are assumed to constitute ~70% of the total workforce."
+    }
+  },
+  {
+    "id": "refinery-128",
+    "name": "VALERO ENERGY CORP TEXAS CITY",
+    "state": "Texas",
+    "padd": 3,
+    "company": "VALERO ENERGY",
+    "capacity": 2595680,
+    "lat": 29.3688933,
+    "lng": -94.9133607,
+    "estimate": {
+      "totalHeadcount": 2300,
+      "turnaroundHeadcount": 3500,
+      "safetySensitive": 1800,
+      "confidence": 0.85,
+      "reasoning": "Based on industry benchmarks for a refinery of this size (2.6 million bpd) and complexity, a total headcount of around 2300 is reasonable. Turnaround headcount can often exceed the total employee count due to specialized contractor support. Safety-sensitive roles, including operators, maintenance, and safety personnel, would constitute a large portion of the workforce. The confidence score reflects the accuracy expected from industry data on comparable refineries, recognizing that the exact number varies due to technology and operating practices."
+    }
+  },
+  {
+    "id": "refinery-129",
+    "name": "VALERO ENERGY CORP THREE RIVERS",
+    "state": "Texas",
+    "padd": 3,
+    "company": "VALERO ENERGY",
+    "capacity": 994895,
+    "lat": 28.4584671,
+    "lng": -98.18485729999999,
+    "estimate": {
+      "totalHeadcount": 1150,
+      "turnaroundHeadcount": 2500,
+      "safetySensitive": 700,
+      "confidence": 0.8,
+      "reasoning": "Based on industry averages for refineries of similar capacity (approximately 1,000,000 bpd) and complexity in the PADD 3 region. Turnaround headcount is estimated based on 2-3x the full-time headcount. Safety-sensitive roles are estimated at 60% of the total staff."
+    }
+  },
+  {
+    "id": "refinery-130",
+    "name": "VALERO ENERGY CORP WILMINGTON ASPHALT PLANT",
+    "state": "California",
+    "padd": 5,
+    "company": "VALERO ENERGY",
+    "capacity": 49100,
+    "lat": 33.7772596,
+    "lng": -118.231299,
+    "estimate": {
+      "totalHeadcount": 280,
+      "turnaroundHeadcount": 500,
+      "safetySensitive": 180,
+      "confidence": 0.8,
+      "reasoning": "Based on industry averages for refineries of similar capacity (49,100 bpd) and complexity, a total headcount of approximately 280 is estimated. Turnaround headcount is estimated based on a typical ratio for similar facilities. Safety-sensitive positions are estimated to be around 65% of the operating staff, which is typical for a refinery. The confidence score reflects the limited specific data available for this particular refinery."
+    }
+  },
+  {
+    "id": "refinery-131",
+    "name": "VALERO ENERGY CORP WILMINGTON REFINERY",
+    "state": "California",
+    "padd": 5,
+    "company": "VALERO ENERGY",
+    "capacity": 1179060,
+    "lat": 33.7772596,
+    "lng": -118.231299,
+    "estimate": {
+      "totalHeadcount": 1100,
+      "turnaroundHeadcount": 1500,
+      "safetySensitive": 600,
+      "confidence": 0.85,
+      "reasoning": "Based on the refinery's capacity of 1,179,060 bpd in PADD 5 (California), a total headcount of approximately 1100 is estimated. Turnaround headcount is estimated based on industry averages for refineries of similar scale. Safety-sensitive headcount is estimated to be around 600, reflecting the large operational footprint."
+    }
+  },
+  {
+    "id": "refinery-132",
+    "name": "WORLD OIL CO SOUTH GATE",
+    "state": "California",
+    "padd": 5,
+    "company": "WORLD OIL",
+    "capacity": 64500,
+    "lat": 33.9452514,
+    "lng": -118.1654699,
+    "estimate": {
+      "totalHeadcount": 280,
+      "turnaroundHeadcount": 450,
+      "safetySensitive": 180,
+      "confidence": 0.8,
+      "reasoning": "Based on industry averages for a 64,500 bpd refinery in PADD 5, total headcount is estimated around 280. Turnaround headcount is based on 1.5-2x normal staffing. Safety-sensitive positions are estimated at 60-65% of the operating workforce, and the confidence is high due to the availability of public information about refinery staffing."
+    }
+  },
+  {
+    "id": "refinery-133",
+    "name": "WRB REFINING LP BORGER",
+    "state": "Texas",
+    "padd": 3,
+    "company": "WRB REFINING",
+    "capacity": 1768400,
+    "lat": 35.688467,
+    "lng": -101.3667638,
+    "estimate": {
+      "totalHeadcount": 1768,
+      "turnaroundHeadcount": 3537,
+      "safetySensitive": 884,
+      "confidence": 0.8,
+      "reasoning": "Based on industry averages, a refinery typically requires approximately 1 employee per 1,000 bpd capacity. Turnaround headcount is estimated to be double the number of workers during normal operations. Safety Sensitive headcount estimated at 50% of normal operations."
+    }
+  },
+  {
+    "id": "refinery-134",
+    "name": "WRB REFINING LP WOOD RIVER",
+    "state": "Illinois",
+    "padd": 2,
+    "company": "WRB REFINING",
+    "capacity": 3784616,
+    "lat": 38.83731849999999,
+    "lng": -90.0733856,
+    "estimate": {
+      "totalHeadcount": 1800,
+      "turnaroundHeadcount": 2500,
+      "safetySensitive": 1200,
+      "confidence": 0.8,
+      "reasoning": "Based on industry averages for refineries of this size (approximately 3.8M bpd) and complexity in PADD 2, a total headcount of 1800 is a reasonable estimate. Turnaround headcount is estimated at 2500 reflecting the surge in workers needed during maintenance. Safety-sensitive roles account for approximately 66% of the total workforce. Confidence is high due to the availability of benchmarking data for similar refineries."
+    }
+  }
+]
