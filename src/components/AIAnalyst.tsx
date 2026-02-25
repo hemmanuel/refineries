@@ -133,6 +133,12 @@ const AIAnalyst: React.FC<AIAnalystProps> = ({ refineries }) => {
     let processedContent = content
       .replace(/\[\[(.*?)\]\]\(citation:.*?\)/g, '[[$1]]') // Fix double-processed links if AI tries to be smart
       .replace(/\[\[(.*?)\]\]/g, (match, name) => `[${name}](citation:${encodeURIComponent(name)})`)
+      // Handle cases where AI outputs [Name](citation:Name) directly (hallucination of format)
+      .replace(/\[(.*?)\]\(citation:(.*?)\)/g, (match, name, target) => {
+          // Decode first to ensure we don't double encode if it was already encoded
+          const cleanTarget = decodeURIComponent(target);
+          return `[${name}](citation:${encodeURIComponent(cleanTarget)})`;
+      })
       .replace(/\n{3,}/g, '\n\n');
 
     return (
