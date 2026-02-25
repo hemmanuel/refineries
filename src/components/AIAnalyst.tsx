@@ -127,7 +127,10 @@ const AIAnalyst: React.FC<AIAnalystProps> = ({ refineries }) => {
   // Helper to parse message content and render citations
   const renderMessageContent = (content: string) => {
     // Pre-process content to convert [[Citation]] to markdown links with a specific protocol
-    const processedContent = content.replace(/\[\[(.*?)\]\]/g, '[$1](citation:$1)');
+    // Also strip excessive newlines (more than 2) to fix spacing issues
+    const processedContent = content
+      .replace(/\[\[(.*?)\]\]/g, '[$1](citation:$1)')
+      .replace(/\n{3,}/g, '\n\n');
 
     return (
       <ReactMarkdown
