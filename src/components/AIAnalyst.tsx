@@ -136,7 +136,7 @@ const AIAnalyst: React.FC<AIAnalystProps> = ({ refineries }) => {
       // Handle cases where AI outputs [[Name]] (old instruction hallucination)
       .replace(/\[\[(.*?)\]\]/g, '{{{$1}}}')
       // Handle cases where AI outputs [Name](citation:Name) but with spaces in the URL part which breaks markdown
-      .replace(/\[(.*?)\]\(citation:(.*?)\)/g, (match, name, target) => {
+      .replace(/\[(.*?)\]\(citation:(.*?)\)/g, (_match, name, target) => {
          return `[${name}](citation:${encodeURIComponent(target)})`;
       })
       // Now handle the canonical format: {{{Refinery Name}}} -> [Refinery Name](citation:Refinery%20Name)
