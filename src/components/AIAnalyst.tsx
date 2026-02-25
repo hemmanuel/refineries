@@ -34,13 +34,6 @@ const AIAnalyst: React.FC<AIAnalystProps> = ({ refineries }) => {
     scrollToBottom();
   }, [messages]);
 
-  // Open sidebar when a refinery is selected - REMOVED logic
-  // useEffect(() => {
-  //   if (selectedRefinery) {
-  //     setSidebarOpen(true);
-  //   }
-  // }, [selectedRefinery]);
-
   const filteredRefineries = useMemo(() => {
     if (!searchTerm) return refineries;
     const lowerTerm = searchTerm.toLowerCase();
@@ -127,68 +120,64 @@ const AIAnalyst: React.FC<AIAnalystProps> = ({ refineries }) => {
 
   // Helper to parse message content and render citations
   const renderMessageContent = (content: string) => {
-    // Pre-process content to convert {{{Citation}}} to markdown links with a specific protocol
-    // Also strip excessive newlines (more than 2) to fix spacing issues
-    // And remove any markdown link syntax that might have been wrapped around the citation by the AI
-    let processedContent = content
-      // Handle cases where AI outputs [Name](citation:Name) directly (hallucination of format) - we convert this to our target format first
-      .replace(/\[(.*?)\]\(citation:(.*?)\)/g, '{{{$1}}}') 
-      // Handle cases where AI outputs [[Name]] (old instruction hallucination)
-      .replace(/\[\[(.*?)\]\]/g, '{{{$1}}}')
-      // Handle cases where AI outputs [Name](citation:Name) but with spaces in the URL part which breaks markdown
-      .replace(/\[(.*?)\]\(citation:(.*?)\)/g, (_match, name, target) => {
-         return `[${name}](citation:${encodeURIComponent(target)})`;
-      })
-      // Now handle the canonical format: {{{Refinery Name}}} -> [Refinery Name](citation:Refinery%20Name)
-      .replace(/\{\{\{(.*?)\}\}\}/g, (_match, name) => {
-        // Double check for any lingering markdown link syntax inside the braces
-        const cleanName = name.replace(/\[(.*?)\]\(.*?\)/, '$1');
-        return `[${cleanName}](citation:${encodeURIComponent(cleanName)})`;
-      })
-      .replace(/\n{3,}/g, '\n\n');
+    // 1. Normalize AI output (handle the [[...]] or [..](..) hallucinations first)
+    // Convert everything to our canonical {{{Refinery Name}}} format
+    let cleanContent = content
+      .replace(/\[(.*?)\]\(citation:(.*?)\)/g, '{{{$1}}}')
+      .replace(/\[\[(.*?)\]\]/g, '{{{$1}}}');
+
+    // 2. Split by the triple curly braces
+    // The capturing group (.*?) ensures the name is included in the split array
+    const parts = cleanContent.split(/\{\{\{(.*?)\}\}\}/g);
 
     return (
-      <ReactMarkdown
-        remarkPlugins={[remarkGfm]}
-        components={{
-          a: ({ node, ...props }) => {
-            // Check if it's a citation link
-            if (props.href?.startsWith('citation:')) {
-              const name = decodeURIComponent(props.href.replace('citation:', ''));
-              // Render as a button, NOT an anchor tag
-              return (
-                <button
-                  type="button"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    e.stopPropagation();
-                    handleCitationClick(name);
-                  }}
-                  className="inline-flex items-center gap-1 px-1.5 py-0.5 mx-1 bg-blue-100 text-blue-700 rounded hover:bg-blue-200 transition-colors text-sm font-medium cursor-pointer align-middle border-none"
-                >
-                  <Sparkles className="w-3 h-3" />
-                  {name}
-                </button>
-              );
-            }
-            // Standard external link
-            return <a {...props} className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer" />;
-          },
-          p: ({ node, ...props }) => <p {...props} className="mb-2 last:mb-0" />,
-          ul: ({ node, ...props }) => <ul {...props} className="list-disc pl-4 mb-2" />,
-          ol: ({ node, ...props }) => <ol {...props} className="list-decimal pl-4 mb-2" />,
-          li: ({ node, ...props }) => <li {...props} className="mb-1" />,
-          h1: ({ node, ...props }) => <h1 {...props} className="text-xl font-bold mb-2 mt-4" />,
-          h2: ({ node, ...props }) => <h2 {...props} className="text-lg font-bold mb-2 mt-3" />,
-          h3: ({ node, ...props }) => <h3 {...props} className="text-md font-bold mb-1 mt-2" />,
-          table: ({ node, ...props }) => <div className="overflow-x-auto mb-4"><table {...props} className="min-w-full divide-y divide-gray-200 border border-gray-200" /></div>,
-          thead: ({ node, ...props }) => <thead {...props} className="bg-gray-50" />,
-          th: ({ node, ...props }) => <th {...props} className="px-3 py-2 text-left text-xs font-medium text-gray-500 uppercase tracking-wider border-b border-gray-200" />,
-          td: ({ node, ...props }) => <td {...props} className="px-3 py-2 whitespace-nowrap text-sm text-gray-500 border-b border-gray-200" />,
-        }}
-      >
-        {processedContent}
-      </ReactMarkdown>
+      <div>
+        {parts.map((part, index) => {
+          // Even indices are text, odd indices are citation names
+          if (index % 2 === 1) {
+            return (
+              <button
+                key={index}
+                onClick={() => handleCitationClick(part)}
+                className="inline-flex items-center gap-1 px-1.5 py-0.5 mx-1 bg-blue-100 text-blue-700 rounded hover:bg-blue-200 transition-colors text-sm font-medium cursor-pointer align-middle border-none"
+              >
+                <Sparkles className="w-3 h-3" />
+                {part}
+              </button>
+            );
+          }
+          
+          // Render text parts with Markdown
+          // Strip excessive newlines from text parts
+          const textPart = part.replace(/\n{3,}/g, '\n\n');
+          if (!textPart) return null;
+
+          return (
+            <span key={index}>
+              <ReactMarkdown 
+                remarkPlugins={[remarkGfm]}
+                components={{
+                  // Standard link styling for non-citation links
+                  a: ({ node, ...props }) => <a {...props} className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer" />,
+                  p: ({ node, ...props }) => <p {...props} className="mb-2 last:mb-0 inline" />, // inline to flow with buttons
+                  ul: ({ node, ...props }) => <ul {...props} className="list-disc pl-4 mb-2" />,
+                  ol: ({ node, ...props }) => <ol {...props} className="list-decimal pl-4 mb-2" />,
+                  li: ({ node, ...props }) => <li {...props} className="mb-1" />,
+                  h1: ({ node, ...props }) => <h1 {...props} className="text-xl font-bold mb-2 mt-4" />,
+                  h2: ({ node, ...props }) => <h2 {...props} className="text-lg font-bold mb-2 mt-3" />,
+                  h3: ({ node, ...props }) => <h3 {...props} className="text-md font-bold mb-1 mt-2" />,
+                  table: ({ node, ...props }) => <div className="overflow-x-auto mb-4"><table {...props} className="min-w-full divide-y divide-gray-200 border border-gray-200" /></div>,
+                  thead: ({ node, ...props }) => <thead {...props} className="bg-gray-50" />,
+                  th: ({ node, ...props }) => <th {...props} className="px-3 py-2 text-left text-xs font-medium text-gray-500 uppercase tracking-wider border-b border-gray-200" />,
+                  td: ({ node, ...props }) => <td {...props} className="px-3 py-2 whitespace-nowrap text-sm text-gray-500 border-b border-gray-200" />,
+                }}
+              >
+                {textPart}
+              </ReactMarkdown>
+            </span>
+          );
+        })}
+      </div>
     );
   };
 
