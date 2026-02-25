@@ -1,5 +1,5 @@
-import React, { useState, useRef, useEffect } from 'react';
-import { Send, Bot, User, Loader2, Sparkles, AlertCircle, X, ChevronRight, ChevronLeft } from 'lucide-react';
+import React, { useState, useRef, useEffect, useMemo } from 'react';
+import { Send, Bot, User, Loader2, Sparkles, AlertCircle, ChevronLeft, Search, MapPin, Factory } from 'lucide-react';
 import { type ParsedRefinery } from '../utils/data';
 import axios from 'axios';
 import RefineryDetail from './RefineryDetail';
@@ -22,6 +22,7 @@ const AIAnalyst: React.FC<AIAnalystProps> = ({ refineries }) => {
   const [error, setError] = useState<string | null>(null);
   const [selectedRefinery, setSelectedRefinery] = useState<ParsedRefinery | null>(null);
   const [sidebarOpen, setSidebarOpen] = useState(false);
+  const [searchTerm, setSearchTerm] = useState('');
   const messagesEndRef = useRef<HTMLDivElement>(null);
 
   const scrollToBottom = () => {
@@ -32,12 +33,22 @@ const AIAnalyst: React.FC<AIAnalystProps> = ({ refineries }) => {
     scrollToBottom();
   }, [messages]);
 
-  // Open sidebar when a refinery is selected
-  useEffect(() => {
-    if (selectedRefinery) {
-      setSidebarOpen(true);
-    }
-  }, [selectedRefinery]);
+  // Open sidebar when a refinery is selected - REMOVED logic
+  // useEffect(() => {
+  //   if (selectedRefinery) {
+  //     setSidebarOpen(true);
+  //   }
+  // }, [selectedRefinery]);
+
+  const filteredRefineries = useMemo(() => {
+    if (!searchTerm) return refineries;
+    const lowerTerm = searchTerm.toLowerCase();
+    return refineries.filter(r => 
+      r.name.toLowerCase().includes(lowerTerm) || 
+      r.company.toLowerCase().includes(lowerTerm) ||
+      r.state.toLowerCase().includes(lowerTerm)
+    );
+  }, [refineries, searchTerm]);
 
   const handleSendMessage = async () => {
     if (!input.trim()) return;
@@ -135,8 +146,66 @@ const AIAnalyst: React.FC<AIAnalystProps> = ({ refineries }) => {
 
   return (
     <div className="h-full w-full bg-gray-50 flex overflow-hidden">
+      {/* Left Sidebar - Refinery List */}
+      <div className="w-96 bg-white border-r border-gray-200 flex flex-col h-full flex-shrink-0">
+        <div className="p-4 border-b border-gray-200">
+          <h2 className="text-lg font-semibold text-gray-900 mb-3">Refineries</h2>
+          <div className="relative">
+            <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400" />
+            <input 
+              type="text" 
+              placeholder="Search refineries..." 
+              value={searchTerm}
+              onChange={(e) => setSearchTerm(e.target.value)}
+              className="w-full pl-9 pr-4 py-2 bg-gray-50 border border-gray-200 rounded-lg text-sm focus:ring-2 focus:ring-blue-500 outline-none"
+            />
+          </div>
+          <div className="mt-2 text-xs text-gray-500 font-medium">
+            {filteredRefineries.length} Facilities
+          </div>
+        </div>
+        
+        <div className="flex-1 overflow-y-auto relative">
+          {filteredRefineries.map((refinery) => (
+            <button
+              key={refinery.id}
+              onClick={() => setSelectedRefinery(refinery)}
+              className={`w-full text-left p-4 border-b border-gray-100 hover:bg-gray-50 transition-colors group ${selectedRefinery?.id === refinery.id ? 'bg-blue-50 border-l-4 border-l-blue-500' : 'border-l-4 border-l-transparent'}`}
+            >
+              <div className="font-medium text-gray-900 group-hover:text-blue-600 transition-colors line-clamp-1">
+                {refinery.name}
+              </div>
+              <div className="text-xs text-gray-500 mt-1 flex items-center gap-1">
+                <Factory className="w-3 h-3" />
+                {refinery.company}
+              </div>
+              <div className="flex justify-between items-center mt-2">
+                <div className="text-xs text-gray-400 flex items-center gap-1">
+                  <MapPin className="w-3 h-3" />
+                  {refinery.state}
+                </div>
+                <div className="text-xs font-mono font-medium text-gray-600 bg-gray-100 px-1.5 py-0.5 rounded">
+                  {(refinery.capacity / 1000).toFixed(0)}k bpd
+                </div>
+              </div>
+            </button>
+          ))}
+
+          {/* Overlay Detail View */}
+          {selectedRefinery && (
+            <div className="absolute inset-0 bg-white z-10 flex flex-col animate-in slide-in-from-left-4 duration-200">
+               <RefineryDetail 
+                  refinery={selectedRefinery} 
+                  onClose={() => setSelectedRefinery(null)} 
+                  mode="sidebar"
+                />
+            </div>
+          )}
+        </div>
+      </div>
+
       {/* Main Chat Area */}
-      <div className="flex-1 flex flex-col h-full min-w-0">
+      <div className="flex-1 flex flex-col h-full min-w-0 bg-gray-50">
         <div className="bg-white border-b border-gray-200 px-6 py-4 flex items-center justify-between shadow-sm flex-shrink-0">
           <div className="flex items-center gap-3">
             <div className="bg-purple-100 p-2 rounded-lg">
@@ -149,11 +218,9 @@ const AIAnalyst: React.FC<AIAnalystProps> = ({ refineries }) => {
           </div>
           {selectedRefinery && !sidebarOpen && (
             <button 
-              onClick={() => setSidebarOpen(true)}
-              className="p-2 hover:bg-gray-100 rounded-lg text-gray-500 flex items-center gap-2 text-sm font-medium"
+              onClick={() => setSelectedRefinery(null)} // Close the overlay in left sidebar if open
+              className="hidden" // Hide this button as we are using left sidebar overlay
             >
-              <ChevronLeft className="w-4 h-4" />
-              Open Sidebar
             </button>
           )}
         </div>
@@ -211,47 +278,34 @@ const AIAnalyst: React.FC<AIAnalystProps> = ({ refineries }) => {
         </div>
 
         <div className="p-6 bg-white border-t border-gray-200 flex-shrink-0">
-          <div className="max-w-4xl mx-auto relative">
+          <div className="relative w-full">
             <textarea
               value={input}
               onChange={(e) => setInput(e.target.value)}
               onKeyDown={handleKeyDown}
               placeholder="Ask about specific refineries, regional trends, or workforce estimates..."
-              className="w-full pl-6 pr-14 py-4 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-purple-500 focus:border-transparent outline-none resize-none shadow-sm text-gray-700 placeholder-gray-400"
-              rows={2}
+              className="w-full pl-6 pr-14 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-purple-500 focus:border-transparent outline-none resize-none shadow-sm text-gray-700 placeholder-gray-400 overflow-hidden"
+              rows={1}
               disabled={isLoading}
+              style={{ minHeight: '48px' }}
+              onInput={(e) => {
+                const target = e.target as HTMLTextAreaElement;
+                target.style.height = 'auto';
+                target.style.height = `${target.scrollHeight}px`;
+              }}
             />
             <button
               onClick={handleSendMessage}
               disabled={!input.trim() || isLoading}
-              className="absolute right-3 top-1/2 -translate-y-1/2 p-2 bg-purple-600 text-white rounded-lg hover:bg-purple-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+              className="absolute right-3 bottom-2 p-2 bg-purple-600 text-white rounded-lg hover:bg-purple-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
             >
               <Send className="w-5 h-5" />
             </button>
           </div>
-          <p className="text-center text-xs text-gray-400 mt-3">
-            AI can make mistakes. Please verify important information.
-          </p>
         </div>
       </div>
 
-      {/* Right Sidebar */}
-      {sidebarOpen && (
-        <div className="w-96 border-l border-gray-200 bg-white shadow-xl flex flex-col h-full flex-shrink-0 transition-all duration-300">
-          {selectedRefinery ? (
-            <RefineryDetail 
-              refinery={selectedRefinery} 
-              onClose={() => setSidebarOpen(false)} 
-              mode="sidebar"
-            />
-          ) : (
-            <div className="flex flex-col items-center justify-center h-full text-gray-400 p-6 text-center">
-              <Sparkles className="w-12 h-12 mb-4 text-gray-200" />
-              <p>Select a refinery from the chat to view details here.</p>
-            </div>
-          )}
-        </div>
-      )}
+      {/* Right Sidebar - Removed */}
     </div>
   );
 };
