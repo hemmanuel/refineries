@@ -156,7 +156,10 @@ const AIAnalyst: React.FC<AIAnalystProps> = ({ refineries }) => {
               const name = decodeURIComponent(props.href.replace('citation:', ''));
               return (
                 <button
-                  onClick={() => handleCitationClick(name)}
+                  onClick={(e) => {
+                    e.preventDefault(); // Prevent default link behavior
+                    handleCitationClick(name);
+                  }}
                   className="inline-flex items-center gap-1 px-1.5 py-0.5 mx-1 bg-blue-100 text-blue-700 rounded hover:bg-blue-200 transition-colors text-sm font-medium cursor-pointer align-middle"
                 >
                   <Sparkles className="w-3 h-3" />
