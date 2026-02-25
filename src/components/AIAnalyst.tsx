@@ -136,7 +136,11 @@ const AIAnalyst: React.FC<AIAnalystProps> = ({ refineries }) => {
       // Handle cases where AI outputs [[Name]] (old instruction hallucination)
       .replace(/\[\[(.*?)\]\]/g, '{{{$1}}}')
       // Now handle the canonical format: {{{Refinery Name}}} -> [Refinery Name](citation:Refinery%20Name)
-      .replace(/\{\{\{(.*?)\}\}\}/g, (match, name) => `[${name}](citation:${encodeURIComponent(name)})`)
+      .replace(/\{\{\{(.*?)\}\}\}/g, (match, name) => {
+        // Double check for any lingering markdown link syntax inside the braces
+        const cleanName = name.replace(/\[(.*?)\]\(.*?\)/, '$1');
+        return `[${cleanName}](citation:${encodeURIComponent(cleanName)})`;
+      })
       .replace(/\n{3,}/g, '\n\n');
 
     return (
