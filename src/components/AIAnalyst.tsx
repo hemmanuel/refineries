@@ -215,7 +215,7 @@ const AIAnalyst: React.FC<AIAnalystProps> = ({ refineries }) => {
               <p className="text-sm text-gray-500">Powered by Gemini 1.5 Pro • Access to full facility database</p>
             </div>
           </div>
-          {selectedRefinery && !sidebarOpen && (
+          {selectedRefinery && (
             <button 
               onClick={() => setSelectedRefinery(null)} // Close the overlay in left sidebar if open
               className="hidden" // Hide this button as we are using left sidebar overlay
