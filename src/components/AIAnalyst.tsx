@@ -72,11 +72,12 @@ const AIAnalyst: React.FC<AIAnalystProps> = ({ refineries }) => {
         1. Be precise and cite specific refineries, companies, or PADD regions when answering.
         2. CRITICAL: When you mention a specific refinery by name, you MUST enclose it in double brackets like this: [[Refinery Name]]. This allows the user to click and view its details.
            Example: "The [[Marathon Garyville Refinery]] has a significant capacity..."
-        3. You can perform calculations (e.g., total capacity for a specific company, average headcount in a region).
-        4. If the user asks about "safety sensitive" or "turnaround" numbers, use the estimates provided in the data.
-        5. If the data doesn't contain the answer, state that clearly based on the available dataset.
-        6. Format your responses with clear headings, bullet points, or tables if appropriate for readability.
-        7. The user is likely a vendor selling services to these refineries, so focus on commercial opportunities, operational scale, and workforce metrics.
+        3. Do NOT include Markdown links or other citation formats inside the brackets. Just the plain name.
+        4. You can perform calculations (e.g., total capacity for a specific company, average headcount in a region).
+        5. If the user asks about "safety sensitive" or "turnaround" numbers, use the estimates provided in the data.
+        6. If the data doesn't contain the answer, state that clearly based on the available dataset.
+        7. Format your responses with clear headings, bullet points, or tables if appropriate for readability.
+        8. The user is likely a vendor selling services to these refineries, so focus on commercial opportunities, operational scale, and workforce metrics.
       `;
 
       const response = await axios.post(
@@ -128,7 +129,9 @@ const AIAnalyst: React.FC<AIAnalystProps> = ({ refineries }) => {
   const renderMessageContent = (content: string) => {
     // Pre-process content to convert [[Citation]] to markdown links with a specific protocol
     // Also strip excessive newlines (more than 2) to fix spacing issues
-    const processedContent = content
+    // And remove any markdown link syntax that might have been wrapped around the citation by the AI
+    let processedContent = content
+      .replace(/\[\[(.*?)\]\]\(citation:.*?\)/g, '[[$1]]') // Fix double-processed links if AI tries to be smart
       .replace(/\[\[(.*?)\]\]/g, '[$1](citation:$1)')
       .replace(/\n{3,}/g, '\n\n');
 
