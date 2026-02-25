@@ -44,9 +44,15 @@ const CompanyProfile: React.FC<CompanyProfileProps> = ({ companyName, refineries
 
   return (
     <>
-      <div className="fixed inset-0 bg-black/50 z-[3000] flex justify-end">
-        <div className="h-full w-full max-w-md bg-white shadow-2xl transform transition-transform duration-300 ease-in-out overflow-y-auto border-l border-gray-200">
-          <div className="p-6">
+      <div 
+        className="fixed inset-0 bg-black/50 z-[3000] transition-opacity" 
+        onClick={onClose}
+      />
+      <div 
+        className="fixed right-0 top-0 h-full w-full max-w-md bg-white shadow-2xl transform transition-transform duration-300 ease-in-out z-[3001] overflow-y-auto border-l border-gray-200 pointer-events-auto"
+        onClick={(e) => e.stopPropagation()} // Prevent clicks inside the panel from closing it
+      >
+        <div className="p-6">
             <div className="flex justify-between items-start mb-6">
               <div>
                 <h2 className="text-2xl font-bold text-gray-900">{companyName}</h2>
@@ -125,7 +131,7 @@ const CompanyProfile: React.FC<CompanyProfileProps> = ({ companyName, refineries
             </div>
           </div>
         </div>
-      </div>
+
 
       {selectedMetric && (
         <MetricExplanation
