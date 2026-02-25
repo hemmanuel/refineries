@@ -26,6 +26,15 @@ export interface OshaYearData {
   trir: number;
   dart?: number;
   hoursWorked?: number;
+  deaths?: number;
+  dafw?: number;
+  djtr?: number;
+  other?: number;
+  hearingLoss?: number;
+  poisonings?: number;
+  respiratory?: number;
+  skinDisorders?: number;
+  otherIllnesses?: number;
   notes: string;
 }
 

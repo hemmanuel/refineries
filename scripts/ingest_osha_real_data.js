@@ -122,6 +122,15 @@ const calculateMetrics = (record) => {
     trir: parseFloat(trir.toFixed(2)),
     dart: parseFloat(dart.toFixed(2)),
     hoursWorked: hours,
+    deaths: deaths,
+    dafw: dafw, // Days Away From Work
+    djtr: djtr, // Days of Job Transfer or Restriction
+    other: other, // Other Recordable Cases
+    hearingLoss: parseFloat(record.total_hearing_loss) || 0,
+    poisonings: parseFloat(record.total_poisonings) || 0,
+    respiratory: parseFloat(record.total_respiratory_conditions) || 0,
+    skinDisorders: parseFloat(record.total_skin_disorders) || 0,
+    otherIllnesses: parseFloat(record.total_other_illnesses) || 0,
     notes: "Official OSHA Data"
   };
 };
