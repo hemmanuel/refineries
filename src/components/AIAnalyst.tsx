@@ -152,21 +152,26 @@ const AIAnalyst: React.FC<AIAnalystProps> = ({ refineries }) => {
         remarkPlugins={[remarkGfm]}
         components={{
           a: ({ node, ...props }) => {
+            // Check if it's a citation link
             if (props.href?.startsWith('citation:')) {
               const name = decodeURIComponent(props.href.replace('citation:', ''));
+              // Render as a button, NOT an anchor tag
               return (
                 <button
+                  type="button"
                   onClick={(e) => {
-                    e.preventDefault(); // Prevent default link behavior
+                    e.preventDefault();
+                    e.stopPropagation();
                     handleCitationClick(name);
                   }}
-                  className="inline-flex items-center gap-1 px-1.5 py-0.5 mx-1 bg-blue-100 text-blue-700 rounded hover:bg-blue-200 transition-colors text-sm font-medium cursor-pointer align-middle"
+                  className="inline-flex items-center gap-1 px-1.5 py-0.5 mx-1 bg-blue-100 text-blue-700 rounded hover:bg-blue-200 transition-colors text-sm font-medium cursor-pointer align-middle border-none"
                 >
                   <Sparkles className="w-3 h-3" />
                   {name}
                 </button>
               );
             }
+            // Standard external link
             return <a {...props} className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer" />;
           },
           p: ({ node, ...props }) => <p {...props} className="mb-2 last:mb-0" />,
