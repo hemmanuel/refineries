@@ -4,6 +4,7 @@ import { Users, Factory, Calendar, HardHat, TrendingUp, Filter, Map, ChevronRigh
 import RefineryDetail from './RefineryDetail';
 import CompanyProfile from './CompanyProfile';
 import MetricExplanation from './MetricExplanation';
+import SafetyExplorer, { type SafetyCategory } from './SafetyExplorer';
 import Select from './Select';
 
 interface DashboardProps {
@@ -17,6 +18,7 @@ const Dashboard: React.FC<DashboardProps> = ({ padd, refineries, onPaddSelect, o
   const [selectedRefinery, setSelectedRefinery] = useState<ParsedRefinery | null>(null);
   const [selectedCompanyProfile, setSelectedCompanyProfile] = useState<string | null>(null);
   const [selectedAggregateMetric, setSelectedAggregateMetric] = useState<'headcount' | 'turnaround' | 'safety' | null>(null);
+  const [selectedSafetyCategory, setSelectedSafetyCategory] = useState<SafetyCategory | null>(null);
   const scrollContainerRef = useRef<HTMLDivElement>(null);
 
   // Scroll to top when padd changes
@@ -105,14 +107,46 @@ const Dashboard: React.FC<DashboardProps> = ({ padd, refineries, onPaddSelect, o
     // Filter for refineries that have official OSHA data
     const withData = filteredRefineries.filter(r => r.hasRealOshaData && r.oshaHistory && r.oshaHistory.length > 0);
     
-    // Sort by latest year's recordable injuries (or average if multiple years)
+    // Sort by latest year's TRIR
     return withData
       .sort((a, b) => {
         const aLatest = a.oshaHistory![0];
         const bLatest = b.oshaHistory![0];
-        return bLatest.recordableInjuries - aLatest.recordableInjuries;
+        return bLatest.trir - aLatest.trir;
       })
       .slice(0, 5);
+  }, [filteredRefineries]);
+
+  const topOperatorsBySafety = useMemo(() => {
+    const companyStats: Record<string, { totalTrir: number, count: number }> = {};
+    filteredRefineries.forEach(r => {
+        if (r.hasRealOshaData && r.oshaHistory?.length) {
+            const latest = r.oshaHistory[0];
+            if (!companyStats[r.company]) companyStats[r.company] = { totalTrir: 0, count: 0 };
+            companyStats[r.company].totalTrir += latest.trir;
+            companyStats[r.company].count++;
+        }
+    });
+    return Object.entries(companyStats)
+        .map(([company, stats]) => ({ company, avgTrir: stats.totalTrir / stats.count }))
+        .sort((a, b) => b.avgTrir - a.avgTrir)
+        .slice(0, 5);
+  }, [filteredRefineries]);
+
+  const topRegionsBySafety = useMemo(() => {
+    const regionStats: Record<number, { totalTrir: number, count: number }> = {};
+    filteredRefineries.forEach(r => {
+        if (r.hasRealOshaData && r.oshaHistory?.length) {
+            const latest = r.oshaHistory[0];
+            if (!regionStats[r.padd]) regionStats[r.padd] = { totalTrir: 0, count: 0 };
+            regionStats[r.padd].totalTrir += latest.trir;
+            regionStats[r.padd].count++;
+        }
+    });
+    return Object.entries(regionStats)
+        .map(([padd, stats]) => ({ padd: Number(padd), avgTrir: stats.totalTrir / stats.count }))
+        .sort((a, b) => b.avgTrir - a.avgTrir)
+        .slice(0, 5);
   }, [filteredRefineries]);
 
   const paddStats = useMemo(() => {
@@ -352,44 +386,70 @@ const Dashboard: React.FC<DashboardProps> = ({ padd, refineries, onPaddSelect, o
           <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-200 lg:col-span-3">
             <div className="flex items-center gap-2 mb-4">
               <AlertTriangle className="w-5 h-5 text-red-600" />
-              <h2 className="text-lg font-semibold text-gray-900">Highest Reported Incidents</h2>
+              <h2 className="text-lg font-semibold text-gray-900">Highest Reported Incident Rates (TRIR)</h2>
             </div>
-            {safetyIncidents.length > 0 ? (
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">
-                {safetyIncidents.map((refinery, idx) => {
-                  const latest = refinery.oshaHistory![0];
-                  return (
-                    <button 
-                      key={refinery.id} 
-                      onClick={() => setSelectedRefinery(refinery)}
-                      className="flex flex-col p-3 bg-red-50 rounded-lg border border-red-100 hover:border-red-300 hover:shadow-md transition-all text-left group"
-                    >
-                      <div className="flex items-center gap-2 mb-2">
-                        <span className="w-6 h-6 flex items-center justify-center bg-white shadow-sm rounded-full text-xs font-bold text-red-600 group-hover:bg-red-600 group-hover:text-white transition-colors">
-                          {idx + 1}
-                        </span>
-                        <span className="font-medium text-gray-900 truncate group-hover:text-red-600 transition-colors" title={refinery.name}>
-                          {refinery.name}
-                        </span>
-                      </div>
-                      <div className="text-xs text-gray-500 truncate" title={refinery.company}>
-                        {refinery.company}
-                      </div>
-                      <div className="mt-2 flex items-center justify-between">
-                        <div className="text-xs text-gray-500">Year: {latest.year}</div>
-                        <div className="text-sm font-bold text-red-700">
-                          {latest.recordableInjuries} Injuries
-                        </div>
-                      </div>
-                    </button>
-                  );
-                })}
-              </div>
-            ) : (
-              <div className="text-center py-8 text-gray-500 bg-gray-50 rounded-lg border border-gray-100 border-dashed">
-                No official incident data available for the current selection.
-              </div>
-            )}
+            
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                {/* Refineries */}
+                <button 
+                    onClick={() => setSelectedSafetyCategory('refineries')}
+                    className="bg-red-50 rounded-lg border border-red-100 p-4 hover:bg-red-100 hover:border-red-200 transition-all text-left group"
+                >
+                    <div className="flex items-center justify-between w-full mb-3">
+                        <h3 className="font-semibold text-red-900 group-hover:text-red-800">Refineries</h3>
+                        <ChevronRight className="w-4 h-4 text-red-400 group-hover:text-red-600" />
+                    </div>
+                    <div className="space-y-3">
+                        {safetyIncidents.slice(0, 3).map(r => (
+                            <div key={r.id} className="flex justify-between items-center text-sm">
+                                <span className="text-gray-700 truncate max-w-[140px]" title={r.name}>{r.name}</span>
+                                <span className="font-bold text-red-700">{r.oshaHistory![0].trir}</span>
+                            </div>
+                        ))}
+                        {safetyIncidents.length === 0 && <div className="text-xs text-gray-500 italic">No data available</div>}
+                    </div>
+                </button>
+
+                {/* Regions */}
+                <button 
+                    onClick={() => setSelectedSafetyCategory('regions')}
+                    className="bg-red-50 rounded-lg border border-red-100 p-4 hover:bg-red-100 hover:border-red-200 transition-all text-left group"
+                >
+                    <div className="flex items-center justify-between w-full mb-3">
+                        <h3 className="font-semibold text-red-900 group-hover:text-red-800">Regions</h3>
+                        <ChevronRight className="w-4 h-4 text-red-400 group-hover:text-red-600" />
+                    </div>
+                    <div className="space-y-3">
+                        {topRegionsBySafety.slice(0, 3).map(({ padd, avgTrir }) => (
+                            <div key={padd} className="flex justify-between items-center text-sm">
+                                <span className="text-gray-700">PADD {padd}</span>
+                                <span className="font-bold text-red-700">{avgTrir.toFixed(2)}</span>
+                            </div>
+                        ))}
+                        {topRegionsBySafety.length === 0 && <div className="text-xs text-gray-500 italic">No data available</div>}
+                    </div>
+                </button>
+
+                {/* Operators */}
+                <button 
+                    onClick={() => setSelectedSafetyCategory('operators')}
+                    className="bg-red-50 rounded-lg border border-red-100 p-4 hover:bg-red-100 hover:border-red-200 transition-all text-left group"
+                >
+                    <div className="flex items-center justify-between w-full mb-3">
+                        <h3 className="font-semibold text-red-900 group-hover:text-red-800">Operators</h3>
+                        <ChevronRight className="w-4 h-4 text-red-400 group-hover:text-red-600" />
+                    </div>
+                    <div className="space-y-3">
+                        {topOperatorsBySafety.slice(0, 3).map(({ company, avgTrir }) => (
+                            <div key={company} className="flex justify-between items-center text-sm">
+                                <span className="text-gray-700 truncate max-w-[140px]" title={company}>{company}</span>
+                                <span className="font-bold text-red-700">{avgTrir.toFixed(2)}</span>
+                            </div>
+                        ))}
+                        {topOperatorsBySafety.length === 0 && <div className="text-xs text-gray-500 italic">No data available</div>}
+                    </div>
+                </button>
+            </div>
           </div>
 
           {/* PADD Breakdown */}
@@ -531,6 +591,17 @@ const Dashboard: React.FC<DashboardProps> = ({ padd, refineries, onPaddSelect, o
           }
           explanation={getAggregateExplanation(selectedAggregateMetric)}
           onClose={() => setSelectedAggregateMetric(null)}
+        />
+      )}
+      {selectedSafetyCategory && (
+        <SafetyExplorer
+          category={selectedSafetyCategory}
+          refineries={filteredRefineries}
+          onClose={() => setSelectedSafetyCategory(null)}
+          onSelectRefinery={(refinery) => {
+            setSelectedSafetyCategory(null);
+            setSelectedRefinery(refinery);
+          }}
         />
       )}
     </div>
