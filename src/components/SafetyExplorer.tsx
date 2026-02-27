@@ -1,5 +1,5 @@
 import React, { useMemo, useState } from 'react';
-import { X, AlertTriangle, Map, Factory, TrendingUp, ChevronRight, ChevronLeft, ArrowUpDown } from 'lucide-react';
+import { X, Map, Factory, TrendingUp, ChevronRight, ChevronLeft } from 'lucide-react';
 import { type ParsedRefinery, PADD_NAMES } from '../utils/data';
 
 export type SafetyCategory = 'refineries' | 'regions' | 'operators';
@@ -11,12 +11,23 @@ interface SafetyExplorerProps {
   onSelectRefinery: (refinery: ParsedRefinery) => void;
 }
 
+interface SafetyExplorerItem {
+  id: string | number;
+  label: string;
+  subLabel: string;
+  value: number;
+  secondaryValue: number;
+  refinery: ParsedRefinery | null;
+  paddId?: number;
+  operatorId?: string;
+}
+
 const SafetyExplorer: React.FC<SafetyExplorerProps> = ({ category, refineries, onClose, onSelectRefinery }) => {
   const [selectedRegion, setSelectedRegion] = useState<number | null>(null);
   const [selectedOperator, setSelectedOperator] = useState<string | null>(null);
   const [sortMetric, setSortMetric] = useState<'trir' | 'injuries'>('trir');
   
-  const data = useMemo(() => {
+  const data = useMemo<SafetyExplorerItem[]>(() => {
     const withData = refineries.filter(r => r.hasRealOshaData && r.oshaHistory?.length);
 
     if (category === 'refineries') {
@@ -363,8 +374,8 @@ const SafetyExplorer: React.FC<SafetyExplorerProps> = ({ category, refineries, o
                                 className={`hover:bg-gray-50 transition-colors ${item.refinery || category === 'regions' || category === 'operators' ? 'cursor-pointer group' : ''}`}
                                 onClick={() => {
                                     if (item.refinery) onSelectRefinery(item.refinery);
-                                    if (category === 'regions' && item.paddId) setSelectedRegion(item.paddId);
-                                    if (category === 'operators' && item.operatorId) setSelectedOperator(item.operatorId);
+                                    if (category === 'regions' && item.paddId !== undefined) setSelectedRegion(item.paddId);
+                                    if (category === 'operators' && item.operatorId !== undefined) setSelectedOperator(item.operatorId);
                                 }}
                             >
                                 <td className="px-6 py-4">
