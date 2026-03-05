@@ -422,7 +422,10 @@ const Dashboard: React.FC<DashboardProps> = ({ padd, refineries, onPaddSelect, o
                     <div className="space-y-3">
                         {topRegionsBySafety.slice(0, 3).map(({ padd, avgTrir }) => (
                             <div key={padd} className="flex justify-between items-center text-sm">
-                                <span className="text-gray-700">PADD {padd}</span>
+                                <div className="flex flex-col">
+                                    <span className="text-gray-900 font-medium">{PADD_NAMES[padd]}</span>
+                                    <span className="text-xs text-gray-500">PADD {padd}</span>
+                                </div>
                                 <span className="font-bold text-red-700">{avgTrir.toFixed(2)}</span>
                             </div>
                         ))}
