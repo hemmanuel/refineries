@@ -106,7 +106,20 @@ const processYear = async (yearUrl) => {
 };
 
 const calculateMetrics = (record) => {
-  const hours = parseFloat(record.total_hours_worked) || 0;
+  let hours = parseFloat(record.total_hours_worked) || 0;
+
+  // Manual fix for United Refining Co - Warren (2020)
+  // Raw data shows 14,177,660 hours which is impossible (~19k hours/employee)
+  // Shifting decimal one place gives ~1.4M hours which aligns with other years
+  if (record.year === 2020 && 
+      record.establishment_name === 'United Refining Company' && 
+      record.city === 'Warren' && 
+      record.state === 'PA' && 
+      hours > 10000000) {
+      console.log('  [Fix] Correcting United Refining 2020 hours (14.1M -> 1.4M)');
+      hours = hours / 10;
+  }
+
   const deaths = parseFloat(record.total_deaths) || 0;
   const dafw = parseFloat(record.total_dafw_cases) || 0;
   const djtr = parseFloat(record.total_djtr_cases) || 0;
