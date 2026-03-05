@@ -9718,9 +9718,9 @@
       {
         "year": 2020,
         "recordableInjuries": 18,
-        "trir": 0.25,
-        "dart": 0.17,
-        "hoursWorked": 14177660,
+        "trir": 2.54,
+        "dart": 1.69,
+        "hoursWorked": 1417766,
         "deaths": 0,
         "dafw": 12,
         "djtr": 0,
@@ -9801,7 +9801,7 @@
         "notes": "Official OSHA Data"
       }
     ],
-    "safetySummary": "Official OSHA data available for 8 years. Latest TRIR (2024): 4.39 (Industry Avg: ~0.6). Average TRIR: 3.18. ",
+    "safetySummary": "Official OSHA data available for 8 years. Latest TRIR (2024): 4.39 (Industry Avg: ~0.6). Average TRIR: 3.46. ",
     "hasRealOshaData": true
   },
   {
