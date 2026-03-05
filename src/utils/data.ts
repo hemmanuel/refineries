@@ -284,7 +284,7 @@ export const PADD_STATES: Record<number, string[]> = {
 };
 
 export const PADD_CENTERS: Record<number, [number, number]> = {
-  1: [40.0, -77.0],  // East Coast
+  1: [37.0, -74.0],  // East Coast
   2: [41.0, -92.0],  // Midwest
   3: [32.0, -98.0],  // Gulf Coast
   4: [44.0, -109.0], // Rockies
