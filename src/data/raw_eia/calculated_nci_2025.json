@@ -1,0 +1,2275 @@
+[
+  {
+    "eiaKey": "HOUSTON REFINING LP - HOUSTON (Texas)",
+    "company": "HOUSTON REFINING LP",
+    "site": "HOUSTON",
+    "state": "Texas",
+    "cdu_capacity": 289000,
+    "nci": 10.27,
+    "units": {
+      "ALKYLATES": 11250,
+      "CAT CRACKING: FRESH FEED": 110000,
+      "DESULFURIZATION, DIESEL FUEL": 92600,
+      "DESULFURIZATION, GASOLINE": 89000,
+      "DESULFURIZATION, HEAVY GAS OIL": 117000,
+      "DESULFURIZATION, KEROSENE AND JET": 41000,
+      "DESULFURIZATION, NAPHTHA/REFORMER FEED": 61000,
+      "THERM CRACKING, DELAYED COKING": 100500,
+      "VACUUM DISTILLATION": 196500
+    }
+  },
+  {
+    "eiaKey": "AMERICAN REFINING GROUP INC - BRADFORD (Pennsylvania)",
+    "company": "AMERICAN REFINING GROUP INC",
+    "site": "BRADFORD",
+    "state": "Pennsylvania",
+    "cdu_capacity": 11800,
+    "nci": 19.48,
+    "units": {
+      "ASPHALT & ROAD OIL": 560,
+      "CAT REFORMING: HIGH PRESSURE": 2200,
+      "DESULFURIZATION, DIESEL FUEL": 4800,
+      "DESULFURIZATION, NAPHTHA/REFORMER FEED": 3900,
+      "ISOMERIZATION (ISOPENTANE/ISOHEXANE)": 780,
+      "LUBRICANTS": 2945
+    }
+  },
+  {
+    "eiaKey": "PETRO STAR INC - NORTH POLE (Alaska)",
+    "company": "PETRO STAR INC",
+    "site": "NORTH POLE",
+    "state": "Alaska",
+    "cdu_capacity": 25000,
+    "nci": 1.18,
+    "units": {
+      "ASPHALT & ROAD OIL": 3000
+    }
+  },
+  {
+    "eiaKey": "PETRO STAR INC - VALDEZ (Alaska)",
+    "company": "PETRO STAR INC",
+    "site": "VALDEZ",
+    "state": "Alaska",
+    "cdu_capacity": 65000,
+    "nci": 1,
+    "units": {}
+  },
+  {
+    "eiaKey": "LAZARUS ENERGY LLC - NIXON (Texas)",
+    "company": "LAZARUS ENERGY LLC",
+    "site": "NIXON",
+    "state": "Texas",
+    "cdu_capacity": 15000,
+    "nci": 1,
+    "units": {}
+  },
+  {
+    "eiaKey": "BP PRODUCTS NORTH AMERICA INC - WHITING (Indiana)",
+    "company": "BP PRODUCTS NORTH AMERICA INC",
+    "site": "WHITING",
+    "state": "Indiana",
+    "cdu_capacity": 440000,
+    "nci": 12.02,
+    "units": {
+      "ALKYLATES": 32000,
+      "AROMATICS": 16800,
+      "ASPHALT & ROAD OIL": 29500,
+      "CAT CRACKING: FRESH FEED": 177000,
+      "CAT REFORMING: HIGH PRESSURE": 67000,
+      "DESULFURIZATION, DIESEL FUEL": 121500,
+      "DESULFURIZATION, GASOLINE": 97000,
+      "DESULFURIZATION, HEAVY GAS OIL": 192000,
+      "DESULFURIZATION, KEROSENE AND JET": 51400,
+      "DESULFURIZATION, NAPHTHA/REFORMER FEED": 122700,
+      "ISOMERIZATION (ISOPENTANE/ISOHEXANE)": 27900,
+      "THERM CRACKING, DELAYED COKING": 102000,
+      "VACUUM DISTILLATION": 276200
+    }
+  },
+  {
+    "eiaKey": "BP PRODUCTS NORTH AMERICA INC - FERNDALE (Washington)",
+    "company": "BP PRODUCTS NORTH AMERICA INC",
+    "site": "FERNDALE",
+    "state": "Washington",
+    "cdu_capacity": 251000,
+    "nci": 9.38,
+    "units": {
+      "CAT HYDROCRACKING, GAS OIL": 65000,
+      "CAT REFORMING: LOW PRESSURE": 65400,
+      "DESULFURIZATION, DIESEL FUEL": 59400,
+      "DESULFURIZATION, KEROSENE AND JET": 20000,
+      "DESULFURIZATION, NAPHTHA/REFORMER FEED": 100500,
+      "ISOMERIZATION (ISOPENTANE/ISOHEXANE)": 26000,
+      "THERM CRACKING, DELAYED COKING": 61500,
+      "VACUUM DISTILLATION": 139000
+    }
+  },
+  {
+    "eiaKey": "BUCKEYE TEXAS PROCESSING LLC - CORPUS CHRISTI (Texas)",
+    "company": "BUCKEYE TEXAS PROCESSING LLC",
+    "site": "CORPUS CHRISTI",
+    "state": "Texas",
+    "cdu_capacity": 65000,
+    "nci": 1,
+    "units": {}
+  },
+  {
+    "eiaKey": "CALUMET COTTON VALLEY REFINING LLC - COTTON VALLEY (Louisiana)",
+    "company": "CALUMET COTTON VALLEY REFINING LLC",
+    "site": "COTTON VALLEY",
+    "state": "Louisiana",
+    "cdu_capacity": 14000,
+    "nci": 2.23,
+    "units": {
+      "DESULFURIZATION, NAPHTHA/REFORMER FEED": 6500,
+      "ISOMERIZATION (ISOPENTANE/ISOHEXANE)": 500
+    }
+  },
+  {
+    "eiaKey": "CALUMET MONTANA REFINING LLC - GREAT FALLS (Montana)",
+    "company": "CALUMET MONTANA REFINING LLC",
+    "site": "GREAT FALLS",
+    "state": "Montana",
+    "cdu_capacity": 17000,
+    "nci": 7.1,
+    "units": {
+      "ALKYLATES": 750,
+      "ASPHALT & ROAD OIL": 4700,
+      "CAT CRACKING: FRESH FEED": 3000,
+      "CAT REFORMING: HIGH PRESSURE": 1400,
+      "DESULFURIZATION, DIESEL FUEL": 7000,
+      "DESULFURIZATION, NAPHTHA/REFORMER FEED": 2750,
+      "ISOMERIZATION (ISOPENTANE/ISOHEXANE)": 1500,
+      "VACUUM DISTILLATION": 10000
+    }
+  },
+  {
+    "eiaKey": "CALUMET PRINCETON REFINING LLC - PRINCETON (Louisiana)",
+    "company": "CALUMET PRINCETON REFINING LLC",
+    "site": "PRINCETON",
+    "state": "Louisiana",
+    "cdu_capacity": 8655,
+    "nci": 54.24,
+    "units": {
+      "ASPHALT & ROAD OIL": 2000,
+      "DESULFURIZATION, OTHER DISTILLATE": 9500,
+      "LUBRICANTS": 7000,
+      "VACUUM DISTILLATION": 7000
+    }
+  },
+  {
+    "eiaKey": "CALUMET SHREVEPORT REFINING LLC - SHREVEPORT (Louisiana)",
+    "company": "CALUMET SHREVEPORT REFINING LLC",
+    "site": "SHREVEPORT",
+    "state": "Louisiana",
+    "cdu_capacity": 60000,
+    "nci": 17.68,
+    "units": {
+      "ASPHALT & ROAD OIL": 6500,
+      "CAT REFORMING: LOW PRESSURE": 12000,
+      "DESULFURIZATION, DIESEL FUEL": 14000,
+      "DESULFURIZATION, HEAVY GAS OIL": 21100,
+      "DESULFURIZATION, NAPHTHA/REFORMER FEED": 16000,
+      "DESULFURIZATION, OTHER": 1200,
+      "LUBRICANTS": 12500,
+      "VACUUM DISTILLATION": 28000
+    }
+  },
+  {
+    "eiaKey": "LIMA REFINING COMPANY - LIMA (Ohio)",
+    "company": "LIMA REFINING COMPANY",
+    "site": "LIMA",
+    "state": "Ohio",
+    "cdu_capacity": 185000,
+    "nci": 10.19,
+    "units": {
+      "AROMATICS": 9200,
+      "CAT CRACKING: FRESH FEED": 45300,
+      "CAT HYDROCRACKING, GAS OIL": 26000,
+      "CAT REFORMING: HIGH PRESSURE": 55000,
+      "DESULFURIZATION, DIESEL FUEL": 36000,
+      "DESULFURIZATION, GASOLINE": 35000,
+      "DESULFURIZATION, KEROSENE AND JET": 27000,
+      "DESULFURIZATION, NAPHTHA/REFORMER FEED": 63000,
+      "ISOMERIZATION (ISOBUTANE)": 4500,
+      "ISOMERIZATION (ISOPENTANE/ISOHEXANE)": 18700,
+      "THERM CRACKING, DELAYED COKING": 23000,
+      "VACUUM DISTILLATION": 57000
+    }
+  },
+  {
+    "eiaKey": "OHIO REFINING COMPANY LLC - TOLEDO (Ohio)",
+    "company": "OHIO REFINING COMPANY LLC",
+    "site": "TOLEDO",
+    "state": "Ohio",
+    "cdu_capacity": 160000,
+    "nci": 10.39,
+    "units": {
+      "ALKYLATES": 11500,
+      "ASPHALT & ROAD OIL": 9000,
+      "CAT CRACKING: FRESH FEED": 55000,
+      "CAT HYDROCRACKING, GAS OIL": 32500,
+      "CAT REFORMING: LOW PRESSURE": 42000,
+      "DESULFURIZATION, DIESEL FUEL": 22500,
+      "DESULFURIZATION, HEAVY GAS OIL": 53000,
+      "DESULFURIZATION, NAPHTHA/REFORMER FEED": 42000,
+      "THERM CRACKING, DELAYED COKING": 36000,
+      "VACUUM DISTILLATION": 72500
+    }
+  },
+  {
+    "eiaKey": "SUPERIOR REFINING COMPANY LLC - SUPERIOR (Wisconsin)",
+    "company": "SUPERIOR REFINING COMPANY LLC",
+    "site": "SUPERIOR",
+    "state": "Wisconsin",
+    "cdu_capacity": 50000,
+    "nci": 8.14,
+    "units": {
+      "ALKYLATES": 1700,
+      "AROMATICS": 6100,
+      "ASPHALT & ROAD OIL": 20000,
+      "CAT CRACKING: FRESH FEED": 11323,
+      "CAT REFORMING: LOW PRESSURE": 9300,
+      "DESULFURIZATION, DIESEL FUEL": 7500,
+      "DESULFURIZATION, GASOLINE": 12500,
+      "DESULFURIZATION, KEROSENE AND JET": 8000,
+      "DESULFURIZATION, NAPHTHA/REFORMER FEED": 12500,
+      "VACUUM DISTILLATION": 29100
+    }
+  },
+  {
+    "eiaKey": "CHEVRON USA INC - EL SEGUNDO (California)",
+    "company": "CHEVRON USA INC",
+    "site": "EL SEGUNDO",
+    "state": "California",
+    "cdu_capacity": 290500,
+    "nci": 12.1,
+    "units": {
+      "ALKYLATES": 33300,
+      "CAT CRACKING: FRESH FEED": 73800,
+      "CAT HYDROCRACKING, GAS OIL": 55000,
+      "CAT REFORMING: LOW PRESSURE": 49000,
+      "DESULFURIZATION, DIESEL FUEL": 51500,
+      "DESULFURIZATION, HEAVY GAS OIL": 74000,
+      "DESULFURIZATION, KEROSENE AND JET": 41500,
+      "DESULFURIZATION, NAPHTHA/REFORMER FEED": 62500,
+      "DESULFURIZATION, OTHER DISTILLATE": 14000,
+      "ISOMERIZATION (ISOBUTANE)": 10500,
+      "ISOMERIZATION (ISOPENTANE/ISOHEXANE)": 22300,
+      "THERM CRACKING, DELAYED COKING": 76700,
+      "VACUUM DISTILLATION": 169100
+    }
+  },
+  {
+    "eiaKey": "CHEVRON USA INC - RICHMOND (California)",
+    "company": "CHEVRON USA INC",
+    "site": "RICHMOND",
+    "state": "California",
+    "cdu_capacity": 257200,
+    "nci": 24.07,
+    "units": {
+      "ALKYLATES": 32662,
+      "CAT CRACKING: FRESH FEED": 90000,
+      "CAT HYDROCRACKING, GAS OIL": 103400,
+      "CAT REFORMING: LOW PRESSURE": 71300,
+      "DESULFURIZATION, DIESEL FUEL": 64800,
+      "DESULFURIZATION, GASOLINE": 64800,
+      "DESULFURIZATION, HEAVY GAS OIL": 65000,
+      "DESULFURIZATION, KEROSENE AND JET": 96000,
+      "DESULFURIZATION, NAPHTHA/REFORMER FEED": 57600,
+      "DESULFURIZATION, OTHER": 34000,
+      "FUELS SOLVENT DEASPHALTING": 56000,
+      "ISOMERIZATION (ISOBUTANE)": 7200,
+      "ISOMERIZATION (ISOPENTANE/ISOHEXANE)": 46000,
+      "LUBRICANTS": 34000,
+      "VACUUM DISTILLATION": 123456
+    }
+  },
+  {
+    "eiaKey": "CHEVRON USA INC - PASCAGOULA (Mississippi)",
+    "company": "CHEVRON USA INC",
+    "site": "PASCAGOULA",
+    "state": "Mississippi",
+    "cdu_capacity": 375200,
+    "nci": 16,
+    "units": {
+      "ALKYLATES": 22600,
+      "AROMATICS": 15600,
+      "CAT CRACKING: FRESH FEED": 88000,
+      "CAT HYDROCRACKING, GAS OIL": 119000,
+      "CAT REFORMING: HIGH PRESSURE": 40000,
+      "CAT REFORMING: LOW PRESSURE": 61600,
+      "DESULFURIZATION, DIESEL FUEL": 35500,
+      "DESULFURIZATION, HEAVY GAS OIL": 104000,
+      "DESULFURIZATION, KEROSENE AND JET": 34000,
+      "DESULFURIZATION, NAPHTHA/REFORMER FEED": 62000,
+      "DESULFURIZATION, OTHER": 50000,
+      "LUBRICANTS": 25000,
+      "THERM CRACKING, DELAYED COKING": 104000,
+      "VACUUM DISTILLATION": 334000
+    }
+  },
+  {
+    "eiaKey": "CHEVRON USA INC - SALT LAKE CITY (Utah)",
+    "company": "CHEVRON USA INC",
+    "site": "SALT LAKE CITY",
+    "state": "Utah",
+    "cdu_capacity": 57600,
+    "nci": 8.71,
+    "units": {
+      "ALKYLATES": 5200,
+      "CAT CRACKING: FRESH FEED": 15500,
+      "CAT REFORMING: HIGH PRESSURE": 9100,
+      "DESULFURIZATION, DIESEL FUEL": 13300,
+      "DESULFURIZATION, NAPHTHA/REFORMER FEED": 9100,
+      "DESULFURIZATION, OTHER": 7200,
+      "DESULFURIZATION, OTHER DISTILLATE": 20700,
+      "ISOMERIZATION (ISOBUTANE)": 1418,
+      "THERM CRACKING, DELAYED COKING": 10000,
+      "VACUUM DISTILLATION": 27900
+    }
+  },
+  {
+    "eiaKey": "PASADENA REFINING SYSTEMS INC - PASADENA (Texas)",
+    "company": "PASADENA REFINING SYSTEMS INC",
+    "site": "PASADENA",
+    "state": "Texas",
+    "cdu_capacity": 125000,
+    "nci": 3.1,
+    "units": {
+      "CAT REFORMING: LOW PRESSURE": 24000,
+      "DESULFURIZATION, KEROSENE AND JET": 12400,
+      "DESULFURIZATION, NAPHTHA/REFORMER FEED": 24000,
+      "VACUUM DISTILLATION": 38000
+    }
+  },
+  {
+    "eiaKey": "CENEX HARVEST STATES COOP - LAUREL (Montana)",
+    "company": "CENEX HARVEST STATES COOP",
+    "site": "LAUREL",
+    "state": "Montana",
+    "cdu_capacity": 64000,
+    "nci": 9.72,
+    "units": {
+      "ALKYLATES": 4000,
+      "ASPHALT & ROAD OIL": 19800,
+      "CAT CRACKING: FRESH FEED": 16500,
+      "CAT REFORMING: LOW PRESSURE": 12500,
+      "DESULFURIZATION, HEAVY GAS OIL": 20000,
+      "DESULFURIZATION, NAPHTHA/REFORMER FEED": 17000,
+      "DESULFURIZATION, OTHER DISTILLATE": 25000,
+      "ISOMERIZATION (ISOBUTANE)": 1250,
+      "THERM CRACKING, DELAYED COKING": 16000,
+      "VACUUM DISTILLATION": 32200
+    }
+  },
+  {
+    "eiaKey": "CHS MCPHERSON REFINERY INC - MCPHERSON (Kansas)",
+    "company": "CHS MCPHERSON REFINERY INC",
+    "site": "MCPHERSON",
+    "state": "Kansas",
+    "cdu_capacity": 117100,
+    "nci": 12.3,
+    "units": {
+      "ALKYLATES": 10500,
+      "CAT CRACKING: FRESH FEED": 24800,
+      "CAT HYDROCRACKING, GAS OIL": 43000,
+      "CAT REFORMING: LOW PRESSURE": 28500,
+      "DESULFURIZATION, DIESEL FUEL": 47000,
+      "DESULFURIZATION, NAPHTHA/REFORMER FEED": 42400,
+      "ISOMERIZATION (ISOBUTANE)": 2500,
+      "ISOMERIZATION (ISOPENTANE/ISOHEXANE)": 12000,
+      "THERM CRACKING, DELAYED COKING": 27500,
+      "VACUUM DISTILLATION": 52500
+    }
+  },
+  {
+    "eiaKey": "CONOCOPHILLIPS ALASKA INC - PRUDHOE BAY (Alaska)",
+    "company": "CONOCOPHILLIPS ALASKA INC",
+    "site": "PRUDHOE BAY",
+    "state": "Alaska",
+    "cdu_capacity": 16000,
+    "nci": 1,
+    "units": {}
+  },
+  {
+    "eiaKey": "COUNTRYMARK REFINING & LOGISTICS LLC - MOUNT VERNON (Indiana)",
+    "company": "COUNTRYMARK REFINING & LOGISTICS LLC",
+    "site": "MOUNT VERNON",
+    "state": "Indiana",
+    "cdu_capacity": 35800,
+    "nci": 8.62,
+    "units": {
+      "ALKYLATES": 2400,
+      "ASPHALT & ROAD OIL": 3700,
+      "CAT CRACKING: FRESH FEED": 9000,
+      "CAT REFORMING: LOW PRESSURE": 6850,
+      "DESULFURIZATION, DIESEL FUEL": 16300,
+      "DESULFURIZATION, GASOLINE": 6700,
+      "DESULFURIZATION, NAPHTHA/REFORMER FEED": 11700,
+      "ISOMERIZATION (ISOPENTANE/ISOHEXANE)": 3850,
+      "VACUUM DISTILLATION": 14500
+    }
+  },
+  {
+    "eiaKey": "CVR REFINING CVL LLC - COFFEYVILLE (Kansas)",
+    "company": "CVR REFINING CVL LLC",
+    "site": "COFFEYVILLE",
+    "state": "Kansas",
+    "cdu_capacity": 136000,
+    "nci": 8.01,
+    "units": {
+      "ALKYLATES": 9000,
+      "CAT CRACKING: FRESH FEED": 36900,
+      "CAT REFORMING: LOW PRESSURE": 26500,
+      "DESULFURIZATION, DIESEL FUEL": 34000,
+      "DESULFURIZATION, GASOLINE": 22000,
+      "DESULFURIZATION, KEROSENE AND JET": 9000,
+      "DESULFURIZATION, NAPHTHA/REFORMER FEED": 38000,
+      "DESULFURIZATION, OTHER DISTILLATE": 27800,
+      "THERM CRACKING, DELAYED COKING": 25000,
+      "VACUUM DISTILLATION": 46000
+    }
+  },
+  {
+    "eiaKey": "CVR REFINING WYN LLC - WYNNEWOOD (Oklahoma)",
+    "company": "CVR REFINING WYN LLC",
+    "site": "WYNNEWOOD",
+    "state": "Oklahoma",
+    "cdu_capacity": 78000,
+    "nci": 9.85,
+    "units": {
+      "ALKYLATES": 5500,
+      "AROMATICS": 21000,
+      "CAT CRACKING: FRESH FEED": 21200,
+      "CAT REFORMING: LOW PRESSURE": 18700,
+      "DESULFURIZATION, DIESEL FUEL": 28200,
+      "DESULFURIZATION, GASOLINE": 14900,
+      "DESULFURIZATION, NAPHTHA/REFORMER FEED": 29300,
+      "VACUUM DISTILLATION": 34000
+    }
+  },
+  {
+    "eiaKey": "ALON REFINING KROTZ SPRINGS INC - KROTZ SPRINGS (Louisiana)",
+    "company": "ALON REFINING KROTZ SPRINGS INC",
+    "site": "KROTZ SPRINGS",
+    "state": "Louisiana",
+    "cdu_capacity": 83000,
+    "nci": 7.54,
+    "units": {
+      "ALKYLATES": 6000,
+      "CAT CRACKING: FRESH FEED": 34000,
+      "CAT REFORMING: HIGH PRESSURE": 13000,
+      "DESULFURIZATION, GASOLINE": 18000,
+      "DESULFURIZATION, NAPHTHA/REFORMER FEED": 14000,
+      "ISOMERIZATION (ISOPENTANE/ISOHEXANE)": 6220,
+      "VACUUM DISTILLATION": 36200
+    }
+  },
+  {
+    "eiaKey": "ALON USA ENERGY INC - BIG SPRING (Texas)",
+    "company": "ALON USA ENERGY INC",
+    "site": "BIG SPRING",
+    "state": "Texas",
+    "cdu_capacity": 74000,
+    "nci": 8.17,
+    "units": {
+      "ALKYLATES": 5000,
+      "AROMATICS": 1000,
+      "ASPHALT & ROAD OIL": 7600,
+      "CAT CRACKING: FRESH FEED": 23500,
+      "CAT REFORMING: LOW PRESSURE": 21500,
+      "DESULFURIZATION, DIESEL FUEL": 24000,
+      "DESULFURIZATION, HEAVY GAS OIL": 6300,
+      "DESULFURIZATION, KEROSENE AND JET": 5000,
+      "DESULFURIZATION, NAPHTHA/REFORMER FEED": 25500,
+      "FUELS SOLVENT DEASPHALTING": 10000,
+      "VACUUM DISTILLATION": 28000
+    }
+  },
+  {
+    "eiaKey": "DELEK REFINING LTD - TYLER (Texas)",
+    "company": "DELEK REFINING LTD",
+    "site": "TYLER",
+    "state": "Texas",
+    "cdu_capacity": 77500,
+    "nci": 7.56,
+    "units": {
+      "ALKYLATES": 4720,
+      "CAT CRACKING: FRESH FEED": 20250,
+      "CAT REFORMING: LOW PRESSURE": 17500,
+      "DESULFURIZATION, DIESEL FUEL": 36000,
+      "DESULFURIZATION, GASOLINE": 13000,
+      "DESULFURIZATION, NAPHTHA/REFORMER FEED": 28000,
+      "THERM CRACKING, DELAYED COKING": 7500,
+      "VACUUM DISTILLATION": 28000
+    }
+  },
+  {
+    "eiaKey": "LION OIL CO - EL DORADO (Arkansas)",
+    "company": "LION OIL CO",
+    "site": "EL DORADO",
+    "state": "Arkansas",
+    "cdu_capacity": 85000,
+    "nci": 9.32,
+    "units": {
+      "ALKYLATES": 5000,
+      "ASPHALT & ROAD OIL": 20500,
+      "CAT CRACKING: FRESH FEED": 21000,
+      "CAT REFORMING: LOW PRESSURE": 15300,
+      "DESULFURIZATION, DIESEL FUEL": 35000,
+      "DESULFURIZATION, GASOLINE": 8750,
+      "DESULFURIZATION, HEAVY GAS OIL": 21000,
+      "DESULFURIZATION, NAPHTHA/REFORMER FEED": 20000,
+      "DESULFURIZATION, OTHER": 8000,
+      "ISOMERIZATION (ISOPENTANE/ISOHEXANE)": 8000,
+      "VACUUM DISTILLATION": 45000
+    }
+  },
+  {
+    "eiaKey": "MONROE ENERGY LLC - TRAINER (Pennsylvania)",
+    "company": "MONROE ENERGY LLC",
+    "site": "TRAINER",
+    "state": "Pennsylvania",
+    "cdu_capacity": 208000,
+    "nci": 7.42,
+    "units": {
+      "ALKYLATES": 12000,
+      "CAT CRACKING: FRESH FEED": 53000,
+      "CAT HYDROCRACKING, DISTILLATE": 23000,
+      "CAT REFORMING: LOW PRESSURE": 50000,
+      "DESULFURIZATION, DIESEL FUEL": 53300,
+      "DESULFURIZATION, GASOLINE": 34000,
+      "DESULFURIZATION, KEROSENE AND JET": 23300,
+      "DESULFURIZATION, NAPHTHA/REFORMER FEED": 80000,
+      "VACUUM DISTILLATION": 73000
+    }
+  },
+  {
+    "eiaKey": "ERGON REFINING INC - VICKSBURG (Mississippi)",
+    "company": "ERGON REFINING INC",
+    "site": "VICKSBURG",
+    "state": "Mississippi",
+    "cdu_capacity": 27300,
+    "nci": 55.52,
+    "units": {
+      "ASPHALT & ROAD OIL": 10000,
+      "DESULFURIZATION, DIESEL FUEL": 2500,
+      "DESULFURIZATION, OTHER": 20500,
+      "LUBRICANTS": 23000,
+      "VACUUM DISTILLATION": 18000
+    }
+  },
+  {
+    "eiaKey": "ERGON WEST VIRGINIA INC - NEWELL (West Virginia)",
+    "company": "ERGON WEST VIRGINIA INC",
+    "site": "NEWELL",
+    "state": "West Virginia",
+    "cdu_capacity": 23000,
+    "nci": 20.9,
+    "units": {
+      "ASPHALT & ROAD OIL": 700,
+      "CAT REFORMING: LOW PRESSURE": 4700,
+      "DESULFURIZATION, DIESEL FUEL": 9500,
+      "DESULFURIZATION, HEAVY GAS OIL": 6900,
+      "DESULFURIZATION, NAPHTHA/REFORMER FEED": 7700,
+      "LUBRICANTS": 6000,
+      "VACUUM DISTILLATION": 8600
+    }
+  },
+  {
+    "eiaKey": "EXXONMOBIL REFINING & SUPPLY CO - JOLIET (Illinois)",
+    "company": "EXXONMOBIL REFINING & SUPPLY CO",
+    "site": "JOLIET",
+    "state": "Illinois",
+    "cdu_capacity": 275000,
+    "nci": 9.51,
+    "units": {
+      "ALKYLATES": 32000,
+      "ASPHALT & ROAD OIL": 17100,
+      "CAT CRACKING: FRESH FEED": 100300,
+      "CAT REFORMING: LOW PRESSURE": 52600,
+      "DESULFURIZATION, DIESEL FUEL": 89100,
+      "DESULFURIZATION, NAPHTHA/REFORMER FEED": 179300,
+      "THERM CRACKING, DELAYED COKING": 58500,
+      "VACUUM DISTILLATION": 143800
+    }
+  },
+  {
+    "eiaKey": "EXXONMOBIL REFINING & SUPPLY CO - BATON ROUGE (Louisiana)",
+    "company": "EXXONMOBIL REFINING & SUPPLY CO",
+    "site": "BATON ROUGE",
+    "state": "Louisiana",
+    "cdu_capacity": 544600,
+    "nci": 11.67,
+    "units": {
+      "ALKYLATES": 43200,
+      "ASPHALT & ROAD OIL": 40000,
+      "CAT CRACKING: FRESH FEED": 243000,
+      "CAT HYDROCRACKING, DISTILLATE": 27000,
+      "CAT REFORMING: LOW PRESSURE": 80000,
+      "DESULFURIZATION, DIESEL FUEL": 216900,
+      "DESULFURIZATION, GASOLINE": 266300,
+      "DESULFURIZATION, NAPHTHA/REFORMER FEED": 80000,
+      "LUBRICANTS": 16500,
+      "THERM CRACKING, DELAYED COKING": 123500,
+      "VACUUM DISTILLATION": 254000
+    }
+  },
+  {
+    "eiaKey": "EXXONMOBIL REFINING & SUPPLY CO - BAYTOWN (Texas)",
+    "company": "EXXONMOBIL REFINING & SUPPLY CO",
+    "site": "BAYTOWN",
+    "state": "Texas",
+    "cdu_capacity": 588000,
+    "nci": 13.81,
+    "units": {
+      "ALKYLATES": 42000,
+      "CAT CRACKING: FRESH FEED": 220000,
+      "CAT HYDROCRACKING, DISTILLATE": 30600,
+      "CAT REFORMING: LOW PRESSURE": 126500,
+      "DESULFURIZATION, DIESEL FUEL": 160000,
+      "DESULFURIZATION, GASOLINE": 212100,
+      "DESULFURIZATION, HEAVY GAS OIL": 117000,
+      "DESULFURIZATION, KEROSENE AND JET": 134400,
+      "DESULFURIZATION, NAPHTHA/REFORMER FEED": 158000,
+      "DESULFURIZATION, OTHER": 50300,
+      "FUELS SOLVENT DEASPHALTING": 47000,
+      "LUBRICANTS": 32000,
+      "THERM CRACKING, DELAYED COKING": 54000,
+      "THERM CRACKING, FLUID COKING": 42000,
+      "VACUUM DISTILLATION": 297000
+    }
+  },
+  {
+    "eiaKey": "EXXONMOBIL REFINING & SUPPLY CO - BEAUMONT (Texas)",
+    "company": "EXXONMOBIL REFINING & SUPPLY CO",
+    "site": "BEAUMONT",
+    "state": "Texas",
+    "cdu_capacity": 637400,
+    "nci": 7.92,
+    "units": {
+      "ALKYLATES": 16300,
+      "CAT CRACKING: FRESH FEED": 115000,
+      "CAT HYDROCRACKING, DISTILLATE": 70000,
+      "CAT REFORMING: LOW PRESSURE": 146000,
+      "DESULFURIZATION, DIESEL FUEL": 97000,
+      "DESULFURIZATION, GASOLINE": 69700,
+      "DESULFURIZATION, KEROSENE AND JET": 121000,
+      "DESULFURIZATION, NAPHTHA/REFORMER FEED": 173700,
+      "DESULFURIZATION, OTHER": 23300,
+      "ISOMERIZATION (ISOBUTANE)": 14600,
+      "ISOMERIZATION (ISOPENTANE/ISOHEXANE)": 38600,
+      "THERM CRACKING, DELAYED COKING": 47000,
+      "VACUUM DISTILLATION": 180000
+    }
+  },
+  {
+    "eiaKey": "BIG WEST OIL CO - NORTH SALT LAKE (Utah)",
+    "company": "BIG WEST OIL CO",
+    "site": "NORTH SALT LAKE",
+    "state": "Utah",
+    "cdu_capacity": 36000,
+    "nci": 8.78,
+    "units": {
+      "ALKYLATES": 3200,
+      "CAT CRACKING: FRESH FEED": 12500,
+      "CAT REFORMING: HIGH PRESSURE": 9000,
+      "DESULFURIZATION, DIESEL FUEL": 13000,
+      "DESULFURIZATION, NAPHTHA/REFORMER FEED": 11800,
+      "ISOMERIZATION (ISOBUTANE)": 1900,
+      "ISOMERIZATION (ISOPENTANE/ISOHEXANE)": 3300
+    }
+  },
+  {
+    "eiaKey": "FORELAND REFINING CORP - ELY (Nevada)",
+    "company": "FORELAND REFINING CORP",
+    "site": "ELY",
+    "state": "Nevada",
+    "cdu_capacity": 5000,
+    "nci": 2.58,
+    "units": {
+      "ASPHALT & ROAD OIL": 1600,
+      "VACUUM DISTILLATION": 2750
+    }
+  },
+  {
+    "eiaKey": "GOODWAY REFINING LLC - ATMORE (Alabama)",
+    "company": "GOODWAY REFINING LLC",
+    "site": "ATMORE",
+    "state": "Alabama",
+    "cdu_capacity": 5000,
+    "nci": 1,
+    "units": {}
+  },
+  {
+    "eiaKey": "HARTREE REFINING LLC - CHANNELVIEW (Texas)",
+    "company": "HARTREE REFINING LLC",
+    "site": "CHANNELVIEW",
+    "state": "Texas",
+    "cdu_capacity": 50000,
+    "nci": 1,
+    "units": {}
+  },
+  {
+    "eiaKey": "HF SINCLAIR CASPER REFINING COMPANY - EVANSVILLE (Wyoming)",
+    "company": "HF SINCLAIR CASPER REFINING COMPANY",
+    "site": "EVANSVILLE",
+    "state": "Wyoming",
+    "cdu_capacity": 32200,
+    "nci": 5.29,
+    "units": {
+      "CAT CRACKING: FRESH FEED": 10500,
+      "CAT REFORMING: LOW PRESSURE": 5000,
+      "DESULFURIZATION, DIESEL FUEL": 11200,
+      "DESULFURIZATION, GASOLINE": 6500,
+      "DESULFURIZATION, NAPHTHA/REFORMER FEED": 8200
+    }
+  },
+  {
+    "eiaKey": "HF SINCLAIR EL DORADO REFINING LLC - EL DORADO (Kansas)",
+    "company": "HF SINCLAIR EL DORADO REFINING LLC",
+    "site": "EL DORADO",
+    "state": "Kansas",
+    "cdu_capacity": 165000,
+    "nci": 10.14,
+    "units": {
+      "ALKYLATES": 14000,
+      "ASPHALT & ROAD OIL": 4000,
+      "CAT CRACKING: FRESH FEED": 44000,
+      "CAT REFORMING: HIGH PRESSURE": 23500,
+      "CAT REFORMING: LOW PRESSURE": 7500,
+      "DESULFURIZATION, DIESEL FUEL": 54000,
+      "DESULFURIZATION, GASOLINE": 27000,
+      "DESULFURIZATION, HEAVY GAS OIL": 50000,
+      "DESULFURIZATION, KEROSENE AND JET": 12000,
+      "DESULFURIZATION, NAPHTHA/REFORMER FEED": 50000,
+      "ISOMERIZATION (ISOBUTANE)": 1500,
+      "ISOMERIZATION (ISOPENTANE/ISOHEXANE)": 15000,
+      "THERM CRACKING, DELAYED COKING": 22500,
+      "VACUUM DISTILLATION": 65000
+    }
+  },
+  {
+    "eiaKey": "HF SINCLAIR NAVAJO REFINING LLC - ARTESIA (New Mexico)",
+    "company": "HF SINCLAIR NAVAJO REFINING LLC",
+    "site": "ARTESIA",
+    "state": "New Mexico",
+    "cdu_capacity": 124000,
+    "nci": 8.17,
+    "units": {
+      "ALKYLATES": 9500,
+      "ASPHALT & ROAD OIL": 7000,
+      "CAT CRACKING: FRESH FEED": 30000,
+      "CAT HYDROCRACKING, GAS OIL": 18000,
+      "CAT REFORMING: LOW PRESSURE": 24000,
+      "DESULFURIZATION, DIESEL FUEL": 43000,
+      "DESULFURIZATION, HEAVY GAS OIL": 18000,
+      "DESULFURIZATION, KEROSENE AND JET": 15000,
+      "DESULFURIZATION, NAPHTHA/REFORMER FEED": 42000,
+      "FUELS SOLVENT DEASPHALTING": 18000,
+      "VACUUM DISTILLATION": 34300
+    }
+  },
+  {
+    "eiaKey": "HF SINCLAIR PUGET SOUND REFG LLC - ANACORTES (Washington)",
+    "company": "HF SINCLAIR PUGET SOUND REFG LLC",
+    "site": "ANACORTES",
+    "state": "Washington",
+    "cdu_capacity": 149000,
+    "nci": 8.55,
+    "units": {
+      "ALKYLATES": 12500,
+      "CAT CRACKING: FRESH FEED": 57900,
+      "CAT REFORMING: HIGH PRESSURE": 21700,
+      "DESULFURIZATION, DIESEL FUEL": 39900,
+      "DESULFURIZATION, GASOLINE": 43900,
+      "DESULFURIZATION, KEROSENE AND JET": 25000,
+      "DESULFURIZATION, NAPHTHA/REFORMER FEED": 21700,
+      "THERM CRACKING, DELAYED COKING": 25300,
+      "VACUUM DISTILLATION": 65800
+    }
+  },
+  {
+    "eiaKey": "HF SINCLAIR TULSA REFINING LLC - TULSA EAST (Oklahoma)",
+    "company": "HF SINCLAIR TULSA REFINING LLC",
+    "site": "TULSA EAST",
+    "state": "Oklahoma",
+    "cdu_capacity": 75500,
+    "nci": 11.77,
+    "units": {
+      "ALKYLATES": 5500,
+      "ASPHALT & ROAD OIL": 15200,
+      "CAT CRACKING: FRESH FEED": 28000,
+      "CAT REFORMING: LOW PRESSURE": 25000,
+      "DESULFURIZATION, DIESEL FUEL": 45000,
+      "DESULFURIZATION, GASOLINE": 29000,
+      "DESULFURIZATION, NAPHTHA/REFORMER FEED": 25000,
+      "ISOMERIZATION (ISOPENTANE/ISOHEXANE)": 13000,
+      "VACUUM DISTILLATION": 27000
+    }
+  },
+  {
+    "eiaKey": "HF SINCLAIR TULSA REFINING LLC - TULSA WEST (Oklahoma)",
+    "company": "HF SINCLAIR TULSA REFINING LLC",
+    "site": "TULSA WEST",
+    "state": "Oklahoma",
+    "cdu_capacity": 91020,
+    "nci": 10.15,
+    "units": {
+      "ASPHALT & ROAD OIL": 6500,
+      "DESULFURIZATION, NAPHTHA/REFORMER FEED": 28000,
+      "DESULFURIZATION, OTHER": 21600,
+      "ISOMERIZATION (ISOBUTANE)": 900,
+      "LUBRICANTS": 9900,
+      "THERM CRACKING, DELAYED COKING": 9300,
+      "VACUUM DISTILLATION": 32000
+    }
+  },
+  {
+    "eiaKey": "HF SINCLAIR WOODS CROSS REFINING LLC - WOODS CROSS (Utah)",
+    "company": "HF SINCLAIR WOODS CROSS REFINING LLC",
+    "site": "WOODS CROSS",
+    "state": "Utah",
+    "cdu_capacity": 41400,
+    "nci": 10.9,
+    "units": {
+      "ALKYLATES": 5300,
+      "ASPHALT & ROAD OIL": 1800,
+      "CAT CRACKING: FRESH FEED": 18200,
+      "CAT HYDROCRACKING, GAS OIL": 15000,
+      "CAT REFORMING: HIGH PRESSURE": 8400,
+      "DESULFURIZATION, KEROSENE AND JET": 2900,
+      "DESULFURIZATION, NAPHTHA/REFORMER FEED": 12500,
+      "DESULFURIZATION, OTHER DISTILLATE": 10800,
+      "FUELS SOLVENT DEASPHALTING": 6000,
+      "ISOMERIZATION (ISOPENTANE/ISOHEXANE)": 3000
+    }
+  },
+  {
+    "eiaKey": "HF SINCLAIR WYOMING REFINING CO - SINCLAIR (Wyoming)",
+    "company": "HF SINCLAIR WYOMING REFINING CO",
+    "site": "SINCLAIR",
+    "state": "Wyoming",
+    "cdu_capacity": 92000,
+    "nci": 9.16,
+    "units": {
+      "ALKYLATES": 5000,
+      "ASPHALT & ROAD OIL": 8000,
+      "CAT CRACKING: FRESH FEED": 22000,
+      "CAT HYDROCRACKING, DISTILLATE": 16000,
+      "CAT REFORMING: HIGH PRESSURE": 13000,
+      "DESULFURIZATION, DIESEL FUEL": 18500,
+      "DESULFURIZATION, HEAVY GAS OIL": 20000,
+      "DESULFURIZATION, KEROSENE AND JET": 14000,
+      "DESULFURIZATION, NAPHTHA/REFORMER FEED": 21500,
+      "THERM CRACKING, DELAYED COKING": 20000,
+      "VACUUM DISTILLATION": 51000
+    }
+  },
+  {
+    "eiaKey": "HILCORP NORTH SLOPE LLC - PRUDHOE BAY (Alaska)",
+    "company": "HILCORP NORTH SLOPE LLC",
+    "site": "PRUDHOE BAY",
+    "state": "Alaska",
+    "cdu_capacity": 8000,
+    "nci": 1,
+    "units": {}
+  },
+  {
+    "eiaKey": "HUNT REFINING CO - TUSCALOOSA (Alabama)",
+    "company": "HUNT REFINING CO",
+    "site": "TUSCALOOSA",
+    "state": "Alabama",
+    "cdu_capacity": 52500,
+    "nci": 16.99,
+    "units": {
+      "ASPHALT & ROAD OIL": 26000,
+      "CAT HYDROCRACKING, GAS OIL": 24000,
+      "CAT REFORMING: LOW PRESSURE": 19500,
+      "DESULFURIZATION, HEAVY GAS OIL": 10500,
+      "DESULFURIZATION, KEROSENE AND JET": 3500,
+      "DESULFURIZATION, NAPHTHA/REFORMER FEED": 19500,
+      "DESULFURIZATION, OTHER DISTILLATE": 28500,
+      "ISOMERIZATION (ISOPENTANE/ISOHEXANE)": 9000,
+      "THERM CRACKING, DELAYED COKING": 38500,
+      "VACUUM DISTILLATION": 26000
+    }
+  },
+  {
+    "eiaKey": "HUNT SOUTHLAND REFINING CO - SANDERSVILLE (Mississippi)",
+    "company": "HUNT SOUTHLAND REFINING CO",
+    "site": "SANDERSVILLE",
+    "state": "Mississippi",
+    "cdu_capacity": 12500,
+    "nci": 2.83,
+    "units": {
+      "ASPHALT & ROAD OIL": 6125,
+      "VACUUM DISTILLATION": 6875
+    }
+  },
+  {
+    "eiaKey": "KERN OIL & REFINING CO - BAKERSFIELD (California)",
+    "company": "KERN OIL & REFINING CO",
+    "site": "BAKERSFIELD",
+    "state": "California",
+    "cdu_capacity": 27000,
+    "nci": 3.19,
+    "units": {
+      "CAT REFORMING: HIGH PRESSURE": 3300,
+      "CAT REFORMING: LOW PRESSURE": 2500,
+      "DESULFURIZATION, NAPHTHA/REFORMER FEED": 5000,
+      "DESULFURIZATION, OTHER DISTILLATE": 9000
+    }
+  },
+  {
+    "eiaKey": "KINDER MORGAN CRUDE & CONDENSATE - GALENA PARK (Texas)",
+    "company": "KINDER MORGAN CRUDE & CONDENSATE",
+    "site": "GALENA PARK",
+    "state": "Texas",
+    "cdu_capacity": 121000,
+    "nci": 1,
+    "units": {}
+  },
+  {
+    "eiaKey": "FLINT HILLS RESOURCES LP - SAINT PAUL (Minnesota)",
+    "company": "FLINT HILLS RESOURCES LP",
+    "site": "SAINT PAUL",
+    "state": "Minnesota",
+    "cdu_capacity": 375000,
+    "nci": 10.26,
+    "units": {
+      "ALKYLATES": 14000,
+      "ASPHALT & ROAD OIL": 45000,
+      "CAT CRACKING: FRESH FEED": 96000,
+      "CAT HYDROCRACKING, DISTILLATE": 67000,
+      "CAT REFORMING: HIGH PRESSURE": 13000,
+      "CAT REFORMING: LOW PRESSURE": 36000,
+      "DESULFURIZATION, DIESEL FUEL": 63500,
+      "DESULFURIZATION, GASOLINE": 57000,
+      "DESULFURIZATION, HEAVY GAS OIL": 128000,
+      "DESULFURIZATION, KEROSENE AND JET": 43500,
+      "DESULFURIZATION, NAPHTHA/REFORMER FEED": 49000,
+      "ISOMERIZATION (ISOPENTANE/ISOHEXANE)": 18000,
+      "THERM CRACKING, DELAYED COKING": 82000,
+      "VACUUM DISTILLATION": 234000
+    }
+  },
+  {
+    "eiaKey": "FLINT HILLS RESOURCES LP - CORPUS CHRISTI EAST (Texas)",
+    "company": "FLINT HILLS RESOURCES LP",
+    "site": "CORPUS CHRISTI EAST",
+    "state": "Texas",
+    "cdu_capacity": 90000,
+    "nci": 4.82,
+    "units": {
+      "CAT CRACKING: FRESH FEED": 49100,
+      "DESULFURIZATION, NAPHTHA/REFORMER FEED": 33000
+    }
+  },
+  {
+    "eiaKey": "FLINT HILLS RESOURCES LP - CORPUS CHRISTI WEST (Texas)",
+    "company": "FLINT HILLS RESOURCES LP",
+    "site": "CORPUS CHRISTI WEST",
+    "state": "Texas",
+    "cdu_capacity": 275000,
+    "nci": 5.64,
+    "units": {
+      "ALKYLATES": 15500,
+      "CAT CRACKING: FRESH FEED": 58100,
+      "CAT HYDROCRACKING, GAS OIL": 15500,
+      "DESULFURIZATION, DIESEL FUEL": 91000,
+      "DESULFURIZATION, GASOLINE": 72000,
+      "DESULFURIZATION, KEROSENE AND JET": 32000,
+      "DESULFURIZATION, NAPHTHA/REFORMER FEED": 60000,
+      "VACUUM DISTILLATION": 87500
+    }
+  },
+  {
+    "eiaKey": "MARATHON PETROLEUM CO LP - ROBINSON (Illinois)",
+    "company": "MARATHON PETROLEUM CO LP",
+    "site": "ROBINSON",
+    "state": "Illinois",
+    "cdu_capacity": 266000,
+    "nci": 9.22,
+    "units": {
+      "ALKYLATES": 19000,
+      "AROMATICS": 3300,
+      "CAT CRACKING: FRESH FEED": 54500,
+      "CAT HYDROCRACKING, GAS OIL": 44000,
+      "CAT REFORMING: LOW PRESSURE": 82000,
+      "DESULFURIZATION, DIESEL FUEL": 84000,
+      "DESULFURIZATION, GASOLINE": 46000,
+      "DESULFURIZATION, NAPHTHA/REFORMER FEED": 71000,
+      "ISOMERIZATION (ISOPENTANE/ISOHEXANE)": 16000,
+      "THERM CRACKING, DELAYED COKING": 31000,
+      "VACUUM DISTILLATION": 76000
+    }
+  },
+  {
+    "eiaKey": "MARATHON PETROLEUM CO LP - CATLETTSBURG (Kentucky)",
+    "company": "MARATHON PETROLEUM CO LP",
+    "site": "CATLETTSBURG",
+    "state": "Kentucky",
+    "cdu_capacity": 316000,
+    "nci": 9.17,
+    "units": {
+      "ALKYLATES": 25000,
+      "AROMATICS": 2500,
+      "ASPHALT & ROAD OIL": 35400,
+      "CAT CRACKING: FRESH FEED": 109000,
+      "CAT REFORMING: HIGH PRESSURE": 34500,
+      "CAT REFORMING: LOW PRESSURE": 24500,
+      "DESULFURIZATION, DIESEL FUEL": 81500,
+      "DESULFURIZATION, HEAVY GAS OIL": 107000,
+      "DESULFURIZATION, KEROSENE AND JET": 34000,
+      "DESULFURIZATION, NAPHTHA/REFORMER FEED": 59500,
+      "FUELS SOLVENT DEASPHALTING": 14500,
+      "ISOMERIZATION (ISOPENTANE/ISOHEXANE)": 20000,
+      "VACUUM DISTILLATION": 134000
+    }
+  },
+  {
+    "eiaKey": "MARATHON PETROLEUM CO LP - GARYVILLE (Louisiana)",
+    "company": "MARATHON PETROLEUM CO LP",
+    "site": "GARYVILLE",
+    "state": "Louisiana",
+    "cdu_capacity": 638000,
+    "nci": 11.25,
+    "units": {
+      "ALKYLATES": 52500,
+      "ASPHALT & ROAD OIL": 33000,
+      "CAT CRACKING: FRESH FEED": 150000,
+      "CAT HYDROCRACKING, GAS OIL": 130000,
+      "CAT REFORMING: LOW PRESSURE": 138500,
+      "DESULFURIZATION, DIESEL FUEL": 181500,
+      "DESULFURIZATION, GASOLINE": 128000,
+      "DESULFURIZATION, HEAVY GAS OIL": 106000,
+      "DESULFURIZATION, KEROSENE AND JET": 85000,
+      "DESULFURIZATION, NAPHTHA/REFORMER FEED": 125000,
+      "FUELS SOLVENT DEASPHALTING": 38000,
+      "ISOMERIZATION (ISOBUTANE)": 23000,
+      "ISOMERIZATION (ISOPENTANE/ISOHEXANE)": 35000,
+      "THERM CRACKING, DELAYED COKING": 110500,
+      "VACUUM DISTILLATION": 299000
+    }
+  },
+  {
+    "eiaKey": "MARATHON PETROLEUM CO LP - DETROIT (Michigan)",
+    "company": "MARATHON PETROLEUM CO LP",
+    "site": "DETROIT",
+    "state": "Michigan",
+    "cdu_capacity": 152000,
+    "nci": 9.32,
+    "units": {
+      "ALKYLATES": 8500,
+      "ASPHALT & ROAD OIL": 32000,
+      "CAT CRACKING: FRESH FEED": 44000,
+      "CAT REFORMING: LOW PRESSURE": 21500,
+      "DESULFURIZATION, DIESEL FUEL": 51000,
+      "DESULFURIZATION, HEAVY GAS OIL": 44500,
+      "DESULFURIZATION, KEROSENE AND JET": 8000,
+      "DESULFURIZATION, NAPHTHA/REFORMER FEED": 36500,
+      "THERM CRACKING, DELAYED COKING": 40500,
+      "VACUUM DISTILLATION": 90500
+    }
+  },
+  {
+    "eiaKey": "MARATHON PETROLEUM CO LP - CANTON (Ohio)",
+    "company": "MARATHON PETROLEUM CO LP",
+    "site": "CANTON",
+    "state": "Ohio",
+    "cdu_capacity": 105000,
+    "nci": 7.3,
+    "units": {
+      "ALKYLATES": 8500,
+      "ASPHALT & ROAD OIL": 17000,
+      "CAT CRACKING: FRESH FEED": 24000,
+      "CAT REFORMING: LOW PRESSURE": 23500,
+      "DESULFURIZATION, DIESEL FUEL": 25500,
+      "DESULFURIZATION, HEAVY GAS OIL": 22500,
+      "DESULFURIZATION, KEROSENE AND JET": 13500,
+      "DESULFURIZATION, NAPHTHA/REFORMER FEED": 36500,
+      "VACUUM DISTILLATION": 35000
+    }
+  },
+  {
+    "eiaKey": "MARATHON PETROLEUM CO LP - GALVESTON BAY (Texas)",
+    "company": "MARATHON PETROLEUM CO LP",
+    "site": "GALVESTON BAY",
+    "state": "Texas",
+    "cdu_capacity": 665000,
+    "nci": 10.6,
+    "units": {
+      "ALKYLATES": 67000,
+      "AROMATICS": 97000,
+      "CAT CRACKING: FRESH FEED": 219500,
+      "CAT HYDROCRACKING, DISTILLATE": 79500,
+      "CAT HYDROCRACKING, RESIDUAL": 84500,
+      "CAT REFORMING: LOW PRESSURE": 147000,
+      "DESULFURIZATION, DIESEL FUEL": 60000,
+      "DESULFURIZATION, GASOLINE": 57000,
+      "DESULFURIZATION, HEAVY GAS OIL": 108500,
+      "DESULFURIZATION, KEROSENE AND JET": 76000,
+      "DESULFURIZATION, NAPHTHA/REFORMER FEED": 129000,
+      "FUELS SOLVENT DEASPHALTING": 20000,
+      "THERM CRACKING, DELAYED COKING": 32500,
+      "VACUUM DISTILLATION": 259500
+    }
+  },
+  {
+    "eiaKey": "ST PAUL PARK REFINING CO LLC - SAINT PAUL (Minnesota)",
+    "company": "ST PAUL PARK REFINING CO LLC",
+    "site": "SAINT PAUL",
+    "state": "Minnesota",
+    "cdu_capacity": 111000,
+    "nci": 9.86,
+    "units": {
+      "ALKYLATES": 7000,
+      "ASPHALT & ROAD OIL": 19500,
+      "CAT CRACKING: FRESH FEED": 31000,
+      "CAT REFORMING: HIGH PRESSURE": 23500,
+      "DESULFURIZATION, DIESEL FUEL": 32000,
+      "DESULFURIZATION, HEAVY GAS OIL": 31000,
+      "DESULFURIZATION, KEROSENE AND JET": 10000,
+      "DESULFURIZATION, NAPHTHA/REFORMER FEED": 25000,
+      "FUELS SOLVENT DEASPHALTING": 4500,
+      "ISOMERIZATION (ISOPENTANE/ISOHEXANE)": 15500,
+      "VACUUM DISTILLATION": 51000
+    }
+  },
+  {
+    "eiaKey": "TESORO ALASKA COMPANY LLC - KENAI (Alaska)",
+    "company": "TESORO ALASKA COMPANY LLC",
+    "site": "KENAI",
+    "state": "Alaska",
+    "cdu_capacity": 72000,
+    "nci": 5.65,
+    "units": {
+      "ASPHALT & ROAD OIL": 9500,
+      "CAT HYDROCRACKING, GAS OIL": 13000,
+      "CAT REFORMING: LOW PRESSURE": 13500,
+      "DESULFURIZATION, DIESEL FUEL": 11500,
+      "DESULFURIZATION, NAPHTHA/REFORMER FEED": 13000,
+      "ISOMERIZATION (ISOPENTANE/ISOHEXANE)": 5000,
+      "VACUUM DISTILLATION": 26000
+    }
+  },
+  {
+    "eiaKey": "TESORO REFINING & MARKETING CO - CARSON (California)",
+    "company": "TESORO REFINING & MARKETING CO",
+    "site": "CARSON",
+    "state": "California",
+    "cdu_capacity": 384500,
+    "nci": 12.47,
+    "units": {
+      "ALKYLATES": 29500,
+      "CAT CRACKING: FRESH FEED": 110000,
+      "CAT HYDROCRACKING, DISTILLATE": 100500,
+      "CAT REFORMING: HIGH PRESSURE": 83000,
+      "DESULFURIZATION, DIESEL FUEL": 24000,
+      "DESULFURIZATION, GASOLINE": 17000,
+      "DESULFURIZATION, HEAVY GAS OIL": 147000,
+      "DESULFURIZATION, KEROSENE AND JET": 38500,
+      "DESULFURIZATION, NAPHTHA/REFORMER FEED": 79000,
+      "ISOMERIZATION (ISOBUTANE)": 16500,
+      "ISOMERIZATION (ISOPENTANE/ISOHEXANE)": 25500,
+      "THERM CRACKING, DELAYED COKING": 109100,
+      "VACUUM DISTILLATION": 205000
+    }
+  },
+  {
+    "eiaKey": "TESORO REFINING & MARKETING CO - MANDAN (North Dakota)",
+    "company": "TESORO REFINING & MARKETING CO",
+    "site": "MANDAN",
+    "state": "North Dakota",
+    "cdu_capacity": 75500,
+    "nci": 6.45,
+    "units": {
+      "ALKYLATES": 5500,
+      "CAT CRACKING: FRESH FEED": 28000,
+      "CAT REFORMING: HIGH PRESSURE": 12500,
+      "DESULFURIZATION, DIESEL FUEL": 25500,
+      "DESULFURIZATION, KEROSENE AND JET": 7000,
+      "DESULFURIZATION, NAPHTHA/REFORMER FEED": 29600
+    }
+  },
+  {
+    "eiaKey": "TESORO REFINING & MARKETING CO - SALT LAKE CITY (Utah)",
+    "company": "TESORO REFINING & MARKETING CO",
+    "site": "SALT LAKE CITY",
+    "state": "Utah",
+    "cdu_capacity": 72500,
+    "nci": 6.55,
+    "units": {
+      "ALKYLATES": 8000,
+      "CAT CRACKING: FRESH FEED": 28500,
+      "CAT REFORMING: HIGH PRESSURE": 11500,
+      "DESULFURIZATION, DIESEL FUEL": 22500,
+      "DESULFURIZATION, GASOLINE": 13000,
+      "DESULFURIZATION, NAPHTHA/REFORMER FEED": 12000
+    }
+  },
+  {
+    "eiaKey": "TESORO REFINING & MARKETING CO - ANACORTES (Washington)",
+    "company": "TESORO REFINING & MARKETING CO",
+    "site": "ANACORTES",
+    "state": "Washington",
+    "cdu_capacity": 122000,
+    "nci": 10.06,
+    "units": {
+      "ALKYLATES": 17000,
+      "CAT CRACKING: FRESH FEED": 51500,
+      "CAT REFORMING: LOW PRESSURE": 29500,
+      "DESULFURIZATION, DIESEL FUEL": 28500,
+      "DESULFURIZATION, GASOLINE": 28000,
+      "DESULFURIZATION, NAPHTHA/REFORMER FEED": 52500,
+      "FUELS SOLVENT DEASPHALTING": 24000,
+      "ISOMERIZATION (ISOBUTANE)": 8700,
+      "VACUUM DISTILLATION": 48000
+    }
+  },
+  {
+    "eiaKey": "WESTERN REFINING COMPANY LP - EL PASO (Texas)",
+    "company": "WESTERN REFINING COMPANY LP",
+    "site": "EL PASO",
+    "state": "Texas",
+    "cdu_capacity": 140000,
+    "nci": 7.6,
+    "units": {
+      "ALKYLATES": 13500,
+      "ASPHALT & ROAD OIL": 4000,
+      "CAT CRACKING: FRESH FEED": 35000,
+      "CAT REFORMING: LOW PRESSURE": 31000,
+      "DESULFURIZATION, DIESEL FUEL": 49000,
+      "DESULFURIZATION, GASOLINE": 38500,
+      "DESULFURIZATION, KEROSENE AND JET": 9500,
+      "DESULFURIZATION, NAPHTHA/REFORMER FEED": 34000,
+      "ISOMERIZATION (ISOBUTANE)": 3500,
+      "VACUUM DISTILLATION": 55500
+    }
+  },
+  {
+    "eiaKey": "CROSS OIL REFINING & MARKETING INC - SMACKOVER (Arkansas)",
+    "company": "CROSS OIL REFINING & MARKETING INC",
+    "site": "SMACKOVER",
+    "state": "Arkansas",
+    "cdu_capacity": 7700,
+    "nci": 45.79,
+    "units": {
+      "ASPHALT & ROAD OIL": 800,
+      "DESULFURIZATION, OTHER": 6000,
+      "LUBRICANTS": 5350,
+      "VACUUM DISTILLATION": 3850
+    }
+  },
+  {
+    "eiaKey": "MAGELLAN PROCESSING LP - CORPUS CHRISTI (Texas)",
+    "company": "MAGELLAN PROCESSING LP",
+    "site": "CORPUS CHRISTI",
+    "state": "Texas",
+    "cdu_capacity": 55000,
+    "nci": 1,
+    "units": {}
+  },
+  {
+    "eiaKey": "PAR HAWAII REFINING LLC - KAPOLEI (Hawaii)",
+    "company": "PAR HAWAII REFINING LLC",
+    "site": "KAPOLEI",
+    "state": "Hawaii",
+    "cdu_capacity": 95000,
+    "nci": 4.34,
+    "units": {
+      "CAT HYDROCRACKING, DISTILLATE": 2000,
+      "CAT HYDROCRACKING, GAS OIL": 18000,
+      "CAT REFORMING: LOW PRESSURE": 13500,
+      "DESULFURIZATION, NAPHTHA/REFORMER FEED": 13000,
+      "THERM CRACKING, VISBREAKING": 11000,
+      "VACUUM DISTILLATION": 40000
+    }
+  },
+  {
+    "eiaKey": "PAR MONTANA LLC - BILLINGS (Montana)",
+    "company": "PAR MONTANA LLC",
+    "site": "BILLINGS",
+    "state": "Montana",
+    "cdu_capacity": 62900,
+    "nci": 9.85,
+    "units": {
+      "ALKYLATES": 5100,
+      "ASPHALT & ROAD OIL": 14500,
+      "CAT CRACKING: FRESH FEED": 23660,
+      "CAT HYDROCRACKING, DISTILLATE": 6200,
+      "CAT REFORMING: HIGH PRESSURE": 12500,
+      "DESULFURIZATION, DIESEL FUEL": 11000,
+      "DESULFURIZATION, GASOLINE": 20500,
+      "DESULFURIZATION, KEROSENE AND JET": 7600,
+      "DESULFURIZATION, NAPHTHA/REFORMER FEED": 13900,
+      "DESULFURIZATION, OTHER": 7900,
+      "THERM CRACKING, FLUID COKING": 10000,
+      "VACUUM DISTILLATION": 32300
+    }
+  },
+  {
+    "eiaKey": "US OIL & REFINING CO - TACOMA (Washington)",
+    "company": "US OIL & REFINING CO",
+    "site": "TACOMA",
+    "state": "Washington",
+    "cdu_capacity": 42000,
+    "nci": 5.74,
+    "units": {
+      "ASPHALT & ROAD OIL": 9000,
+      "CAT REFORMING: HIGH PRESSURE": 6800,
+      "DESULFURIZATION, DIESEL FUEL": 8600,
+      "DESULFURIZATION, NAPHTHA/REFORMER FEED": 11000,
+      "ISOMERIZATION (ISOPENTANE/ISOHEXANE)": 5000,
+      "VACUUM DISTILLATION": 19200
+    }
+  },
+  {
+    "eiaKey": "WYOMING REFINING CO - NEWCASTLE (Wyoming)",
+    "company": "WYOMING REFINING CO",
+    "site": "NEWCASTLE",
+    "state": "Wyoming",
+    "cdu_capacity": 20000,
+    "nci": 6.13,
+    "units": {
+      "ALKYLATES": 1300,
+      "CAT CRACKING: FRESH FEED": 7500,
+      "CAT REFORMING: HIGH PRESSURE": 4500,
+      "DESULFURIZATION, DIESEL FUEL": 6100,
+      "DESULFURIZATION, NAPHTHA/REFORMER FEED": 4500
+    }
+  },
+  {
+    "eiaKey": "CHALMETTE REFINING LLC - CHALMETTE (Louisiana)",
+    "company": "CHALMETTE REFINING LLC",
+    "site": "CHALMETTE",
+    "state": "Louisiana",
+    "cdu_capacity": 197000,
+    "nci": 11.13,
+    "units": {
+      "ALKYLATES": 16800,
+      "AROMATICS": 10500,
+      "CAT CRACKING: FRESH FEED": 75600,
+      "CAT REFORMING: HIGH PRESSURE": 30000,
+      "CAT REFORMING: LOW PRESSURE": 22700,
+      "DESULFURIZATION, DIESEL FUEL": 35000,
+      "DESULFURIZATION, GASOLINE": 46000,
+      "DESULFURIZATION, HEAVY GAS OIL": 65600,
+      "DESULFURIZATION, NAPHTHA/REFORMER FEED": 42000,
+      "THERM CRACKING, DELAYED COKING": 42000,
+      "VACUUM DISTILLATION": 169000
+    }
+  },
+  {
+    "eiaKey": "CPI OPERATIONS LLC - PAULSBORO (New Jersey)",
+    "company": "CPI OPERATIONS LLC",
+    "site": "PAULSBORO",
+    "state": "New Jersey",
+    "cdu_capacity": 35000,
+    "nci": 1,
+    "units": {}
+  },
+  {
+    "eiaKey": "DELAWARE CITY REFINING CO LLC - DELAWARE CITY (Delaware)",
+    "company": "DELAWARE CITY REFINING CO LLC",
+    "site": "DELAWARE CITY",
+    "state": "Delaware",
+    "cdu_capacity": 180000,
+    "nci": 12.18,
+    "units": {
+      "ALKYLATES": 12500,
+      "AROMATICS": 5191,
+      "CAT CRACKING: FRESH FEED": 82000,
+      "CAT HYDROCRACKING, GAS OIL": 24000,
+      "CAT REFORMING: LOW PRESSURE": 43000,
+      "DESULFURIZATION, DIESEL FUEL": 52000,
+      "DESULFURIZATION, GASOLINE": 33000,
+      "DESULFURIZATION, KEROSENE AND JET": 16500,
+      "DESULFURIZATION, NAPHTHA/REFORMER FEED": 58800,
+      "DESULFURIZATION, OTHER": 20000,
+      "ISOMERIZATION (ISOBUTANE)": 6000,
+      "THERM CRACKING, FLUID COKING": 54500,
+      "VACUUM DISTILLATION": 104600
+    }
+  },
+  {
+    "eiaKey": "MARTINEZ REFINING CO LLC - MARTINEZ (California)",
+    "company": "MARTINEZ REFINING CO LLC",
+    "site": "MARTINEZ",
+    "state": "California",
+    "cdu_capacity": 157000,
+    "nci": 15.48,
+    "units": {
+      "ALKYLATES": 12800,
+      "CAT CRACKING: FRESH FEED": 72000,
+      "CAT HYDROCRACKING, DISTILLATE": 42900,
+      "CAT REFORMING: LOW PRESSURE": 31000,
+      "DESULFURIZATION, GASOLINE": 90000,
+      "DESULFURIZATION, HEAVY GAS OIL": 80500,
+      "DESULFURIZATION, NAPHTHA/REFORMER FEED": 28000,
+      "DESULFURIZATION, OTHER": 14500,
+      "DESULFURIZATION, OTHER DISTILLATE": 49500,
+      "ISOMERIZATION (ISOPENTANE/ISOHEXANE)": 15000,
+      "THERM CRACKING, DELAYED COKING": 26800,
+      "THERM CRACKING, FLUID COKING": 22500,
+      "VACUUM DISTILLATION": 101000
+    }
+  },
+  {
+    "eiaKey": "PAULSBORO REFINING CO LLC - PAULSBORO (New Jersey)",
+    "company": "PAULSBORO REFINING CO LLC",
+    "site": "PAULSBORO",
+    "state": "New Jersey",
+    "cdu_capacity": 166000,
+    "nci": 9,
+    "units": {
+      "ASPHALT & ROAD OIL": 21000,
+      "CAT REFORMING: LOW PRESSURE": 32000,
+      "DESULFURIZATION, DIESEL FUEL": 46000,
+      "DESULFURIZATION, KEROSENE AND JET": 29100,
+      "DESULFURIZATION, NAPHTHA/REFORMER FEED": 32000,
+      "LUBRICANTS": 12000,
+      "VACUUM DISTILLATION": 90000
+    }
+  },
+  {
+    "eiaKey": "TOLEDO REFINING CO LLC - TOLEDO (Ohio)",
+    "company": "TOLEDO REFINING CO LLC",
+    "site": "TOLEDO",
+    "state": "Ohio",
+    "cdu_capacity": 180000,
+    "nci": 9.49,
+    "units": {
+      "ALKYLATES": 9950,
+      "AROMATICS": 10800,
+      "CAT CRACKING: FRESH FEED": 82000,
+      "CAT HYDROCRACKING, DISTILLATE": 52000,
+      "CAT REFORMING: HIGH PRESSURE": 51800,
+      "DESULFURIZATION, GASOLINE": 72000,
+      "DESULFURIZATION, KEROSENE AND JET": 32000,
+      "DESULFURIZATION, NAPHTHA/REFORMER FEED": 45900
+    }
+  },
+  {
+    "eiaKey": "TORRANCE REFINING CO LLC - TORRANCE (California)",
+    "company": "TORRANCE REFINING CO LLC",
+    "site": "TORRANCE",
+    "state": "California",
+    "cdu_capacity": 166200,
+    "nci": 13.03,
+    "units": {
+      "ALKYLATES": 30000,
+      "CAT CRACKING: FRESH FEED": 90000,
+      "CAT HYDROCRACKING, DISTILLATE": 28300,
+      "DESULFURIZATION, DIESEL FUEL": 19800,
+      "DESULFURIZATION, HEAVY GAS OIL": 108300,
+      "DESULFURIZATION, NAPHTHA/REFORMER FEED": 25300,
+      "THERM CRACKING, DELAYED COKING": 62000,
+      "VACUUM DISTILLATION": 102300
+    }
+  },
+  {
+    "eiaKey": "CITGO PETROLEUM CORP - LAKE CHARLES (Louisiana)",
+    "company": "CITGO PETROLEUM CORP",
+    "site": "LAKE CHARLES",
+    "state": "Louisiana",
+    "cdu_capacity": 484000,
+    "nci": 10.56,
+    "units": {
+      "ALKYLATES": 28100,
+      "AROMATICS": 20900,
+      "CAT CRACKING: FRESH FEED": 148000,
+      "CAT HYDROCRACKING, GAS OIL": 51200,
+      "CAT REFORMING: HIGH PRESSURE": 53200,
+      "CAT REFORMING: LOW PRESSURE": 65000,
+      "DESULFURIZATION, DIESEL FUEL": 100000,
+      "DESULFURIZATION, GASOLINE": 85400,
+      "DESULFURIZATION, KEROSENE AND JET": 70100,
+      "DESULFURIZATION, NAPHTHA/REFORMER FEED": 131200,
+      "DESULFURIZATION, OTHER": 23800,
+      "ISOMERIZATION (ISOPENTANE/ISOHEXANE)": 28000,
+      "THERM CRACKING, DELAYED COKING": 110000,
+      "VACUUM DISTILLATION": 230000
+    }
+  },
+  {
+    "eiaKey": "CITGO REFINING & CHEMICAL INC - CORPUS CHRISTI (Texas)",
+    "company": "CITGO REFINING & CHEMICAL INC",
+    "site": "CORPUS CHRISTI",
+    "state": "Texas",
+    "cdu_capacity": 175500,
+    "nci": 13.27,
+    "units": {
+      "ALKYLATES": 24878,
+      "AROMATICS": 16270,
+      "CAT CRACKING: FRESH FEED": 70700,
+      "CAT REFORMING: LOW PRESSURE": 51500,
+      "DESULFURIZATION, DIESEL FUEL": 102267,
+      "DESULFURIZATION, GASOLINE": 47080,
+      "DESULFURIZATION, HEAVY GAS OIL": 70900,
+      "DESULFURIZATION, NAPHTHA/REFORMER FEED": 52800,
+      "THERM CRACKING, DELAYED COKING": 45100,
+      "VACUUM DISTILLATION": 85300
+    }
+  },
+  {
+    "eiaKey": "PDV MIDWEST REFINING LLC - LEMONT (Illinois)",
+    "company": "PDV MIDWEST REFINING LLC",
+    "site": "LEMONT",
+    "state": "Illinois",
+    "cdu_capacity": 197919,
+    "nci": 10.1,
+    "units": {
+      "ALKYLATES": 24800,
+      "AROMATICS": 9400,
+      "CAT CRACKING: FRESH FEED": 69500,
+      "CAT REFORMING: HIGH PRESSURE": 35800,
+      "DESULFURIZATION, DIESEL FUEL": 97160,
+      "DESULFURIZATION, KEROSENE AND JET": 13700,
+      "DESULFURIZATION, NAPHTHA/REFORMER FEED": 111300,
+      "DESULFURIZATION, OTHER": 6800,
+      "THERM CRACKING, DELAYED COKING": 41220,
+      "VACUUM DISTILLATION": 77200
+    }
+  },
+  {
+    "eiaKey": "DEER PARK REFINING LP - DEER PARK (Texas)",
+    "company": "DEER PARK REFINING LP",
+    "site": "DEER PARK",
+    "state": "Texas",
+    "cdu_capacity": 340000,
+    "nci": 9.88,
+    "units": {
+      "ALKYLATES": 21000,
+      "CAT CRACKING: FRESH FEED": 75100,
+      "CAT HYDROCRACKING, GAS OIL": 62000,
+      "CAT REFORMING: HIGH PRESSURE": 24500,
+      "CAT REFORMING: LOW PRESSURE": 44000,
+      "DESULFURIZATION, DIESEL FUEL": 50000,
+      "DESULFURIZATION, GASOLINE": 46600,
+      "DESULFURIZATION, HEAVY GAS OIL": 45000,
+      "DESULFURIZATION, KEROSENE AND JET": 40000,
+      "DESULFURIZATION, NAPHTHA/REFORMER FEED": 80000,
+      "DESULFURIZATION, OTHER": 63000,
+      "THERM CRACKING, DELAYED COKING": 96000,
+      "VACUUM DISTILLATION": 180000
+    }
+  },
+  {
+    "eiaKey": "PETROMAX REFINING CO LLC - HOUSTON (Texas)",
+    "company": "PETROMAX REFINING CO LLC",
+    "site": "HOUSTON",
+    "state": "Texas",
+    "cdu_capacity": 27500,
+    "nci": 1,
+    "units": {}
+  },
+  {
+    "eiaKey": "PHILLIPS 66 COMPANY - WILMINGTON (California)",
+    "company": "PHILLIPS 66 COMPANY",
+    "site": "WILMINGTON",
+    "state": "California",
+    "cdu_capacity": 156000,
+    "nci": 13.7,
+    "units": {
+      "ALKYLATES": 16600,
+      "CAT CRACKING: FRESH FEED": 51600,
+      "CAT HYDROCRACKING, DISTILLATE": 27500,
+      "CAT REFORMING: HIGH PRESSURE": 40000,
+      "DESULFURIZATION, DIESEL FUEL": 32000,
+      "DESULFURIZATION, HEAVY GAS OIL": 55500,
+      "DESULFURIZATION, KEROSENE AND JET": 12900,
+      "DESULFURIZATION, NAPHTHA/REFORMER FEED": 57500,
+      "ISOMERIZATION (ISOBUTANE)": 7000,
+      "ISOMERIZATION (ISOPENTANE/ISOHEXANE)": 12800,
+      "THERM CRACKING, DELAYED COKING": 51900,
+      "VACUUM DISTILLATION": 83400
+    }
+  },
+  {
+    "eiaKey": "PHILLIPS 66 COMPANY - WESTLAKE (Louisiana)",
+    "company": "PHILLIPS 66 COMPANY",
+    "site": "WESTLAKE",
+    "state": "Louisiana",
+    "cdu_capacity": 285716,
+    "nci": 9.24,
+    "units": {
+      "ALKYLATES": 9920,
+      "ASPHALT & ROAD OIL": 5269,
+      "CAT CRACKING: FRESH FEED": 50941,
+      "CAT REFORMING: LOW PRESSURE": 49086,
+      "DESULFURIZATION, DIESEL FUEL": 55300,
+      "DESULFURIZATION, GASOLINE": 63820,
+      "DESULFURIZATION, HEAVY GAS OIL": 50040,
+      "DESULFURIZATION, KEROSENE AND JET": 38353,
+      "DESULFURIZATION, NAPHTHA/REFORMER FEED": 52285,
+      "DESULFURIZATION, OTHER": 19178,
+      "ISOMERIZATION (ISOPENTANE/ISOHEXANE)": 25000,
+      "THERM CRACKING, DELAYED COKING": 66543,
+      "THERM CRACKING, OTHER (INCLDNG GAS OIL)": 19373,
+      "VACUUM DISTILLATION": 128900
+    }
+  },
+  {
+    "eiaKey": "PHILLIPS 66 COMPANY - BILLINGS (Montana)",
+    "company": "PHILLIPS 66 COMPANY",
+    "site": "BILLINGS",
+    "state": "Montana",
+    "cdu_capacity": 72975,
+    "nci": 11.22,
+    "units": {
+      "ALKYLATES": 7130,
+      "CAT CRACKING: FRESH FEED": 24900,
+      "CAT REFORMING: HIGH PRESSURE": 9000,
+      "DESULFURIZATION, DIESEL FUEL": 29100,
+      "DESULFURIZATION, GASOLINE": 7300,
+      "DESULFURIZATION, HEAVY GAS OIL": 27900,
+      "DESULFURIZATION, KEROSENE AND JET": 5800,
+      "DESULFURIZATION, NAPHTHA/REFORMER FEED": 12250,
+      "ISOMERIZATION (ISOBUTANE)": 4000,
+      "THERM CRACKING, DELAYED COKING": 20050,
+      "VACUUM DISTILLATION": 49900
+    }
+  },
+  {
+    "eiaKey": "PHILLIPS 66 COMPANY - LINDEN (New Jersey)",
+    "company": "PHILLIPS 66 COMPANY",
+    "site": "LINDEN",
+    "state": "New Jersey",
+    "cdu_capacity": 272135,
+    "nci": 8.13,
+    "units": {
+      "ALKYLATES": 18961,
+      "CAT CRACKING: FRESH FEED": 145000,
+      "CAT REFORMING: HIGH PRESSURE": 37039,
+      "DESULFURIZATION, DIESEL FUEL": 109697,
+      "DESULFURIZATION, GASOLINE": 65500,
+      "DESULFURIZATION, NAPHTHA/REFORMER FEED": 38944,
+      "FUELS SOLVENT DEASPHALTING": 22000,
+      "ISOMERIZATION (ISOBUTANE)": 4000,
+      "VACUUM DISTILLATION": 75000
+    }
+  },
+  {
+    "eiaKey": "PHILLIPS 66 COMPANY - PONCA CITY (Oklahoma)",
+    "company": "PHILLIPS 66 COMPANY",
+    "site": "PONCA CITY",
+    "state": "Oklahoma",
+    "cdu_capacity": 236927,
+    "nci": 8.02,
+    "units": {
+      "ALKYLATES": 16883,
+      "CAT CRACKING: FRESH FEED": 69935,
+      "CAT REFORMING: HIGH PRESSURE": 49258,
+      "DESULFURIZATION, DIESEL FUEL": 37136,
+      "DESULFURIZATION, GASOLINE": 53979,
+      "DESULFURIZATION, HEAVY GAS OIL": 22425,
+      "DESULFURIZATION, KEROSENE AND JET": 18902,
+      "DESULFURIZATION, NAPHTHA/REFORMER FEED": 49258,
+      "DESULFURIZATION, OTHER": 14256,
+      "DESULFURIZATION, OTHER DISTILLATE": 39161,
+      "THERM CRACKING, DELAYED COKING": 27300,
+      "VACUUM DISTILLATION": 84802
+    }
+  },
+  {
+    "eiaKey": "PHILLIPS 66 COMPANY - SWEENY (Texas)",
+    "company": "PHILLIPS 66 COMPANY",
+    "site": "SWEENY",
+    "state": "Texas",
+    "cdu_capacity": 293532,
+    "nci": 11.81,
+    "units": {
+      "ALKYLATES": 27304,
+      "AROMATICS": 21553,
+      "CAT CRACKING: FRESH FEED": 116005,
+      "CAT REFORMING: LOW PRESSURE": 46176,
+      "DESULFURIZATION, DIESEL FUEL": 124107,
+      "DESULFURIZATION, GASOLINE": 60000,
+      "DESULFURIZATION, HEAVY GAS OIL": 107751,
+      "DESULFURIZATION, NAPHTHA/REFORMER FEED": 70590,
+      "DESULFURIZATION, OTHER": 16000,
+      "ISOMERIZATION (ISOPENTANE/ISOHEXANE)": 10100,
+      "THERM CRACKING, DELAYED COKING": 78732,
+      "VACUUM DISTILLATION": 132066
+    }
+  },
+  {
+    "eiaKey": "PHILLIPS 66 COMPANY - FERNDALE (Washington)",
+    "company": "PHILLIPS 66 COMPANY",
+    "site": "FERNDALE",
+    "state": "Washington",
+    "cdu_capacity": 108055,
+    "nci": 8.19,
+    "units": {
+      "ALKYLATES": 12711,
+      "CAT CRACKING: FRESH FEED": 39179,
+      "CAT REFORMING: LOW PRESSURE": 18505,
+      "DESULFURIZATION, DIESEL FUEL": 40367,
+      "DESULFURIZATION, GASOLINE": 37033,
+      "DESULFURIZATION, NAPHTHA/REFORMER FEED": 19444,
+      "ISOMERIZATION (ISOBUTANE)": 2900,
+      "VACUUM DISTILLATION": 46703
+    }
+  },
+  {
+    "eiaKey": "PLACID REFINING CO - PORT ALLEN (Louisiana)",
+    "company": "PLACID REFINING CO",
+    "site": "PORT ALLEN",
+    "state": "Louisiana",
+    "cdu_capacity": 82500,
+    "nci": 6.78,
+    "units": {
+      "ALKYLATES": 7500,
+      "CAT CRACKING: FRESH FEED": 25000,
+      "CAT REFORMING: LOW PRESSURE": 11500,
+      "DESULFURIZATION, DIESEL FUEL": 25000,
+      "DESULFURIZATION, GASOLINE": 20000,
+      "DESULFURIZATION, NAPHTHA/REFORMER FEED": 12000,
+      "FUELS SOLVENT DEASPHALTING": 12000,
+      "VACUUM DISTILLATION": 27000
+    }
+  },
+  {
+    "eiaKey": "UNITED REFINING CO - WARREN (Pennsylvania)",
+    "company": "UNITED REFINING CO",
+    "site": "WARREN",
+    "state": "Pennsylvania",
+    "cdu_capacity": 70000,
+    "nci": 9.69,
+    "units": {
+      "ALKYLATES": 4500,
+      "ASPHALT & ROAD OIL": 23000,
+      "CAT CRACKING: FRESH FEED": 25000,
+      "CAT REFORMING: HIGH PRESSURE": 14000,
+      "DESULFURIZATION, DIESEL FUEL": 17000,
+      "DESULFURIZATION, GASOLINE": 5000,
+      "DESULFURIZATION, KEROSENE AND JET": 5000,
+      "DESULFURIZATION, NAPHTHA/REFORMER FEED": 26000,
+      "ISOMERIZATION (ISOPENTANE/ISOHEXANE)": 8500,
+      "VACUUM DISTILLATION": 40000
+    }
+  },
+  {
+    "eiaKey": "SAN JOAQUIN REFINING CO INC - BAKERSFIELD (California)",
+    "company": "SAN JOAQUIN REFINING CO INC",
+    "site": "BAKERSFIELD",
+    "state": "California",
+    "cdu_capacity": 25000,
+    "nci": 18.27,
+    "units": {
+      "AROMATICS": 1500,
+      "ASPHALT & ROAD OIL": 8000,
+      "DESULFURIZATION, HEAVY GAS OIL": 1800,
+      "DESULFURIZATION, OTHER DISTILLATE": 3600,
+      "LUBRICANTS": 5800,
+      "THERM CRACKING, VISBREAKING": 5000,
+      "VACUUM DISTILLATION": 14300
+    }
+  },
+  {
+    "eiaKey": "MOTIVA ENTERPRISES LLC - PORT ARTHUR (Texas)",
+    "company": "MOTIVA ENTERPRISES LLC",
+    "site": "PORT ARTHUR",
+    "state": "Texas",
+    "cdu_capacity": 659700,
+    "nci": 13.66,
+    "units": {
+      "ALKYLATES": 21800,
+      "CAT CRACKING: FRESH FEED": 92600,
+      "CAT HYDROCRACKING, GAS OIL": 115500,
+      "CAT REFORMING: LOW PRESSURE": 134500,
+      "DESULFURIZATION, DIESEL FUEL": 182000,
+      "DESULFURIZATION, GASOLINE": 55000,
+      "DESULFURIZATION, HEAVY GAS OIL": 65000,
+      "DESULFURIZATION, KEROSENE AND JET": 79000,
+      "DESULFURIZATION, NAPHTHA/REFORMER FEED": 186500,
+      "DESULFURIZATION, OTHER": 21000,
+      "ISOMERIZATION (ISOPENTANE/ISOHEXANE)": 58500,
+      "LUBRICANTS": 39000,
+      "THERM CRACKING, DELAYED COKING": 178000,
+      "VACUUM DISTILLATION": 331800
+    }
+  },
+  {
+    "eiaKey": "SHELL OIL PRODUCTS US - NORCO (Louisiana)",
+    "company": "SHELL OIL PRODUCTS US",
+    "site": "NORCO",
+    "state": "Louisiana",
+    "cdu_capacity": 250000,
+    "nci": 9.26,
+    "units": {
+      "ALKYLATES": 18100,
+      "CAT CRACKING: FRESH FEED": 118800,
+      "CAT HYDROCRACKING, GAS OIL": 44000,
+      "CAT REFORMING: LOW PRESSURE": 40000,
+      "DESULFURIZATION, DIESEL FUEL": 70000,
+      "DESULFURIZATION, GASOLINE": 77000,
+      "DESULFURIZATION, NAPHTHA/REFORMER FEED": 42000,
+      "THERM CRACKING, DELAYED COKING": 28500,
+      "VACUUM DISTILLATION": 91300
+    }
+  },
+  {
+    "eiaKey": "SILVER EAGLE REFINING - WOODS CROSS (Utah)",
+    "company": "SILVER EAGLE REFINING",
+    "site": "WOODS CROSS",
+    "state": "Utah",
+    "cdu_capacity": 15700,
+    "nci": 2.46,
+    "units": {
+      "DESULFURIZATION, DIESEL FUEL": 3000,
+      "DESULFURIZATION, NAPHTHA/REFORMER FEED": 1000,
+      "VACUUM DISTILLATION": 7000
+    }
+  },
+  {
+    "eiaKey": "SILVER EAGLE REFINING - EVANSTON (Wyoming)",
+    "company": "SILVER EAGLE REFINING",
+    "site": "EVANSTON",
+    "state": "Wyoming",
+    "cdu_capacity": 3400,
+    "nci": 6.99,
+    "units": {
+      "CAT REFORMING: HIGH PRESSURE": 2900,
+      "DESULFURIZATION, NAPHTHA/REFORMER FEED": 3900
+    }
+  },
+  {
+    "eiaKey": "THE SAN ANTONIO REFINERY LLC - SAN ANTONIO (Texas)",
+    "company": "THE SAN ANTONIO REFINERY LLC",
+    "site": "SAN ANTONIO",
+    "state": "Texas",
+    "cdu_capacity": 21000,
+    "nci": 3.88,
+    "units": {
+      "CAT REFORMING: HIGH PRESSURE": 6000,
+      "DESULFURIZATION, DIESEL FUEL": 8000,
+      "DESULFURIZATION, NAPHTHA/REFORMER FEED": 7000
+    }
+  },
+  {
+    "eiaKey": "SUNCOR ENERGY (USA) INC - COMMERCE CITY EAST (Colorado)",
+    "company": "SUNCOR ENERGY (USA) INC",
+    "site": "COMMERCE CITY EAST",
+    "state": "Colorado",
+    "cdu_capacity": 38700,
+    "nci": 4.68,
+    "units": {
+      "CAT CRACKING: FRESH FEED": 9000,
+      "CAT REFORMING: LOW PRESSURE": 11000,
+      "DESULFURIZATION, NAPHTHA/REFORMER FEED": 11000,
+      "VACUUM DISTILLATION": 8500
+    }
+  },
+  {
+    "eiaKey": "SUNCOR ENERGY (USA) INC - COMMERCE CITY WEST (Colorado)",
+    "company": "SUNCOR ENERGY (USA) INC",
+    "site": "COMMERCE CITY WEST",
+    "state": "Colorado",
+    "cdu_capacity": 73000,
+    "nci": 7.1,
+    "units": {
+      "ASPHALT & ROAD OIL": 13200,
+      "CAT CRACKING: FRESH FEED": 21000,
+      "CAT REFORMING: LOW PRESSURE": 10900,
+      "DESULFURIZATION, DIESEL FUEL": 23330,
+      "DESULFURIZATION, HEAVY GAS OIL": 30000,
+      "DESULFURIZATION, KEROSENE AND JET": 12100,
+      "DESULFURIZATION, NAPHTHA/REFORMER FEED": 11000,
+      "VACUUM DISTILLATION": 25000
+    }
+  },
+  {
+    "eiaKey": "TALLEY ASPHALT PRODUCTS INC - KERN (California)",
+    "company": "TALLEY ASPHALT PRODUCTS INC",
+    "site": "KERN",
+    "state": "California",
+    "cdu_capacity": 2000,
+    "nci": 2.27,
+    "units": {
+      "ASPHALT & ROAD OIL": 1700
+    }
+  },
+  {
+    "eiaKey": "TEXAS INTERNATIONAL TERMINALS - GALVESTON (Texas)",
+    "company": "TEXAS INTERNATIONAL TERMINALS",
+    "site": "GALVESTON",
+    "state": "Texas",
+    "cdu_capacity": 50000,
+    "nci": 1,
+    "units": {}
+  },
+  {
+    "eiaKey": "TOTALENERGIES PETROCHEM & REFG USA - PORT ARTHUR (Texas)",
+    "company": "TOTALENERGIES PETROCHEM & REFG USA",
+    "site": "PORT ARTHUR",
+    "state": "Texas",
+    "cdu_capacity": 245000,
+    "nci": 10.22,
+    "units": {
+      "ALKYLATES": 7500,
+      "AROMATICS": 13600,
+      "CAT CRACKING: FRESH FEED": 80000,
+      "CAT REFORMING: LOW PRESSURE": 43000,
+      "DESULFURIZATION, DIESEL FUEL": 80000,
+      "DESULFURIZATION, GASOLINE": 51600,
+      "DESULFURIZATION, HEAVY GAS OIL": 54400,
+      "DESULFURIZATION, KEROSENE AND JET": 31000,
+      "DESULFURIZATION, NAPHTHA/REFORMER FEED": 57500,
+      "FUELS SOLVENT DEASPHALTING": 15500,
+      "ISOMERIZATION (ISOPENTANE/ISOHEXANE)": 7800,
+      "THERM CRACKING, DELAYED COKING": 60000,
+      "VACUUM DISTILLATION": 117000
+    }
+  },
+  {
+    "eiaKey": "CALCASIEU REFINING CO - LAKE CHARLES (Louisiana)",
+    "company": "CALCASIEU REFINING CO",
+    "site": "LAKE CHARLES",
+    "state": "Louisiana",
+    "cdu_capacity": 137000,
+    "nci": 1.53,
+    "units": {
+      "VACUUM DISTILLATION": 36000
+    }
+  },
+  {
+    "eiaKey": "DIAMOND SHAMROCK REFINING CO LP - SUNRAY (Texas)",
+    "company": "DIAMOND SHAMROCK REFINING CO LP",
+    "site": "SUNRAY",
+    "state": "Texas",
+    "cdu_capacity": 204000,
+    "nci": 7.2,
+    "units": {
+      "ALKYLATES": 9800,
+      "ASPHALT & ROAD OIL": 5500,
+      "CAT CRACKING: FRESH FEED": 56000,
+      "CAT HYDROCRACKING, GAS OIL": 27000,
+      "CAT REFORMING: HIGH PRESSURE": 18000,
+      "CAT REFORMING: LOW PRESSURE": 29000,
+      "DESULFURIZATION, DIESEL FUEL": 48000,
+      "DESULFURIZATION, GASOLINE": 39600,
+      "DESULFURIZATION, NAPHTHA/REFORMER FEED": 44400,
+      "FUELS SOLVENT DEASPHALTING": 13500,
+      "ISOMERIZATION (ISOBUTANE)": 3000,
+      "VACUUM DISTILLATION": 50000
+    }
+  },
+  {
+    "eiaKey": "DIAMOND SHAMROCK REFINING CO LP - THREE RIVERS (Texas)",
+    "company": "DIAMOND SHAMROCK REFINING CO LP",
+    "site": "THREE RIVERS",
+    "state": "Texas",
+    "cdu_capacity": 100000,
+    "nci": 11.65,
+    "units": {
+      "ALKYLATES": 7000,
+      "AROMATICS": 10800,
+      "CAT CRACKING: FRESH FEED": 23840,
+      "CAT HYDROCRACKING, GAS OIL": 28000,
+      "CAT REFORMING: HIGH PRESSURE": 10000,
+      "CAT REFORMING: LOW PRESSURE": 23500,
+      "DESULFURIZATION, DIESEL FUEL": 28000,
+      "DESULFURIZATION, HEAVY GAS OIL": 20000,
+      "DESULFURIZATION, NAPHTHA/REFORMER FEED": 35000,
+      "ISOMERIZATION (ISOBUTANE)": 3000,
+      "LUBRICANTS": 1900,
+      "VACUUM DISTILLATION": 33500
+    }
+  },
+  {
+    "eiaKey": "PREMCOR REFINING GROUP INC - PORT ARTHUR (Texas)",
+    "company": "PREMCOR REFINING GROUP INC",
+    "site": "PORT ARTHUR",
+    "state": "Texas",
+    "cdu_capacity": 424000,
+    "nci": 10.15,
+    "units": {
+      "ALKYLATES": 19500,
+      "CAT CRACKING: FRESH FEED": 75000,
+      "CAT HYDROCRACKING, GAS OIL": 134800,
+      "CAT REFORMING: LOW PRESSURE": 58000,
+      "DESULFURIZATION, DIESEL FUEL": 104600,
+      "DESULFURIZATION, GASOLINE": 90000,
+      "DESULFURIZATION, HEAVY GAS OIL": 60000,
+      "DESULFURIZATION, KEROSENE AND JET": 33000,
+      "DESULFURIZATION, NAPHTHA/REFORMER FEED": 58000,
+      "THERM CRACKING, DELAYED COKING": 158000,
+      "VACUUM DISTILLATION": 220000
+    }
+  },
+  {
+    "eiaKey": "ULTRAMAR INC - WILMINGTON REFINERY (California)",
+    "company": "ULTRAMAR INC",
+    "site": "WILMINGTON REFINERY",
+    "state": "California",
+    "cdu_capacity": 87000,
+    "nci": 15.64,
+    "units": {
+      "ALKYLATES": 22000,
+      "CAT CRACKING: FRESH FEED": 56300,
+      "CAT REFORMING: LOW PRESSURE": 18000,
+      "DESULFURIZATION, DIESEL FUEL": 45000,
+      "DESULFURIZATION, HEAVY GAS OIL": 67000,
+      "DESULFURIZATION, NAPHTHA/REFORMER FEED": 32000,
+      "THERM CRACKING, DELAYED COKING": 28800,
+      "VACUUM DISTILLATION": 46000
+    }
+  },
+  {
+    "eiaKey": "VALERO REF COMPANY TENNESSEE LLC - MEMPHIS (Tennessee)",
+    "company": "VALERO REF COMPANY TENNESSEE LLC",
+    "site": "MEMPHIS",
+    "state": "Tennessee",
+    "cdu_capacity": 205000,
+    "nci": 8.1,
+    "units": {
+      "ALKYLATES": 17000,
+      "AROMATICS": 29000,
+      "CAT CRACKING: FRESH FEED": 70000,
+      "CAT HYDROCRACKING, DISTILLATE": 26500,
+      "CAT REFORMING: LOW PRESSURE": 36000,
+      "DESULFURIZATION, DIESEL FUEL": 38000,
+      "DESULFURIZATION, GASOLINE": 39000,
+      "DESULFURIZATION, NAPHTHA/REFORMER FEED": 55000
+    }
+  },
+  {
+    "eiaKey": "VALERO REFINING - MERAUX LLC - MERAUX (Louisiana)",
+    "company": "VALERO REFINING - MERAUX LLC",
+    "site": "MERAUX",
+    "state": "Louisiana",
+    "cdu_capacity": 135000,
+    "nci": 7.06,
+    "units": {
+      "CAT HYDROCRACKING, GAS OIL": 48700,
+      "CAT REFORMING: LOW PRESSURE": 32000,
+      "DESULFURIZATION, DIESEL FUEL": 40000,
+      "DESULFURIZATION, KEROSENE AND JET": 15000,
+      "DESULFURIZATION, NAPHTHA/REFORMER FEED": 40000,
+      "FUELS SOLVENT DEASPHALTING": 22000,
+      "VACUUM DISTILLATION": 56600
+    }
+  },
+  {
+    "eiaKey": "VALERO REFINING CO CALIFORNIA - BENICIA (California)",
+    "company": "VALERO REFINING CO CALIFORNIA",
+    "site": "BENICIA",
+    "state": "California",
+    "cdu_capacity": 150000,
+    "nci": 13.05,
+    "units": {
+      "ALKYLATES": 17100,
+      "ASPHALT & ROAD OIL": 9000,
+      "CAT CRACKING: FRESH FEED": 75300,
+      "CAT HYDROCRACKING, DISTILLATE": 34000,
+      "CAT REFORMING: HIGH PRESSURE": 37200,
+      "DESULFURIZATION, DIESEL FUEL": 15000,
+      "DESULFURIZATION, GASOLINE": 43200,
+      "DESULFURIZATION, HEAVY GAS OIL": 39000,
+      "DESULFURIZATION, KEROSENE AND JET": 15400,
+      "DESULFURIZATION, NAPHTHA/REFORMER FEED": 30000,
+      "DESULFURIZATION, OTHER": 21700,
+      "DESULFURIZATION, OTHER DISTILLATE": 5000,
+      "ISOMERIZATION (ISOBUTANE)": 4200,
+      "THERM CRACKING, FLUID COKING": 29500,
+      "VACUUM DISTILLATION": 85500
+    }
+  },
+  {
+    "eiaKey": "VALERO REFINING CO CALIFORNIA - WILMINGTON ASPHALT PLANT (California)",
+    "company": "VALERO REFINING CO CALIFORNIA",
+    "site": "WILMINGTON ASPHALT PLANT",
+    "state": "California",
+    "cdu_capacity": 6500,
+    "nci": 3.35,
+    "units": {
+      "ASPHALT & ROAD OIL": 3500,
+      "VACUUM DISTILLATION": 5000
+    }
+  },
+  {
+    "eiaKey": "VALERO REFINING CO OKLAHOMA - ARDMORE (Oklahoma)",
+    "company": "VALERO REFINING CO OKLAHOMA",
+    "site": "ARDMORE",
+    "state": "Oklahoma",
+    "cdu_capacity": 90000,
+    "nci": 9.41,
+    "units": {
+      "ALKYLATES": 7012,
+      "CAT CRACKING: FRESH FEED": 30000,
+      "CAT HYDROCRACKING, DISTILLATE": 14000,
+      "CAT REFORMING: LOW PRESSURE": 20500,
+      "DESULFURIZATION, DIESEL FUEL": 35000,
+      "DESULFURIZATION, GASOLINE": 16500,
+      "DESULFURIZATION, HEAVY GAS OIL": 34450,
+      "DESULFURIZATION, NAPHTHA/REFORMER FEED": 27000,
+      "VACUUM DISTILLATION": 32000
+    }
+  },
+  {
+    "eiaKey": "VALERO REFINING CO TEXAS LP - CORPUS CHRISTI (Texas)",
+    "company": "VALERO REFINING CO TEXAS LP",
+    "site": "CORPUS CHRISTI",
+    "state": "Texas",
+    "cdu_capacity": 301000,
+    "nci": 10.28,
+    "units": {
+      "ALKYLATES": 24500,
+      "AROMATICS": 16455,
+      "ASPHALT & ROAD OIL": 30600,
+      "CAT CRACKING: FRESH FEED": 95500,
+      "CAT HYDROCRACKING, GAS OIL": 51000,
+      "CAT REFORMING: HIGH PRESSURE": 11000,
+      "CAT REFORMING: LOW PRESSURE": 39000,
+      "DESULFURIZATION, DIESEL FUEL": 72000,
+      "DESULFURIZATION, GASOLINE": 54500,
+      "DESULFURIZATION, HEAVY GAS OIL": 25000,
+      "DESULFURIZATION, KEROSENE AND JET": 10000,
+      "DESULFURIZATION, NAPHTHA/REFORMER FEED": 57000,
+      "DESULFURIZATION, RESIDUAL": 75000,
+      "ISOMERIZATION (ISOBUTANE)": 16000,
+      "THERM CRACKING, DELAYED COKING": 19000,
+      "VACUUM DISTILLATION": 91000
+    }
+  },
+  {
+    "eiaKey": "VALERO REFINING CO TEXAS LP - HOUSTON (Texas)",
+    "company": "VALERO REFINING CO TEXAS LP",
+    "site": "HOUSTON",
+    "state": "Texas",
+    "cdu_capacity": 218700,
+    "nci": 7.52,
+    "units": {
+      "ALKYLATES": 28875,
+      "CAT CRACKING: FRESH FEED": 75200,
+      "CAT HYDROCRACKING, DISTILLATE": 75000,
+      "DESULFURIZATION, GASOLINE": 38240,
+      "DESULFURIZATION, KEROSENE AND JET": 18000,
+      "DESULFURIZATION, NAPHTHA/REFORMER FEED": 9000,
+      "FUELS SOLVENT DEASPHALTING": 18000,
+      "VACUUM DISTILLATION": 38000
+    }
+  },
+  {
+    "eiaKey": "VALERO REFINING CO TEXAS LP - TEXAS CITY (Texas)",
+    "company": "VALERO REFINING CO TEXAS LP",
+    "site": "TEXAS CITY",
+    "state": "Texas",
+    "cdu_capacity": 227400,
+    "nci": 10.7,
+    "units": {
+      "ALKYLATES": 14700,
+      "CAT CRACKING: FRESH FEED": 86000,
+      "CAT REFORMING: LOW PRESSURE": 18100,
+      "DESULFURIZATION, DIESEL FUEL": 55000,
+      "DESULFURIZATION, GASOLINE": 61500,
+      "DESULFURIZATION, HEAVY GAS OIL": 110000,
+      "DESULFURIZATION, KEROSENE AND JET": 28000,
+      "DESULFURIZATION, NAPHTHA/REFORMER FEED": 25000,
+      "DESULFURIZATION, OTHER": 6500,
+      "FUELS SOLVENT DEASPHALTING": 33500,
+      "ISOMERIZATION (ISOPENTANE/ISOHEXANE)": 6500,
+      "THERM CRACKING, DELAYED COKING": 53500,
+      "VACUUM DISTILLATION": 133500
+    }
+  },
+  {
+    "eiaKey": "VALERO REFINING NEW ORLEANS LLC - NORCO (Louisiana)",
+    "company": "VALERO REFINING NEW ORLEANS LLC",
+    "site": "NORCO",
+    "state": "Louisiana",
+    "cdu_capacity": 235000,
+    "nci": 14.55,
+    "units": {
+      "ALKYLATES": 48000,
+      "AROMATICS": 3000,
+      "CAT CRACKING: FRESH FEED": 100000,
+      "CAT HYDROCRACKING, DISTILLATE": 28000,
+      "CAT HYDROCRACKING, GAS OIL": 85000,
+      "CAT REFORMING: LOW PRESSURE": 25000,
+      "DESULFURIZATION, DIESEL FUEL": 66000,
+      "DESULFURIZATION, GASOLINE": 60000,
+      "DESULFURIZATION, HEAVY GAS OIL": 24000,
+      "DESULFURIZATION, NAPHTHA/REFORMER FEED": 45000,
+      "THERM CRACKING, DELAYED COKING": 86000,
+      "VACUUM DISTILLATION": 180000
+    }
+  },
+  {
+    "eiaKey": "VERTEX REFINING ALABAMA LLC - SARALAND (Alabama)",
+    "company": "VERTEX REFINING ALABAMA LLC",
+    "site": "SARALAND",
+    "state": "Alabama",
+    "cdu_capacity": 91200,
+    "nci": 6.4,
+    "units": {
+      "CAT HYDROCRACKING, GAS OIL": 30000,
+      "CAT REFORMING: HIGH PRESSURE": 22000,
+      "DESULFURIZATION, DIESEL FUEL": 17000,
+      "DESULFURIZATION, KEROSENE AND JET": 18000,
+      "DESULFURIZATION, NAPHTHA/REFORMER FEED": 26700,
+      "ISOMERIZATION (ISOBUTANE)": 1150,
+      "VACUUM DISTILLATION": 29000
+    }
+  },
+  {
+    "eiaKey": "LUNDAY THAGARD CO - SOUTH GATE (California)",
+    "company": "LUNDAY THAGARD CO",
+    "site": "SOUTH GATE",
+    "state": "California",
+    "cdu_capacity": 10000,
+    "nci": 2.56,
+    "units": {
+      "ASPHALT & ROAD OIL": 3750,
+      "VACUUM DISTILLATION": 5000
+    }
+  },
+  {
+    "eiaKey": "WRB REFINING LP - WOOD RIVER (Illinois)",
+    "company": "WRB REFINING LP",
+    "site": "WOOD RIVER",
+    "state": "Illinois",
+    "cdu_capacity": 384220,
+    "nci": 9.23,
+    "units": {
+      "ALKYLATES": 22770,
+      "AROMATICS": 4400,
+      "ASPHALT & ROAD OIL": 26000,
+      "CAT CRACKING: FRESH FEED": 103000,
+      "CAT HYDROCRACKING, GAS OIL": 63770,
+      "CAT REFORMING: LOW PRESSURE": 81930,
+      "DESULFURIZATION, DIESEL FUEL": 63079,
+      "DESULFURIZATION, GASOLINE": 76190,
+      "DESULFURIZATION, KEROSENE AND JET": 53250,
+      "DESULFURIZATION, NAPHTHA/REFORMER FEED": 89370,
+      "DESULFURIZATION, OTHER": 11000,
+      "THERM CRACKING, DELAYED COKING": 77190,
+      "VACUUM DISTILLATION": 206560
+    }
+  },
+  {
+    "eiaKey": "WRB REFINING LP - BORGER (Texas)",
+    "company": "WRB REFINING LP",
+    "site": "BORGER",
+    "state": "Texas",
+    "cdu_capacity": 159688,
+    "nci": 14.42,
+    "units": {
+      "ALKYLATES": 14591,
+      "CAT CRACKING: FRESH FEED": 61226,
+      "CAT REFORMING: HIGH PRESSURE": 31622,
+      "DESULFURIZATION, DIESEL FUEL": 28646,
+      "DESULFURIZATION, HEAVY GAS OIL": 78334,
+      "DESULFURIZATION, KEROSENE AND JET": 15173,
+      "DESULFURIZATION, NAPHTHA/REFORMER FEED": 67789,
+      "ISOMERIZATION (ISOBUTANE)": 15000,
+      "ISOMERIZATION (ISOPENTANE/ISOHEXANE)": 31000,
+      "THERM CRACKING, DELAYED COKING": 28680,
+      "VACUUM DISTILLATION": 82027
+    }
+  }
+]
