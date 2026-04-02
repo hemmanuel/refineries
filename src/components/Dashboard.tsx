@@ -66,16 +66,22 @@ const Dashboard: React.FC<DashboardProps> = ({ padd, refineries, onPaddSelect, o
         capacity: acc.capacity + curr.capacity,
         headcount: acc.headcount + (est.totalHeadcount || 0),
         turnaround: acc.turnaround + (est.turnaroundHeadcount || 0),
-        safety: acc.safety + (est.safetySensitive || 0)
+        safety: acc.safety + (est.safetySensitive || 0),
+        edc: acc.edc + (curr.edc || 0),
+        nciSum: acc.nciSum + (curr.nci || 1.0)
       };
     }, {
       count: 0,
       capacity: 0,
       headcount: 0,
       turnaround: 0,
-      safety: 0
+      safety: 0,
+      edc: 0,
+      nciSum: 0
     });
   }, [filteredRefineries]);
+
+  const avgNci = stats.count > 0 ? stats.nciSum / stats.count : 0;
 
   const uniqueCompanies = useMemo(() => {
     const companies = new Set(refineries.map(r => r.company));
@@ -100,6 +106,20 @@ const Dashboard: React.FC<DashboardProps> = ({ padd, refineries, onPaddSelect, o
   const largestRefineries = useMemo(() => {
     return [...filteredRefineries]
       .sort((a, b) => b.capacity - a.capacity)
+      .slice(0, 5);
+  }, [filteredRefineries]);
+
+  const topNciRefineries = useMemo(() => {
+    return [...filteredRefineries]
+      .filter(r => r.nci && r.nci > 1.0)
+      .sort((a, b) => (b.nci || 0) - (a.nci || 0))
+      .slice(0, 5);
+  }, [filteredRefineries]);
+
+  const topEdcRefineries = useMemo(() => {
+    return [...filteredRefineries]
+      .filter(r => r.edc && r.edc > 0)
+      .sort((a, b) => (b.edc || 0) - (a.edc || 0))
       .slice(0, 5);
   }, [filteredRefineries]);
 
@@ -240,67 +260,85 @@ const Dashboard: React.FC<DashboardProps> = ({ padd, refineries, onPaddSelect, o
         </div>
 
         {/* Stats Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6 mb-12">
-          <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
-            <div className="flex items-center gap-3 mb-2 text-gray-500">
-              <Factory className="w-5 h-5" />
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-7 gap-4 mb-12">
+          <div className="bg-white p-4 rounded-xl shadow-sm border border-gray-200">
+            <div className="flex items-center gap-2 mb-2 text-gray-500">
+              <Factory className="w-4 h-4" />
               <span className="text-sm font-medium">Refineries</span>
             </div>
-            <div className="text-2xl font-bold text-gray-900">{stats.count}</div>
+            <div className="text-xl font-bold text-gray-900">{stats.count}</div>
           </div>
 
-          <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
-            <div className="flex items-center gap-3 mb-2 text-gray-500">
-              <div className="w-5 h-5 font-mono font-bold text-xs flex items-center justify-center border border-current rounded">BPD</div>
-              <span className="text-sm font-medium">Total Capacity</span>
+          <div className="bg-white p-4 rounded-xl shadow-sm border border-gray-200">
+            <div className="flex items-center gap-2 mb-2 text-gray-500">
+              <div className="w-4 h-4 font-mono font-bold text-[10px] flex items-center justify-center border border-current rounded">BPD</div>
+              <span className="text-sm font-medium">Capacity</span>
             </div>
-            <div className="text-2xl font-bold text-gray-900">{(stats.capacity / 1000000).toFixed(2)}M</div>
-            <div className="text-xs text-gray-400 mt-1">Barrels Per Day</div>
+            <div className="text-xl font-bold text-gray-900">{(stats.capacity / 1000000).toFixed(2)}M</div>
+            <div className="text-[10px] text-gray-400 mt-1">Barrels Per Day</div>
+          </div>
+
+          <div className="bg-white p-4 rounded-xl shadow-sm border border-gray-200">
+            <div className="flex items-center gap-2 mb-2 text-purple-600">
+              <TrendingUp className="w-4 h-4" />
+              <span className="text-sm font-medium">Avg NCI</span>
+            </div>
+            <div className="text-xl font-bold text-gray-900">{avgNci.toFixed(2)}</div>
+            <div className="text-[10px] text-gray-400 mt-1">Nelson Complexity</div>
+          </div>
+
+          <div className="bg-white p-4 rounded-xl shadow-sm border border-gray-200">
+            <div className="flex items-center gap-2 mb-2 text-indigo-600">
+              <Factory className="w-4 h-4" />
+              <span className="text-sm font-medium">Total EDC</span>
+            </div>
+            <div className="text-xl font-bold text-gray-900">{(stats.edc / 1000000).toFixed(2)}M</div>
+            <div className="text-[10px] text-gray-400 mt-1">Complexity-Barrels</div>
           </div>
 
           <button 
             onClick={() => setSelectedAggregateMetric('headcount')}
-            className="bg-white p-6 rounded-xl shadow-sm border border-gray-200 hover:border-blue-400 hover:shadow-md transition-all text-left group relative"
+            className="bg-white p-4 rounded-xl shadow-sm border border-gray-200 hover:border-blue-400 hover:shadow-md transition-all text-left group relative"
           >
-            <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity">
-              <ChevronRight className="w-5 h-5 text-blue-400" />
+            <div className="absolute top-3 right-3 opacity-0 group-hover:opacity-100 transition-opacity">
+              <ChevronRight className="w-4 h-4 text-blue-400" />
             </div>
-            <div className="flex items-center gap-3 mb-2 text-blue-600">
-              <Users className="w-5 h-5" />
-              <span className="text-sm font-medium">Total Headcount</span>
+            <div className="flex items-center gap-2 mb-2 text-blue-600">
+              <Users className="w-4 h-4" />
+              <span className="text-sm font-medium">Headcount</span>
             </div>
-            <div className="text-2xl font-bold text-gray-900 group-hover:text-blue-600 transition-colors">{stats.headcount.toLocaleString()}</div>
-            <div className="text-xs text-gray-400 mt-1">Est. FTE + Contractors</div>
+            <div className="text-xl font-bold text-gray-900 group-hover:text-blue-600 transition-colors">{stats.headcount.toLocaleString()}</div>
+            <div className="text-[10px] text-gray-400 mt-1">FTE + Contractors</div>
           </button>
 
           <button 
             onClick={() => setSelectedAggregateMetric('turnaround')}
-            className="bg-white p-6 rounded-xl shadow-sm border border-gray-200 hover:border-orange-400 hover:shadow-md transition-all text-left group relative"
+            className="bg-white p-4 rounded-xl shadow-sm border border-gray-200 hover:border-orange-400 hover:shadow-md transition-all text-left group relative"
           >
-            <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity">
-              <ChevronRight className="w-5 h-5 text-orange-400" />
+            <div className="absolute top-3 right-3 opacity-0 group-hover:opacity-100 transition-opacity">
+              <ChevronRight className="w-4 h-4 text-orange-400" />
             </div>
-            <div className="flex items-center gap-3 mb-2 text-orange-600">
-              <Calendar className="w-5 h-5" />
-              <span className="text-sm font-medium">Turnaround Peak</span>
+            <div className="flex items-center gap-2 mb-2 text-orange-600">
+              <Calendar className="w-4 h-4" />
+              <span className="text-sm font-medium">Turnaround</span>
             </div>
-            <div className="text-2xl font-bold text-gray-900 group-hover:text-orange-600 transition-colors">{stats.turnaround.toLocaleString()}</div>
-            <div className="text-xs text-gray-400 mt-1">Est. Seasonal Workers</div>
+            <div className="text-xl font-bold text-gray-900 group-hover:text-orange-600 transition-colors">{stats.turnaround.toLocaleString()}</div>
+            <div className="text-[10px] text-gray-400 mt-1">Seasonal Workers</div>
           </button>
 
           <button 
             onClick={() => setSelectedAggregateMetric('safety')}
-            className="bg-white p-6 rounded-xl shadow-sm border border-gray-200 hover:border-green-400 hover:shadow-md transition-all text-left group relative"
+            className="bg-white p-4 rounded-xl shadow-sm border border-gray-200 hover:border-green-400 hover:shadow-md transition-all text-left group relative"
           >
-            <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity">
-              <ChevronRight className="w-5 h-5 text-green-400" />
+            <div className="absolute top-3 right-3 opacity-0 group-hover:opacity-100 transition-opacity">
+              <ChevronRight className="w-4 h-4 text-green-400" />
             </div>
-            <div className="flex items-center gap-3 mb-2 text-green-600">
-              <HardHat className="w-5 h-5" />
-              <span className="text-sm font-medium">Safety Sensitive</span>
+            <div className="flex items-center gap-2 mb-2 text-green-600">
+              <HardHat className="w-4 h-4" />
+              <span className="text-sm font-medium">Safety</span>
             </div>
-            <div className="text-2xl font-bold text-gray-900 group-hover:text-green-600 transition-colors">{stats.safety.toLocaleString()}</div>
-            <div className="text-xs text-gray-400 mt-1">Est. Critical Roles</div>
+            <div className="text-xl font-bold text-gray-900 group-hover:text-green-600 transition-colors">{stats.safety.toLocaleString()}</div>
+            <div className="text-[10px] text-gray-400 mt-1">Critical Roles</div>
           </button>
         </div>
 
@@ -354,7 +392,7 @@ const Dashboard: React.FC<DashboardProps> = ({ padd, refineries, onPaddSelect, o
           <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-200 lg:col-span-3">
             <div className="flex items-center gap-2 mb-4">
               <Factory className="w-5 h-5 text-blue-600" />
-              <h2 className="text-lg font-semibold text-gray-900">Largest Refineries</h2>
+              <h2 className="text-lg font-semibold text-gray-900">Largest Refineries (Capacity)</h2>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">
               {largestRefineries.map((refinery, idx) => (
@@ -379,6 +417,81 @@ const Dashboard: React.FC<DashboardProps> = ({ padd, refineries, onPaddSelect, o
                   </div>
                 </button>
               ))}
+            </div>
+          </div>
+
+          {/* Most Complex Refineries */}
+          <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-200 lg:col-span-3">
+            <div className="flex items-center gap-2 mb-4">
+              <TrendingUp className="w-5 h-5 text-purple-600" />
+              <h2 className="text-lg font-semibold text-gray-900">Most Complex Refineries</h2>
+            </div>
+            
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                {/* Top by NCI */}
+                <div className="bg-purple-50 rounded-lg border border-purple-100 p-4">
+                    <div className="flex items-center justify-between w-full mb-3">
+                        <h3 className="font-semibold text-purple-900">Highest NCI</h3>
+                    </div>
+                    <div className="space-y-3">
+                        {topNciRefineries.slice(0, 3).map(r => (
+                            <button 
+                                key={r.id} 
+                                onClick={() => setSelectedRefinery(r)}
+                                className="flex justify-between items-center text-sm w-full text-left hover:opacity-80 transition-opacity"
+                            >
+                                <span className="text-gray-700 truncate max-w-[140px]" title={r.name}>{r.name}</span>
+                                <span className="font-bold text-purple-700">{r.nci?.toFixed(2)}</span>
+                            </button>
+                        ))}
+                        {topNciRefineries.length === 0 && <div className="text-xs text-gray-500 italic">No data available</div>}
+                    </div>
+                </div>
+
+                {/* Top by EDC */}
+                <div className="bg-indigo-50 rounded-lg border border-indigo-100 p-4">
+                    <div className="flex items-center justify-between w-full mb-3">
+                        <h3 className="font-semibold text-indigo-900">Highest EDC</h3>
+                    </div>
+                    <div className="space-y-3">
+                        {topEdcRefineries.slice(0, 3).map(r => (
+                            <button 
+                                key={r.id} 
+                                onClick={() => setSelectedRefinery(r)}
+                                className="flex justify-between items-center text-sm w-full text-left hover:opacity-80 transition-opacity"
+                            >
+                                <span className="text-gray-700 truncate max-w-[140px]" title={r.name}>{r.name}</span>
+                                <span className="font-bold text-indigo-700">{(r.edc! / 1000000).toFixed(2)}M</span>
+                            </button>
+                        ))}
+                        {topEdcRefineries.length === 0 && <div className="text-xs text-gray-500 italic">No data available</div>}
+                    </div>
+                </div>
+
+                {/* Highest NCI Processes */}
+                <div className="bg-gray-50 rounded-lg border border-gray-200 p-4">
+                    <div className="flex items-center justify-between w-full mb-3">
+                        <h3 className="font-semibold text-gray-900">Highest Complexity Units</h3>
+                    </div>
+                    <div className="space-y-3">
+                        <div className="flex justify-between items-center text-sm">
+                            <span className="text-gray-700">Lubricants</span>
+                            <span className="font-bold text-gray-900">60.0</span>
+                        </div>
+                        <div className="flex justify-between items-center text-sm">
+                            <span className="text-gray-700">Isomerization</span>
+                            <span className="font-bold text-gray-900">15.0</span>
+                        </div>
+                        <div className="flex justify-between items-center text-sm">
+                            <span className="text-gray-700">Aromatics</span>
+                            <span className="font-bold text-gray-900">15.0</span>
+                        </div>
+                        <div className="flex justify-between items-center text-sm">
+                            <span className="text-gray-700">Alkylation</span>
+                            <span className="font-bold text-gray-900">10.0</span>
+                        </div>
+                    </div>
+                </div>
             </div>
           </div>
 

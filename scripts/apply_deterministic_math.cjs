@@ -46,7 +46,7 @@ facilities.forEach(f => {
             f.estimate.safetySensitive = safety;
             
             if (!f.estimate.explanations) f.estimate.explanations = {};
-            f.estimate.explanations.totalHeadcount = `Calculated using the industry-standard Equivalent Distillation Capacity (EDC) framework. The facility's nameplate capacity (${capacity.toLocaleString()} bpd) is scaled using the 0.7 power rule to account for economies of scale, and multiplied by its Nelson Complexity Index (${nci.toFixed(2)}). This deterministic model is calibrated to align with the AFPM's reported 64,500 total US refining workforce.`;
+            f.estimate.explanations.totalHeadcount = `Calculated using the industry-standard Equivalent Distillation Capacity (EDC) framework. The facility's nameplate capacity (${capacity.toLocaleString()} bpd) is scaled using the 0.7 power rule to account for economies of scale, and multiplied by its Nelson Complexity Index (${nci.toFixed(2)}). This model is calibrated to align with the AFPM's reported 64,500 total US refining workforce.`;
             f.estimate.explanations.turnaroundHeadcount = `Calculated using a 5.0x multiplier on the base headcount. Major maintenance events (turnarounds) require a massive, temporary influx of specialized trades (pipefitters, boilermakers, scaffolders) to safely execute complex unit overhauls within a compressed timeframe.`;
             f.estimate.explanations.safetySensitive = `Calculated as 75% of the total site headcount. Per OSHA Process Safety Management (PSM) and PHMSA guidelines, this encompasses all personnel involved in operations, maintenance, and emergency response near highly hazardous chemicals, excluding only pure administrative staff.`;
         }

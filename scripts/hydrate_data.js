@@ -473,14 +473,30 @@ const main = async () => {
     await new Promise(resolve => setTimeout(resolve, 1000));
   }
 
-  // Ensure output directory exists
+    // Ensure output directory exists
   const outputDir = path.dirname(OUTPUT_FILE);
   if (!fs.existsSync(outputDir)) {
     fs.mkdirSync(outputDir, { recursive: true });
   }
 
-  fs.writeFileSync(OUTPUT_FILE, JSON.stringify(hydratedFacilities, null, 2));
-  console.log(`Successfully hydrated ${hydratedFacilities.length} facilities and saved to ${OUTPUT_FILE}`);
+  // Load existing facilities to preserve OSHA data
+  let existingFacilities = [];
+  if (fs.existsSync(OUTPUT_FILE)) {
+      existingFacilities = JSON.parse(fs.readFileSync(OUTPUT_FILE, 'utf8'));
+  }
+
+  const finalFacilities = hydratedFacilities.map(hydrated => {
+      const existing = existingFacilities.find(f => f.id === hydrated.id);
+      if (existing && existing.oshaHistory) {
+          hydrated.oshaHistory = existing.oshaHistory;
+          hydrated.safetySummary = existing.safetySummary;
+          hydrated.hasRealOshaData = existing.hasRealOshaData;
+      }
+      return hydrated;
+  });
+
+  fs.writeFileSync(OUTPUT_FILE, JSON.stringify(finalFacilities, null, 2));
+  console.log(`Successfully hydrated ${finalFacilities.length} facilities and saved to ${OUTPUT_FILE}`);
 };
 
 main().catch(console.error);
