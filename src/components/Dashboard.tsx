@@ -747,7 +747,11 @@ const Dashboard: React.FC<DashboardProps> = ({ padd, refineries, onPaddSelect, o
           value={
             selectedAggregateMetric === 'headcount' ? stats.headcount :
             selectedAggregateMetric === 'turnaround' ? stats.turnaround :
-            stats.safety
+            selectedAggregateMetric === 'safety' ? stats.safety :
+            selectedAggregateMetric === 'count' ? stats.count :
+            selectedAggregateMetric === 'capacity' ? stats.capacity :
+            selectedAggregateMetric === 'nci' ? avgNci :
+            stats.edc
           }
           explanation={getAggregateExplanation(selectedAggregateMetric)}
           onClose={() => setSelectedAggregateMetric(null)}
