@@ -76,6 +76,26 @@ const RefineryDetail: React.FC<RefineryDetailProps> = ({ refinery, onClose, mode
                     {refinery.state} ({refinery.lat.toFixed(4)}, {refinery.lng.toFixed(4)})
                   </p>
                 </div>
+                {refinery.edc && (
+                  <div className="col-span-2">
+                    <p className="text-xs text-gray-500">Equivalent Distillation Capacity (EDC)</p>
+                    <p className="text-sm font-medium text-gray-900">
+                      {refinery.edc.toLocaleString()} complexity-barrels
+                    </p>
+                  </div>
+                )}
+                {refinery.units && Object.keys(refinery.units).length > 0 && (
+                  <div className="col-span-2">
+                    <p className="text-xs text-gray-500 mb-1">Processing Units</p>
+                    <div className="flex flex-wrap gap-1">
+                      {Object.keys(refinery.units).map(unit => (
+                        <span key={unit} className="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-medium bg-gray-100 text-gray-800">
+                          {unit}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                )}
               </div>
             </div>
 

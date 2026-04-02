@@ -54,6 +54,9 @@ export interface ParsedRefinery {
   oshaHistory?: OshaYearData[];
   safetySummary?: string;
   hasRealOshaData?: boolean;
+  nci?: number;
+  edc?: number;
+  units?: Record<string, number>;
 }
 
 // const CSV_URL = 'https://raw.githubusercontent.com/cpreid2/US-Refineries/master/Refineries_US.csv';

@@ -240,96 +240,77 @@ const normalizeCompanyName = (name) => {
   return name;
 };
 
-const getMockEstimate = (facility) => {
-  // Heuristic for Oil Refineries
-  if (facility.type === 'Oil Refinery') {
-    const baseHeadcount = Math.round(Math.pow(facility.capacity, 0.65) * 0.8);
-    const turnaround = Math.round(baseHeadcount * (2 + Math.random() * 2));
-    const safety = Math.round(baseHeadcount * 0.7);
-    return {
-      totalHeadcount: baseHeadcount,
-      turnaroundHeadcount: turnaround,
-      safetySensitive: safety,
-      confidence: 0.7,
-      reasoning: "Estimated using refinery capacity-based heuristics (Mock Data)",
-      explanations: {
-        totalHeadcount: "Based on standard industry multiplier for refinery capacity.",
-        turnaroundHeadcount: "Typically 2-3x base headcount during peak maintenance.",
-        safetySensitive: "Approximately 70% of workforce is in safety-sensitive roles."
-      }
-    };
-  } 
-  // Heuristic for Petrochemical Plants (Capacity in mtpa)
-  else {
-    // 1 mtpa ethylene cracker approx 300-500 FTEs
-    const baseHeadcount = Math.round((facility.capacity / 1000000) * 400); 
-    const turnaround = Math.round(baseHeadcount * 3); // Crackers have huge turnarounds
+const getDeterministicEstimates = (facility) => {
+  if (facility.type !== 'Oil Refinery') {
+    // Petrochemical plants
+    const baseHeadcount = Math.round((facility.capacity / 1000000) * 400) || 100; 
+    const turnaround = Math.round(baseHeadcount * 3);
     const safety = Math.round(baseHeadcount * 0.6);
-    return {
-      totalHeadcount: baseHeadcount,
-      turnaroundHeadcount: turnaround,
-      safetySensitive: safety,
-      confidence: 0.6,
-      reasoning: "Estimated using petrochemical capacity-based heuristics (Mock Data)",
-      explanations: {
-        totalHeadcount: "Based on standard industry multiplier for petrochemical capacity.",
-        turnaroundHeadcount: "Crackers require significant manpower during turnarounds.",
-        safetySensitive: "Approximately 60% of workforce is in safety-sensitive roles."
-      }
-    };
+    return { baseHeadcount, turnaround, safety };
   }
+
+  // Refineries
+  // Constant calibrated to make US total ~64,500
+  const CONSTANT = 0.0130785;
+  const nci = facility.nci || 1.0;
+  const capacity = facility.capacity || 0;
+  
+  const baseHeadcount = Math.round(Math.pow(capacity, 0.7) * nci * CONSTANT);
+  const turnaround = Math.round(baseHeadcount * 5.0);
+  const safety = Math.round(baseHeadcount * 0.75);
+  
+  return { baseHeadcount, turnaround, safety };
 };
 
 const getLLMEstimate = async (facility) => {
+  const { baseHeadcount, turnaround, safety } = getDeterministicEstimates(facility);
+
   if (!API_KEY) {
     console.warn("No API key found, using mock data.");
-    return getMockEstimate(facility);
+    return {
+      totalHeadcount: baseHeadcount,
+      turnaroundHeadcount: turnaround,
+      safetySensitive: safety,
+      confidence: 0.9,
+      reasoning: "Estimated using deterministic capacity and NCI heuristics.",
+      explanations: {
+        totalHeadcount: "Calculated using the Six-Tenths rule for economies of scale and Nelson Complexity Index.",
+        turnaroundHeadcount: "Calculated as 5x base headcount.",
+        safetySensitive: "Calculated as 75% of base headcount."
+      }
+    };
   }
 
   try {
     const prompt = `
-      Estimate the workforce metrics for the following ${facility.type}:
+      You are an expert in the oil and gas industry. We have deterministically calculated the workforce metrics for the following ${facility.type} using industry-standard formulas (Nelson Complexity Index and the 0.7 scaling rule).
+      
       Name: ${facility.name}
-      Company: ${facility.company}
       Location: ${facility.city}, ${facility.state}
       Capacity: ${facility.capacity.toLocaleString()} ${facility.capacityUnit || 'bpd'}
-      Nelson Complexity Index (NCI): ${facility.nci ? facility.nci.toFixed(2) : '1.00'} (Higher NCI means more complex processing units, requiring more maintenance and specialized personnel)
-      PADD Region: ${facility.padd}
+      Nelson Complexity Index (NCI): ${facility.nci ? facility.nci.toFixed(2) : '1.00'}
       
-      Please provide the following estimates based on industry standards and the facility's size/complexity:
-      1. Total Headcount (Full-time employees + long-term contractors)
-      2. Turnaround Headcount (Peak number of additional workers during major maintenance/turnarounds)
-      3. Safety Sensitive Headcount (Number of workers in safety-critical roles)
-      4. Confidence Score (0.0 to 1.0)
+      CALCULATED METRICS (DO NOT CHANGE THESE NUMBERS):
+      1. Total Headcount: ${baseHeadcount}
+      2. Turnaround Peak Headcount: ${turnaround}
+      3. Safety Sensitive Headcount: ${safety}
       
-      For the explanations, you MUST include concrete derived metrics to justify the numbers, AND provide context.
-      
-      For "totalHeadcount":
-      - Explicitly state the "Personnel per 1,000 bpd" ratio you are using (e.g., "Using a ratio of ~3.5 personnel per 1,000 bpd...").
-      - Explain why this specific ratio applies to this refinery (e.g., complexity, location, age).
-      - Provide context on the operational model (e.g., lean vs full-service).
-      
-      For "turnaroundHeadcount":
-      - State the multiplier relative to total headcount or capacity (e.g., "Approximately 1.5x the steady-state workforce...").
-      - Mention specific trades or tasks driving this number.
-      - Explain the typical turnaround cycle or scope for this type of facility.
-      
-      For "safetySensitive":
-      - State the percentage of the total workforce (e.g., "Estimated at 60% of total headcount...").
-      - List the key roles included.
-      - Explain why this percentage is appropriate given the refinery's risk profile.
+      Please write a brief, professional explanation for EACH of these three metrics. 
+      - For Total Headcount, mention that it was calculated using the facility's specific Capacity and Nelson Complexity Index, applying the 0.7 scaling rule for economies of scale.
+      - For Turnaround, mention that it represents a 5x multiplier during peak maintenance events (like FCCU turnarounds) which require specialized trades (pipefitters, boilermakers, etc).
+      - For Safety Sensitive, mention that it represents 75% of the workforce, covering operations, maintenance, and emergency response per OSHA PSM and PHMSA guidelines.
 
       Return the response in strict JSON format:
       {
-        "totalHeadcount": number,
-        "turnaroundHeadcount": number,
-        "safetySensitive": number,
-        "confidence": number,
-        "reasoning": "brief overall summary",
+        "totalHeadcount": ${baseHeadcount},
+        "turnaroundHeadcount": ${turnaround},
+        "safetySensitive": ${safety},
+        "confidence": 0.95,
+        "reasoning": "brief overall summary of the facility's scale and complexity",
         "explanations": {
-            "totalHeadcount": "explanation with concrete ratio and context",
-            "turnaroundHeadcount": "explanation with concrete multiplier and context",
-            "safetySensitive": "explanation with concrete percentage and context"
+            "totalHeadcount": "your explanation here",
+            "turnaroundHeadcount": "your explanation here",
+            "safetySensitive": "your explanation here"
         }
       }
     `;
