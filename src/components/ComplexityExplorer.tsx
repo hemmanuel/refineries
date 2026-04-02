@@ -1,5 +1,5 @@
 import React, { useMemo, useState } from 'react';
-import { type ParsedRefinery, PADD_NAMES } from '../utils/data';
+import { type ParsedRefinery } from '../utils/data';
 import { X, TrendingUp, Factory, Settings, ChevronDown, ChevronUp } from 'lucide-react';
 
 export type ComplexityCategory = 'nci' | 'edc' | 'units';
