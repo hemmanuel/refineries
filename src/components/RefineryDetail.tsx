@@ -64,6 +64,12 @@ const RefineryDetail: React.FC<RefineryDetailProps> = ({ refinery, onClose, mode
                     {refinery.padd}
                   </p>
                 </div>
+                <div>
+                  <p className="text-xs text-gray-500">Complexity (NCI)</p>
+                  <p className="text-lg font-mono font-medium text-gray-900">
+                    {refinery.nci ? refinery.nci.toFixed(2) : '1.00'}
+                  </p>
+                </div>
                 <div className="col-span-2">
                   <p className="text-xs text-gray-500">Location</p>
                   <p className="text-sm font-medium text-gray-900">

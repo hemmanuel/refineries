@@ -1,0 +1,35 @@
+{
+  "_meta": {
+    "source": "1998 Oil & Gas Journal Complexity Factors",
+    "reference_url": "https://grokipedia.com/page/Nelson_complexity_index",
+    "description": "Nelson Complexity Index factors used to calculate refinery complexity based on processing units."
+  },
+  "factors": {
+    "VACUUM DISTILLATION": 2.0,
+    "THERM CRACKING, DELAYED COKING": 6.0,
+    "THERM CRACKING, FLUID COKING": 6.0,
+    "THERM CRACKING, VISBREAKING": 2.75,
+    "THERM CRACKING, OTHER (INCLDNG GAS OIL)": 3.0,
+    "CAT CRACKING: FRESH FEED": 6.0,
+    "CAT REFORMING: HIGH PRESSURE": 5.0,
+    "CAT REFORMING: LOW PRESSURE": 5.0,
+    "CAT HYDROCRACKING, DISTILLATE": 6.0,
+    "CAT HYDROCRACKING, GAS OIL": 6.0,
+    "CAT HYDROCRACKING, RESIDUAL": 6.0,
+    "DESULFURIZATION, NAPHTHA/REFORMER FEED": 1.5,
+    "DESULFURIZATION, GASOLINE": 1.5,
+    "DESULFURIZATION, KEROSENE AND JET": 2.5,
+    "DESULFURIZATION, DIESEL FUEL": 2.5,
+    "DESULFURIZATION, OTHER DISTILLATE": 2.5,
+    "DESULFURIZATION, HEAVY GAS OIL": 3.0,
+    "DESULFURIZATION, RESIDUAL": 3.0,
+    "DESULFURIZATION, OTHER": 2.5,
+    "ALKYLATES": 10.0,
+    "ISOMERIZATION (ISOBUTANE)": 15.0,
+    "ISOMERIZATION (ISOPENTANE/ISOHEXANE)": 15.0,
+    "LUBRICANTS": 60.0,
+    "ASPHALT & ROAD OIL": 1.5,
+    "AROMATICS": 10.0,
+    "FUELS SOLVENT DEASPHALTING": 2.5
+  }
+}

@@ -293,6 +293,7 @@ const getLLMEstimate = async (facility) => {
       Company: ${facility.company}
       Location: ${facility.city}, ${facility.state}
       Capacity: ${facility.capacity.toLocaleString()} ${facility.capacityUnit || 'bpd'}
+      Nelson Complexity Index (NCI): ${facility.nci ? facility.nci.toFixed(2) : '1.00'} (Higher NCI means more complex processing units, requiring more maintenance and specialized personnel)
       PADD Region: ${facility.padd}
       
       Please provide the following estimates based on industry standards and the facility's size/complexity:
@@ -447,7 +448,8 @@ const main = async () => {
         capacityUnit: 'bpd',
         lat: lat,
         lng: lng,
-        type: 'Oil Refinery'
+        type: 'Oil Refinery',
+        nci: eia.nci // Preserve NCI if it exists
     };
   });
 
