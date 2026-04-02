@@ -90,8 +90,8 @@ const MetricExplanation: React.FC<MetricExplanationProps> = ({ refinery, metric,
             </h3>
             
             <div className="prose prose-blue max-w-none text-gray-700 leading-relaxed text-sm">
-              {explanation.split('\n').map((paragraph, idx) => (
-                paragraph.trim() && <p key={idx} className="mb-4">{paragraph}</p>
+              {explanation.split('\n\n').map((paragraph, idx) => (
+                paragraph.trim() && <p key={idx} className="mb-4 whitespace-pre-wrap">{paragraph}</p>
               ))}
             </div>
           </div>

@@ -3,6 +3,9 @@ import { type ParsedRefinery } from '../utils/data';
 import { X, Factory, Users, HardHat, Calendar, AlertCircle, ChevronRight, AlertTriangle, FileText, TrendingUp } from 'lucide-react';
 import MetricExplanation from './MetricExplanation';
 import OshaDetail from './OshaDetail';
+import nciFactorsData from '../data/nci_factors.json';
+
+const NCI_FACTORS = nciFactorsData.factors as Record<string, number>;
 
 interface RefineryDetailProps {
   refinery: ParsedRefinery | null;
@@ -17,6 +20,42 @@ const RefineryDetail: React.FC<RefineryDetailProps> = ({ refinery, onClose, mode
   if (!refinery) return null;
 
   const estimate = refinery.estimate;
+
+  const generateNciExplanation = () => {
+    if (!refinery.units || Object.keys(refinery.units).length === 0) {
+      return `The Nelson Complexity Index (NCI) measures the secondary conversion capacity of a petroleum refinery relative to the primary distillation capacity. Calculated using the 1998 Oil & Gas Journal complexity factors. Base CDU = 1.0.\n\nThis refinery has an NCI of ${(refinery.nci || 1.0).toFixed(2)}. Detailed unit breakdown is not available for this facility.`;
+    }
+
+    let explanation = `The Nelson Complexity Index (NCI) measures the secondary conversion capacity of a petroleum refinery relative to the primary distillation capacity (${refinery.capacity.toLocaleString()} BPD). Calculated using the 1998 Oil & Gas Journal complexity factors.\n\nCalculation Breakdown:\n\n`;
+    
+    explanation += `• Crude Distillation (Base): 1.00\n`;
+
+    let calculatedNci = 1.0;
+    
+    const unitContributions = Object.entries(refinery.units).map(([unit, capacity]) => {
+      const factor = NCI_FACTORS[unit] || 1.0;
+      const ratio = capacity / refinery.capacity;
+      const contribution = ratio * factor;
+      return { unit, capacity, factor, ratio, contribution };
+    }).sort((a, b) => b.contribution - a.contribution);
+
+    unitContributions.forEach(({ unit, capacity, factor, contribution }) => {
+      explanation += `• ${unit}: ${capacity.toLocaleString()} BPD\n  └─ (${capacity.toLocaleString()} / ${refinery.capacity.toLocaleString()}) × ${factor.toFixed(1)} factor = +${contribution.toFixed(2)}\n`;
+      calculatedNci += contribution;
+    });
+
+    explanation += `\nTotal NCI: ${calculatedNci.toFixed(2)}`;
+    
+    return explanation;
+  };
+
+  const generateEdcExplanation = () => {
+    const nci = refinery.nci || 1.0;
+    const capacity = refinery.capacity || 0;
+    const edc = refinery.edc || 0;
+
+    return `Equivalent Distillation Capacity (EDC) normalizes the scale and complexity of the refinery into a single metric. \n\nEDC represents the equivalent size of a simple distillation plant that would require the same capital and operational intensity.\n\nCalculation:\n\n• Nameplate Capacity: ${capacity.toLocaleString()} BPD\n• Nelson Complexity Index (NCI): ${nci.toFixed(2)}\n\nEDC = ${capacity.toLocaleString()} × ${nci.toFixed(2)} = ${edc.toLocaleString()} complexity-barrels`;
+  };
 
   const containerClasses = mode === 'modal'
     ? "fixed right-0 top-0 h-full w-full max-w-md bg-white shadow-2xl transform transition-transform duration-300 ease-in-out z-[3001] overflow-y-auto border-l border-gray-200"
@@ -305,8 +344,8 @@ const RefineryDetail: React.FC<RefineryDetailProps> = ({ refinery, onClose, mode
             (refinery.edc || 0)
           }
           explanation={
-            selectedMetric === 'nci' ? `The Nelson Complexity Index (NCI) measures the secondary conversion capacity of a petroleum refinery relative to the primary distillation capacity. Calculated using the 1998 Oil & Gas Journal complexity factors. Base CDU = 1.0.\n\nThis refinery has an NCI of ${(refinery.nci || 1.0).toFixed(2)}, driven by its specific configuration of secondary processing units.` :
-            selectedMetric === 'edc' ? `Equivalent Distillation Capacity (EDC) normalizes the scale and complexity of the refinery into a single metric. Calculated as: Nameplate Capacity × NCI.\n\nEDC represents the equivalent size of a simple distillation plant that would require the same capital and operational intensity. This facility's EDC is ${(refinery.edc || 0).toLocaleString()} complexity-barrels.` :
+            selectedMetric === 'nci' ? generateNciExplanation() :
+            selectedMetric === 'edc' ? generateEdcExplanation() :
             (estimate?.explanations && (
                 selectedMetric === 'headcount' ? estimate.explanations.totalHeadcount :
                 selectedMetric === 'turnaround' ? estimate.explanations.turnaroundHeadcount :
