@@ -4,8 +4,8 @@ import { X, Info, CheckCircle2 } from 'lucide-react';
 
 interface MetricExplanationProps {
   refinery: ParsedRefinery;
-  metric: 'headcount' | 'turnaround' | 'safety';
-  value: number;
+  metric: 'headcount' | 'turnaround' | 'safety' | 'count' | 'capacity' | 'nci' | 'edc' | 'units';
+  value: number | string;
   explanation: string;
   onClose: () => void;
 }
@@ -14,13 +14,23 @@ const MetricExplanation: React.FC<MetricExplanationProps> = ({ refinery, metric,
   const metricTitles = {
     headcount: "Total Headcount Analysis",
     turnaround: "Turnaround Peak Analysis",
-    safety: "Safety Sensitive Roles Analysis"
+    safety: "Safety Sensitive Roles Analysis",
+    count: "Refinery Count Analysis",
+    capacity: "Total Capacity Analysis",
+    nci: "Nelson Complexity Index (NCI)",
+    edc: "Equivalent Distillation Capacity (EDC)",
+    units: "Processing Units Analysis"
   };
 
   const metricDescriptions = {
     headcount: "Full-time employees (FTE) plus long-term contractors essential for daily operations.",
     turnaround: "Peak additional workforce required during major maintenance events (turnarounds).",
-    safety: "Personnel in safety-critical roles (operations, maintenance, emergency response)."
+    safety: "Personnel in safety-critical roles (operations, maintenance, emergency response).",
+    count: "Total number of operable refineries in the selected region.",
+    capacity: "Total crude oil distillation capacity in Barrels Per Stream Day (BPSD).",
+    nci: "A measure of the secondary conversion capacity of a petroleum refinery relative to its primary distillation capacity.",
+    edc: "A metric that normalizes the scale and complexity of the refinery into a single value (Complexity-Barrels).",
+    units: "The specific secondary processing units operating at this facility."
   };
 
   return (
@@ -62,7 +72,13 @@ const MetricExplanation: React.FC<MetricExplanationProps> = ({ refinery, metric,
             </div>
             <div>
               <p className="text-sm font-medium text-blue-800 uppercase tracking-wide">Estimated Value</p>
-              <p className="text-3xl font-bold text-gray-900">~{value.toLocaleString()}</p>
+              <p className="text-3xl font-bold text-gray-900">
+                {typeof value === 'number' && metric !== 'nci' && metric !== 'capacity' && metric !== 'edc' ? `~${value.toLocaleString()}` : ''}
+                {metric === 'nci' && typeof value === 'number' ? value.toFixed(2) : ''}
+                {metric === 'capacity' && typeof value === 'number' ? `${value.toLocaleString()} bpd` : ''}
+                {metric === 'edc' && typeof value === 'number' ? `${value.toLocaleString()} complexity-barrels` : ''}
+                {typeof value === 'string' ? value : ''}
+              </p>
               <p className="text-xs text-blue-600 mt-1">{metricDescriptions[metric]}</p>
             </div>
           </div>

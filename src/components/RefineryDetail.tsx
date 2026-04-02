@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { type ParsedRefinery } from '../utils/data';
-import { X, Factory, Users, HardHat, Calendar, AlertCircle, ChevronRight, AlertTriangle, FileText } from 'lucide-react';
+import { X, Factory, Users, HardHat, Calendar, AlertCircle, ChevronRight, AlertTriangle, FileText, TrendingUp } from 'lucide-react';
 import MetricExplanation from './MetricExplanation';
 import OshaDetail from './OshaDetail';
 
@@ -11,7 +11,7 @@ interface RefineryDetailProps {
 }
 
 const RefineryDetail: React.FC<RefineryDetailProps> = ({ refinery, onClose, mode = 'modal' }) => {
-  const [selectedMetric, setSelectedMetric] = useState<'headcount' | 'turnaround' | 'safety' | null>(null);
+  const [selectedMetric, setSelectedMetric] = useState<'headcount' | 'turnaround' | 'safety' | 'nci' | 'edc' | null>(null);
   const [selectedOshaYear, setSelectedOshaYear] = useState<number | null>(null);
 
   if (!refinery) return null;
@@ -102,19 +102,66 @@ const RefineryDetail: React.FC<RefineryDetailProps> = ({ refinery, onClose, mode
             <div className="border-t border-gray-200 pt-6">
               <h3 className="text-lg font-bold text-gray-900 mb-4 flex items-center gap-2">
                 <Users className="w-5 h-5 text-blue-600" />
-                Workforce Estimates
+                Complexity & Workforce Estimates
               </h3>
               
-              {!estimate ? (
-                <div className="text-center py-8 bg-blue-50 rounded-lg border border-blue-100">
-                  <p className="text-sm text-blue-800 mb-4">
-                    No estimate data available for this refinery.
-                  </p>
-                </div>
-              ) : (
-                <div className="space-y-4 animate-in fade-in slide-in-from-bottom-4 duration-500">
+              <div className="space-y-4 animate-in fade-in slide-in-from-bottom-4 duration-500">
+                {refinery.nci && refinery.nci > 1.0 && (
                   <button 
-                    onClick={() => setSelectedMetric('headcount')}
+                    onClick={() => setSelectedMetric('nci')}
+                    className="w-full bg-white border border-gray-200 rounded-lg p-4 shadow-sm hover:border-purple-400 hover:shadow-md transition-all text-left group relative"
+                  >
+                    <div className="absolute right-4 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity">
+                      <ChevronRight className="w-5 h-5 text-purple-400" />
+                    </div>
+                    <div className="flex items-center justify-between mb-2">
+                      <span className="text-sm text-gray-600 flex items-center gap-2">
+                        <TrendingUp className="w-4 h-4 text-gray-400 group-hover:text-purple-500 transition-colors" />
+                        Nelson Complexity Index (NCI)
+                      </span>
+                      <span className="text-xl font-bold text-purple-600 group-hover:text-purple-700 transition-colors">
+                        {refinery.nci.toFixed(2)}
+                      </span>
+                    </div>
+                    <p className="text-xs text-gray-400 mt-2 group-hover:text-gray-500">
+                      Relative secondary conversion capacity
+                    </p>
+                  </button>
+                )}
+
+                {refinery.edc && refinery.edc > 0 && (
+                  <button 
+                    onClick={() => setSelectedMetric('edc')}
+                    className="w-full bg-white border border-gray-200 rounded-lg p-4 shadow-sm hover:border-indigo-400 hover:shadow-md transition-all text-left group relative"
+                  >
+                    <div className="absolute right-4 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity">
+                      <ChevronRight className="w-5 h-5 text-indigo-400" />
+                    </div>
+                    <div className="flex items-center justify-between mb-2">
+                      <span className="text-sm text-gray-600 flex items-center gap-2">
+                        <Factory className="w-4 h-4 text-gray-400 group-hover:text-indigo-500 transition-colors" />
+                        Equivalent Distillation Capacity
+                      </span>
+                      <span className="text-xl font-bold text-indigo-600 group-hover:text-indigo-700 transition-colors">
+                        {(refinery.edc / 1000000).toFixed(2)}M
+                      </span>
+                    </div>
+                    <p className="text-xs text-gray-400 mt-2 group-hover:text-gray-500">
+                      Complexity-Barrels (Capacity × NCI)
+                    </p>
+                  </button>
+                )}
+
+                {!estimate ? (
+                  <div className="text-center py-8 bg-blue-50 rounded-lg border border-blue-100">
+                    <p className="text-sm text-blue-800 mb-4">
+                      No workforce estimate data available for this facility.
+                    </p>
+                  </div>
+                ) : (
+                  <>
+                    <button 
+                      onClick={() => setSelectedMetric('headcount')}
                     className="w-full bg-white border border-gray-200 rounded-lg p-4 shadow-sm hover:border-blue-400 hover:shadow-md transition-all text-left group relative"
                   >
                     <div className="absolute right-4 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity">
@@ -189,8 +236,9 @@ const RefineryDetail: React.FC<RefineryDetailProps> = ({ refinery, onClose, mode
                     <AlertCircle className="w-3 h-3" />
                     <span>Generated by AI based on facility characteristics</span>
                   </div>
-                </div>
-              )}
+                  </>
+                )}
+              </div>
             </div>
 
             {refinery.oshaHistory && refinery.oshaHistory.length > 0 && (
@@ -250,17 +298,21 @@ const RefineryDetail: React.FC<RefineryDetailProps> = ({ refinery, onClose, mode
         </div>
       </div>
 
-      {selectedMetric && estimate && (
+      {selectedMetric && (
         <MetricExplanation
           refinery={refinery}
           metric={selectedMetric}
           value={
-            selectedMetric === 'headcount' ? estimate.totalHeadcount :
-            selectedMetric === 'turnaround' ? estimate.turnaroundHeadcount :
-            estimate.safetySensitive
+            selectedMetric === 'headcount' ? (estimate?.totalHeadcount || 0) :
+            selectedMetric === 'turnaround' ? (estimate?.turnaroundHeadcount || 0) :
+            selectedMetric === 'safety' ? (estimate?.safetySensitive || 0) :
+            selectedMetric === 'nci' ? (refinery.nci || 1.0) :
+            (refinery.edc || 0)
           }
           explanation={
-            (estimate.explanations && (
+            selectedMetric === 'nci' ? `The Nelson Complexity Index (NCI) measures the secondary conversion capacity of a petroleum refinery relative to the primary distillation capacity. Calculated using the 1998 Oil & Gas Journal complexity factors. Base CDU = 1.0.\n\nThis refinery has an NCI of ${(refinery.nci || 1.0).toFixed(2)}, driven by its specific configuration of secondary processing units.` :
+            selectedMetric === 'edc' ? `Equivalent Distillation Capacity (EDC) normalizes the scale and complexity of the refinery into a single metric. Calculated as: Nameplate Capacity × NCI.\n\nEDC represents the equivalent size of a simple distillation plant that would require the same capital and operational intensity. This facility's EDC is ${(refinery.edc || 0).toLocaleString()} complexity-barrels.` :
+            (estimate?.explanations && (
                 selectedMetric === 'headcount' ? estimate.explanations.totalHeadcount :
                 selectedMetric === 'turnaround' ? estimate.explanations.turnaroundHeadcount :
                 estimate.explanations.safetySensitive
