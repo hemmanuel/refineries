@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { type ParsedRefinery } from '../utils/data';
-import { X, Factory, Users, HardHat, Calendar, AlertCircle, ChevronRight, AlertTriangle, FileText, TrendingUp } from 'lucide-react';
+import { X, Factory, Users, HardHat, Calendar, ChevronRight, AlertTriangle, FileText, TrendingUp } from 'lucide-react';
 import MetricExplanation from './MetricExplanation';
 import OshaDetail from './OshaDetail';
 import nciFactorsData from '../data/nci_factors.json';
