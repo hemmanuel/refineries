@@ -38,6 +38,22 @@ export interface OshaYearData {
   notes: string;
 }
 
+export interface WorkforceMatrixCategory {
+  total: number;
+  employee: number;
+  contractor: number;
+}
+
+export interface WorkforceMatrix {
+  operations: WorkforceMatrixCategory;
+  maintenance: WorkforceMatrixCategory;
+  technical: WorkforceMatrixCategory;
+  logistics: WorkforceMatrixCategory;
+  hsse: WorkforceMatrixCategory;
+  support: WorkforceMatrixCategory;
+  turnaround: WorkforceMatrixCategory;
+}
+
 export interface ParsedRefinery {
   id: string;
   name: string;
@@ -51,6 +67,7 @@ export interface ParsedRefinery {
   lng: number;
   type?: 'Oil Refinery' | 'Petrochemical Plant';
   estimate?: WorkforceEstimate;
+  workforceMatrix?: WorkforceMatrix;
   oshaHistory?: OshaYearData[];
   safetySummary?: string;
   hasRealOshaData?: boolean;

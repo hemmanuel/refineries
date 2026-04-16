@@ -63,6 +63,16 @@ const Dashboard: React.FC<DashboardProps> = ({ padd, refineries, onPaddSelect, o
         safetySensitive: 0
       };
       
+      const wm = curr.workforceMatrix;
+      if (wm) {
+        Object.keys(wm).forEach(key => {
+          const k = key as keyof typeof wm;
+          acc.workforceMatrix[k].total += wm[k].total;
+          acc.workforceMatrix[k].employee += wm[k].employee;
+          acc.workforceMatrix[k].contractor += wm[k].contractor;
+        });
+      }
+      
       return {
         count: acc.count + 1,
         capacity: acc.capacity + curr.capacity,
@@ -70,7 +80,8 @@ const Dashboard: React.FC<DashboardProps> = ({ padd, refineries, onPaddSelect, o
         turnaround: acc.turnaround + (est.turnaroundHeadcount || 0),
         safety: acc.safety + (est.safetySensitive || 0),
         edc: acc.edc + (curr.edc || 0),
-        nciSum: acc.nciSum + (curr.nci || 1.0)
+        nciSum: acc.nciSum + (curr.nci || 1.0),
+        workforceMatrix: acc.workforceMatrix
       };
     }, {
       count: 0,
@@ -79,7 +90,16 @@ const Dashboard: React.FC<DashboardProps> = ({ padd, refineries, onPaddSelect, o
       turnaround: 0,
       safety: 0,
       edc: 0,
-      nciSum: 0
+      nciSum: 0,
+      workforceMatrix: {
+        operations: { total: 0, employee: 0, contractor: 0 },
+        maintenance: { total: 0, employee: 0, contractor: 0 },
+        technical: { total: 0, employee: 0, contractor: 0 },
+        logistics: { total: 0, employee: 0, contractor: 0 },
+        hsse: { total: 0, employee: 0, contractor: 0 },
+        support: { total: 0, employee: 0, contractor: 0 },
+        turnaround: { total: 0, employee: 0, contractor: 0 }
+      }
     });
   }, [filteredRefineries]);
 
@@ -302,8 +322,16 @@ const Dashboard: React.FC<DashboardProps> = ({ padd, refineries, onPaddSelect, o
               <div className="w-4 h-4 font-mono font-bold text-[10px] flex items-center justify-center border border-current rounded">BPD</div>
               <span className="text-sm font-medium">Capacity</span>
             </div>
-            <div className="text-xl font-bold text-gray-900 group-hover:text-gray-700 transition-colors">{(stats.capacity / 1000000).toFixed(2)}M</div>
-            <div className="text-[10px] text-gray-400 mt-1">Barrels Per Day</div>
+            <div className="flex flex-col">
+              <div className="flex items-baseline gap-1">
+                <span className="text-xl font-bold text-gray-900 group-hover:text-gray-700 transition-colors">{(stats.capacity / 1000000).toFixed(2)}M</span>
+                <span className="text-[10px] text-gray-400">Stream Day</span>
+              </div>
+              <div className="flex items-baseline gap-1 mt-0.5">
+                <span className="text-sm font-bold text-gray-600 group-hover:text-gray-800 transition-colors">{((stats.capacity * 0.921382) / 1000000).toFixed(2)}M</span>
+                <span className="text-[10px] text-gray-400">Calendar Day</span>
+              </div>
+            </div>
           </button>
 
           <button 
@@ -380,6 +408,60 @@ const Dashboard: React.FC<DashboardProps> = ({ padd, refineries, onPaddSelect, o
             <div className="text-xl font-bold text-gray-900 group-hover:text-green-600 transition-colors">{stats.safety.toLocaleString()}</div>
             <div className="text-[10px] text-gray-400 mt-1">Critical Roles</div>
           </button>
+        </div>
+
+        {/* Industry Workforce Matrix */}
+        <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-200 mb-8">
+          <div className="flex items-center gap-2 mb-6">
+            <Users className="w-6 h-6 text-indigo-600" />
+            <h2 className="text-xl font-bold text-gray-900">Industry-Wide Workforce Breakdown</h2>
+          </div>
+          
+          <div className="overflow-x-auto border border-gray-200 rounded-lg">
+            <table className="min-w-full divide-y divide-gray-200 text-sm">
+              <thead className="bg-gray-50">
+                <tr>
+                  <th scope="col" className="px-6 py-4 text-left font-semibold text-gray-700 uppercase tracking-wider">Function</th>
+                  <th scope="col" className="px-6 py-4 text-right font-semibold text-gray-700 uppercase tracking-wider">Employees</th>
+                  <th scope="col" className="px-6 py-4 text-right font-semibold text-gray-700 uppercase tracking-wider">Contractors</th>
+                  <th scope="col" className="px-6 py-4 text-right font-semibold text-gray-900 uppercase tracking-wider bg-gray-100">Total</th>
+                </tr>
+              </thead>
+              <tbody className="bg-white divide-y divide-gray-200">
+                {Object.entries(stats.workforceMatrix).map(([key, data]) => (
+                  <tr key={key} className="hover:bg-gray-50 transition-colors">
+                    <td className="px-6 py-4 whitespace-nowrap font-medium text-gray-900 capitalize">{key}</td>
+                    <td className="px-6 py-4 whitespace-nowrap text-right text-gray-600">{data.employee.toLocaleString()}</td>
+                    <td className="px-6 py-4 whitespace-nowrap text-right text-gray-600">{data.contractor.toLocaleString()}</td>
+                    <td className="px-6 py-4 whitespace-nowrap text-right font-bold text-gray-900 bg-gray-50/50">{data.total.toLocaleString()}</td>
+                  </tr>
+                ))}
+              </tbody>
+              <tfoot className="bg-gray-100 border-t-2 border-gray-300">
+                <tr>
+                  <td className="px-6 py-4 whitespace-nowrap font-bold text-gray-900">Total (Excl. Turnaround)</td>
+                  <td className="px-6 py-4 whitespace-nowrap text-right font-bold text-gray-900">
+                    {Object.entries(stats.workforceMatrix).filter(([k]) => k !== 'turnaround').reduce((sum, [, d]) => sum + d.employee, 0).toLocaleString()}
+                  </td>
+                  <td className="px-6 py-4 whitespace-nowrap text-right font-bold text-gray-900">
+                    {Object.entries(stats.workforceMatrix).filter(([k]) => k !== 'turnaround').reduce((sum, [, d]) => sum + d.contractor, 0).toLocaleString()}
+                  </td>
+                  <td className="px-6 py-4 whitespace-nowrap text-right font-black text-gray-900">
+                    {Object.entries(stats.workforceMatrix).filter(([k]) => k !== 'turnaround').reduce((sum, [, d]) => sum + d.total, 0).toLocaleString()}
+                  </td>
+                </tr>
+              </tfoot>
+            </table>
+          </div>
+          
+          <div className="mt-4 bg-indigo-50 border border-indigo-100 rounded-lg p-4">
+            <h4 className="text-sm font-semibold text-indigo-900 mb-2">Methodology & Primary Sources</h4>
+            <p className="text-xs text-indigo-800 space-y-2">
+              <span className="block">Functional headcount distributions were modeled using baseline categorical frameworks from Solomon Associates' Personnel Efficiency Index, calibrated against <strong>BLS NAICS 324110</strong> occupational data for direct employees.</span>
+              <span className="block mt-1">Contractor utilization rates were adjusted based on industry-standard practices documented in <strong>OSHA PSM</strong> and <strong>USW</strong> labor records (for Operations/Maintenance splits), and <strong>California SB 54</strong> reports.</span>
+              <span className="block mt-1">Turnaround contractor surges are derived from verified federal disaster investigations, such as the <strong>CSB BP Texas City Report</strong>.</span>
+            </p>
+          </div>
         </div>
 
         {/* Market Analysis Section */}

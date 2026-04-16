@@ -275,6 +275,49 @@ const RefineryDetail: React.FC<RefineryDetailProps> = ({ refinery, onClose, mode
               </div>
             </div>
 
+            {refinery.workforceMatrix && (
+              <div className="border-t border-gray-200 pt-6">
+                <h3 className="text-lg font-bold text-gray-900 mb-4 flex items-center gap-2">
+                  <Users className="w-5 h-5 text-indigo-600" />
+                  Workforce Breakdown
+                </h3>
+                
+                <div className="bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm mb-4">
+                  <div className="overflow-x-auto">
+                    <table className="min-w-full divide-y divide-gray-200 text-sm">
+                      <thead className="bg-gray-50">
+                        <tr>
+                          <th scope="col" className="px-4 py-3 text-left font-medium text-gray-500 uppercase tracking-wider">Function</th>
+                          <th scope="col" className="px-4 py-3 text-right font-medium text-gray-500 uppercase tracking-wider">Employees</th>
+                          <th scope="col" className="px-4 py-3 text-right font-medium text-gray-500 uppercase tracking-wider">Contractors</th>
+                          <th scope="col" className="px-4 py-3 text-right font-medium text-gray-500 uppercase tracking-wider">Total</th>
+                        </tr>
+                      </thead>
+                      <tbody className="bg-white divide-y divide-gray-200">
+                        {Object.entries(refinery.workforceMatrix).map(([key, data]) => (
+                          <tr key={key} className="hover:bg-gray-50 transition-colors">
+                            <td className="px-4 py-2 whitespace-nowrap font-medium text-gray-900 capitalize">{key}</td>
+                            <td className="px-4 py-2 whitespace-nowrap text-right text-gray-500">{data.employee.toLocaleString()}</td>
+                            <td className="px-4 py-2 whitespace-nowrap text-right text-gray-500">{data.contractor.toLocaleString()}</td>
+                            <td className="px-4 py-2 whitespace-nowrap text-right font-medium text-gray-900">{data.total.toLocaleString()}</td>
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+
+                <div className="bg-indigo-50 border border-indigo-100 rounded-lg p-4">
+                  <h4 className="text-sm font-semibold text-indigo-900 mb-2">Methodology & Primary Sources</h4>
+                  <p className="text-xs text-indigo-800 space-y-2">
+                    <span className="block">Functional headcount distributions were modeled using baseline categorical frameworks from Solomon Associates' Personnel Efficiency Index, calibrated against <strong>BLS NAICS 324110</strong> occupational data for direct employees.</span>
+                    <span className="block mt-1">Contractor utilization rates were adjusted based on industry-standard practices documented in <strong>OSHA PSM</strong> and <strong>USW</strong> labor records (for Operations/Maintenance splits), and <strong>California SB 54</strong> reports.</span>
+                    <span className="block mt-1">Turnaround contractor surges are derived from verified federal disaster investigations, such as the <strong>CSB BP Texas City Report</strong>.</span>
+                  </p>
+                </div>
+              </div>
+            )}
+
             {refinery.oshaHistory && refinery.oshaHistory.length > 0 && (
               <div className="border-t border-gray-200 pt-6">
                 <h3 className="text-lg font-bold text-gray-900 mb-4 flex items-center gap-2">
