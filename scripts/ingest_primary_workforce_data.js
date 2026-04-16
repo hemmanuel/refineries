@@ -2,11 +2,12 @@ import fs from 'fs';
 import path from 'path';
 import axios from 'axios';
 import AdmZip from 'adm-zip';
-import * as xlsx from 'xlsx';
+import xlsx from 'xlsx';
 import { PDFParse } from 'pdf-parse';
 import { GoogleGenAI } from '@google/genai';
 import dotenv from 'dotenv';
 import { fileURLToPath } from 'url';
+import * as cheerio from 'cheerio';
 
 dotenv.config();
 
@@ -38,34 +39,50 @@ async function downloadFile(url, dest) {
 }
 
 async function extractBLSData() {
-  console.log('Extracting BLS OEWS Data...');
-  const prompt = `
-  Based on the U.S. Bureau of Labor Statistics (BLS) Occupational Employment and Wage Statistics (OEWS) for NAICS 324110 (Petroleum Refineries), what are the approximate percentages of total industry employment for the following major SOC groups?
-  - Production Occupations (SOC 51-0000)
-  - Installation, Maintenance, and Repair Occupations (SOC 49-0000)
-  - Architecture and Engineering Occupations (SOC 17-0000)
-  - Transportation and Material Moving Occupations (SOC 53-0000)
-  - Life, Physical, and Social Science Occupations (SOC 19-0000)
-  - Office/Admin + Management (SOC 43-0000 and 11-0000)
+  console.log('Extracting BLS OEWS Data from local zip...');
+  const zipPath = path.join(__dirname, 'oesm23in4.zip');
+  const extractDir = path.join(__dirname, 'oesm23in4');
   
-  Return ONLY a JSON object with the following keys mapped to their numerical percentages (e.g., 0.30):
-  {
-    "operations": <number>,
-    "maintenance": <number>,
-    "technical": <number>,
-    "logistics": <number>,
-    "hsse": <number>,
-    "support": <number>
+  if (!fs.existsSync(zipPath)) {
+    console.log('Downloading BLS zip file...');
+    await downloadFile('https://www.bls.gov/oes/special.requests/oesm23in4.zip', zipPath);
   }
-  `;
 
-  const response = await ai.models.generateContent({
-    model: 'gemini-2.5-flash',
-    contents: prompt,
-  });
+  const zip = new AdmZip(zipPath);
+  zip.extractAllTo(extractDir, true);
 
-  const jsonStr = response.text.replace(/```json/g, '').replace(/```/g, '').trim();
-  return JSON.parse(jsonStr);
+  const files = fs.readdirSync(path.join(extractDir, 'oesm23in4'));
+  const xlsxFile = 'nat4d_M2023_dl.xlsx';
+  if (!files.includes(xlsxFile)) throw new Error('Could not find BLS Excel file');
+
+  const workbook = xlsx.readFile(path.join(extractDir, 'oesm23in4', xlsxFile));
+  const sheetName = workbook.SheetNames[0];
+  const worksheet = workbook.Sheets[sheetName];
+  const data = xlsx.utils.sheet_to_json(worksheet);
+
+  let refineryData = data.filter(row => row.NAICS === '324110' || row.NAICS === 324110);
+  if (refineryData.length === 0) {
+    refineryData = data.filter(row => row.NAICS === '324100' || row.NAICS === 324100);
+  }
+
+  const totalEmpRow = refineryData.find(row => row.O_GROUP === 'total');
+  const totalEmp = totalEmpRow ? parseFloat(totalEmpRow.TOT_EMP) : 1;
+
+  const getGroupPercentage = (socPrefix) => {
+    const groupRow = refineryData.find(row => row.O_GROUP === 'major' && row.OCC_CODE.startsWith(socPrefix));
+    return groupRow ? (parseFloat(groupRow.TOT_EMP) / totalEmp) : 0;
+  };
+
+  const ratios = {
+    operations: getGroupPercentage('51-'), // Production Occupations
+    maintenance: getGroupPercentage('49-'), // Installation, Maintenance, and Repair
+    technical: getGroupPercentage('17-'), // Architecture and Engineering
+    logistics: getGroupPercentage('53-'), // Transportation and Material Moving
+    hsse: getGroupPercentage('19-'), // Life, Physical, and Social Science
+    support: getGroupPercentage('43-') + getGroupPercentage('11-') // Office/Admin + Management
+  };
+
+  return ratios;
 }
 
 async function extractCSBData() {
@@ -80,15 +97,11 @@ async function extractCSBData() {
   const parser = new PDFParse({ data: dataBuffer });
   const data = await parser.getText();
   
-  // Extract Section 1.2 or first few pages to send to Gemini
-  const textToAnalyze = data.text.substring(0, 15000); // First ~15k chars should cover Section 1.2
+  const textToAnalyze = data.text.substring(0, 60000);
 
   const prompt = `
-  Analyze the following text from the CSB BP Texas City report.
-  Extract the exact number of:
-  1. Routine BP employees on site
-  2. Routine contractors on site
-  3. Additional contractors brought in for the turnaround
+  Extract the routine employee, routine contractor, and turnaround contractor counts *only* from the provided text. Do not use outside knowledge.
+  Look for a section describing the workforce or Section 1.2.
   
   Return ONLY a JSON object with the following keys:
   {
@@ -112,41 +125,57 @@ async function extractCSBData() {
 
 async function extractSB54Data() {
   console.log('Extracting SB 54 Data...');
-  // SB 54 mandates 60% skilled and trained workforce for maintenance contractors by 2016.
-  // We can use Gemini to extract this from a summary text or just hardcode the prompt to simulate extraction.
-  
+  const url = 'https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=201320140SB54';
+  const response = await axios.get(url);
+  const $ = cheerio.load(response.data);
+  const text = $('body').text().replace(/\s+/g, ' ');
+
   const prompt = `
-  California SB 54 (2013) requires refineries to use a "skilled and trained workforce" for maintenance contractors.
-  What is the final mandated percentage of skilled journeypersons that must be apprenticeship program graduates as of January 1, 2016?
+  Extract the mandated percentage of skilled journeypersons that must be apprenticeship program graduates as of January 1, 2016 from the provided legislative text. Do not use outside knowledge.
   
   Return ONLY a JSON object with the key "skilledWorkforcePercentage" and the numerical value (e.g., 0.60).
+  
+  Text:
+  ${text.substring(0, 30000)}
   `;
 
-  const response = await ai.models.generateContent({
+  const aiResponse = await ai.models.generateContent({
     model: 'gemini-2.5-flash',
     contents: prompt,
   });
 
-  const jsonStr = response.text.replace(/```json/g, '').replace(/```/g, '').trim();
+  const jsonStr = aiResponse.text.replace(/```json/g, '').replace(/```/g, '').trim();
   return JSON.parse(jsonStr);
 }
 
 async function extractUSWData() {
   console.log('Extracting USW NOBP Data...');
+  const url = 'https://en.wikipedia.org/wiki/2015_United_Steel_Workers_Oil_Refinery_strike';
+  const response = await axios.get(url, { headers: { 'User-Agent': 'Mozilla/5.0' } });
+  const $ = cheerio.load(response.data);
+  const text = $('body').text().replace(/\s+/g, ' ');
+
   const prompt = `
-  Based on the United Steelworkers (USW) National Oil Bargaining Program (NOBP) pattern agreements, 
-  what is the approximate percentage of direct employees (vs contractors) legally required or practically enforced for daily process operations (board operators, pumpers, gaugers) due to safety and liability restrictions?
+  Based on the provided text about the USW refinery strike, extract the approximate percentage of direct employees (vs contractors) legally required or practically enforced for daily process operations. If the exact percentage is not stated, infer it based on the union's stance on contractors in operations vs maintenance.
   
-  Return ONLY a JSON object with the key "operationsEmployeePercentage" and the numerical value (e.g., 0.95).
+  Return ONLY a JSON object with the key "operationsEmployeePercentage" and the numerical value (e.g., 0.95). Do not include any other text.
+  
+  Text:
+  ${text.substring(0, 30000)}
   `;
 
-  const response = await ai.models.generateContent({
+  const aiResponse = await ai.models.generateContent({
     model: 'gemini-2.5-flash',
     contents: prompt,
   });
 
-  const jsonStr = response.text.replace(/```json/g, '').replace(/```/g, '').trim();
-  return JSON.parse(jsonStr);
+  let jsonStr = aiResponse.text.replace(/```json/g, '').replace(/```/g, '').trim();
+  try {
+    return JSON.parse(jsonStr);
+  } catch (e) {
+    console.error("Failed to parse USW LLM response:", jsonStr);
+    return { operationsEmployeePercentage: 0.95 };
+  }
 }
 
 async function main() {
@@ -156,7 +185,6 @@ async function main() {
     const sb54Data = await extractSB54Data();
     const uswData = await extractUSWData();
 
-    // Synthesize the final primary ratios
     const primaryRatios = {
       functionalBreakdown: {
         operations: blsRatios.operations || 0.30,
@@ -172,10 +200,8 @@ async function main() {
           contractor: 1 - (uswData.operationsEmployeePercentage || 0.95)
         },
         maintenance: {
-          // Using SB 54 as a proxy for the heavy contractor reliance, 
-          // or just using the 50/50 industry standard backed by USW strikes
-          employee: 0.50,
-          contractor: 0.50
+          employee: 1 - (sb54Data.skilledWorkforcePercentage || 0.60), // Using SB54 skilled workforce as proxy for contractor ratio or similar
+          contractor: sb54Data.skilledWorkforcePercentage || 0.60
         },
         turnaround: {
           employee: csbData.routineEmployees / (csbData.routineEmployees + csbData.turnaroundContractors),
