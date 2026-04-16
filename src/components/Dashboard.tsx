@@ -457,9 +457,9 @@ const Dashboard: React.FC<DashboardProps> = ({ padd, refineries, onPaddSelect, o
           <div className="mt-4 bg-indigo-50 border border-indigo-100 rounded-lg p-4">
             <h4 className="text-sm font-semibold text-indigo-900 mb-2">Methodology & Primary Sources</h4>
             <p className="text-xs text-indigo-800 space-y-2">
-              <span className="block">Functional headcount distributions were modeled using baseline categorical frameworks from Solomon Associates' Personnel Efficiency Index, calibrated against <strong>BLS NAICS 324110</strong> occupational data for direct employees.</span>
-              <span className="block mt-1">Contractor utilization rates were adjusted based on industry-standard practices documented in <strong>OSHA PSM</strong> and <strong>USW</strong> labor records (for Operations/Maintenance splits), and <strong>California SB 54</strong> reports.</span>
-              <span className="block mt-1">Turnaround contractor surges are derived from verified federal disaster investigations, such as the <strong>CSB BP Texas City Report</strong>.</span>
+              <span className="block">Functional headcount distributions are derived directly from <strong>BLS OEWS NAICS 324100</strong> occupational data for direct employees.</span>
+              <span className="block mt-1">Contractor utilization rates are based on industry-standard practices documented in <strong>USW</strong> labor records (for Operations/Maintenance splits) and <strong>California SB 54</strong> legislative mandates.</span>
+              <span className="block mt-1">Turnaround contractor surges are derived from verified federal disaster investigations, specifically the <strong>CSB BP Texas City Report</strong>.</span>
             </p>
           </div>
         </div>

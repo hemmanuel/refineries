@@ -58,7 +58,7 @@ const RefineryDetail: React.FC<RefineryDetailProps> = ({ refinery, onClose, mode
   };
 
   const containerClasses = mode === 'modal'
-    ? "fixed right-0 top-0 h-full w-full max-w-md bg-white shadow-2xl transform transition-transform duration-300 ease-in-out z-[3001] overflow-y-auto border-l border-gray-200"
+    ? "fixed right-0 top-0 h-full w-full max-w-2xl bg-white shadow-2xl transform transition-transform duration-300 ease-in-out z-[3001] overflow-y-auto border-l border-gray-200"
     : "h-full w-full bg-white overflow-y-auto border-l border-gray-200";
 
   return (
@@ -310,9 +310,9 @@ const RefineryDetail: React.FC<RefineryDetailProps> = ({ refinery, onClose, mode
                 <div className="bg-indigo-50 border border-indigo-100 rounded-lg p-4">
                   <h4 className="text-sm font-semibold text-indigo-900 mb-2">Methodology & Primary Sources</h4>
                   <p className="text-xs text-indigo-800 space-y-2">
-                    <span className="block">Functional headcount distributions were modeled using baseline categorical frameworks from Solomon Associates' Personnel Efficiency Index, calibrated against <strong>BLS NAICS 324110</strong> occupational data for direct employees.</span>
-                    <span className="block mt-1">Contractor utilization rates were adjusted based on industry-standard practices documented in <strong>OSHA PSM</strong> and <strong>USW</strong> labor records (for Operations/Maintenance splits), and <strong>California SB 54</strong> reports.</span>
-                    <span className="block mt-1">Turnaround contractor surges are derived from verified federal disaster investigations, such as the <strong>CSB BP Texas City Report</strong>.</span>
+                    <span className="block">Functional headcount distributions are derived directly from <strong>BLS OEWS NAICS 324100</strong> occupational data for direct employees.</span>
+                    <span className="block mt-1">Contractor utilization rates are based on industry-standard practices documented in <strong>USW</strong> labor records (for Operations/Maintenance splits) and <strong>California SB 54</strong> legislative mandates.</span>
+                    <span className="block mt-1">Turnaround contractor surges are derived from verified federal disaster investigations, specifically the <strong>CSB BP Texas City Report</strong>.</span>
                   </p>
                 </div>
               </div>
