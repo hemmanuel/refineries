@@ -303,6 +303,20 @@ const RefineryDetail: React.FC<RefineryDetailProps> = ({ refinery, onClose, mode
                             </tr>
                           ))}
                         </tbody>
+                        <tfoot className="bg-gray-50 border-t-2 border-gray-200">
+                          <tr>
+                            <td className="px-4 py-3 whitespace-nowrap font-bold text-gray-900">Total (Excl. Turnaround)</td>
+                            <td className="px-4 py-3 whitespace-nowrap text-right font-bold text-gray-900">
+                              {Object.entries(refinery.workforceMatrix).filter(([k]) => k !== 'turnaround').reduce((sum, [, d]) => sum + d.employee, 0).toLocaleString()}
+                            </td>
+                            <td className="px-4 py-3 whitespace-nowrap text-right font-bold text-gray-900">
+                              {Object.entries(refinery.workforceMatrix).filter(([k]) => k !== 'turnaround').reduce((sum, [, d]) => sum + d.contractor, 0).toLocaleString()}
+                            </td>
+                            <td className="px-4 py-3 whitespace-nowrap text-right font-black text-gray-900">
+                              {Object.entries(refinery.workforceMatrix).filter(([k]) => k !== 'turnaround').reduce((sum, [, d]) => sum + d.total, 0).toLocaleString()}
+                            </td>
+                          </tr>
+                        </tfoot>
                     </table>
                   </div>
                 </div>
