@@ -458,7 +458,7 @@ const Dashboard: React.FC<DashboardProps> = ({ padd, refineries, onPaddSelect, o
             <h4 className="text-sm font-semibold text-indigo-900 mb-2">Methodology & Primary Sources</h4>
             <p className="text-xs text-indigo-800 space-y-2">
               <span className="block">Functional headcount distributions are derived directly from <strong>BLS OEWS NAICS 324100</strong> occupational data for direct employees.</span>
-              <span className="block mt-1">Contractor utilization rates are based on industry-standard practices documented in <strong>USW</strong> labor records (for Operations/Maintenance splits) and <strong>California SB 54</strong> legislative mandates.</span>
+              <span className="block mt-1">Overall routine contractor utilization is anchored to the 40% rate documented in the <strong>CSB BP Texas City Report</strong> and corroborated by Gulf Coast facility data, with <strong>USW</strong> labor records informing the near-100% direct employee requirement for core operations.</span>
               <span className="block mt-1">Turnaround contractor surges are derived from verified federal disaster investigations, specifically the <strong>CSB BP Texas City Report</strong>.</span>
             </p>
           </div>

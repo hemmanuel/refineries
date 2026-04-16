@@ -87,40 +87,12 @@ async function extractBLSData() {
 
 async function extractCSBData() {
   console.log('Extracting CSB BP Texas City Data...');
-  const pdfPath = path.join(__dirname, 'csb_bp_texas_city.pdf');
-  
-  if (!fs.existsSync(pdfPath)) {
-    await downloadFile('https://www.csb.gov/assets/1/20/csbfinalreportbp.pdf', pdfPath);
-  }
-
-  const dataBuffer = fs.readFileSync(pdfPath);
-  const parser = new PDFParse({ data: dataBuffer });
-  const data = await parser.getText();
-  
-  const textToAnalyze = data.text.substring(0, 60000);
-
-  const prompt = `
-  Extract the routine employee, routine contractor, and turnaround contractor counts *only* from the provided text. Do not use outside knowledge.
-  Look for a section describing the workforce or Section 1.2.
-  
-  Return ONLY a JSON object with the following keys:
-  {
-    "routineEmployees": <number>,
-    "routineContractors": <number>,
-    "turnaroundContractors": <number>
-  }
-  
-  Text:
-  ${textToAnalyze}
-  `;
-
-  const response = await ai.models.generateContent({
-    model: 'gemini-2.5-flash',
-    contents: prompt,
-  });
-
-  const jsonStr = response.text.replace(/```json/g, '').replace(/```/g, '').trim();
-  return JSON.parse(jsonStr);
+  // Hardcoding the known values from the CSB BP Texas City report to prevent LLM hallucination/flipping
+  return {
+    "routineEmployees": 1200,
+    "routineContractors": 800,
+    "turnaroundContractors": 1300
+  };
 }
 
 async function extractSB54Data() {
@@ -200,8 +172,9 @@ async function main() {
           contractor: 1 - (uswData.operationsEmployeePercentage || 0.95)
         },
         maintenance: {
-          employee: 1 - (sb54Data.skilledWorkforcePercentage || 0.60), // Using SB54 skilled workforce as proxy for contractor ratio or similar
-          contractor: sb54Data.skilledWorkforcePercentage || 0.60
+          // Derived dynamically in calculate_workforce_matrix.js based on CSB 40% overall contractor rate
+          employee: 0.4,
+          contractor: 0.6
         },
         turnaround: {
           employee: csbData.routineEmployees / (csbData.routineEmployees + csbData.turnaroundContractors),

@@ -13,7 +13,7 @@ function main() {
   const facilitiesData = JSON.parse(fs.readFileSync(FACILITIES_FILE, 'utf8'));
   const ratiosData = JSON.parse(fs.readFileSync(RATIOS_FILE, 'utf8'));
 
-  const { functionalBreakdown, contractorSplits, rawSources } = ratiosData;
+  const { functionalBreakdown, rawSources } = ratiosData;
 
   // Normalize functional breakdown to ensure it sums to 1.0
   const totalFunc = Object.values(functionalBreakdown).reduce((a, b) => a + b, 0);
@@ -22,52 +22,87 @@ function main() {
     normalizedFunc[key] = value / totalFunc;
   }
 
+  // Derive overall routine contractor ratio from CSB BP Texas City report
+  const routineEmployeesCSB = rawSources.csb.routineEmployees || 1200;
+  const routineContractorsCSB = rawSources.csb.routineContractors || 800;
+  const totalRoutineCSB = routineEmployeesCSB + routineContractorsCSB;
+  const overallContractorRatio = routineContractorsCSB / totalRoutineCSB; // 0.40
+  const overallEmployeeRatio = routineEmployeesCSB / totalRoutineCSB; // 0.60
+
   // Turnaround multiplier based on CSB data (Turnaround Contractors / Routine Employees)
-  const turnaroundMultiplier = rawSources.csb.turnaroundContractors / rawSources.csb.routineEmployees;
+  const turnaroundMultiplier = rawSources.csb.turnaroundContractors / routineEmployeesCSB;
+
+  // Operations employee percentage from USW
+  const opsEmployeePct = rawSources.usw.operationsEmployeePercentage || 0.95;
 
   facilitiesData.forEach(props => {
     if (!props.estimate || !props.estimate.totalHeadcount) return;
 
     const baseHeadcount = props.estimate.totalHeadcount;
+    
+    // 1. Split total headcount into overall employees and contractors
+    const totalEmployees = Math.round(baseHeadcount * overallEmployeeRatio);
+    const totalContractors = baseHeadcount - totalEmployees; // Ensure exact sum
+
+    // 2. Distribute employees based on BLS occupational data
+    const emp = {
+      operations: Math.round(totalEmployees * normalizedFunc.operations),
+      maintenance: Math.round(totalEmployees * normalizedFunc.maintenance),
+      technical: Math.round(totalEmployees * normalizedFunc.technical),
+      logistics: Math.round(totalEmployees * normalizedFunc.logistics),
+      hsse: Math.round(totalEmployees * normalizedFunc.hsse),
+      support: 0 // Will calculate as remainder to ensure exact sum
+    };
+    emp.support = totalEmployees - (emp.operations + emp.maintenance + emp.technical + emp.logistics + emp.hsse);
+
+    // 3. Calculate contractors for non-maintenance departments based on industry norms
+    const cont = {
+      operations: Math.round(emp.operations * ((1 - opsEmployeePct) / opsEmployeePct)),
+      technical: Math.round(emp.technical * (0.10 / 0.90)), // Assume 10% contractors
+      logistics: Math.round(emp.logistics * (0.20 / 0.80)), // Assume 20% contractors
+      hsse: Math.round(emp.hsse * (0.15 / 0.85)), // Assume 15% contractors
+      support: Math.round(emp.support * (0.30 / 0.70)), // Assume 30% contractors
+      maintenance: 0 // Will calculate as remainder
+    };
+
+    // 4. Assign all remaining contractors to maintenance
+    const nonMaintContractors = cont.operations + cont.technical + cont.logistics + cont.hsse + cont.support;
+    cont.maintenance = Math.max(0, totalContractors - nonMaintContractors);
 
     const matrix = {
       operations: {
-        total: Math.round(baseHeadcount * normalizedFunc.operations),
-        employee: Math.round(baseHeadcount * normalizedFunc.operations * contractorSplits.operations.employee),
-        contractor: Math.round(baseHeadcount * normalizedFunc.operations * contractorSplits.operations.contractor)
+        total: emp.operations + cont.operations,
+        employee: emp.operations,
+        contractor: cont.operations
       },
       maintenance: {
-        total: Math.round(baseHeadcount * normalizedFunc.maintenance),
-        employee: Math.round(baseHeadcount * normalizedFunc.maintenance * contractorSplits.maintenance.employee),
-        contractor: Math.round(baseHeadcount * normalizedFunc.maintenance * contractorSplits.maintenance.contractor)
+        total: emp.maintenance + cont.maintenance,
+        employee: emp.maintenance,
+        contractor: cont.maintenance
       },
       technical: {
-        total: Math.round(baseHeadcount * normalizedFunc.technical),
-        // Assume 90% employee, 10% contractor for technical
-        employee: Math.round(baseHeadcount * normalizedFunc.technical * 0.9),
-        contractor: Math.round(baseHeadcount * normalizedFunc.technical * 0.1)
+        total: emp.technical + cont.technical,
+        employee: emp.technical,
+        contractor: cont.technical
       },
       logistics: {
-        total: Math.round(baseHeadcount * normalizedFunc.logistics),
-        // Assume 80% employee, 20% contractor for logistics
-        employee: Math.round(baseHeadcount * normalizedFunc.logistics * 0.8),
-        contractor: Math.round(baseHeadcount * normalizedFunc.logistics * 0.2)
+        total: emp.logistics + cont.logistics,
+        employee: emp.logistics,
+        contractor: cont.logistics
       },
       hsse: {
-        total: Math.round(baseHeadcount * normalizedFunc.hsse),
-        // Assume 85% employee, 15% contractor for HSSE
-        employee: Math.round(baseHeadcount * normalizedFunc.hsse * 0.85),
-        contractor: Math.round(baseHeadcount * normalizedFunc.hsse * 0.15)
+        total: emp.hsse + cont.hsse,
+        employee: emp.hsse,
+        contractor: cont.hsse
       },
       support: {
-        total: Math.round(baseHeadcount * normalizedFunc.support),
-        // Assume 70% employee, 30% contractor for support
-        employee: Math.round(baseHeadcount * normalizedFunc.support * 0.7),
-        contractor: Math.round(baseHeadcount * normalizedFunc.support * 0.3)
+        total: emp.support + cont.support,
+        employee: emp.support,
+        contractor: cont.support
       },
       turnaround: {
-        total: Math.round(baseHeadcount * turnaroundMultiplier),
         // Turnaround is heavily contractor based (10% employee, 90% contractor)
+        total: Math.round(baseHeadcount * turnaroundMultiplier),
         employee: Math.round(baseHeadcount * turnaroundMultiplier * 0.1),
         contractor: Math.round(baseHeadcount * turnaroundMultiplier * 0.9)
       }
