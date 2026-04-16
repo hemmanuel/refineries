@@ -58,7 +58,7 @@ const ComplexityExplorer: React.FC<ComplexityExplorerProps> = ({ category, refin
         className="fixed inset-0 bg-black/50 z-[4000] transition-opacity" 
         onClick={onClose}
       />
-      <div className="fixed right-0 top-0 h-full w-full max-w-2xl bg-white shadow-2xl transform transition-transform duration-300 ease-in-out z-[4001] flex flex-col">
+        <div className="fixed right-0 top-0 h-full w-full md:w-1/2 bg-white shadow-2xl transform transition-transform duration-300 ease-in-out z-[4001] flex flex-col">
         <div className="flex-none p-6 border-b border-gray-200 bg-white sticky top-0 z-10">
           <div className="flex justify-between items-start">
             <div className="flex items-center gap-3">

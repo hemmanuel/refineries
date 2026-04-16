@@ -58,7 +58,7 @@ const RefineryDetail: React.FC<RefineryDetailProps> = ({ refinery, onClose, mode
   };
 
   const containerClasses = mode === 'modal'
-    ? "fixed right-0 top-0 h-full w-full max-w-2xl bg-white shadow-2xl transform transition-transform duration-300 ease-in-out z-[3001] overflow-y-auto border-l border-gray-200"
+    ? "fixed right-0 top-0 h-full w-full md:w-1/2 bg-white shadow-2xl transform transition-transform duration-300 ease-in-out z-[3001] overflow-y-auto border-l border-gray-200"
     : "h-full w-full bg-white overflow-y-auto border-l border-gray-200";
 
   return (
