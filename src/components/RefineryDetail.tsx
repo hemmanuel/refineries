@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { type ParsedRefinery } from '../utils/data';
+import { type ParsedRefinery, WORKFORCE_CATEGORY_LABELS, type WorkforceMatrix } from '../utils/data';
 import { X, Factory, Users, HardHat, Calendar, ChevronRight, AlertTriangle, FileText, TrendingUp } from 'lucide-react';
 import MetricExplanation from './MetricExplanation';
 import OshaDetail from './OshaDetail';
@@ -293,16 +293,16 @@ const RefineryDetail: React.FC<RefineryDetailProps> = ({ refinery, onClose, mode
                           <th scope="col" className="px-4 py-3 text-right font-medium text-gray-500 uppercase tracking-wider">Total</th>
                         </tr>
                       </thead>
-                      <tbody className="bg-white divide-y divide-gray-200">
-                        {Object.entries(refinery.workforceMatrix).map(([key, data]) => (
-                          <tr key={key} className="hover:bg-gray-50 transition-colors">
-                            <td className="px-4 py-2 whitespace-nowrap font-medium text-gray-900 capitalize">{key}</td>
-                            <td className="px-4 py-2 whitespace-nowrap text-right text-gray-500">{data.employee.toLocaleString()}</td>
-                            <td className="px-4 py-2 whitespace-nowrap text-right text-gray-500">{data.contractor.toLocaleString()}</td>
-                            <td className="px-4 py-2 whitespace-nowrap text-right font-medium text-gray-900">{data.total.toLocaleString()}</td>
-                          </tr>
-                        ))}
-                      </tbody>
+                        <tbody className="bg-white divide-y divide-gray-200">
+                          {Object.entries(refinery.workforceMatrix).map(([key, data]) => (
+                            <tr key={key} className="hover:bg-gray-50 transition-colors">
+                              <td className="px-4 py-2 whitespace-nowrap font-medium text-gray-900">{WORKFORCE_CATEGORY_LABELS[key as keyof WorkforceMatrix]}</td>
+                              <td className="px-4 py-2 whitespace-nowrap text-right text-gray-500">{data.employee.toLocaleString()}</td>
+                              <td className="px-4 py-2 whitespace-nowrap text-right text-gray-500">{data.contractor.toLocaleString()}</td>
+                              <td className="px-4 py-2 whitespace-nowrap text-right font-medium text-gray-900">{data.total.toLocaleString()}</td>
+                            </tr>
+                          ))}
+                        </tbody>
                     </table>
                   </div>
                 </div>
@@ -311,7 +311,7 @@ const RefineryDetail: React.FC<RefineryDetailProps> = ({ refinery, onClose, mode
                   <h4 className="text-sm font-semibold text-indigo-900 mb-2">Methodology & Primary Sources</h4>
                   <p className="text-xs text-indigo-800 space-y-2">
                     <span className="block">Functional headcount distributions are derived directly from <strong>BLS OEWS NAICS 324100</strong> occupational data for direct employees.</span>
-                    <span className="block mt-1">Overall routine contractor utilization is anchored to the 40% rate documented in the <strong>CSB BP Texas City Report</strong> and corroborated by Gulf Coast facility data, with <strong>USW</strong> labor records informing the near-100% direct employee requirement for core operations.</span>
+                    <span className="block mt-1">Based on the <strong>WWU Washington State Refinery Study</strong>, routine contractor utilization is allocated heavily to the Maintenance function (86% contractors), with Technical, Logistics, HSSE, and Support modeled as direct-hire functions based on BLS OEWS distributions. <strong>USW</strong> labor records inform the near-100% direct employee requirement for core operations.</span>
                     <span className="block mt-1">Turnaround contractor surges are derived from verified federal disaster investigations, specifically the <strong>CSB BP Texas City Report</strong>.</span>
                   </p>
                 </div>

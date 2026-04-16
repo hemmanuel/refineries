@@ -54,6 +54,16 @@ export interface WorkforceMatrix {
   turnaround: WorkforceMatrixCategory;
 }
 
+export const WORKFORCE_CATEGORY_LABELS: Record<keyof WorkforceMatrix, string> = {
+  operations: "Production Occupations",
+  maintenance: "Installation, Maintenance, and Repair Occupations",
+  technical: "Architecture and Engineering Occupations",
+  logistics: "Transportation and Material Moving Occupations",
+  hsse: "Life, Physical, and Social Science Occupations",
+  support: "Management and Administrative Support Occupations",
+  turnaround: "Turnaround (Major Maintenance)"
+};
+
 export interface ParsedRefinery {
   id: string;
   name: string;

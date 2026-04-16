@@ -55,19 +55,23 @@ function main() {
     };
     emp.support = totalEmployees - (emp.operations + emp.maintenance + emp.technical + emp.logistics + emp.hsse);
 
-    // 3. Calculate contractors for non-maintenance departments based on industry norms
+    // 3. Calculate contractors based on WWU report for maintenance, USW for operations, and estimates for the rest
+    // WWU report: 1027 contractors / (164 employees + 1027 contractors) = ~86.2% contractors in maintenance
+    // Using the WWU ratio directly: contractors = employees * (1027 / 164) = employees * 6.262
+    const maintContractorRatio = 1027 / 164;
+
     const cont = {
       operations: Math.round(emp.operations * ((1 - opsEmployeePct) / opsEmployeePct)),
-      technical: Math.round(emp.technical * (0.10 / 0.90)), // Assume 10% contractors
-      logistics: Math.round(emp.logistics * (0.20 / 0.80)), // Assume 20% contractors
-      hsse: Math.round(emp.hsse * (0.15 / 0.85)), // Assume 15% contractors
-      support: Math.round(emp.support * (0.30 / 0.70)), // Assume 30% contractors
-      maintenance: 0 // Will calculate as remainder
+      maintenance: Math.round(emp.maintenance * maintContractorRatio),
+      technical: Math.round(emp.technical * (0.10 / 0.90)), // Estimate: 10% contractors
+      logistics: Math.round(emp.logistics * (0.20 / 0.80)), // Estimate: 20% contractors
+      hsse: Math.round(emp.hsse * (0.15 / 0.85)), // Estimate: 15% contractors
+      support: 0 // Will calculate as remainder to ensure totalContractors matches the 40% site-wide average
     };
 
-    // 4. Assign all remaining contractors to maintenance
-    const nonMaintContractors = cont.operations + cont.technical + cont.logistics + cont.hsse + cont.support;
-    cont.maintenance = Math.max(0, totalContractors - nonMaintContractors);
+    // 4. Assign all remaining contractors to support to ensure the site-wide 40% contractor average is maintained
+    const nonSupportContractors = cont.operations + cont.maintenance + cont.technical + cont.logistics + cont.hsse;
+    cont.support = Math.max(0, totalContractors - nonSupportContractors);
 
     const matrix = {
       operations: {

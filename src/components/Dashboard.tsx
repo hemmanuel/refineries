@@ -1,5 +1,5 @@
 import React, { useMemo, useState, useRef, useEffect } from 'react';
-import { type ParsedRefinery, PADD_NAMES } from '../utils/data';
+import { type ParsedRefinery, PADD_NAMES, WORKFORCE_CATEGORY_LABELS, type WorkforceMatrix } from '../utils/data';
 import { Users, Factory, Calendar, HardHat, TrendingUp, Filter, Map, ChevronRight, AlertTriangle } from 'lucide-react';
 import RefineryDetail from './RefineryDetail';
 import CompanyProfile from './CompanyProfile';
@@ -427,16 +427,16 @@ const Dashboard: React.FC<DashboardProps> = ({ padd, refineries, onPaddSelect, o
                   <th scope="col" className="px-6 py-4 text-right font-semibold text-gray-900 uppercase tracking-wider bg-gray-100">Total</th>
                 </tr>
               </thead>
-              <tbody className="bg-white divide-y divide-gray-200">
-                {Object.entries(stats.workforceMatrix).map(([key, data]) => (
-                  <tr key={key} className="hover:bg-gray-50 transition-colors">
-                    <td className="px-6 py-4 whitespace-nowrap font-medium text-gray-900 capitalize">{key}</td>
-                    <td className="px-6 py-4 whitespace-nowrap text-right text-gray-600">{data.employee.toLocaleString()}</td>
-                    <td className="px-6 py-4 whitespace-nowrap text-right text-gray-600">{data.contractor.toLocaleString()}</td>
-                    <td className="px-6 py-4 whitespace-nowrap text-right font-bold text-gray-900 bg-gray-50/50">{data.total.toLocaleString()}</td>
-                  </tr>
-                ))}
-              </tbody>
+                <tbody className="bg-white divide-y divide-gray-200">
+                  {Object.entries(stats.workforceMatrix).map(([key, data]) => (
+                    <tr key={key} className="hover:bg-gray-50 transition-colors">
+                      <td className="px-6 py-4 whitespace-nowrap font-medium text-gray-900">{WORKFORCE_CATEGORY_LABELS[key as keyof WorkforceMatrix]}</td>
+                      <td className="px-6 py-4 whitespace-nowrap text-right text-gray-600">{data.employee.toLocaleString()}</td>
+                      <td className="px-6 py-4 whitespace-nowrap text-right text-gray-600">{data.contractor.toLocaleString()}</td>
+                      <td className="px-6 py-4 whitespace-nowrap text-right font-bold text-gray-900 bg-gray-50/50">{data.total.toLocaleString()}</td>
+                    </tr>
+                  ))}
+                </tbody>
               <tfoot className="bg-gray-100 border-t-2 border-gray-300">
                 <tr>
                   <td className="px-6 py-4 whitespace-nowrap font-bold text-gray-900">Total (Excl. Turnaround)</td>
@@ -456,11 +456,11 @@ const Dashboard: React.FC<DashboardProps> = ({ padd, refineries, onPaddSelect, o
           
           <div className="mt-4 bg-indigo-50 border border-indigo-100 rounded-lg p-4">
             <h4 className="text-sm font-semibold text-indigo-900 mb-2">Methodology & Primary Sources</h4>
-            <p className="text-xs text-indigo-800 space-y-2">
-              <span className="block">Functional headcount distributions are derived directly from <strong>BLS OEWS NAICS 324100</strong> occupational data for direct employees.</span>
-              <span className="block mt-1">Overall routine contractor utilization is anchored to the 40% rate documented in the <strong>CSB BP Texas City Report</strong> and corroborated by Gulf Coast facility data, with <strong>USW</strong> labor records informing the near-100% direct employee requirement for core operations.</span>
-              <span className="block mt-1">Turnaround contractor surges are derived from verified federal disaster investigations, specifically the <strong>CSB BP Texas City Report</strong>.</span>
-            </p>
+              <p className="text-xs text-indigo-800 space-y-2">
+                <span className="block">Functional headcount distributions are derived directly from <strong>BLS OEWS NAICS 324100</strong> occupational data for direct employees.</span>
+                <span className="block mt-1">Based on the <strong>WWU Washington State Refinery Study</strong>, routine contractor utilization is allocated heavily to the Maintenance function (86% contractors), with Technical, Logistics, HSSE, and Support modeled as direct-hire functions based on BLS OEWS distributions. <strong>USW</strong> labor records inform the near-100% direct employee requirement for core operations.</span>
+                <span className="block mt-1">Turnaround contractor surges are derived from verified federal disaster investigations, specifically the <strong>CSB BP Texas City Report</strong>.</span>
+              </p>
           </div>
         </div>
 
