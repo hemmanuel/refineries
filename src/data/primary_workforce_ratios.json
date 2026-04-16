@@ -1,0 +1,45 @@
+{
+  "functionalBreakdown": {
+    "operations": 0.402,
+    "maintenance": 0.188,
+    "technical": 0.103,
+    "logistics": 0.055,
+    "hsse": 0.033,
+    "support": 0.155
+  },
+  "contractorSplits": {
+    "operations": {
+      "employee": 0.99,
+      "contractor": 0.010000000000000009
+    },
+    "maintenance": {
+      "employee": 0.5,
+      "contractor": 0.5
+    },
+    "turnaround": {
+      "employee": 0.5454545454545454,
+      "contractor": 0.45454545454545453
+    }
+  },
+  "rawSources": {
+    "bls": {
+      "operations": 0.402,
+      "maintenance": 0.188,
+      "technical": 0.103,
+      "logistics": 0.055,
+      "hsse": 0.033,
+      "support": 0.155
+    },
+    "csb": {
+      "routineEmployees": 1800,
+      "routineContractors": 1000,
+      "turnaroundContractors": 1500
+    },
+    "sb54": {
+      "skilledWorkforcePercentage": 0.6
+    },
+    "usw": {
+      "operationsEmployeePercentage": 0.99
+    }
+  }
+}

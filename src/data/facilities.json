@@ -62,7 +62,44 @@
       }
     ],
     "safetySummary": "Official OSHA data available for 2 years. Latest TRIR (2024): 5.06 (Industry Avg: ~0.6). Average TRIR: 2.53. ",
-    "hasRealOshaData": true
+    "hasRealOshaData": true,
+    "workforceMatrix": {
+      "operations": {
+        "total": 2,
+        "employee": 2,
+        "contractor": 0
+      },
+      "maintenance": {
+        "total": 1,
+        "employee": 0,
+        "contractor": 0
+      },
+      "technical": {
+        "total": 0,
+        "employee": 0,
+        "contractor": 0
+      },
+      "logistics": {
+        "total": 0,
+        "employee": 0,
+        "contractor": 0
+      },
+      "hsse": {
+        "total": 0,
+        "employee": 0,
+        "contractor": 0
+      },
+      "support": {
+        "total": 1,
+        "employee": 0,
+        "contractor": 0
+      },
+      "turnaround": {
+        "total": 3,
+        "employee": 0,
+        "contractor": 3
+      }
+    }
   },
   {
     "id": "refinery-eia-1",
@@ -258,7 +295,44 @@
       }
     ],
     "safetySummary": "Official OSHA data available for 9 years. Latest TRIR (2024): 1.12 (Industry Avg: ~0.6). Average TRIR: 0.90. ",
-    "hasRealOshaData": true
+    "hasRealOshaData": true,
+    "workforceMatrix": {
+      "operations": {
+        "total": 186,
+        "employee": 185,
+        "contractor": 2
+      },
+      "maintenance": {
+        "total": 87,
+        "employee": 44,
+        "contractor": 44
+      },
+      "technical": {
+        "total": 48,
+        "employee": 43,
+        "contractor": 5
+      },
+      "logistics": {
+        "total": 26,
+        "employee": 20,
+        "contractor": 5
+      },
+      "hsse": {
+        "total": 15,
+        "employee": 13,
+        "contractor": 2
+      },
+      "support": {
+        "total": 72,
+        "employee": 50,
+        "contractor": 22
+      },
+      "turnaround": {
+        "total": 362,
+        "employee": 36,
+        "contractor": 326
+      }
+    }
   },
   {
     "id": "refinery-eia-2",
@@ -349,7 +423,44 @@
       }
     ],
     "safetySummary": "Official OSHA data available for 3 years. Latest TRIR (2024): 0 (Industry Avg: ~0.6). Average TRIR: 0.16. Zero recordable incidents in latest reporting year.",
-    "hasRealOshaData": true
+    "hasRealOshaData": true,
+    "workforceMatrix": {
+      "operations": {
+        "total": 104,
+        "employee": 102,
+        "contractor": 1
+      },
+      "maintenance": {
+        "total": 48,
+        "employee": 24,
+        "contractor": 24
+      },
+      "technical": {
+        "total": 27,
+        "employee": 24,
+        "contractor": 3
+      },
+      "logistics": {
+        "total": 14,
+        "employee": 11,
+        "contractor": 3
+      },
+      "hsse": {
+        "total": 8,
+        "employee": 7,
+        "contractor": 1
+      },
+      "support": {
+        "total": 40,
+        "employee": 28,
+        "contractor": 12
+      },
+      "turnaround": {
+        "total": 201,
+        "employee": 20,
+        "contractor": 181
+      }
+    }
   },
   {
     "id": "refinery-eia-3",
@@ -376,7 +487,44 @@
       }
     },
     "edc": 15000,
-    "nci": 1
+    "nci": 1,
+    "workforceMatrix": {
+      "operations": {
+        "total": 5,
+        "employee": 5,
+        "contractor": 0
+      },
+      "maintenance": {
+        "total": 2,
+        "employee": 1,
+        "contractor": 1
+      },
+      "technical": {
+        "total": 1,
+        "employee": 1,
+        "contractor": 0
+      },
+      "logistics": {
+        "total": 1,
+        "employee": 1,
+        "contractor": 0
+      },
+      "hsse": {
+        "total": 0,
+        "employee": 0,
+        "contractor": 0
+      },
+      "support": {
+        "total": 2,
+        "employee": 1,
+        "contractor": 1
+      },
+      "turnaround": {
+        "total": 9,
+        "employee": 1,
+        "contractor": 8
+      }
+    }
   },
   {
     "id": "refinery-eia-4",
@@ -403,7 +551,44 @@
       }
     },
     "edc": 6500,
-    "nci": 1
+    "nci": 1,
+    "workforceMatrix": {
+      "operations": {
+        "total": 3,
+        "employee": 3,
+        "contractor": 0
+      },
+      "maintenance": {
+        "total": 1,
+        "employee": 1,
+        "contractor": 1
+      },
+      "technical": {
+        "total": 1,
+        "employee": 1,
+        "contractor": 0
+      },
+      "logistics": {
+        "total": 0,
+        "employee": 0,
+        "contractor": 0
+      },
+      "hsse": {
+        "total": 0,
+        "employee": 0,
+        "contractor": 0
+      },
+      "support": {
+        "total": 1,
+        "employee": 1,
+        "contractor": 0
+      },
+      "turnaround": {
+        "total": 5,
+        "employee": 1,
+        "contractor": 5
+      }
+    }
   },
   {
     "id": "refinery-eia-5",
@@ -433,6 +618,43 @@
     "nci": 1.18,
     "units": {
       "ASPHALT & ROAD OIL": 3000
+    },
+    "workforceMatrix": {
+      "operations": {
+        "total": 8,
+        "employee": 8,
+        "contractor": 0
+      },
+      "maintenance": {
+        "total": 4,
+        "employee": 2,
+        "contractor": 2
+      },
+      "technical": {
+        "total": 2,
+        "employee": 2,
+        "contractor": 0
+      },
+      "logistics": {
+        "total": 1,
+        "employee": 1,
+        "contractor": 0
+      },
+      "hsse": {
+        "total": 1,
+        "employee": 1,
+        "contractor": 0
+      },
+      "support": {
+        "total": 3,
+        "employee": 2,
+        "contractor": 1
+      },
+      "turnaround": {
+        "total": 15,
+        "employee": 2,
+        "contractor": 14
+      }
     }
   },
   {
@@ -460,7 +682,44 @@
       }
     },
     "edc": 62500,
-    "nci": 1
+    "nci": 1,
+    "workforceMatrix": {
+      "operations": {
+        "total": 12,
+        "employee": 12,
+        "contractor": 0
+      },
+      "maintenance": {
+        "total": 6,
+        "employee": 3,
+        "contractor": 3
+      },
+      "technical": {
+        "total": 3,
+        "employee": 3,
+        "contractor": 0
+      },
+      "logistics": {
+        "total": 2,
+        "employee": 1,
+        "contractor": 0
+      },
+      "hsse": {
+        "total": 1,
+        "employee": 1,
+        "contractor": 0
+      },
+      "support": {
+        "total": 5,
+        "employee": 3,
+        "contractor": 1
+      },
+      "turnaround": {
+        "total": 24,
+        "employee": 2,
+        "contractor": 22
+      }
+    }
   },
   {
     "id": "refinery-eia-7",
@@ -602,7 +861,44 @@
       }
     ],
     "safetySummary": "Official OSHA data available for 6 years. Latest TRIR (2024): 0 (Industry Avg: ~0.6). Average TRIR: 0.46. Zero recordable incidents in latest reporting year.",
-    "hasRealOshaData": true
+    "hasRealOshaData": true,
+    "workforceMatrix": {
+      "operations": {
+        "total": 77,
+        "employee": 77,
+        "contractor": 1
+      },
+      "maintenance": {
+        "total": 36,
+        "employee": 18,
+        "contractor": 18
+      },
+      "technical": {
+        "total": 20,
+        "employee": 18,
+        "contractor": 2
+      },
+      "logistics": {
+        "total": 11,
+        "employee": 8,
+        "contractor": 2
+      },
+      "hsse": {
+        "total": 6,
+        "employee": 5,
+        "contractor": 1
+      },
+      "support": {
+        "total": 30,
+        "employee": 21,
+        "contractor": 9
+      },
+      "turnaround": {
+        "total": 150,
+        "employee": 15,
+        "contractor": 135
+      }
+    }
   },
   {
     "id": "refinery-eia-8",
@@ -635,6 +931,43 @@
       "DESULFURIZATION, OTHER": 6000,
       "LUBRICANTS": 5350,
       "VACUUM DISTILLATION": 3850
+    },
+    "workforceMatrix": {
+      "operations": {
+        "total": 131,
+        "employee": 130,
+        "contractor": 1
+      },
+      "maintenance": {
+        "total": 61,
+        "employee": 31,
+        "contractor": 31
+      },
+      "technical": {
+        "total": 34,
+        "employee": 30,
+        "contractor": 3
+      },
+      "logistics": {
+        "total": 18,
+        "employee": 14,
+        "contractor": 4
+      },
+      "hsse": {
+        "total": 11,
+        "employee": 9,
+        "contractor": 2
+      },
+      "support": {
+        "total": 51,
+        "employee": 35,
+        "contractor": 15
+      },
+      "turnaround": {
+        "total": 254,
+        "employee": 25,
+        "contractor": 229
+      }
     }
   },
   {
@@ -730,7 +1063,44 @@
       }
     ],
     "safetySummary": "Official OSHA data available for 3 years. Latest TRIR (2019): 0.25 (Industry Avg: ~0.6). Average TRIR: 0.71. ",
-    "hasRealOshaData": true
+    "hasRealOshaData": true,
+    "workforceMatrix": {
+      "operations": {
+        "total": 143,
+        "employee": 142,
+        "contractor": 1
+      },
+      "maintenance": {
+        "total": 67,
+        "employee": 34,
+        "contractor": 34
+      },
+      "technical": {
+        "total": 37,
+        "employee": 33,
+        "contractor": 4
+      },
+      "logistics": {
+        "total": 20,
+        "employee": 16,
+        "contractor": 4
+      },
+      "hsse": {
+        "total": 12,
+        "employee": 10,
+        "contractor": 2
+      },
+      "support": {
+        "total": 55,
+        "employee": 39,
+        "contractor": 17
+      },
+      "turnaround": {
+        "total": 278,
+        "employee": 28,
+        "contractor": 251
+      }
+    }
   },
   {
     "id": "refinery-eia-10",
@@ -895,7 +1265,44 @@
       }
     ],
     "safetySummary": "Official OSHA data available for 7 years. Latest TRIR (2023): 0 (Industry Avg: ~0.6). Average TRIR: 0.20. Zero recordable incidents in latest reporting year.",
-    "hasRealOshaData": true
+    "hasRealOshaData": true,
+    "workforceMatrix": {
+      "operations": {
+        "total": 440,
+        "employee": 435,
+        "contractor": 4
+      },
+      "maintenance": {
+        "total": 206,
+        "employee": 103,
+        "contractor": 103
+      },
+      "technical": {
+        "total": 113,
+        "employee": 101,
+        "contractor": 11
+      },
+      "logistics": {
+        "total": 60,
+        "employee": 48,
+        "contractor": 12
+      },
+      "hsse": {
+        "total": 36,
+        "employee": 31,
+        "contractor": 5
+      },
+      "support": {
+        "total": 170,
+        "employee": 119,
+        "contractor": 51
+      },
+      "turnaround": {
+        "total": 853,
+        "employee": 85,
+        "contractor": 768
+      }
+    }
   },
   {
     "id": "refinery-eia-11",
@@ -1062,7 +1469,44 @@
       }
     ],
     "safetySummary": "Official OSHA data available for 7 years. Latest TRIR (2023): 0.07 (Industry Avg: ~0.6). Average TRIR: 0.23. ",
-    "hasRealOshaData": true
+    "hasRealOshaData": true,
+    "workforceMatrix": {
+      "operations": {
+        "total": 803,
+        "employee": 795,
+        "contractor": 8
+      },
+      "maintenance": {
+        "total": 376,
+        "employee": 188,
+        "contractor": 188
+      },
+      "technical": {
+        "total": 206,
+        "employee": 185,
+        "contractor": 21
+      },
+      "logistics": {
+        "total": 110,
+        "employee": 88,
+        "contractor": 22
+      },
+      "hsse": {
+        "total": 66,
+        "employee": 56,
+        "contractor": 10
+      },
+      "support": {
+        "total": 310,
+        "employee": 217,
+        "contractor": 93
+      },
+      "turnaround": {
+        "total": 1558,
+        "employee": 156,
+        "contractor": 1403
+      }
+    }
   },
   {
     "id": "refinery-eia-12",
@@ -1136,7 +1580,44 @@
       }
     ],
     "safetySummary": "Official OSHA data available for 2 years. Latest TRIR (2018): 1.35 (Industry Avg: ~0.6). Average TRIR: 2.09. ",
-    "hasRealOshaData": true
+    "hasRealOshaData": true,
+    "workforceMatrix": {
+      "operations": {
+        "total": 119,
+        "employee": 118,
+        "contractor": 1
+      },
+      "maintenance": {
+        "total": 56,
+        "employee": 28,
+        "contractor": 28
+      },
+      "technical": {
+        "total": 31,
+        "employee": 28,
+        "contractor": 3
+      },
+      "logistics": {
+        "total": 16,
+        "employee": 13,
+        "contractor": 3
+      },
+      "hsse": {
+        "total": 10,
+        "employee": 8,
+        "contractor": 1
+      },
+      "support": {
+        "total": 46,
+        "employee": 32,
+        "contractor": 14
+      },
+      "turnaround": {
+        "total": 232,
+        "employee": 23,
+        "contractor": 209
+      }
+    }
   },
   {
     "id": "refinery-eia-13",
@@ -1167,6 +1648,43 @@
     "units": {
       "ASPHALT & ROAD OIL": 3750,
       "VACUUM DISTILLATION": 5000
+    },
+    "workforceMatrix": {
+      "operations": {
+        "total": 9,
+        "employee": 9,
+        "contractor": 0
+      },
+      "maintenance": {
+        "total": 4,
+        "employee": 2,
+        "contractor": 2
+      },
+      "technical": {
+        "total": 2,
+        "employee": 2,
+        "contractor": 0
+      },
+      "logistics": {
+        "total": 1,
+        "employee": 1,
+        "contractor": 0
+      },
+      "hsse": {
+        "total": 1,
+        "employee": 1,
+        "contractor": 0
+      },
+      "support": {
+        "total": 3,
+        "employee": 2,
+        "contractor": 1
+      },
+      "turnaround": {
+        "total": 17,
+        "employee": 2,
+        "contractor": 15
+      }
     }
   },
   {
@@ -1298,7 +1816,44 @@
       }
     ],
     "safetySummary": "Official OSHA data available for 5 years. Latest TRIR (2024): 0.17 (Industry Avg: ~0.6). Average TRIR: 0.20. ",
-    "hasRealOshaData": true
+    "hasRealOshaData": true,
+    "workforceMatrix": {
+      "operations": {
+        "total": 365,
+        "employee": 362,
+        "contractor": 4
+      },
+      "maintenance": {
+        "total": 171,
+        "employee": 85,
+        "contractor": 85
+      },
+      "technical": {
+        "total": 94,
+        "employee": 84,
+        "contractor": 9
+      },
+      "logistics": {
+        "total": 50,
+        "employee": 40,
+        "contractor": 10
+      },
+      "hsse": {
+        "total": 30,
+        "employee": 26,
+        "contractor": 5
+      },
+      "support": {
+        "total": 141,
+        "employee": 99,
+        "contractor": 42
+      },
+      "turnaround": {
+        "total": 709,
+        "employee": 71,
+        "contractor": 638
+      }
+    }
   },
   {
     "id": "refinery-eia-15",
@@ -1479,7 +2034,44 @@
       }
     ],
     "safetySummary": "Official OSHA data available for 8 years. Latest TRIR (2024): 0.15 (Industry Avg: ~0.6). Average TRIR: 0.24. ",
-    "hasRealOshaData": true
+    "hasRealOshaData": true,
+    "workforceMatrix": {
+      "operations": {
+        "total": 322,
+        "employee": 319,
+        "contractor": 3
+      },
+      "maintenance": {
+        "total": 151,
+        "employee": 75,
+        "contractor": 75
+      },
+      "technical": {
+        "total": 83,
+        "employee": 74,
+        "contractor": 8
+      },
+      "logistics": {
+        "total": 44,
+        "employee": 35,
+        "contractor": 9
+      },
+      "hsse": {
+        "total": 26,
+        "employee": 22,
+        "contractor": 4
+      },
+      "support": {
+        "total": 124,
+        "employee": 87,
+        "contractor": 37
+      },
+      "turnaround": {
+        "total": 625,
+        "employee": 63,
+        "contractor": 563
+      }
+    }
   },
   {
     "id": "refinery-eia-16",
@@ -1512,6 +2104,43 @@
       "CAT REFORMING: LOW PRESSURE": 2500,
       "DESULFURIZATION, NAPHTHA/REFORMER FEED": 5000,
       "DESULFURIZATION, OTHER DISTILLATE": 9000
+    },
+    "workforceMatrix": {
+      "operations": {
+        "total": 22,
+        "employee": 22,
+        "contractor": 0
+      },
+      "maintenance": {
+        "total": 10,
+        "employee": 5,
+        "contractor": 5
+      },
+      "technical": {
+        "total": 6,
+        "employee": 5,
+        "contractor": 1
+      },
+      "logistics": {
+        "total": 3,
+        "employee": 2,
+        "contractor": 1
+      },
+      "hsse": {
+        "total": 2,
+        "employee": 2,
+        "contractor": 0
+      },
+      "support": {
+        "total": 8,
+        "employee": 6,
+        "contractor": 3
+      },
+      "turnaround": {
+        "total": 43,
+        "employee": 4,
+        "contractor": 38
+      }
     }
   },
   {
@@ -1542,6 +2171,43 @@
     "nci": 2.27,
     "units": {
       "ASPHALT & ROAD OIL": 1700
+    },
+    "workforceMatrix": {
+      "operations": {
+        "total": 3,
+        "employee": 3,
+        "contractor": 0
+      },
+      "maintenance": {
+        "total": 1,
+        "employee": 1,
+        "contractor": 1
+      },
+      "technical": {
+        "total": 1,
+        "employee": 1,
+        "contractor": 0
+      },
+      "logistics": {
+        "total": 0,
+        "employee": 0,
+        "contractor": 0
+      },
+      "hsse": {
+        "total": 0,
+        "employee": 0,
+        "contractor": 0
+      },
+      "support": {
+        "total": 1,
+        "employee": 1,
+        "contractor": 0
+      },
+      "turnaround": {
+        "total": 5,
+        "employee": 1,
+        "contractor": 5
+      }
     }
   },
   {
@@ -1707,7 +2373,44 @@
       }
     ],
     "safetySummary": "Official OSHA data available for 7 years. Latest TRIR (2024): 0.6 (Industry Avg: ~0.6). Average TRIR: 0.33. ",
-    "hasRealOshaData": true
+    "hasRealOshaData": true,
+    "workforceMatrix": {
+      "operations": {
+        "total": 551,
+        "employee": 546,
+        "contractor": 6
+      },
+      "maintenance": {
+        "total": 258,
+        "employee": 129,
+        "contractor": 129
+      },
+      "technical": {
+        "total": 141,
+        "employee": 127,
+        "contractor": 14
+      },
+      "logistics": {
+        "total": 75,
+        "employee": 60,
+        "contractor": 15
+      },
+      "hsse": {
+        "total": 45,
+        "employee": 38,
+        "contractor": 7
+      },
+      "support": {
+        "total": 213,
+        "employee": 149,
+        "contractor": 64
+      },
+      "turnaround": {
+        "total": 1070,
+        "employee": 107,
+        "contractor": 963
+      }
+    }
   },
   {
     "id": "refinery-eia-19",
@@ -1816,7 +2519,44 @@
       }
     ],
     "safetySummary": "Official OSHA data available for 4 years. Latest TRIR (2023): 0.18 (Industry Avg: ~0.6). Average TRIR: 0.33. ",
-    "hasRealOshaData": true
+    "hasRealOshaData": true,
+    "workforceMatrix": {
+      "operations": {
+        "total": 320,
+        "employee": 317,
+        "contractor": 3
+      },
+      "maintenance": {
+        "total": 150,
+        "employee": 75,
+        "contractor": 75
+      },
+      "technical": {
+        "total": 82,
+        "employee": 74,
+        "contractor": 8
+      },
+      "logistics": {
+        "total": 44,
+        "employee": 35,
+        "contractor": 9
+      },
+      "hsse": {
+        "total": 26,
+        "employee": 22,
+        "contractor": 4
+      },
+      "support": {
+        "total": 124,
+        "employee": 86,
+        "contractor": 37
+      },
+      "turnaround": {
+        "total": 622,
+        "employee": 62,
+        "contractor": 560
+      }
+    }
   },
   {
     "id": "refinery-eia-20",
@@ -1993,7 +2733,44 @@
       }
     ],
     "safetySummary": "Official OSHA data available for 8 years. Latest TRIR (2024): 0.5 (Industry Avg: ~0.6). Average TRIR: 0.45. ",
-    "hasRealOshaData": true
+    "hasRealOshaData": true,
+    "workforceMatrix": {
+      "operations": {
+        "total": 244,
+        "employee": 242,
+        "contractor": 2
+      },
+      "maintenance": {
+        "total": 114,
+        "employee": 57,
+        "contractor": 57
+      },
+      "technical": {
+        "total": 63,
+        "employee": 56,
+        "contractor": 6
+      },
+      "logistics": {
+        "total": 33,
+        "employee": 27,
+        "contractor": 7
+      },
+      "hsse": {
+        "total": 20,
+        "employee": 17,
+        "contractor": 3
+      },
+      "support": {
+        "total": 94,
+        "employee": 66,
+        "contractor": 28
+      },
+      "turnaround": {
+        "total": 474,
+        "employee": 47,
+        "contractor": 427
+      }
+    }
   },
   {
     "id": "refinery-eia-21",
@@ -2177,7 +2954,44 @@
       }
     ],
     "safetySummary": "Official OSHA data available for 8 years. Latest TRIR (2024): 0 (Industry Avg: ~0.6). Average TRIR: 0.23. Zero recordable incidents in latest reporting year.",
-    "hasRealOshaData": true
+    "hasRealOshaData": true,
+    "workforceMatrix": {
+      "operations": {
+        "total": 298,
+        "employee": 296,
+        "contractor": 3
+      },
+      "maintenance": {
+        "total": 140,
+        "employee": 70,
+        "contractor": 70
+      },
+      "technical": {
+        "total": 76,
+        "employee": 69,
+        "contractor": 8
+      },
+      "logistics": {
+        "total": 41,
+        "employee": 33,
+        "contractor": 8
+      },
+      "hsse": {
+        "total": 25,
+        "employee": 21,
+        "contractor": 4
+      },
+      "support": {
+        "total": 115,
+        "employee": 81,
+        "contractor": 35
+      },
+      "turnaround": {
+        "total": 579,
+        "employee": 58,
+        "contractor": 521
+      }
+    }
   },
   {
     "id": "refinery-eia-22",
@@ -2348,7 +3162,44 @@
       }
     ],
     "safetySummary": "Official OSHA data available for 8 years. Latest TRIR (2024): 0.5 (Industry Avg: ~0.6). Average TRIR: 0.45. ",
-    "hasRealOshaData": true
+    "hasRealOshaData": true,
+    "workforceMatrix": {
+      "operations": {
+        "total": 9,
+        "employee": 9,
+        "contractor": 0
+      },
+      "maintenance": {
+        "total": 4,
+        "employee": 2,
+        "contractor": 2
+      },
+      "technical": {
+        "total": 2,
+        "employee": 2,
+        "contractor": 0
+      },
+      "logistics": {
+        "total": 1,
+        "employee": 1,
+        "contractor": 0
+      },
+      "hsse": {
+        "total": 1,
+        "employee": 1,
+        "contractor": 0
+      },
+      "support": {
+        "total": 3,
+        "employee": 2,
+        "contractor": 1
+      },
+      "turnaround": {
+        "total": 17,
+        "employee": 2,
+        "contractor": 15
+      }
+    }
   },
   {
     "id": "refinery-eia-23",
@@ -2487,7 +3338,44 @@
       }
     ],
     "safetySummary": "Official OSHA data available for 6 years. Latest TRIR (2022): 1.24 (Industry Avg: ~0.6). Average TRIR: 0.81. ",
-    "hasRealOshaData": true
+    "hasRealOshaData": true,
+    "workforceMatrix": {
+      "operations": {
+        "total": 42,
+        "employee": 41,
+        "contractor": 0
+      },
+      "maintenance": {
+        "total": 19,
+        "employee": 10,
+        "contractor": 10
+      },
+      "technical": {
+        "total": 11,
+        "employee": 10,
+        "contractor": 1
+      },
+      "logistics": {
+        "total": 6,
+        "employee": 5,
+        "contractor": 1
+      },
+      "hsse": {
+        "total": 3,
+        "employee": 3,
+        "contractor": 1
+      },
+      "support": {
+        "total": 16,
+        "employee": 11,
+        "contractor": 5
+      },
+      "turnaround": {
+        "total": 81,
+        "employee": 8,
+        "contractor": 73
+      }
+    }
   },
   {
     "id": "refinery-eia-24",
@@ -2630,7 +3518,44 @@
       }
     ],
     "safetySummary": "Official OSHA data available for 6 years. Latest TRIR (2022): 1.24 (Industry Avg: ~0.6). Average TRIR: 0.81. ",
-    "hasRealOshaData": true
+    "hasRealOshaData": true,
+    "workforceMatrix": {
+      "operations": {
+        "total": 98,
+        "employee": 97,
+        "contractor": 1
+      },
+      "maintenance": {
+        "total": 46,
+        "employee": 23,
+        "contractor": 23
+      },
+      "technical": {
+        "total": 25,
+        "employee": 23,
+        "contractor": 3
+      },
+      "logistics": {
+        "total": 13,
+        "employee": 11,
+        "contractor": 3
+      },
+      "hsse": {
+        "total": 8,
+        "employee": 7,
+        "contractor": 1
+      },
+      "support": {
+        "total": 38,
+        "employee": 26,
+        "contractor": 11
+      },
+      "turnaround": {
+        "total": 190,
+        "employee": 19,
+        "contractor": 171
+      }
+    }
   },
   {
     "id": "refinery-eia-25",
@@ -2710,7 +3635,44 @@
       }
     ],
     "safetySummary": "Official OSHA data available for 2 years. Latest TRIR (2024): 0.35 (Industry Avg: ~0.6). Average TRIR: 0.61. ",
-    "hasRealOshaData": true
+    "hasRealOshaData": true,
+    "workforceMatrix": {
+      "operations": {
+        "total": 317,
+        "employee": 313,
+        "contractor": 3
+      },
+      "maintenance": {
+        "total": 148,
+        "employee": 74,
+        "contractor": 74
+      },
+      "technical": {
+        "total": 81,
+        "employee": 73,
+        "contractor": 8
+      },
+      "logistics": {
+        "total": 43,
+        "employee": 35,
+        "contractor": 9
+      },
+      "hsse": {
+        "total": 26,
+        "employee": 22,
+        "contractor": 4
+      },
+      "support": {
+        "total": 122,
+        "employee": 85,
+        "contractor": 37
+      },
+      "turnaround": {
+        "total": 614,
+        "employee": 61,
+        "contractor": 553
+      }
+    }
   },
   {
     "id": "refinery-eia-26",
@@ -2745,6 +3707,43 @@
       "DESULFURIZATION, NAPHTHA/REFORMER FEED": 13000,
       "THERM CRACKING, VISBREAKING": 11000,
       "VACUUM DISTILLATION": 40000
+    },
+    "workforceMatrix": {
+      "operations": {
+        "total": 72,
+        "employee": 71,
+        "contractor": 1
+      },
+      "maintenance": {
+        "total": 34,
+        "employee": 17,
+        "contractor": 17
+      },
+      "technical": {
+        "total": 18,
+        "employee": 17,
+        "contractor": 2
+      },
+      "logistics": {
+        "total": 10,
+        "employee": 8,
+        "contractor": 2
+      },
+      "hsse": {
+        "total": 6,
+        "employee": 5,
+        "contractor": 1
+      },
+      "support": {
+        "total": 28,
+        "employee": 19,
+        "contractor": 8
+      },
+      "turnaround": {
+        "total": 140,
+        "employee": 14,
+        "contractor": 126
+      }
     }
   },
   {
@@ -2939,7 +3938,44 @@
       }
     ],
     "safetySummary": "Official OSHA data available for 9 years. Latest TRIR (2024): 0.59 (Industry Avg: ~0.6). Average TRIR: 0.33. ",
-    "hasRealOshaData": true
+    "hasRealOshaData": true,
+    "workforceMatrix": {
+      "operations": {
+        "total": 332,
+        "employee": 329,
+        "contractor": 3
+      },
+      "maintenance": {
+        "total": 155,
+        "employee": 78,
+        "contractor": 78
+      },
+      "technical": {
+        "total": 85,
+        "employee": 77,
+        "contractor": 9
+      },
+      "logistics": {
+        "total": 45,
+        "employee": 36,
+        "contractor": 9
+      },
+      "hsse": {
+        "total": 27,
+        "employee": 23,
+        "contractor": 4
+      },
+      "support": {
+        "total": 128,
+        "employee": 90,
+        "contractor": 38
+      },
+      "turnaround": {
+        "total": 645,
+        "employee": 65,
+        "contractor": 581
+      }
+    }
   },
   {
     "id": "refinery-eia-28",
@@ -3136,7 +4172,44 @@
       }
     ],
     "safetySummary": "Official OSHA data available for 9 years. Latest TRIR (2024): 0 (Industry Avg: ~0.6). Average TRIR: 0.31. Zero recordable incidents in latest reporting year.",
-    "hasRealOshaData": true
+    "hasRealOshaData": true,
+    "workforceMatrix": {
+      "operations": {
+        "total": 315,
+        "employee": 312,
+        "contractor": 3
+      },
+      "maintenance": {
+        "total": 147,
+        "employee": 74,
+        "contractor": 74
+      },
+      "technical": {
+        "total": 81,
+        "employee": 73,
+        "contractor": 8
+      },
+      "logistics": {
+        "total": 43,
+        "employee": 34,
+        "contractor": 9
+      },
+      "hsse": {
+        "total": 26,
+        "employee": 22,
+        "contractor": 4
+      },
+      "support": {
+        "total": 121,
+        "employee": 85,
+        "contractor": 36
+      },
+      "turnaround": {
+        "total": 611,
+        "employee": 61,
+        "contractor": 550
+      }
+    }
   },
   {
     "id": "refinery-eia-29",
@@ -3298,7 +4371,44 @@
       }
     ],
     "safetySummary": "Official OSHA data available for 7 years. Latest TRIR (2024): 0 (Industry Avg: ~0.6). Average TRIR: 0.11. Zero recordable incidents in latest reporting year.",
-    "hasRealOshaData": true
+    "hasRealOshaData": true,
+    "workforceMatrix": {
+      "operations": {
+        "total": 280,
+        "employee": 278,
+        "contractor": 3
+      },
+      "maintenance": {
+        "total": 131,
+        "employee": 66,
+        "contractor": 66
+      },
+      "technical": {
+        "total": 72,
+        "employee": 65,
+        "contractor": 7
+      },
+      "logistics": {
+        "total": 38,
+        "employee": 31,
+        "contractor": 8
+      },
+      "hsse": {
+        "total": 23,
+        "employee": 20,
+        "contractor": 3
+      },
+      "support": {
+        "total": 108,
+        "employee": 76,
+        "contractor": 32
+      },
+      "turnaround": {
+        "total": 544,
+        "employee": 54,
+        "contractor": 490
+      }
+    }
   },
   {
     "id": "refinery-eia-30",
@@ -3480,7 +4590,44 @@
       }
     ],
     "safetySummary": "Official OSHA data available for 8 years. Latest TRIR (2024): 0 (Industry Avg: ~0.6). Average TRIR: 0.25. Zero recordable incidents in latest reporting year.",
-    "hasRealOshaData": true
+    "hasRealOshaData": true,
+    "workforceMatrix": {
+      "operations": {
+        "total": 408,
+        "employee": 404,
+        "contractor": 4
+      },
+      "maintenance": {
+        "total": 191,
+        "employee": 95,
+        "contractor": 95
+      },
+      "technical": {
+        "total": 105,
+        "employee": 94,
+        "contractor": 10
+      },
+      "logistics": {
+        "total": 56,
+        "employee": 45,
+        "contractor": 11
+      },
+      "hsse": {
+        "total": 33,
+        "employee": 28,
+        "contractor": 5
+      },
+      "support": {
+        "total": 157,
+        "employee": 110,
+        "contractor": 47
+      },
+      "turnaround": {
+        "total": 792,
+        "employee": 79,
+        "contractor": 713
+      }
+    }
   },
   {
     "id": "refinery-eia-31",
@@ -3560,7 +4707,44 @@
       }
     ],
     "safetySummary": "Official OSHA data available for 2 years. Latest TRIR (2024): 0.77 (Industry Avg: ~0.6). Average TRIR: 0.62. ",
-    "hasRealOshaData": true
+    "hasRealOshaData": true,
+    "workforceMatrix": {
+      "operations": {
+        "total": 584,
+        "employee": 578,
+        "contractor": 6
+      },
+      "maintenance": {
+        "total": 273,
+        "employee": 137,
+        "contractor": 137
+      },
+      "technical": {
+        "total": 150,
+        "employee": 135,
+        "contractor": 15
+      },
+      "logistics": {
+        "total": 80,
+        "employee": 64,
+        "contractor": 16
+      },
+      "hsse": {
+        "total": 48,
+        "employee": 41,
+        "contractor": 7
+      },
+      "support": {
+        "total": 225,
+        "employee": 158,
+        "contractor": 68
+      },
+      "turnaround": {
+        "total": 1133,
+        "employee": 113,
+        "contractor": 1020
+      }
+    }
   },
   {
     "id": "refinery-eia-32",
@@ -3598,6 +4782,43 @@
       "DESULFURIZATION, NAPHTHA/REFORMER FEED": 11700,
       "ISOMERIZATION (ISOPENTANE/ISOHEXANE)": 3850,
       "VACUUM DISTILLATION": 14500
+    },
+    "workforceMatrix": {
+      "operations": {
+        "total": 72,
+        "employee": 71,
+        "contractor": 1
+      },
+      "maintenance": {
+        "total": 34,
+        "employee": 17,
+        "contractor": 17
+      },
+      "technical": {
+        "total": 18,
+        "employee": 17,
+        "contractor": 2
+      },
+      "logistics": {
+        "total": 10,
+        "employee": 8,
+        "contractor": 2
+      },
+      "hsse": {
+        "total": 6,
+        "employee": 5,
+        "contractor": 1
+      },
+      "support": {
+        "total": 28,
+        "employee": 19,
+        "contractor": 8
+      },
+      "turnaround": {
+        "total": 140,
+        "employee": 14,
+        "contractor": 126
+      }
     }
   },
   {
@@ -3777,7 +4998,44 @@
       }
     ],
     "safetySummary": "Official OSHA data available for 8 years. Latest TRIR (2024): 2.29 (Industry Avg: ~0.6). Average TRIR: 2.04. ",
-    "hasRealOshaData": true
+    "hasRealOshaData": true,
+    "workforceMatrix": {
+      "operations": {
+        "total": 237,
+        "employee": 234,
+        "contractor": 2
+      },
+      "maintenance": {
+        "total": 111,
+        "employee": 55,
+        "contractor": 55
+      },
+      "technical": {
+        "total": 61,
+        "employee": 55,
+        "contractor": 6
+      },
+      "logistics": {
+        "total": 32,
+        "employee": 26,
+        "contractor": 6
+      },
+      "hsse": {
+        "total": 19,
+        "employee": 17,
+        "contractor": 3
+      },
+      "support": {
+        "total": 91,
+        "employee": 64,
+        "contractor": 27
+      },
+      "turnaround": {
+        "total": 459,
+        "employee": 46,
+        "contractor": 413
+      }
+    }
   },
   {
     "id": "refinery-eia-34",
@@ -3816,6 +5074,43 @@
       "DESULFURIZATION, OTHER DISTILLATE": 27800,
       "THERM CRACKING, DELAYED COKING": 25000,
       "VACUUM DISTILLATION": 46000
+    },
+    "workforceMatrix": {
+      "operations": {
+        "total": 171,
+        "employee": 169,
+        "contractor": 2
+      },
+      "maintenance": {
+        "total": 80,
+        "employee": 40,
+        "contractor": 40
+      },
+      "technical": {
+        "total": 44,
+        "employee": 39,
+        "contractor": 4
+      },
+      "logistics": {
+        "total": 23,
+        "employee": 19,
+        "contractor": 5
+      },
+      "hsse": {
+        "total": 14,
+        "employee": 12,
+        "contractor": 2
+      },
+      "support": {
+        "total": 66,
+        "employee": 46,
+        "contractor": 20
+      },
+      "turnaround": {
+        "total": 332,
+        "employee": 33,
+        "contractor": 299
+      }
     }
   },
   {
@@ -3965,7 +5260,44 @@
       }
     ],
     "safetySummary": "Official OSHA data available for 6 years. Latest TRIR (2023): 0.17 (Industry Avg: ~0.6). Average TRIR: 0.57. ",
-    "hasRealOshaData": true
+    "hasRealOshaData": true,
+    "workforceMatrix": {
+      "operations": {
+        "total": 248,
+        "employee": 245,
+        "contractor": 2
+      },
+      "maintenance": {
+        "total": 116,
+        "employee": 58,
+        "contractor": 58
+      },
+      "technical": {
+        "total": 63,
+        "employee": 57,
+        "contractor": 6
+      },
+      "logistics": {
+        "total": 34,
+        "employee": 27,
+        "contractor": 7
+      },
+      "hsse": {
+        "total": 20,
+        "employee": 17,
+        "contractor": 3
+      },
+      "support": {
+        "total": 96,
+        "employee": 67,
+        "contractor": 29
+      },
+      "turnaround": {
+        "total": 481,
+        "employee": 48,
+        "contractor": 433
+      }
+    }
   },
   {
     "id": "refinery-eia-36",
@@ -4164,7 +5496,44 @@
       }
     ],
     "safetySummary": "Official OSHA data available for 9 years. Latest TRIR (2024): 0.13 (Industry Avg: ~0.6). Average TRIR: 0.32. ",
-    "hasRealOshaData": true
+    "hasRealOshaData": true,
+    "workforceMatrix": {
+      "operations": {
+        "total": 353,
+        "employee": 350,
+        "contractor": 4
+      },
+      "maintenance": {
+        "total": 165,
+        "employee": 83,
+        "contractor": 83
+      },
+      "technical": {
+        "total": 91,
+        "employee": 82,
+        "contractor": 9
+      },
+      "logistics": {
+        "total": 48,
+        "employee": 39,
+        "contractor": 10
+      },
+      "hsse": {
+        "total": 29,
+        "employee": 25,
+        "contractor": 4
+      },
+      "support": {
+        "total": 136,
+        "employee": 95,
+        "contractor": 41
+      },
+      "turnaround": {
+        "total": 686,
+        "employee": 69,
+        "contractor": 617
+      }
+    }
   },
   {
     "id": "refinery-eia-37",
@@ -4200,6 +5569,43 @@
       "DESULFURIZATION, NAPHTHA/REFORMER FEED": 14000,
       "ISOMERIZATION (ISOPENTANE/ISOHEXANE)": 6220,
       "VACUUM DISTILLATION": 36200
+    },
+    "workforceMatrix": {
+      "operations": {
+        "total": 114,
+        "employee": 113,
+        "contractor": 1
+      },
+      "maintenance": {
+        "total": 53,
+        "employee": 27,
+        "contractor": 27
+      },
+      "technical": {
+        "total": 29,
+        "employee": 26,
+        "contractor": 3
+      },
+      "logistics": {
+        "total": 16,
+        "employee": 12,
+        "contractor": 3
+      },
+      "hsse": {
+        "total": 9,
+        "employee": 8,
+        "contractor": 1
+      },
+      "support": {
+        "total": 44,
+        "employee": 31,
+        "contractor": 13
+      },
+      "turnaround": {
+        "total": 221,
+        "employee": 22,
+        "contractor": 199
+      }
     }
   },
   {
@@ -4387,7 +5793,44 @@
       }
     ],
     "safetySummary": "Official OSHA data available for 9 years. Latest TRIR (2024): 0 (Industry Avg: ~0.6). Average TRIR: 2.13. Zero recordable incidents in latest reporting year.",
-    "hasRealOshaData": true
+    "hasRealOshaData": true,
+    "workforceMatrix": {
+      "operations": {
+        "total": 33,
+        "employee": 32,
+        "contractor": 0
+      },
+      "maintenance": {
+        "total": 15,
+        "employee": 8,
+        "contractor": 8
+      },
+      "technical": {
+        "total": 8,
+        "employee": 8,
+        "contractor": 1
+      },
+      "logistics": {
+        "total": 4,
+        "employee": 4,
+        "contractor": 1
+      },
+      "hsse": {
+        "total": 3,
+        "employee": 2,
+        "contractor": 0
+      },
+      "support": {
+        "total": 13,
+        "employee": 9,
+        "contractor": 4
+      },
+      "turnaround": {
+        "total": 63,
+        "employee": 6,
+        "contractor": 57
+      }
+    }
   },
   {
     "id": "refinery-eia-39",
@@ -4524,7 +5967,44 @@
       }
     ],
     "safetySummary": "Official OSHA data available for 6 years. Latest TRIR (2023): 1.26 (Industry Avg: ~0.6). Average TRIR: 0.58. ",
-    "hasRealOshaData": true
+    "hasRealOshaData": true,
+    "workforceMatrix": {
+      "operations": {
+        "total": 10,
+        "employee": 10,
+        "contractor": 0
+      },
+      "maintenance": {
+        "total": 5,
+        "employee": 2,
+        "contractor": 2
+      },
+      "technical": {
+        "total": 3,
+        "employee": 2,
+        "contractor": 0
+      },
+      "logistics": {
+        "total": 1,
+        "employee": 1,
+        "contractor": 0
+      },
+      "hsse": {
+        "total": 1,
+        "employee": 1,
+        "contractor": 0
+      },
+      "support": {
+        "total": 4,
+        "employee": 3,
+        "contractor": 1
+      },
+      "turnaround": {
+        "total": 19,
+        "employee": 2,
+        "contractor": 17
+      }
+    }
   },
   {
     "id": "refinery-eia-40",
@@ -4663,7 +6143,44 @@
       }
     ],
     "safetySummary": "Official OSHA data available for 6 years. Latest TRIR (2023): 0.85 (Industry Avg: ~0.6). Average TRIR: 1.16. ",
-    "hasRealOshaData": true
+    "hasRealOshaData": true,
+    "workforceMatrix": {
+      "operations": {
+        "total": 168,
+        "employee": 167,
+        "contractor": 2
+      },
+      "maintenance": {
+        "total": 79,
+        "employee": 39,
+        "contractor": 39
+      },
+      "technical": {
+        "total": 43,
+        "employee": 39,
+        "contractor": 4
+      },
+      "logistics": {
+        "total": 23,
+        "employee": 18,
+        "contractor": 5
+      },
+      "hsse": {
+        "total": 14,
+        "employee": 12,
+        "contractor": 2
+      },
+      "support": {
+        "total": 65,
+        "employee": 45,
+        "contractor": 19
+      },
+      "turnaround": {
+        "total": 327,
+        "employee": 33,
+        "contractor": 294
+      }
+    }
   },
   {
     "id": "refinery-eia-41",
@@ -4823,7 +6340,44 @@
       }
     ],
     "safetySummary": "Official OSHA data available for 7 years. Latest TRIR (2024): 0.23 (Industry Avg: ~0.6). Average TRIR: 0.89. ",
-    "hasRealOshaData": true
+    "hasRealOshaData": true,
+    "workforceMatrix": {
+      "operations": {
+        "total": 213,
+        "employee": 211,
+        "contractor": 2
+      },
+      "maintenance": {
+        "total": 100,
+        "employee": 50,
+        "contractor": 50
+      },
+      "technical": {
+        "total": 55,
+        "employee": 49,
+        "contractor": 5
+      },
+      "logistics": {
+        "total": 29,
+        "employee": 23,
+        "contractor": 6
+      },
+      "hsse": {
+        "total": 17,
+        "employee": 15,
+        "contractor": 3
+      },
+      "support": {
+        "total": 82,
+        "employee": 57,
+        "contractor": 25
+      },
+      "turnaround": {
+        "total": 413,
+        "employee": 41,
+        "contractor": 372
+      }
+    }
   },
   {
     "id": "refinery-eia-42",
@@ -4986,7 +6540,44 @@
       }
     ],
     "safetySummary": "Official OSHA data available for 7 years. Latest TRIR (2024): 0 (Industry Avg: ~0.6). Average TRIR: 0.09. Zero recordable incidents in latest reporting year.",
-    "hasRealOshaData": true
+    "hasRealOshaData": true,
+    "workforceMatrix": {
+      "operations": {
+        "total": 308,
+        "employee": 305,
+        "contractor": 3
+      },
+      "maintenance": {
+        "total": 144,
+        "employee": 72,
+        "contractor": 72
+      },
+      "technical": {
+        "total": 79,
+        "employee": 71,
+        "contractor": 8
+      },
+      "logistics": {
+        "total": 42,
+        "employee": 34,
+        "contractor": 8
+      },
+      "hsse": {
+        "total": 25,
+        "employee": 22,
+        "contractor": 4
+      },
+      "support": {
+        "total": 119,
+        "employee": 83,
+        "contractor": 36
+      },
+      "turnaround": {
+        "total": 598,
+        "employee": 60,
+        "contractor": 539
+      }
+    }
   },
   {
     "id": "refinery-eia-43",
@@ -5029,6 +6620,43 @@
       "ISOMERIZATION (ISOPENTANE/ISOHEXANE)": 28000,
       "THERM CRACKING, DELAYED COKING": 110000,
       "VACUUM DISTILLATION": 230000
+    },
+    "workforceMatrix": {
+      "operations": {
+        "total": 548,
+        "employee": 543,
+        "contractor": 5
+      },
+      "maintenance": {
+        "total": 256,
+        "employee": 128,
+        "contractor": 128
+      },
+      "technical": {
+        "total": 141,
+        "employee": 126,
+        "contractor": 14
+      },
+      "logistics": {
+        "total": 75,
+        "employee": 60,
+        "contractor": 15
+      },
+      "hsse": {
+        "total": 45,
+        "employee": 38,
+        "contractor": 7
+      },
+      "support": {
+        "total": 211,
+        "employee": 148,
+        "contractor": 63
+      },
+      "turnaround": {
+        "total": 1064,
+        "employee": 106,
+        "contractor": 958
+      }
     }
   },
   {
@@ -5072,6 +6700,43 @@
       "THERM CRACKING, DELAYED COKING": 66543,
       "THERM CRACKING, OTHER (INCLDNG GAS OIL)": 19373,
       "VACUUM DISTILLATION": 128900
+    },
+    "workforceMatrix": {
+      "operations": {
+        "total": 332,
+        "employee": 329,
+        "contractor": 3
+      },
+      "maintenance": {
+        "total": 155,
+        "employee": 78,
+        "contractor": 78
+      },
+      "technical": {
+        "total": 85,
+        "employee": 77,
+        "contractor": 9
+      },
+      "logistics": {
+        "total": 45,
+        "employee": 36,
+        "contractor": 9
+      },
+      "hsse": {
+        "total": 27,
+        "employee": 23,
+        "contractor": 4
+      },
+      "support": {
+        "total": 128,
+        "employee": 90,
+        "contractor": 38
+      },
+      "turnaround": {
+        "total": 644,
+        "employee": 64,
+        "contractor": 580
+      }
     }
   },
   {
@@ -5218,7 +6883,44 @@
       }
     ],
     "safetySummary": "Official OSHA data available for 6 years. Latest TRIR (2024): 0.32 (Industry Avg: ~0.6). Average TRIR: 0.14. ",
-    "hasRealOshaData": true
+    "hasRealOshaData": true,
+    "workforceMatrix": {
+      "operations": {
+        "total": 658,
+        "employee": 652,
+        "contractor": 7
+      },
+      "maintenance": {
+        "total": 308,
+        "employee": 154,
+        "contractor": 154
+      },
+      "technical": {
+        "total": 169,
+        "employee": 152,
+        "contractor": 17
+      },
+      "logistics": {
+        "total": 90,
+        "employee": 72,
+        "contractor": 18
+      },
+      "hsse": {
+        "total": 54,
+        "employee": 46,
+        "contractor": 8
+      },
+      "support": {
+        "total": 254,
+        "employee": 178,
+        "contractor": 76
+      },
+      "turnaround": {
+        "total": 1278,
+        "employee": 128,
+        "contractor": 1150
+      }
+    }
   },
   {
     "id": "refinery-eia-46",
@@ -5419,7 +7121,44 @@
       }
     ],
     "safetySummary": "Official OSHA data available for 9 years. Latest TRIR (2024): 0.37 (Industry Avg: ~0.6). Average TRIR: 0.17. ",
-    "hasRealOshaData": true
+    "hasRealOshaData": true,
+    "workforceMatrix": {
+      "operations": {
+        "total": 709,
+        "employee": 702,
+        "contractor": 7
+      },
+      "maintenance": {
+        "total": 332,
+        "employee": 166,
+        "contractor": 166
+      },
+      "technical": {
+        "total": 182,
+        "employee": 164,
+        "contractor": 18
+      },
+      "logistics": {
+        "total": 97,
+        "employee": 78,
+        "contractor": 19
+      },
+      "hsse": {
+        "total": 58,
+        "employee": 49,
+        "contractor": 9
+      },
+      "support": {
+        "total": 273,
+        "employee": 191,
+        "contractor": 82
+      },
+      "turnaround": {
+        "total": 1376,
+        "employee": 138,
+        "contractor": 1238
+      }
+    }
   },
   {
     "id": "refinery-eia-47",
@@ -5457,6 +7196,43 @@
       "DESULFURIZATION, NAPHTHA/REFORMER FEED": 42000,
       "THERM CRACKING, DELAYED COKING": 28500,
       "VACUUM DISTILLATION": 91300
+    },
+    "workforceMatrix": {
+      "operations": {
+        "total": 303,
+        "employee": 300,
+        "contractor": 3
+      },
+      "maintenance": {
+        "total": 142,
+        "employee": 71,
+        "contractor": 71
+      },
+      "technical": {
+        "total": 78,
+        "employee": 70,
+        "contractor": 8
+      },
+      "logistics": {
+        "total": 41,
+        "employee": 33,
+        "contractor": 8
+      },
+      "hsse": {
+        "total": 25,
+        "employee": 21,
+        "contractor": 4
+      },
+      "support": {
+        "total": 117,
+        "employee": 82,
+        "contractor": 35
+      },
+      "turnaround": {
+        "total": 588,
+        "employee": 59,
+        "contractor": 529
+      }
     }
   },
   {
@@ -5651,7 +7427,44 @@
       }
     ],
     "safetySummary": "Official OSHA data available for 9 years. Latest TRIR (2024): 0.53 (Industry Avg: ~0.6). Average TRIR: 0.35. ",
-    "hasRealOshaData": true
+    "hasRealOshaData": true,
+    "workforceMatrix": {
+      "operations": {
+        "total": 102,
+        "employee": 101,
+        "contractor": 1
+      },
+      "maintenance": {
+        "total": 48,
+        "employee": 24,
+        "contractor": 24
+      },
+      "technical": {
+        "total": 26,
+        "employee": 24,
+        "contractor": 3
+      },
+      "logistics": {
+        "total": 14,
+        "employee": 11,
+        "contractor": 3
+      },
+      "hsse": {
+        "total": 8,
+        "employee": 7,
+        "contractor": 1
+      },
+      "support": {
+        "total": 39,
+        "employee": 28,
+        "contractor": 12
+      },
+      "turnaround": {
+        "total": 198,
+        "employee": 20,
+        "contractor": 179
+      }
+    }
   },
   {
     "id": "refinery-eia-49",
@@ -5781,7 +7594,44 @@
       }
     ],
     "safetySummary": "Official OSHA data available for 5 years. Latest TRIR (2024): 0.11 (Industry Avg: ~0.6). Average TRIR: 0.16. ",
-    "hasRealOshaData": true
+    "hasRealOshaData": true,
+    "workforceMatrix": {
+      "operations": {
+        "total": 456,
+        "employee": 451,
+        "contractor": 5
+      },
+      "maintenance": {
+        "total": 213,
+        "employee": 107,
+        "contractor": 107
+      },
+      "technical": {
+        "total": 117,
+        "employee": 105,
+        "contractor": 12
+      },
+      "logistics": {
+        "total": 62,
+        "employee": 50,
+        "contractor": 12
+      },
+      "hsse": {
+        "total": 37,
+        "employee": 32,
+        "contractor": 6
+      },
+      "support": {
+        "total": 176,
+        "employee": 123,
+        "contractor": 53
+      },
+      "turnaround": {
+        "total": 884,
+        "employee": 88,
+        "contractor": 796
+      }
+    }
   },
   {
     "id": "refinery-eia-50",
@@ -5889,7 +7739,44 @@
       }
     ],
     "safetySummary": "Official OSHA data available for 4 years. Latest TRIR (2023): 0.34 (Industry Avg: ~0.6). Average TRIR: 0.17. ",
-    "hasRealOshaData": true
+    "hasRealOshaData": true,
+    "workforceMatrix": {
+      "operations": {
+        "total": 150,
+        "employee": 148,
+        "contractor": 1
+      },
+      "maintenance": {
+        "total": 70,
+        "employee": 35,
+        "contractor": 35
+      },
+      "technical": {
+        "total": 38,
+        "employee": 35,
+        "contractor": 4
+      },
+      "logistics": {
+        "total": 21,
+        "employee": 16,
+        "contractor": 4
+      },
+      "hsse": {
+        "total": 12,
+        "employee": 10,
+        "contractor": 2
+      },
+      "support": {
+        "total": 58,
+        "employee": 40,
+        "contractor": 17
+      },
+      "turnaround": {
+        "total": 291,
+        "employee": 29,
+        "contractor": 262
+      }
+    }
   },
   {
     "id": "refinery-eia-51",
@@ -5985,7 +7872,44 @@
       }
     ],
     "safetySummary": "Official OSHA data available for 3 years. Latest TRIR (2020): 0.15 (Industry Avg: ~0.6). Average TRIR: 0.15. ",
-    "hasRealOshaData": true
+    "hasRealOshaData": true,
+    "workforceMatrix": {
+      "operations": {
+        "total": 456,
+        "employee": 451,
+        "contractor": 5
+      },
+      "maintenance": {
+        "total": 213,
+        "employee": 107,
+        "contractor": 107
+      },
+      "technical": {
+        "total": 117,
+        "employee": 105,
+        "contractor": 12
+      },
+      "logistics": {
+        "total": 62,
+        "employee": 50,
+        "contractor": 12
+      },
+      "hsse": {
+        "total": 37,
+        "employee": 32,
+        "contractor": 6
+      },
+      "support": {
+        "total": 176,
+        "employee": 123,
+        "contractor": 53
+      },
+      "turnaround": {
+        "total": 884,
+        "employee": 88,
+        "contractor": 796
+      }
+    }
   },
   {
     "id": "refinery-eia-52",
@@ -6181,7 +8105,44 @@
       }
     ],
     "safetySummary": "Official OSHA data available for 9 years. Latest TRIR (2024): 0 (Industry Avg: ~0.6). Average TRIR: 0.43. Zero recordable incidents in latest reporting year.",
-    "hasRealOshaData": true
+    "hasRealOshaData": true,
+    "workforceMatrix": {
+      "operations": {
+        "total": 215,
+        "employee": 213,
+        "contractor": 2
+      },
+      "maintenance": {
+        "total": 101,
+        "employee": 50,
+        "contractor": 50
+      },
+      "technical": {
+        "total": 55,
+        "employee": 50,
+        "contractor": 6
+      },
+      "logistics": {
+        "total": 29,
+        "employee": 24,
+        "contractor": 6
+      },
+      "hsse": {
+        "total": 18,
+        "employee": 15,
+        "contractor": 3
+      },
+      "support": {
+        "total": 83,
+        "employee": 58,
+        "contractor": 25
+      },
+      "turnaround": {
+        "total": 418,
+        "employee": 42,
+        "contractor": 376
+      }
+    }
   },
   {
     "id": "refinery-eia-53",
@@ -6364,7 +8325,44 @@
       }
     ],
     "safetySummary": "Official OSHA data available for 8 years. Latest TRIR (2024): 0.54 (Industry Avg: ~0.6). Average TRIR: 0.78. ",
-    "hasRealOshaData": true
+    "hasRealOshaData": true,
+    "workforceMatrix": {
+      "operations": {
+        "total": 446,
+        "employee": 441,
+        "contractor": 4
+      },
+      "maintenance": {
+        "total": 208,
+        "employee": 104,
+        "contractor": 104
+      },
+      "technical": {
+        "total": 114,
+        "employee": 103,
+        "contractor": 11
+      },
+      "logistics": {
+        "total": 61,
+        "employee": 49,
+        "contractor": 12
+      },
+      "hsse": {
+        "total": 37,
+        "employee": 31,
+        "contractor": 5
+      },
+      "support": {
+        "total": 172,
+        "employee": 120,
+        "contractor": 52
+      },
+      "turnaround": {
+        "total": 865,
+        "employee": 87,
+        "contractor": 779
+      }
+    }
   },
   {
     "id": "refinery-eia-54",
@@ -6510,7 +8508,44 @@
       }
     ],
     "safetySummary": "Official OSHA data available for 6 years. Latest TRIR (2024): 0.71 (Industry Avg: ~0.6). Average TRIR: 0.42. ",
-    "hasRealOshaData": true
+    "hasRealOshaData": true,
+    "workforceMatrix": {
+      "operations": {
+        "total": 183,
+        "employee": 181,
+        "contractor": 2
+      },
+      "maintenance": {
+        "total": 85,
+        "employee": 43,
+        "contractor": 43
+      },
+      "technical": {
+        "total": 47,
+        "employee": 42,
+        "contractor": 5
+      },
+      "logistics": {
+        "total": 25,
+        "employee": 20,
+        "contractor": 5
+      },
+      "hsse": {
+        "total": 15,
+        "employee": 13,
+        "contractor": 2
+      },
+      "support": {
+        "total": 70,
+        "employee": 49,
+        "contractor": 21
+      },
+      "turnaround": {
+        "total": 354,
+        "employee": 35,
+        "contractor": 319
+      }
+    }
   },
   {
     "id": "refinery-eia-55",
@@ -6608,7 +8643,44 @@
       }
     ],
     "safetySummary": "Official OSHA data available for 3 years. Latest TRIR (2018): 0.12 (Industry Avg: ~0.6). Average TRIR: 0.14. ",
-    "hasRealOshaData": true
+    "hasRealOshaData": true,
+    "workforceMatrix": {
+      "operations": {
+        "total": 695,
+        "employee": 688,
+        "contractor": 7
+      },
+      "maintenance": {
+        "total": 325,
+        "employee": 163,
+        "contractor": 163
+      },
+      "technical": {
+        "total": 178,
+        "employee": 160,
+        "contractor": 18
+      },
+      "logistics": {
+        "total": 95,
+        "employee": 76,
+        "contractor": 19
+      },
+      "hsse": {
+        "total": 57,
+        "employee": 49,
+        "contractor": 9
+      },
+      "support": {
+        "total": 268,
+        "employee": 188,
+        "contractor": 80
+      },
+      "turnaround": {
+        "total": 1349,
+        "employee": 135,
+        "contractor": 1214
+      }
+    }
   },
   {
     "id": "refinery-eia-56",
@@ -6799,7 +8871,44 @@
       }
     ],
     "safetySummary": "Official OSHA data available for 9 years. Latest TRIR (2024): 1.56 (Industry Avg: ~0.6). Average TRIR: 1.79. ",
-    "hasRealOshaData": true
+    "hasRealOshaData": true,
+    "workforceMatrix": {
+      "operations": {
+        "total": 385,
+        "employee": 381,
+        "contractor": 4
+      },
+      "maintenance": {
+        "total": 180,
+        "employee": 90,
+        "contractor": 90
+      },
+      "technical": {
+        "total": 99,
+        "employee": 89,
+        "contractor": 10
+      },
+      "logistics": {
+        "total": 53,
+        "employee": 42,
+        "contractor": 11
+      },
+      "hsse": {
+        "total": 32,
+        "employee": 27,
+        "contractor": 5
+      },
+      "support": {
+        "total": 149,
+        "employee": 104,
+        "contractor": 45
+      },
+      "turnaround": {
+        "total": 748,
+        "employee": 75,
+        "contractor": 673
+      }
+    }
   },
   {
     "id": "refinery-eia-57",
@@ -6987,7 +9096,44 @@
       }
     ],
     "safetySummary": "Official OSHA data available for 9 years. Latest TRIR (2024): 2.22 (Industry Avg: ~0.6). Average TRIR: 1.27. ",
-    "hasRealOshaData": true
+    "hasRealOshaData": true,
+    "workforceMatrix": {
+      "operations": {
+        "total": 11,
+        "employee": 11,
+        "contractor": 0
+      },
+      "maintenance": {
+        "total": 5,
+        "employee": 3,
+        "contractor": 3
+      },
+      "technical": {
+        "total": 3,
+        "employee": 3,
+        "contractor": 0
+      },
+      "logistics": {
+        "total": 2,
+        "employee": 1,
+        "contractor": 0
+      },
+      "hsse": {
+        "total": 1,
+        "employee": 1,
+        "contractor": 0
+      },
+      "support": {
+        "total": 4,
+        "employee": 3,
+        "contractor": 1
+      },
+      "turnaround": {
+        "total": 22,
+        "employee": 2,
+        "contractor": 20
+      }
+    }
   },
   {
     "id": "refinery-eia-58",
@@ -7045,7 +9191,44 @@
       }
     ],
     "safetySummary": "Official OSHA data available for 1 years. Latest TRIR (2016): 1.41 (Industry Avg: ~0.6). Average TRIR: 1.41. ",
-    "hasRealOshaData": true
+    "hasRealOshaData": true,
+    "workforceMatrix": {
+      "operations": {
+        "total": 35,
+        "employee": 35,
+        "contractor": 0
+      },
+      "maintenance": {
+        "total": 16,
+        "employee": 8,
+        "contractor": 8
+      },
+      "technical": {
+        "total": 9,
+        "employee": 8,
+        "contractor": 1
+      },
+      "logistics": {
+        "total": 5,
+        "employee": 4,
+        "contractor": 1
+      },
+      "hsse": {
+        "total": 3,
+        "employee": 2,
+        "contractor": 0
+      },
+      "support": {
+        "total": 14,
+        "employee": 10,
+        "contractor": 4
+      },
+      "turnaround": {
+        "total": 68,
+        "employee": 7,
+        "contractor": 62
+      }
+    }
   },
   {
     "id": "refinery-eia-59",
@@ -7241,7 +9424,44 @@
       }
     ],
     "safetySummary": "Official OSHA data available for 9 years. Latest TRIR (2024): 1.12 (Industry Avg: ~0.6). Average TRIR: 1.35. ",
-    "hasRealOshaData": true
+    "hasRealOshaData": true,
+    "workforceMatrix": {
+      "operations": {
+        "total": 122,
+        "employee": 121,
+        "contractor": 1
+      },
+      "maintenance": {
+        "total": 57,
+        "employee": 29,
+        "contractor": 29
+      },
+      "technical": {
+        "total": 31,
+        "employee": 28,
+        "contractor": 3
+      },
+      "logistics": {
+        "total": 17,
+        "employee": 13,
+        "contractor": 3
+      },
+      "hsse": {
+        "total": 10,
+        "employee": 9,
+        "contractor": 2
+      },
+      "support": {
+        "total": 47,
+        "employee": 33,
+        "contractor": 14
+      },
+      "turnaround": {
+        "total": 238,
+        "employee": 24,
+        "contractor": 214
+      }
+    }
   },
   {
     "id": "refinery-eia-60",
@@ -7319,7 +9539,44 @@
       }
     ],
     "safetySummary": "Official OSHA data available for 2 years. Latest TRIR (2024): 0.53 (Industry Avg: ~0.6). Average TRIR: 0.51. ",
-    "hasRealOshaData": true
+    "hasRealOshaData": true,
+    "workforceMatrix": {
+      "operations": {
+        "total": 155,
+        "employee": 153,
+        "contractor": 2
+      },
+      "maintenance": {
+        "total": 73,
+        "employee": 36,
+        "contractor": 36
+      },
+      "technical": {
+        "total": 40,
+        "employee": 36,
+        "contractor": 4
+      },
+      "logistics": {
+        "total": 21,
+        "employee": 17,
+        "contractor": 4
+      },
+      "hsse": {
+        "total": 13,
+        "employee": 11,
+        "contractor": 2
+      },
+      "support": {
+        "total": 60,
+        "employee": 42,
+        "contractor": 18
+      },
+      "turnaround": {
+        "total": 301,
+        "employee": 30,
+        "contractor": 271
+      }
+    }
   },
   {
     "id": "refinery-eia-61",
@@ -7500,7 +9757,44 @@
       }
     ],
     "safetySummary": "Official OSHA data available for 8 years. Latest TRIR (2024): 0 (Industry Avg: ~0.6). Average TRIR: 0.17. Zero recordable incidents in latest reporting year.",
-    "hasRealOshaData": true
+    "hasRealOshaData": true,
+    "workforceMatrix": {
+      "operations": {
+        "total": 123,
+        "employee": 122,
+        "contractor": 1
+      },
+      "maintenance": {
+        "total": 57,
+        "employee": 29,
+        "contractor": 29
+      },
+      "technical": {
+        "total": 31,
+        "employee": 28,
+        "contractor": 3
+      },
+      "logistics": {
+        "total": 17,
+        "employee": 13,
+        "contractor": 3
+      },
+      "hsse": {
+        "total": 10,
+        "employee": 9,
+        "contractor": 2
+      },
+      "support": {
+        "total": 47,
+        "employee": 33,
+        "contractor": 14
+      },
+      "turnaround": {
+        "total": 238,
+        "employee": 24,
+        "contractor": 215
+      }
+    }
   },
   {
     "id": "refinery-eia-62",
@@ -7531,6 +9825,43 @@
     "units": {
       "ASPHALT & ROAD OIL": 1600,
       "VACUUM DISTILLATION": 2750
+    },
+    "workforceMatrix": {
+      "operations": {
+        "total": 6,
+        "employee": 6,
+        "contractor": 0
+      },
+      "maintenance": {
+        "total": 3,
+        "employee": 1,
+        "contractor": 1
+      },
+      "technical": {
+        "total": 1,
+        "employee": 1,
+        "contractor": 0
+      },
+      "logistics": {
+        "total": 1,
+        "employee": 1,
+        "contractor": 0
+      },
+      "hsse": {
+        "total": 0,
+        "employee": 0,
+        "contractor": 0
+      },
+      "support": {
+        "total": 2,
+        "employee": 2,
+        "contractor": 1
+      },
+      "turnaround": {
+        "total": 11,
+        "employee": 1,
+        "contractor": 10
+      }
     }
   },
   {
@@ -7567,6 +9898,43 @@
       "DESULFURIZATION, NAPHTHA/REFORMER FEED": 32000,
       "LUBRICANTS": 12000,
       "VACUUM DISTILLATION": 90000
+    },
+    "workforceMatrix": {
+      "operations": {
+        "total": 221,
+        "employee": 219,
+        "contractor": 2
+      },
+      "maintenance": {
+        "total": 103,
+        "employee": 52,
+        "contractor": 52
+      },
+      "technical": {
+        "total": 57,
+        "employee": 51,
+        "contractor": 6
+      },
+      "logistics": {
+        "total": 30,
+        "employee": 24,
+        "contractor": 6
+      },
+      "hsse": {
+        "total": 18,
+        "employee": 15,
+        "contractor": 3
+      },
+      "support": {
+        "total": 85,
+        "employee": 60,
+        "contractor": 26
+      },
+      "turnaround": {
+        "total": 429,
+        "employee": 43,
+        "contractor": 386
+      }
     }
   },
   {
@@ -7760,7 +10128,44 @@
       }
     ],
     "safetySummary": "Official OSHA data available for 9 years. Latest TRIR (2024): 0.53 (Industry Avg: ~0.6). Average TRIR: 0.65. ",
-    "hasRealOshaData": true
+    "hasRealOshaData": true,
+    "workforceMatrix": {
+      "operations": {
+        "total": 221,
+        "employee": 219,
+        "contractor": 2
+      },
+      "maintenance": {
+        "total": 103,
+        "employee": 52,
+        "contractor": 52
+      },
+      "technical": {
+        "total": 57,
+        "employee": 51,
+        "contractor": 6
+      },
+      "logistics": {
+        "total": 30,
+        "employee": 24,
+        "contractor": 6
+      },
+      "hsse": {
+        "total": 18,
+        "employee": 15,
+        "contractor": 3
+      },
+      "support": {
+        "total": 85,
+        "employee": 60,
+        "contractor": 26
+      },
+      "turnaround": {
+        "total": 429,
+        "employee": 43,
+        "contractor": 386
+      }
+    }
   },
   {
     "id": "refinery-eia-65",
@@ -7887,7 +10292,44 @@
       }
     ],
     "safetySummary": "Official OSHA data available for 5 years. Latest TRIR (2023): 2.36 (Industry Avg: ~0.6). Average TRIR: 0.57. ",
-    "hasRealOshaData": true
+    "hasRealOshaData": true,
+    "workforceMatrix": {
+      "operations": {
+        "total": 282,
+        "employee": 279,
+        "contractor": 3
+      },
+      "maintenance": {
+        "total": 132,
+        "employee": 66,
+        "contractor": 66
+      },
+      "technical": {
+        "total": 72,
+        "employee": 65,
+        "contractor": 7
+      },
+      "logistics": {
+        "total": 39,
+        "employee": 31,
+        "contractor": 8
+      },
+      "hsse": {
+        "total": 23,
+        "employee": 20,
+        "contractor": 3
+      },
+      "support": {
+        "total": 109,
+        "employee": 76,
+        "contractor": 33
+      },
+      "turnaround": {
+        "total": 548,
+        "employee": 55,
+        "contractor": 493
+      }
+    }
   },
   {
     "id": "refinery-eia-66",
@@ -7982,7 +10424,44 @@
       }
     ],
     "safetySummary": "Official OSHA data available for 3 years. Latest TRIR (2024): 0 (Industry Avg: ~0.6). Average TRIR: 0.00. Zero recordable incidents in latest reporting year.",
-    "hasRealOshaData": true
+    "hasRealOshaData": true,
+    "workforceMatrix": {
+      "operations": {
+        "total": 164,
+        "employee": 162,
+        "contractor": 2
+      },
+      "maintenance": {
+        "total": 77,
+        "employee": 38,
+        "contractor": 38
+      },
+      "technical": {
+        "total": 42,
+        "employee": 38,
+        "contractor": 4
+      },
+      "logistics": {
+        "total": 22,
+        "employee": 18,
+        "contractor": 4
+      },
+      "hsse": {
+        "total": 13,
+        "employee": 11,
+        "contractor": 2
+      },
+      "support": {
+        "total": 63,
+        "employee": 44,
+        "contractor": 19
+      },
+      "turnaround": {
+        "total": 318,
+        "employee": 32,
+        "contractor": 286
+      }
+    }
   },
   {
     "id": "refinery-eia-67",
@@ -8123,7 +10602,44 @@
       }
     ],
     "safetySummary": "Official OSHA data available for 6 years. Latest TRIR (2024): 0.27 (Industry Avg: ~0.6). Average TRIR: 0.19. ",
-    "hasRealOshaData": true
+    "hasRealOshaData": true,
+    "workforceMatrix": {
+      "operations": {
+        "total": 91,
+        "employee": 91,
+        "contractor": 1
+      },
+      "maintenance": {
+        "total": 43,
+        "employee": 21,
+        "contractor": 21
+      },
+      "technical": {
+        "total": 23,
+        "employee": 21,
+        "contractor": 2
+      },
+      "logistics": {
+        "total": 13,
+        "employee": 10,
+        "contractor": 3
+      },
+      "hsse": {
+        "total": 8,
+        "employee": 6,
+        "contractor": 1
+      },
+      "support": {
+        "total": 35,
+        "employee": 25,
+        "contractor": 11
+      },
+      "turnaround": {
+        "total": 178,
+        "employee": 18,
+        "contractor": 160
+      }
+    }
   },
   {
     "id": "refinery-eia-68",
@@ -8219,7 +10735,44 @@
       }
     ],
     "safetySummary": "Official OSHA data available for 3 years. Latest TRIR (2024): 1.08 (Industry Avg: ~0.6). Average TRIR: 0.60. ",
-    "hasRealOshaData": true
+    "hasRealOshaData": true,
+    "workforceMatrix": {
+      "operations": {
+        "total": 270,
+        "employee": 267,
+        "contractor": 3
+      },
+      "maintenance": {
+        "total": 126,
+        "employee": 63,
+        "contractor": 63
+      },
+      "technical": {
+        "total": 69,
+        "employee": 62,
+        "contractor": 7
+      },
+      "logistics": {
+        "total": 37,
+        "employee": 30,
+        "contractor": 7
+      },
+      "hsse": {
+        "total": 22,
+        "employee": 19,
+        "contractor": 3
+      },
+      "support": {
+        "total": 104,
+        "employee": 73,
+        "contractor": 31
+      },
+      "turnaround": {
+        "total": 524,
+        "employee": 52,
+        "contractor": 472
+      }
+    }
   },
   {
     "id": "refinery-eia-69",
@@ -8414,7 +10967,44 @@
       }
     ],
     "safetySummary": "Official OSHA data available for 9 years. Latest TRIR (2024): 0.48 (Industry Avg: ~0.6). Average TRIR: 0.24. ",
-    "hasRealOshaData": true
+    "hasRealOshaData": true,
+    "workforceMatrix": {
+      "operations": {
+        "total": 130,
+        "employee": 129,
+        "contractor": 1
+      },
+      "maintenance": {
+        "total": 61,
+        "employee": 30,
+        "contractor": 30
+      },
+      "technical": {
+        "total": 33,
+        "employee": 30,
+        "contractor": 3
+      },
+      "logistics": {
+        "total": 18,
+        "employee": 14,
+        "contractor": 4
+      },
+      "hsse": {
+        "total": 11,
+        "employee": 9,
+        "contractor": 2
+      },
+      "support": {
+        "total": 50,
+        "employee": 35,
+        "contractor": 15
+      },
+      "turnaround": {
+        "total": 253,
+        "employee": 25,
+        "contractor": 227
+      }
+    }
   },
   {
     "id": "refinery-eia-70",
@@ -8608,7 +11198,44 @@
       }
     ],
     "safetySummary": "Official OSHA data available for 9 years. Latest TRIR (2024): 0.3 (Industry Avg: ~0.6). Average TRIR: 0.65. ",
-    "hasRealOshaData": true
+    "hasRealOshaData": true,
+    "workforceMatrix": {
+      "operations": {
+        "total": 247,
+        "employee": 244,
+        "contractor": 2
+      },
+      "maintenance": {
+        "total": 115,
+        "employee": 58,
+        "contractor": 58
+      },
+      "technical": {
+        "total": 63,
+        "employee": 57,
+        "contractor": 6
+      },
+      "logistics": {
+        "total": 34,
+        "employee": 27,
+        "contractor": 7
+      },
+      "hsse": {
+        "total": 20,
+        "employee": 17,
+        "contractor": 3
+      },
+      "support": {
+        "total": 95,
+        "employee": 67,
+        "contractor": 29
+      },
+      "turnaround": {
+        "total": 478,
+        "employee": 48,
+        "contractor": 431
+      }
+    }
   },
   {
     "id": "refinery-eia-71",
@@ -8804,7 +11431,44 @@
       }
     ],
     "safetySummary": "Official OSHA data available for 9 years. Latest TRIR (2024): 0 (Industry Avg: ~0.6). Average TRIR: 0.61. Zero recordable incidents in latest reporting year.",
-    "hasRealOshaData": true
+    "hasRealOshaData": true,
+    "workforceMatrix": {
+      "operations": {
+        "total": 249,
+        "employee": 246,
+        "contractor": 2
+      },
+      "maintenance": {
+        "total": 116,
+        "employee": 58,
+        "contractor": 58
+      },
+      "technical": {
+        "total": 64,
+        "employee": 57,
+        "contractor": 6
+      },
+      "logistics": {
+        "total": 34,
+        "employee": 27,
+        "contractor": 7
+      },
+      "hsse": {
+        "total": 20,
+        "employee": 17,
+        "contractor": 3
+      },
+      "support": {
+        "total": 96,
+        "employee": 67,
+        "contractor": 29
+      },
+      "turnaround": {
+        "total": 483,
+        "employee": 48,
+        "contractor": 434
+      }
+    }
   },
   {
     "id": "refinery-eia-72",
@@ -8896,7 +11560,44 @@
       }
     ],
     "safetySummary": "Official OSHA data available for 3 years. Latest TRIR (2023): 1.22 (Industry Avg: ~0.6). Average TRIR: 0.61. ",
-    "hasRealOshaData": true
+    "hasRealOshaData": true,
+    "workforceMatrix": {
+      "operations": {
+        "total": 143,
+        "employee": 141,
+        "contractor": 1
+      },
+      "maintenance": {
+        "total": 67,
+        "employee": 33,
+        "contractor": 33
+      },
+      "technical": {
+        "total": 37,
+        "employee": 33,
+        "contractor": 4
+      },
+      "logistics": {
+        "total": 20,
+        "employee": 16,
+        "contractor": 4
+      },
+      "hsse": {
+        "total": 12,
+        "employee": 10,
+        "contractor": 2
+      },
+      "support": {
+        "total": 55,
+        "employee": 38,
+        "contractor": 16
+      },
+      "turnaround": {
+        "total": 277,
+        "employee": 28,
+        "contractor": 249
+      }
+    }
   },
   {
     "id": "refinery-eia-73",
@@ -8955,7 +11656,44 @@
       }
     ],
     "safetySummary": "Official OSHA data available for 1 years. Latest TRIR (2023): 0.17 (Industry Avg: ~0.6). Average TRIR: 0.17. ",
-    "hasRealOshaData": true
+    "hasRealOshaData": true,
+    "workforceMatrix": {
+      "operations": {
+        "total": 167,
+        "employee": 165,
+        "contractor": 2
+      },
+      "maintenance": {
+        "total": 78,
+        "employee": 39,
+        "contractor": 39
+      },
+      "technical": {
+        "total": 43,
+        "employee": 38,
+        "contractor": 4
+      },
+      "logistics": {
+        "total": 23,
+        "employee": 18,
+        "contractor": 5
+      },
+      "hsse": {
+        "total": 14,
+        "employee": 12,
+        "contractor": 2
+      },
+      "support": {
+        "total": 64,
+        "employee": 45,
+        "contractor": 19
+      },
+      "turnaround": {
+        "total": 323,
+        "employee": 32,
+        "contractor": 291
+      }
+    }
   },
   {
     "id": "refinery-eia-74",
@@ -9012,7 +11750,44 @@
       }
     ],
     "safetySummary": "Official OSHA data available for 1 years. Latest TRIR (2023): 0.17 (Industry Avg: ~0.6). Average TRIR: 0.17. ",
-    "hasRealOshaData": true
+    "hasRealOshaData": true,
+    "workforceMatrix": {
+      "operations": {
+        "total": 164,
+        "employee": 162,
+        "contractor": 2
+      },
+      "maintenance": {
+        "total": 77,
+        "employee": 38,
+        "contractor": 38
+      },
+      "technical": {
+        "total": 42,
+        "employee": 38,
+        "contractor": 4
+      },
+      "logistics": {
+        "total": 22,
+        "employee": 18,
+        "contractor": 4
+      },
+      "hsse": {
+        "total": 13,
+        "employee": 11,
+        "contractor": 2
+      },
+      "support": {
+        "total": 63,
+        "employee": 44,
+        "contractor": 19
+      },
+      "turnaround": {
+        "total": 318,
+        "employee": 32,
+        "contractor": 286
+      }
+    }
   },
   {
     "id": "refinery-eia-75",
@@ -9108,7 +11883,44 @@
       }
     ],
     "safetySummary": "Official OSHA data available for 3 years. Latest TRIR (2020): 0 (Industry Avg: ~0.6). Average TRIR: 0.14. Zero recordable incidents in latest reporting year.",
-    "hasRealOshaData": true
+    "hasRealOshaData": true,
+    "workforceMatrix": {
+      "operations": {
+        "total": 253,
+        "employee": 250,
+        "contractor": 3
+      },
+      "maintenance": {
+        "total": 118,
+        "employee": 59,
+        "contractor": 59
+      },
+      "technical": {
+        "total": 65,
+        "employee": 58,
+        "contractor": 6
+      },
+      "logistics": {
+        "total": 35,
+        "employee": 28,
+        "contractor": 7
+      },
+      "hsse": {
+        "total": 21,
+        "employee": 18,
+        "contractor": 3
+      },
+      "support": {
+        "total": 97,
+        "employee": 68,
+        "contractor": 29
+      },
+      "turnaround": {
+        "total": 490,
+        "employee": 49,
+        "contractor": 441
+      }
+    }
   },
   {
     "id": "refinery-eia-76",
@@ -9218,7 +12030,44 @@
       }
     ],
     "safetySummary": "Official OSHA data available for 4 years. Latest TRIR (2024): 0 (Industry Avg: ~0.6). Average TRIR: 0.08. Zero recordable incidents in latest reporting year.",
-    "hasRealOshaData": true
+    "hasRealOshaData": true,
+    "workforceMatrix": {
+      "operations": {
+        "total": 151,
+        "employee": 149,
+        "contractor": 2
+      },
+      "maintenance": {
+        "total": 70,
+        "employee": 35,
+        "contractor": 35
+      },
+      "technical": {
+        "total": 39,
+        "employee": 35,
+        "contractor": 4
+      },
+      "logistics": {
+        "total": 21,
+        "employee": 16,
+        "contractor": 4
+      },
+      "hsse": {
+        "total": 12,
+        "employee": 11,
+        "contractor": 2
+      },
+      "support": {
+        "total": 58,
+        "employee": 41,
+        "contractor": 17
+      },
+      "turnaround": {
+        "total": 293,
+        "employee": 29,
+        "contractor": 263
+      }
+    }
   },
   {
     "id": "refinery-eia-77",
@@ -9410,7 +12259,44 @@
       }
     ],
     "safetySummary": "Official OSHA data available for 9 years. Latest TRIR (2024): 2.52 (Industry Avg: ~0.6). Average TRIR: 2.00. ",
-    "hasRealOshaData": true
+    "hasRealOshaData": true,
+    "workforceMatrix": {
+      "operations": {
+        "total": 75,
+        "employee": 74,
+        "contractor": 1
+      },
+      "maintenance": {
+        "total": 35,
+        "employee": 18,
+        "contractor": 18
+      },
+      "technical": {
+        "total": 19,
+        "employee": 17,
+        "contractor": 2
+      },
+      "logistics": {
+        "total": 10,
+        "employee": 8,
+        "contractor": 2
+      },
+      "hsse": {
+        "total": 6,
+        "employee": 5,
+        "contractor": 1
+      },
+      "support": {
+        "total": 29,
+        "employee": 20,
+        "contractor": 9
+      },
+      "turnaround": {
+        "total": 146,
+        "employee": 15,
+        "contractor": 131
+      }
+    }
   },
   {
     "id": "refinery-eia-78",
@@ -9605,7 +12491,44 @@
       }
     ],
     "safetySummary": "Official OSHA data available for 9 years. Latest TRIR (2024): 0.18 (Industry Avg: ~0.6). Average TRIR: 0.33. ",
-    "hasRealOshaData": true
+    "hasRealOshaData": true,
+    "workforceMatrix": {
+      "operations": {
+        "total": 213,
+        "employee": 211,
+        "contractor": 2
+      },
+      "maintenance": {
+        "total": 100,
+        "employee": 50,
+        "contractor": 50
+      },
+      "technical": {
+        "total": 55,
+        "employee": 49,
+        "contractor": 5
+      },
+      "logistics": {
+        "total": 29,
+        "employee": 23,
+        "contractor": 6
+      },
+      "hsse": {
+        "total": 18,
+        "employee": 15,
+        "contractor": 3
+      },
+      "support": {
+        "total": 82,
+        "employee": 58,
+        "contractor": 25
+      },
+      "turnaround": {
+        "total": 414,
+        "employee": 41,
+        "contractor": 373
+      }
+    }
   },
   {
     "id": "refinery-eia-79",
@@ -9784,7 +12707,44 @@
       }
     ],
     "safetySummary": "Official OSHA data available for 8 years. Latest TRIR (2024): 4.39 (Industry Avg: ~0.6). Average TRIR: 3.46. ",
-    "hasRealOshaData": true
+    "hasRealOshaData": true,
+    "workforceMatrix": {
+      "operations": {
+        "total": 130,
+        "employee": 129,
+        "contractor": 1
+      },
+      "maintenance": {
+        "total": 61,
+        "employee": 30,
+        "contractor": 30
+      },
+      "technical": {
+        "total": 33,
+        "employee": 30,
+        "contractor": 3
+      },
+      "logistics": {
+        "total": 18,
+        "employee": 14,
+        "contractor": 4
+      },
+      "hsse": {
+        "total": 11,
+        "employee": 9,
+        "contractor": 2
+      },
+      "support": {
+        "total": 50,
+        "employee": 35,
+        "contractor": 15
+      },
+      "turnaround": {
+        "total": 253,
+        "employee": 25,
+        "contractor": 227
+      }
+    }
   },
   {
     "id": "refinery-eia-80",
@@ -9961,7 +12921,44 @@
       }
     ],
     "safetySummary": "Official OSHA data available for 8 years. Latest TRIR (2024): 0 (Industry Avg: ~0.6). Average TRIR: 0.44. Zero recordable incidents in latest reporting year.",
-    "hasRealOshaData": true
+    "hasRealOshaData": true,
+    "workforceMatrix": {
+      "operations": {
+        "total": 231,
+        "employee": 228,
+        "contractor": 2
+      },
+      "maintenance": {
+        "total": 108,
+        "employee": 54,
+        "contractor": 54
+      },
+      "technical": {
+        "total": 59,
+        "employee": 53,
+        "contractor": 6
+      },
+      "logistics": {
+        "total": 32,
+        "employee": 25,
+        "contractor": 6
+      },
+      "hsse": {
+        "total": 19,
+        "employee": 16,
+        "contractor": 3
+      },
+      "support": {
+        "total": 89,
+        "employee": 62,
+        "contractor": 27
+      },
+      "turnaround": {
+        "total": 448,
+        "employee": 45,
+        "contractor": 403
+      }
+    }
   },
   {
     "id": "refinery-eia-81",
@@ -10107,7 +13104,44 @@
       }
     ],
     "safetySummary": "Official OSHA data available for 6 years. Latest TRIR (2024): 0.77 (Industry Avg: ~0.6). Average TRIR: 0.65. ",
-    "hasRealOshaData": true
+    "hasRealOshaData": true,
+    "workforceMatrix": {
+      "operations": {
+        "total": 114,
+        "employee": 113,
+        "contractor": 1
+      },
+      "maintenance": {
+        "total": 53,
+        "employee": 27,
+        "contractor": 27
+      },
+      "technical": {
+        "total": 29,
+        "employee": 26,
+        "contractor": 3
+      },
+      "logistics": {
+        "total": 16,
+        "employee": 12,
+        "contractor": 3
+      },
+      "hsse": {
+        "total": 9,
+        "employee": 8,
+        "contractor": 1
+      },
+      "support": {
+        "total": 44,
+        "employee": 31,
+        "contractor": 13
+      },
+      "turnaround": {
+        "total": 221,
+        "employee": 22,
+        "contractor": 199
+      }
+    }
   },
   {
     "id": "refinery-eia-82",
@@ -10134,7 +13168,44 @@
       }
     },
     "edc": 60000,
-    "nci": 1
+    "nci": 1,
+    "workforceMatrix": {
+      "operations": {
+        "total": 12,
+        "employee": 12,
+        "contractor": 0
+      },
+      "maintenance": {
+        "total": 6,
+        "employee": 3,
+        "contractor": 3
+      },
+      "technical": {
+        "total": 3,
+        "employee": 3,
+        "contractor": 0
+      },
+      "logistics": {
+        "total": 2,
+        "employee": 1,
+        "contractor": 0
+      },
+      "hsse": {
+        "total": 1,
+        "employee": 1,
+        "contractor": 0
+      },
+      "support": {
+        "total": 5,
+        "employee": 3,
+        "contractor": 1
+      },
+      "turnaround": {
+        "total": 23,
+        "employee": 2,
+        "contractor": 21
+      }
+    }
   },
   {
     "id": "refinery-eia-83",
@@ -10279,7 +13350,44 @@
       }
     ],
     "safetySummary": "Official OSHA data available for 6 years. Latest TRIR (2024): 0.14 (Industry Avg: ~0.6). Average TRIR: 0.26. ",
-    "hasRealOshaData": true
+    "hasRealOshaData": true,
+    "workforceMatrix": {
+      "operations": {
+        "total": 339,
+        "employee": 335,
+        "contractor": 3
+      },
+      "maintenance": {
+        "total": 158,
+        "employee": 79,
+        "contractor": 79
+      },
+      "technical": {
+        "total": 87,
+        "employee": 78,
+        "contractor": 9
+      },
+      "logistics": {
+        "total": 46,
+        "employee": 37,
+        "contractor": 9
+      },
+      "hsse": {
+        "total": 28,
+        "employee": 24,
+        "contractor": 4
+      },
+      "support": {
+        "total": 131,
+        "employee": 91,
+        "contractor": 39
+      },
+      "turnaround": {
+        "total": 658,
+        "employee": 66,
+        "contractor": 592
+      }
+    }
   },
   {
     "id": "refinery-eia-84",
@@ -10376,7 +13484,44 @@
       }
     ],
     "safetySummary": "Official OSHA data available for 3 years. Latest TRIR (2024): 2.37 (Industry Avg: ~0.6). Average TRIR: 1.21. ",
-    "hasRealOshaData": true
+    "hasRealOshaData": true,
+    "workforceMatrix": {
+      "operations": {
+        "total": 401,
+        "employee": 397,
+        "contractor": 4
+      },
+      "maintenance": {
+        "total": 187,
+        "employee": 94,
+        "contractor": 94
+      },
+      "technical": {
+        "total": 103,
+        "employee": 92,
+        "contractor": 10
+      },
+      "logistics": {
+        "total": 55,
+        "employee": 44,
+        "contractor": 11
+      },
+      "hsse": {
+        "total": 33,
+        "employee": 28,
+        "contractor": 5
+      },
+      "support": {
+        "total": 155,
+        "employee": 108,
+        "contractor": 46
+      },
+      "turnaround": {
+        "total": 778,
+        "employee": 78,
+        "contractor": 700
+      }
+    }
   },
   {
     "id": "refinery-eia-85",
@@ -10536,7 +13681,44 @@
       }
     ],
     "safetySummary": "Official OSHA data available for 7 years. Latest TRIR (2022): 0 (Industry Avg: ~0.6). Average TRIR: 0.76. Zero recordable incidents in latest reporting year.",
-    "hasRealOshaData": true
+    "hasRealOshaData": true,
+    "workforceMatrix": {
+      "operations": {
+        "total": 109,
+        "employee": 108,
+        "contractor": 1
+      },
+      "maintenance": {
+        "total": 51,
+        "employee": 26,
+        "contractor": 26
+      },
+      "technical": {
+        "total": 28,
+        "employee": 25,
+        "contractor": 3
+      },
+      "logistics": {
+        "total": 15,
+        "employee": 12,
+        "contractor": 3
+      },
+      "hsse": {
+        "total": 9,
+        "employee": 8,
+        "contractor": 1
+      },
+      "support": {
+        "total": 42,
+        "employee": 29,
+        "contractor": 13
+      },
+      "turnaround": {
+        "total": 212,
+        "employee": 21,
+        "contractor": 191
+      }
+    }
   },
   {
     "id": "refinery-eia-86",
@@ -10577,6 +13759,43 @@
       "FUELS SOLVENT DEASPHALTING": 13500,
       "ISOMERIZATION (ISOBUTANE)": 3000,
       "VACUUM DISTILLATION": 50000
+    },
+    "workforceMatrix": {
+      "operations": {
+        "total": 204,
+        "employee": 202,
+        "contractor": 2
+      },
+      "maintenance": {
+        "total": 96,
+        "employee": 48,
+        "contractor": 48
+      },
+      "technical": {
+        "total": 52,
+        "employee": 47,
+        "contractor": 5
+      },
+      "logistics": {
+        "total": 28,
+        "employee": 22,
+        "contractor": 6
+      },
+      "hsse": {
+        "total": 17,
+        "employee": 14,
+        "contractor": 3
+      },
+      "support": {
+        "total": 79,
+        "employee": 55,
+        "contractor": 24
+      },
+      "turnaround": {
+        "total": 397,
+        "employee": 40,
+        "contractor": 357
+      }
     }
   },
   {
@@ -10775,7 +13994,44 @@
       }
     ],
     "safetySummary": "Official OSHA data available for 9 years. Latest TRIR (2024): 0.29 (Industry Avg: ~0.6). Average TRIR: 0.38. ",
-    "hasRealOshaData": true
+    "hasRealOshaData": true,
+    "workforceMatrix": {
+      "operations": {
+        "total": 201,
+        "employee": 199,
+        "contractor": 2
+      },
+      "maintenance": {
+        "total": 94,
+        "employee": 47,
+        "contractor": 47
+      },
+      "technical": {
+        "total": 51,
+        "employee": 46,
+        "contractor": 5
+      },
+      "logistics": {
+        "total": 27,
+        "employee": 22,
+        "contractor": 5
+      },
+      "hsse": {
+        "total": 16,
+        "employee": 14,
+        "contractor": 2
+      },
+      "support": {
+        "total": 77,
+        "employee": 54,
+        "contractor": 23
+      },
+      "turnaround": {
+        "total": 389,
+        "employee": 39,
+        "contractor": 350
+      }
+    }
   },
   {
     "id": "refinery-eia-88",
@@ -11013,7 +14269,44 @@
       }
     ],
     "safetySummary": "Official OSHA data available for 8 years. Latest TRIR (2024): 0.14 (Industry Avg: ~0.6). Average TRIR: 0.17. ",
-    "hasRealOshaData": true
+    "hasRealOshaData": true,
+    "workforceMatrix": {
+      "operations": {
+        "total": 822,
+        "employee": 814,
+        "contractor": 8
+      },
+      "maintenance": {
+        "total": 384,
+        "employee": 192,
+        "contractor": 192
+      },
+      "technical": {
+        "total": 211,
+        "employee": 190,
+        "contractor": 21
+      },
+      "logistics": {
+        "total": 112,
+        "employee": 90,
+        "contractor": 22
+      },
+      "hsse": {
+        "total": 67,
+        "employee": 57,
+        "contractor": 10
+      },
+      "support": {
+        "total": 317,
+        "employee": 222,
+        "contractor": 95
+      },
+      "turnaround": {
+        "total": 1595,
+        "employee": 160,
+        "contractor": 1436
+      }
+    }
   },
   {
     "id": "refinery-eia-91",
@@ -11212,7 +14505,44 @@
       }
     ],
     "safetySummary": "Official OSHA data available for 9 years. Latest TRIR (2024): 0 (Industry Avg: ~0.6). Average TRIR: 0.09. Zero recordable incidents in latest reporting year.",
-    "hasRealOshaData": true
+    "hasRealOshaData": true,
+    "workforceMatrix": {
+      "operations": {
+        "total": 499,
+        "employee": 494,
+        "contractor": 5
+      },
+      "maintenance": {
+        "total": 233,
+        "employee": 117,
+        "contractor": 117
+      },
+      "technical": {
+        "total": 128,
+        "employee": 115,
+        "contractor": 13
+      },
+      "logistics": {
+        "total": 68,
+        "employee": 55,
+        "contractor": 14
+      },
+      "hsse": {
+        "total": 41,
+        "employee": 35,
+        "contractor": 6
+      },
+      "support": {
+        "total": 192,
+        "employee": 135,
+        "contractor": 58
+      },
+      "turnaround": {
+        "total": 968,
+        "employee": 97,
+        "contractor": 872
+      }
+    }
   },
   {
     "id": "refinery-eia-92",
@@ -11298,7 +14628,44 @@
       }
     ],
     "safetySummary": "Official OSHA data available for 3 years. Latest TRIR (2024): 0.52 (Industry Avg: ~0.6). Average TRIR: 0.35. ",
-    "hasRealOshaData": true
+    "hasRealOshaData": true,
+    "workforceMatrix": {
+      "operations": {
+        "total": 77,
+        "employee": 77,
+        "contractor": 1
+      },
+      "maintenance": {
+        "total": 36,
+        "employee": 18,
+        "contractor": 18
+      },
+      "technical": {
+        "total": 20,
+        "employee": 18,
+        "contractor": 2
+      },
+      "logistics": {
+        "total": 11,
+        "employee": 8,
+        "contractor": 2
+      },
+      "hsse": {
+        "total": 6,
+        "employee": 5,
+        "contractor": 1
+      },
+      "support": {
+        "total": 30,
+        "employee": 21,
+        "contractor": 9
+      },
+      "turnaround": {
+        "total": 150,
+        "employee": 15,
+        "contractor": 135
+      }
+    }
   },
   {
     "id": "refinery-eia-93",
@@ -11398,7 +14765,44 @@
       }
     ],
     "safetySummary": "Official OSHA data available for 3 years. Latest TRIR (2024): 0.52 (Industry Avg: ~0.6). Average TRIR: 0.35. ",
-    "hasRealOshaData": true
+    "hasRealOshaData": true,
+    "workforceMatrix": {
+      "operations": {
+        "total": 383,
+        "employee": 379,
+        "contractor": 4
+      },
+      "maintenance": {
+        "total": 179,
+        "employee": 90,
+        "contractor": 90
+      },
+      "technical": {
+        "total": 98,
+        "employee": 88,
+        "contractor": 10
+      },
+      "logistics": {
+        "total": 52,
+        "employee": 42,
+        "contractor": 10
+      },
+      "hsse": {
+        "total": 31,
+        "employee": 27,
+        "contractor": 5
+      },
+      "support": {
+        "total": 148,
+        "employee": 103,
+        "contractor": 44
+      },
+      "turnaround": {
+        "total": 743,
+        "employee": 74,
+        "contractor": 669
+      }
+    }
   },
   {
     "id": "refinery-eia-94",
@@ -11425,7 +14829,44 @@
       }
     },
     "edc": 45000,
-    "nci": 1
+    "nci": 1,
+    "workforceMatrix": {
+      "operations": {
+        "total": 10,
+        "employee": 10,
+        "contractor": 0
+      },
+      "maintenance": {
+        "total": 5,
+        "employee": 2,
+        "contractor": 2
+      },
+      "technical": {
+        "total": 3,
+        "employee": 2,
+        "contractor": 0
+      },
+      "logistics": {
+        "total": 1,
+        "employee": 1,
+        "contractor": 0
+      },
+      "hsse": {
+        "total": 1,
+        "employee": 1,
+        "contractor": 0
+      },
+      "support": {
+        "total": 4,
+        "employee": 3,
+        "contractor": 1
+      },
+      "turnaround": {
+        "total": 19,
+        "employee": 2,
+        "contractor": 17
+      }
+    }
   },
   {
     "id": "refinery-eia-95",
@@ -11620,7 +15061,44 @@
       }
     ],
     "safetySummary": "Official OSHA data available for 9 years. Latest TRIR (2024): 0 (Industry Avg: ~0.6). Average TRIR: 0.18. Zero recordable incidents in latest reporting year.",
-    "hasRealOshaData": true
+    "hasRealOshaData": true,
+    "workforceMatrix": {
+      "operations": {
+        "total": 372,
+        "employee": 368,
+        "contractor": 4
+      },
+      "maintenance": {
+        "total": 174,
+        "employee": 87,
+        "contractor": 87
+      },
+      "technical": {
+        "total": 95,
+        "employee": 86,
+        "contractor": 10
+      },
+      "logistics": {
+        "total": 51,
+        "employee": 41,
+        "contractor": 10
+      },
+      "hsse": {
+        "total": 31,
+        "employee": 26,
+        "contractor": 5
+      },
+      "support": {
+        "total": 143,
+        "employee": 100,
+        "contractor": 43
+      },
+      "turnaround": {
+        "total": 722,
+        "employee": 72,
+        "contractor": 650
+      }
+    }
   },
   {
     "id": "refinery-eia-96",
@@ -11736,7 +15214,44 @@
       }
     ],
     "safetySummary": "Official OSHA data available for 5 years. Latest TRIR (2024): 0 (Industry Avg: ~0.6). Average TRIR: 1.88. Zero recordable incidents in latest reporting year.",
-    "hasRealOshaData": true
+    "hasRealOshaData": true,
+    "workforceMatrix": {
+      "operations": {
+        "total": 18,
+        "employee": 18,
+        "contractor": 0
+      },
+      "maintenance": {
+        "total": 8,
+        "employee": 4,
+        "contractor": 4
+      },
+      "technical": {
+        "total": 5,
+        "employee": 4,
+        "contractor": 0
+      },
+      "logistics": {
+        "total": 2,
+        "employee": 2,
+        "contractor": 0
+      },
+      "hsse": {
+        "total": 1,
+        "employee": 1,
+        "contractor": 0
+      },
+      "support": {
+        "total": 7,
+        "employee": 5,
+        "contractor": 2
+      },
+      "turnaround": {
+        "total": 35,
+        "employee": 4,
+        "contractor": 32
+      }
+    }
   },
   {
     "id": "refinery-eia-97",
@@ -11818,7 +15333,44 @@
       }
     ],
     "safetySummary": "Official OSHA data available for 3 years. Latest TRIR (2024): 0 (Industry Avg: ~0.6). Average TRIR: 1.71. Zero recordable incidents in latest reporting year.",
-    "hasRealOshaData": true
+    "hasRealOshaData": true,
+    "workforceMatrix": {
+      "operations": {
+        "total": 4,
+        "employee": 4,
+        "contractor": 0
+      },
+      "maintenance": {
+        "total": 2,
+        "employee": 1,
+        "contractor": 1
+      },
+      "technical": {
+        "total": 1,
+        "employee": 1,
+        "contractor": 0
+      },
+      "logistics": {
+        "total": 1,
+        "employee": 0,
+        "contractor": 0
+      },
+      "hsse": {
+        "total": 0,
+        "employee": 0,
+        "contractor": 0
+      },
+      "support": {
+        "total": 2,
+        "employee": 1,
+        "contractor": 0
+      },
+      "turnaround": {
+        "total": 8,
+        "employee": 1,
+        "contractor": 8
+      }
+    }
   },
   {
     "id": "refinery-eia-98",
@@ -11845,7 +15397,44 @@
       }
     },
     "edc": 50000,
-    "nci": 1
+    "nci": 1,
+    "workforceMatrix": {
+      "operations": {
+        "total": 11,
+        "employee": 11,
+        "contractor": 0
+      },
+      "maintenance": {
+        "total": 5,
+        "employee": 3,
+        "contractor": 3
+      },
+      "technical": {
+        "total": 3,
+        "employee": 2,
+        "contractor": 0
+      },
+      "logistics": {
+        "total": 1,
+        "employee": 1,
+        "contractor": 0
+      },
+      "hsse": {
+        "total": 1,
+        "employee": 1,
+        "contractor": 0
+      },
+      "support": {
+        "total": 4,
+        "employee": 3,
+        "contractor": 1
+      },
+      "turnaround": {
+        "total": 21,
+        "employee": 2,
+        "contractor": 19
+      }
+    }
   },
   {
     "id": "refinery-eia-99",
@@ -12028,7 +15617,44 @@
       }
     ],
     "safetySummary": "Official OSHA data available for 8 years. Latest TRIR (2024): 0.29 (Industry Avg: ~0.6). Average TRIR: 0.44. ",
-    "hasRealOshaData": true
+    "hasRealOshaData": true,
+    "workforceMatrix": {
+      "operations": {
+        "total": 688,
+        "employee": 681,
+        "contractor": 7
+      },
+      "maintenance": {
+        "total": 322,
+        "employee": 161,
+        "contractor": 161
+      },
+      "technical": {
+        "total": 176,
+        "employee": 159,
+        "contractor": 18
+      },
+      "logistics": {
+        "total": 94,
+        "employee": 75,
+        "contractor": 19
+      },
+      "hsse": {
+        "total": 56,
+        "employee": 48,
+        "contractor": 8
+      },
+      "support": {
+        "total": 265,
+        "employee": 186,
+        "contractor": 80
+      },
+      "turnaround": {
+        "total": 1334,
+        "employee": 133,
+        "contractor": 1201
+      }
+    }
   },
   {
     "id": "refinery-eia-100",
@@ -12211,7 +15837,44 @@
       }
     ],
     "safetySummary": "Official OSHA data available for 8 years. Latest TRIR (2024): 0.13 (Industry Avg: ~0.6). Average TRIR: 0.49. ",
-    "hasRealOshaData": true
+    "hasRealOshaData": true,
+    "workforceMatrix": {
+      "operations": {
+        "total": 881,
+        "employee": 872,
+        "contractor": 9
+      },
+      "maintenance": {
+        "total": 412,
+        "employee": 206,
+        "contractor": 206
+      },
+      "technical": {
+        "total": 226,
+        "employee": 203,
+        "contractor": 23
+      },
+      "logistics": {
+        "total": 121,
+        "employee": 96,
+        "contractor": 24
+      },
+      "hsse": {
+        "total": 72,
+        "employee": 61,
+        "contractor": 11
+      },
+      "support": {
+        "total": 340,
+        "employee": 238,
+        "contractor": 102
+      },
+      "turnaround": {
+        "total": 1710,
+        "employee": 171,
+        "contractor": 1539
+      }
+    }
   },
   {
     "id": "refinery-eia-101",
@@ -12244,6 +15907,43 @@
       "DESULFURIZATION, KEROSENE AND JET": 12400,
       "DESULFURIZATION, NAPHTHA/REFORMER FEED": 24000,
       "VACUUM DISTILLATION": 38000
+    },
+    "workforceMatrix": {
+      "operations": {
+        "total": 62,
+        "employee": 62,
+        "contractor": 1
+      },
+      "maintenance": {
+        "total": 29,
+        "employee": 15,
+        "contractor": 15
+      },
+      "technical": {
+        "total": 16,
+        "employee": 14,
+        "contractor": 2
+      },
+      "logistics": {
+        "total": 9,
+        "employee": 7,
+        "contractor": 2
+      },
+      "hsse": {
+        "total": 5,
+        "employee": 4,
+        "contractor": 1
+      },
+      "support": {
+        "total": 24,
+        "employee": 17,
+        "contractor": 7
+      },
+      "turnaround": {
+        "total": 121,
+        "employee": 12,
+        "contractor": 109
+      }
     }
   },
   {
@@ -12434,7 +16134,44 @@
       }
     ],
     "safetySummary": "Official OSHA data available for 9 years. Latest TRIR (2024): 0.8 (Industry Avg: ~0.6). Average TRIR: 0.58. ",
-    "hasRealOshaData": true
+    "hasRealOshaData": true,
+    "workforceMatrix": {
+      "operations": {
+        "total": 62,
+        "employee": 62,
+        "contractor": 1
+      },
+      "maintenance": {
+        "total": 29,
+        "employee": 15,
+        "contractor": 15
+      },
+      "technical": {
+        "total": 16,
+        "employee": 14,
+        "contractor": 2
+      },
+      "logistics": {
+        "total": 9,
+        "employee": 7,
+        "contractor": 2
+      },
+      "hsse": {
+        "total": 5,
+        "employee": 4,
+        "contractor": 1
+      },
+      "support": {
+        "total": 24,
+        "employee": 17,
+        "contractor": 7
+      },
+      "turnaround": {
+        "total": 121,
+        "employee": 12,
+        "contractor": 109
+      }
+    }
   },
   {
     "id": "refinery-eia-103",
@@ -12461,7 +16198,44 @@
       }
     },
     "edc": 25000,
-    "nci": 1
+    "nci": 1,
+    "workforceMatrix": {
+      "operations": {
+        "total": 6,
+        "employee": 6,
+        "contractor": 0
+      },
+      "maintenance": {
+        "total": 3,
+        "employee": 2,
+        "contractor": 2
+      },
+      "technical": {
+        "total": 2,
+        "employee": 1,
+        "contractor": 0
+      },
+      "logistics": {
+        "total": 1,
+        "employee": 1,
+        "contractor": 0
+      },
+      "hsse": {
+        "total": 1,
+        "employee": 0,
+        "contractor": 0
+      },
+      "support": {
+        "total": 2,
+        "employee": 2,
+        "contractor": 1
+      },
+      "turnaround": {
+        "total": 13,
+        "employee": 1,
+        "contractor": 11
+      }
+    }
   },
   {
     "id": "refinery-eia-104",
@@ -12625,7 +16399,44 @@
       }
     ],
     "safetySummary": "Official OSHA data available for 7 years. Latest TRIR (2024): 0 (Industry Avg: ~0.6). Average TRIR: 0.12. Zero recordable incidents in latest reporting year.",
-    "hasRealOshaData": true
+    "hasRealOshaData": true,
+    "workforceMatrix": {
+      "operations": {
+        "total": 432,
+        "employee": 428,
+        "contractor": 4
+      },
+      "maintenance": {
+        "total": 202,
+        "employee": 101,
+        "contractor": 101
+      },
+      "technical": {
+        "total": 111,
+        "employee": 100,
+        "contractor": 11
+      },
+      "logistics": {
+        "total": 59,
+        "employee": 47,
+        "contractor": 12
+      },
+      "hsse": {
+        "total": 36,
+        "employee": 30,
+        "contractor": 5
+      },
+      "support": {
+        "total": 167,
+        "employee": 117,
+        "contractor": 50
+      },
+      "turnaround": {
+        "total": 839,
+        "employee": 84,
+        "contractor": 755
+      }
+    }
   },
   {
     "id": "refinery-eia-105",
@@ -12788,7 +16599,44 @@
       }
     ],
     "safetySummary": "Official OSHA data available for 7 years. Latest TRIR (2024): 0.23 (Industry Avg: ~0.6). Average TRIR: 0.42. ",
-    "hasRealOshaData": true
+    "hasRealOshaData": true,
+    "workforceMatrix": {
+      "operations": {
+        "total": 481,
+        "employee": 476,
+        "contractor": 5
+      },
+      "maintenance": {
+        "total": 225,
+        "employee": 112,
+        "contractor": 112
+      },
+      "technical": {
+        "total": 123,
+        "employee": 111,
+        "contractor": 12
+      },
+      "logistics": {
+        "total": 66,
+        "employee": 53,
+        "contractor": 13
+      },
+      "hsse": {
+        "total": 39,
+        "employee": 34,
+        "contractor": 6
+      },
+      "support": {
+        "total": 185,
+        "employee": 130,
+        "contractor": 56
+      },
+      "turnaround": {
+        "total": 933,
+        "employee": 93,
+        "contractor": 839
+      }
+    }
   },
   {
     "id": "refinery-eia-106",
@@ -12842,7 +16690,44 @@
       }
     },
     "edc": 45000,
-    "nci": 1
+    "nci": 1,
+    "workforceMatrix": {
+      "operations": {
+        "total": 10,
+        "employee": 10,
+        "contractor": 0
+      },
+      "maintenance": {
+        "total": 5,
+        "employee": 2,
+        "contractor": 2
+      },
+      "technical": {
+        "total": 3,
+        "employee": 2,
+        "contractor": 0
+      },
+      "logistics": {
+        "total": 1,
+        "employee": 1,
+        "contractor": 0
+      },
+      "hsse": {
+        "total": 1,
+        "employee": 1,
+        "contractor": 0
+      },
+      "support": {
+        "total": 4,
+        "employee": 3,
+        "contractor": 1
+      },
+      "turnaround": {
+        "total": 19,
+        "employee": 2,
+        "contractor": 17
+      }
+    }
   },
   {
     "id": "refinery-eia-108",
@@ -12874,6 +16759,43 @@
       "CAT REFORMING: HIGH PRESSURE": 6000,
       "DESULFURIZATION, DIESEL FUEL": 8000,
       "DESULFURIZATION, NAPHTHA/REFORMER FEED": 7000
+    },
+    "workforceMatrix": {
+      "operations": {
+        "total": 22,
+        "employee": 22,
+        "contractor": 0
+      },
+      "maintenance": {
+        "total": 10,
+        "employee": 5,
+        "contractor": 5
+      },
+      "technical": {
+        "total": 6,
+        "employee": 5,
+        "contractor": 1
+      },
+      "logistics": {
+        "total": 3,
+        "employee": 2,
+        "contractor": 1
+      },
+      "hsse": {
+        "total": 2,
+        "employee": 2,
+        "contractor": 0
+      },
+      "support": {
+        "total": 9,
+        "employee": 6,
+        "contractor": 3
+      },
+      "turnaround": {
+        "total": 43,
+        "employee": 4,
+        "contractor": 39
+      }
     }
   },
   {
@@ -12988,7 +16910,44 @@
       }
     ],
     "safetySummary": "Official OSHA data available for 4 years. Latest TRIR (2024): 0 (Industry Avg: ~0.6). Average TRIR: 0.24. Zero recordable incidents in latest reporting year.",
-    "hasRealOshaData": true
+    "hasRealOshaData": true,
+    "workforceMatrix": {
+      "operations": {
+        "total": 330,
+        "employee": 327,
+        "contractor": 3
+      },
+      "maintenance": {
+        "total": 154,
+        "employee": 77,
+        "contractor": 77
+      },
+      "technical": {
+        "total": 85,
+        "employee": 76,
+        "contractor": 8
+      },
+      "logistics": {
+        "total": 45,
+        "employee": 36,
+        "contractor": 9
+      },
+      "hsse": {
+        "total": 27,
+        "employee": 23,
+        "contractor": 4
+      },
+      "support": {
+        "total": 127,
+        "employee": 89,
+        "contractor": 38
+      },
+      "turnaround": {
+        "total": 640,
+        "employee": 64,
+        "contractor": 576
+      }
+    }
   },
   {
     "id": "refinery-eia-110",
@@ -13052,6 +17011,43 @@
       "DESULFURIZATION, KEROSENE AND JET": 32000,
       "DESULFURIZATION, NAPHTHA/REFORMER FEED": 60000,
       "VACUUM DISTILLATION": 87500
+    },
+    "workforceMatrix": {
+      "operations": {
+        "total": 197,
+        "employee": 195,
+        "contractor": 2
+      },
+      "maintenance": {
+        "total": 92,
+        "employee": 46,
+        "contractor": 46
+      },
+      "technical": {
+        "total": 51,
+        "employee": 45,
+        "contractor": 5
+      },
+      "logistics": {
+        "total": 27,
+        "employee": 22,
+        "contractor": 5
+      },
+      "hsse": {
+        "total": 16,
+        "employee": 14,
+        "contractor": 2
+      },
+      "support": {
+        "total": 76,
+        "employee": 53,
+        "contractor": 23
+      },
+      "turnaround": {
+        "total": 383,
+        "employee": 38,
+        "contractor": 344
+      }
     }
   },
   {
@@ -13246,7 +17242,44 @@
       }
     ],
     "safetySummary": "Official OSHA data available for 9 years. Latest TRIR (2024): 0 (Industry Avg: ~0.6). Average TRIR: 0.20. Zero recordable incidents in latest reporting year.",
-    "hasRealOshaData": true
+    "hasRealOshaData": true,
+    "workforceMatrix": {
+      "operations": {
+        "total": 224,
+        "employee": 222,
+        "contractor": 2
+      },
+      "maintenance": {
+        "total": 105,
+        "employee": 52,
+        "contractor": 52
+      },
+      "technical": {
+        "total": 57,
+        "employee": 52,
+        "contractor": 6
+      },
+      "logistics": {
+        "total": 31,
+        "employee": 25,
+        "contractor": 6
+      },
+      "hsse": {
+        "total": 18,
+        "employee": 16,
+        "contractor": 3
+      },
+      "support": {
+        "total": 86,
+        "employee": 61,
+        "contractor": 26
+      },
+      "turnaround": {
+        "total": 435,
+        "employee": 44,
+        "contractor": 392
+      }
+    }
   },
   {
     "id": "refinery-eia-113",
@@ -13394,7 +17427,44 @@
       }
     ],
     "safetySummary": "Official OSHA data available for 6 years. Latest TRIR (2023): 0.54 (Industry Avg: ~0.6). Average TRIR: 0.38. ",
-    "hasRealOshaData": true
+    "hasRealOshaData": true,
+    "workforceMatrix": {
+      "operations": {
+        "total": 328,
+        "employee": 324,
+        "contractor": 3
+      },
+      "maintenance": {
+        "total": 153,
+        "employee": 77,
+        "contractor": 77
+      },
+      "technical": {
+        "total": 84,
+        "employee": 76,
+        "contractor": 8
+      },
+      "logistics": {
+        "total": 45,
+        "employee": 36,
+        "contractor": 9
+      },
+      "hsse": {
+        "total": 27,
+        "employee": 23,
+        "contractor": 4
+      },
+      "support": {
+        "total": 126,
+        "employee": 88,
+        "contractor": 38
+      },
+      "turnaround": {
+        "total": 636,
+        "employee": 64,
+        "contractor": 572
+      }
+    }
   },
   {
     "id": "refinery-eia-114",
@@ -13539,7 +17609,44 @@
       }
     ],
     "safetySummary": "Official OSHA data available for 6 years. Latest TRIR (2024): 0 (Industry Avg: ~0.6). Average TRIR: 0.54. Zero recordable incidents in latest reporting year.",
-    "hasRealOshaData": true
+    "hasRealOshaData": true,
+    "workforceMatrix": {
+      "operations": {
+        "total": 166,
+        "employee": 164,
+        "contractor": 2
+      },
+      "maintenance": {
+        "total": 78,
+        "employee": 39,
+        "contractor": 39
+      },
+      "technical": {
+        "total": 42,
+        "employee": 38,
+        "contractor": 4
+      },
+      "logistics": {
+        "total": 23,
+        "employee": 18,
+        "contractor": 5
+      },
+      "hsse": {
+        "total": 14,
+        "employee": 12,
+        "contractor": 2
+      },
+      "support": {
+        "total": 64,
+        "employee": 45,
+        "contractor": 19
+      },
+      "turnaround": {
+        "total": 322,
+        "employee": 32,
+        "contractor": 290
+      }
+    }
   },
   {
     "id": "refinery-eia-115",
@@ -13719,7 +17826,44 @@
       }
     ],
     "safetySummary": "Official OSHA data available for 8 years. Latest TRIR (2023): 0.26 (Industry Avg: ~0.6). Average TRIR: 0.17. ",
-    "hasRealOshaData": true
+    "hasRealOshaData": true,
+    "workforceMatrix": {
+      "operations": {
+        "total": 345,
+        "employee": 341,
+        "contractor": 3
+      },
+      "maintenance": {
+        "total": 161,
+        "employee": 81,
+        "contractor": 81
+      },
+      "technical": {
+        "total": 88,
+        "employee": 80,
+        "contractor": 9
+      },
+      "logistics": {
+        "total": 47,
+        "employee": 38,
+        "contractor": 9
+      },
+      "hsse": {
+        "total": 28,
+        "employee": 24,
+        "contractor": 4
+      },
+      "support": {
+        "total": 133,
+        "employee": 93,
+        "contractor": 40
+      },
+      "turnaround": {
+        "total": 669,
+        "employee": 67,
+        "contractor": 602
+      }
+    }
   },
   {
     "id": "refinery-eia-116",
@@ -13755,6 +17899,43 @@
       "DESULFURIZATION, NAPHTHA/REFORMER FEED": 11800,
       "ISOMERIZATION (ISOBUTANE)": 1900,
       "ISOMERIZATION (ISOPENTANE/ISOHEXANE)": 3300
+    },
+    "workforceMatrix": {
+      "operations": {
+        "total": 74,
+        "employee": 73,
+        "contractor": 1
+      },
+      "maintenance": {
+        "total": 35,
+        "employee": 17,
+        "contractor": 17
+      },
+      "technical": {
+        "total": 19,
+        "employee": 17,
+        "contractor": 2
+      },
+      "logistics": {
+        "total": 10,
+        "employee": 8,
+        "contractor": 2
+      },
+      "hsse": {
+        "total": 6,
+        "employee": 5,
+        "contractor": 1
+      },
+      "support": {
+        "total": 28,
+        "employee": 20,
+        "contractor": 9
+      },
+      "turnaround": {
+        "total": 143,
+        "employee": 14,
+        "contractor": 129
+      }
     }
   },
   {
@@ -13790,6 +17971,43 @@
       "DESULFURIZATION, DIESEL FUEL": 22500,
       "DESULFURIZATION, GASOLINE": 13000,
       "DESULFURIZATION, NAPHTHA/REFORMER FEED": 12000
+    },
+    "workforceMatrix": {
+      "operations": {
+        "total": 90,
+        "employee": 89,
+        "contractor": 1
+      },
+      "maintenance": {
+        "total": 42,
+        "employee": 21,
+        "contractor": 21
+      },
+      "technical": {
+        "total": 23,
+        "employee": 21,
+        "contractor": 2
+      },
+      "logistics": {
+        "total": 12,
+        "employee": 10,
+        "contractor": 2
+      },
+      "hsse": {
+        "total": 7,
+        "employee": 6,
+        "contractor": 1
+      },
+      "support": {
+        "total": 35,
+        "employee": 24,
+        "contractor": 10
+      },
+      "turnaround": {
+        "total": 175,
+        "employee": 18,
+        "contractor": 158
+      }
     }
   },
   {
@@ -13829,6 +18047,43 @@
       "DESULFURIZATION, OTHER DISTILLATE": 10800,
       "FUELS SOLVENT DEASPHALTING": 6000,
       "ISOMERIZATION (ISOPENTANE/ISOHEXANE)": 3000
+    },
+    "workforceMatrix": {
+      "operations": {
+        "total": 101,
+        "employee": 100,
+        "contractor": 1
+      },
+      "maintenance": {
+        "total": 47,
+        "employee": 24,
+        "contractor": 24
+      },
+      "technical": {
+        "total": 26,
+        "employee": 23,
+        "contractor": 3
+      },
+      "logistics": {
+        "total": 14,
+        "employee": 11,
+        "contractor": 3
+      },
+      "hsse": {
+        "total": 8,
+        "employee": 7,
+        "contractor": 1
+      },
+      "support": {
+        "total": 39,
+        "employee": 27,
+        "contractor": 12
+      },
+      "turnaround": {
+        "total": 197,
+        "employee": 20,
+        "contractor": 177
+      }
     }
   },
   {
@@ -13882,7 +18137,44 @@
       }
     ],
     "safetySummary": "Official OSHA data available for 1 years. Latest TRIR (2018): 1.53 (Industry Avg: ~0.6). Average TRIR: 1.53. ",
-    "hasRealOshaData": true
+    "hasRealOshaData": true,
+    "workforceMatrix": {
+      "operations": {
+        "total": 12,
+        "employee": 11,
+        "contractor": 0
+      },
+      "maintenance": {
+        "total": 5,
+        "employee": 3,
+        "contractor": 3
+      },
+      "technical": {
+        "total": 3,
+        "employee": 3,
+        "contractor": 0
+      },
+      "logistics": {
+        "total": 2,
+        "employee": 1,
+        "contractor": 0
+      },
+      "hsse": {
+        "total": 1,
+        "employee": 1,
+        "contractor": 0
+      },
+      "support": {
+        "total": 4,
+        "employee": 3,
+        "contractor": 1
+      },
+      "turnaround": {
+        "total": 23,
+        "employee": 2,
+        "contractor": 20
+      }
+    }
   },
   {
     "id": "refinery-eia-120",
@@ -14027,7 +18319,44 @@
       }
     ],
     "safetySummary": "Official OSHA data available for 6 years. Latest TRIR (2024): 0.27 (Industry Avg: ~0.6). Average TRIR: 0.34. ",
-    "hasRealOshaData": true
+    "hasRealOshaData": true,
+    "workforceMatrix": {
+      "operations": {
+        "total": 102,
+        "employee": 101,
+        "contractor": 1
+      },
+      "maintenance": {
+        "total": 48,
+        "employee": 24,
+        "contractor": 24
+      },
+      "technical": {
+        "total": 26,
+        "employee": 23,
+        "contractor": 3
+      },
+      "logistics": {
+        "total": 14,
+        "employee": 11,
+        "contractor": 3
+      },
+      "hsse": {
+        "total": 8,
+        "employee": 7,
+        "contractor": 1
+      },
+      "support": {
+        "total": 39,
+        "employee": 27,
+        "contractor": 12
+      },
+      "turnaround": {
+        "total": 198,
+        "employee": 20,
+        "contractor": 178
+      }
+    }
   },
   {
     "id": "refinery-eia-121",
@@ -14064,6 +18393,43 @@
       "ISOMERIZATION (ISOPENTANE/ISOHEXANE)": 26000,
       "THERM CRACKING, DELAYED COKING": 61500,
       "VACUUM DISTILLATION": 139000
+    },
+    "workforceMatrix": {
+      "operations": {
+        "total": 308,
+        "employee": 305,
+        "contractor": 3
+      },
+      "maintenance": {
+        "total": 144,
+        "employee": 72,
+        "contractor": 72
+      },
+      "technical": {
+        "total": 79,
+        "employee": 71,
+        "contractor": 8
+      },
+      "logistics": {
+        "total": 42,
+        "employee": 34,
+        "contractor": 8
+      },
+      "hsse": {
+        "total": 25,
+        "employee": 21,
+        "contractor": 4
+      },
+      "support": {
+        "total": 119,
+        "employee": 83,
+        "contractor": 36
+      },
+      "turnaround": {
+        "total": 598,
+        "employee": 60,
+        "contractor": 538
+      }
     }
   },
   {
@@ -14157,7 +18523,44 @@
       }
     ],
     "safetySummary": "Official OSHA data available for 3 years. Latest TRIR (2024): 0 (Industry Avg: ~0.6). Average TRIR: 0.13. Zero recordable incidents in latest reporting year.",
-    "hasRealOshaData": true
+    "hasRealOshaData": true,
+    "workforceMatrix": {
+      "operations": {
+        "total": 199,
+        "employee": 197,
+        "contractor": 2
+      },
+      "maintenance": {
+        "total": 93,
+        "employee": 47,
+        "contractor": 47
+      },
+      "technical": {
+        "total": 51,
+        "employee": 46,
+        "contractor": 5
+      },
+      "logistics": {
+        "total": 27,
+        "employee": 22,
+        "contractor": 5
+      },
+      "hsse": {
+        "total": 16,
+        "employee": 14,
+        "contractor": 2
+      },
+      "support": {
+        "total": 77,
+        "employee": 54,
+        "contractor": 23
+      },
+      "turnaround": {
+        "total": 387,
+        "employee": 39,
+        "contractor": 348
+      }
+    }
   },
   {
     "id": "refinery-eia-123",
@@ -14300,7 +18703,44 @@
       }
     ],
     "safetySummary": "Official OSHA data available for 6 years. Latest TRIR (2024): 0 (Industry Avg: ~0.6). Average TRIR: 0.12. Zero recordable incidents in latest reporting year.",
-    "hasRealOshaData": true
+    "hasRealOshaData": true,
+    "workforceMatrix": {
+      "operations": {
+        "total": 149,
+        "employee": 148,
+        "contractor": 1
+      },
+      "maintenance": {
+        "total": 70,
+        "employee": 35,
+        "contractor": 35
+      },
+      "technical": {
+        "total": 38,
+        "employee": 34,
+        "contractor": 4
+      },
+      "logistics": {
+        "total": 20,
+        "employee": 16,
+        "contractor": 4
+      },
+      "hsse": {
+        "total": 12,
+        "employee": 10,
+        "contractor": 2
+      },
+      "support": {
+        "total": 57,
+        "employee": 40,
+        "contractor": 17
+      },
+      "turnaround": {
+        "total": 289,
+        "employee": 29,
+        "contractor": 260
+      }
+    }
   },
   {
     "id": "refinery-eia-124",
@@ -14461,7 +18901,44 @@
       }
     ],
     "safetySummary": "Official OSHA data available for 7 years. Latest TRIR (2024): 0.42 (Industry Avg: ~0.6). Average TRIR: 0.31. ",
-    "hasRealOshaData": true
+    "hasRealOshaData": true,
+    "workforceMatrix": {
+      "operations": {
+        "total": 199,
+        "employee": 197,
+        "contractor": 2
+      },
+      "maintenance": {
+        "total": 93,
+        "employee": 47,
+        "contractor": 47
+      },
+      "technical": {
+        "total": 51,
+        "employee": 46,
+        "contractor": 5
+      },
+      "logistics": {
+        "total": 27,
+        "employee": 22,
+        "contractor": 5
+      },
+      "hsse": {
+        "total": 16,
+        "employee": 14,
+        "contractor": 2
+      },
+      "support": {
+        "total": 77,
+        "employee": 54,
+        "contractor": 23
+      },
+      "turnaround": {
+        "total": 387,
+        "employee": 39,
+        "contractor": 348
+      }
+    }
   },
   {
     "id": "refinery-eia-125",
@@ -14496,6 +18973,43 @@
       "DESULFURIZATION, NAPHTHA/REFORMER FEED": 11000,
       "ISOMERIZATION (ISOPENTANE/ISOHEXANE)": 5000,
       "VACUUM DISTILLATION": 19200
+    },
+    "workforceMatrix": {
+      "operations": {
+        "total": 54,
+        "employee": 53,
+        "contractor": 1
+      },
+      "maintenance": {
+        "total": 25,
+        "employee": 13,
+        "contractor": 13
+      },
+      "technical": {
+        "total": 14,
+        "employee": 12,
+        "contractor": 1
+      },
+      "logistics": {
+        "total": 7,
+        "employee": 6,
+        "contractor": 1
+      },
+      "hsse": {
+        "total": 4,
+        "employee": 4,
+        "contractor": 1
+      },
+      "support": {
+        "total": 21,
+        "employee": 14,
+        "contractor": 6
+      },
+      "turnaround": {
+        "total": 104,
+        "employee": 10,
+        "contractor": 94
+      }
     }
   },
   {
@@ -14621,7 +19135,44 @@
       }
     ],
     "safetySummary": "Official OSHA data available for 5 years. Latest TRIR (2020): 0 (Industry Avg: ~0.6). Average TRIR: 0.78. Zero recordable incidents in latest reporting year.",
-    "hasRealOshaData": true
+    "hasRealOshaData": true,
+    "workforceMatrix": {
+      "operations": {
+        "total": 129,
+        "employee": 128,
+        "contractor": 1
+      },
+      "maintenance": {
+        "total": 60,
+        "employee": 30,
+        "contractor": 30
+      },
+      "technical": {
+        "total": 33,
+        "employee": 30,
+        "contractor": 3
+      },
+      "logistics": {
+        "total": 18,
+        "employee": 14,
+        "contractor": 4
+      },
+      "hsse": {
+        "total": 11,
+        "employee": 9,
+        "contractor": 2
+      },
+      "support": {
+        "total": 50,
+        "employee": 35,
+        "contractor": 15
+      },
+      "turnaround": {
+        "total": 250,
+        "employee": 25,
+        "contractor": 225
+      }
+    }
   },
   {
     "id": "refinery-eia-127",
@@ -14715,7 +19266,44 @@
       }
     ],
     "safetySummary": "Official OSHA data available for 3 years. Latest TRIR (2024): 1.02 (Industry Avg: ~0.6). Average TRIR: 0.63. ",
-    "hasRealOshaData": true
+    "hasRealOshaData": true,
+    "workforceMatrix": {
+      "operations": {
+        "total": 86,
+        "employee": 85,
+        "contractor": 1
+      },
+      "maintenance": {
+        "total": 40,
+        "employee": 20,
+        "contractor": 20
+      },
+      "technical": {
+        "total": 22,
+        "employee": 20,
+        "contractor": 2
+      },
+      "logistics": {
+        "total": 12,
+        "employee": 9,
+        "contractor": 2
+      },
+      "hsse": {
+        "total": 7,
+        "employee": 6,
+        "contractor": 1
+      },
+      "support": {
+        "total": 33,
+        "employee": 23,
+        "contractor": 10
+      },
+      "turnaround": {
+        "total": 168,
+        "employee": 17,
+        "contractor": 151
+      }
+    }
   },
   {
     "id": "refinery-eia-128",
@@ -14810,7 +19398,44 @@
       }
     ],
     "safetySummary": "Official OSHA data available for 3 years. Latest TRIR (2024): 0 (Industry Avg: ~0.6). Average TRIR: 0.00. Zero recordable incidents in latest reporting year.",
-    "hasRealOshaData": true
+    "hasRealOshaData": true,
+    "workforceMatrix": {
+      "operations": {
+        "total": 149,
+        "employee": 148,
+        "contractor": 1
+      },
+      "maintenance": {
+        "total": 70,
+        "employee": 35,
+        "contractor": 35
+      },
+      "technical": {
+        "total": 38,
+        "employee": 34,
+        "contractor": 4
+      },
+      "logistics": {
+        "total": 20,
+        "employee": 16,
+        "contractor": 4
+      },
+      "hsse": {
+        "total": 12,
+        "employee": 10,
+        "contractor": 2
+      },
+      "support": {
+        "total": 57,
+        "employee": 40,
+        "contractor": 17
+      },
+      "turnaround": {
+        "total": 289,
+        "employee": 29,
+        "contractor": 260
+      }
+    }
   },
   {
     "id": "refinery-eia-129",
@@ -14922,7 +19547,44 @@
       }
     ],
     "safetySummary": "Official OSHA data available for 4 years. Latest TRIR (2023): 0.37 (Industry Avg: ~0.6). Average TRIR: 0.41. ",
-    "hasRealOshaData": true
+    "hasRealOshaData": true,
+    "workforceMatrix": {
+      "operations": {
+        "total": 149,
+        "employee": 148,
+        "contractor": 1
+      },
+      "maintenance": {
+        "total": 70,
+        "employee": 35,
+        "contractor": 35
+      },
+      "technical": {
+        "total": 38,
+        "employee": 34,
+        "contractor": 4
+      },
+      "logistics": {
+        "total": 20,
+        "employee": 16,
+        "contractor": 4
+      },
+      "hsse": {
+        "total": 12,
+        "employee": 10,
+        "contractor": 2
+      },
+      "support": {
+        "total": 57,
+        "employee": 40,
+        "contractor": 17
+      },
+      "turnaround": {
+        "total": 289,
+        "employee": 29,
+        "contractor": 260
+      }
+    }
   },
   {
     "id": "refinery-eia-130",
@@ -15008,7 +19670,44 @@
       }
     ],
     "safetySummary": "Official OSHA data available for 3 years. Latest TRIR (2020): 0 (Industry Avg: ~0.6). Average TRIR: 0.00. Zero recordable incidents in latest reporting year.",
-    "hasRealOshaData": true
+    "hasRealOshaData": true,
+    "workforceMatrix": {
+      "operations": {
+        "total": 11,
+        "employee": 11,
+        "contractor": 0
+      },
+      "maintenance": {
+        "total": 5,
+        "employee": 3,
+        "contractor": 3
+      },
+      "technical": {
+        "total": 3,
+        "employee": 3,
+        "contractor": 0
+      },
+      "logistics": {
+        "total": 2,
+        "employee": 1,
+        "contractor": 0
+      },
+      "hsse": {
+        "total": 1,
+        "employee": 1,
+        "contractor": 0
+      },
+      "support": {
+        "total": 4,
+        "employee": 3,
+        "contractor": 1
+      },
+      "turnaround": {
+        "total": 22,
+        "employee": 2,
+        "contractor": 20
+      }
+    }
   },
   {
     "id": "refinery-eia-131",
@@ -15063,7 +19762,44 @@
       }
     ],
     "safetySummary": "Official OSHA data available for 1 years. Latest TRIR (2023): 0.62 (Industry Avg: ~0.6). Average TRIR: 0.62. ",
-    "hasRealOshaData": true
+    "hasRealOshaData": true,
+    "workforceMatrix": {
+      "operations": {
+        "total": 34,
+        "employee": 34,
+        "contractor": 0
+      },
+      "maintenance": {
+        "total": 16,
+        "employee": 8,
+        "contractor": 8
+      },
+      "technical": {
+        "total": 9,
+        "employee": 8,
+        "contractor": 1
+      },
+      "logistics": {
+        "total": 5,
+        "employee": 4,
+        "contractor": 1
+      },
+      "hsse": {
+        "total": 3,
+        "employee": 2,
+        "contractor": 0
+      },
+      "support": {
+        "total": 13,
+        "employee": 9,
+        "contractor": 4
+      },
+      "turnaround": {
+        "total": 67,
+        "employee": 7,
+        "contractor": 60
+      }
+    }
   },
   {
     "name": "Baytown Chemical Plant",
@@ -15229,7 +19965,44 @@
       }
     ],
     "safetySummary": "Official OSHA data available for 8 years. Latest TRIR (2024): 0.14 (Industry Avg: ~0.6). Average TRIR: 0.17. ",
-    "hasRealOshaData": true
+    "hasRealOshaData": true,
+    "workforceMatrix": {
+      "operations": {
+        "total": 378,
+        "employee": 374,
+        "contractor": 4
+      },
+      "maintenance": {
+        "total": 177,
+        "employee": 88,
+        "contractor": 88
+      },
+      "technical": {
+        "total": 97,
+        "employee": 87,
+        "contractor": 10
+      },
+      "logistics": {
+        "total": 52,
+        "employee": 41,
+        "contractor": 10
+      },
+      "hsse": {
+        "total": 31,
+        "employee": 26,
+        "contractor": 5
+      },
+      "support": {
+        "total": 146,
+        "employee": 102,
+        "contractor": 44
+      },
+      "turnaround": {
+        "total": 733,
+        "employee": 73,
+        "contractor": 660
+      }
+    }
   },
   {
     "name": "Channelview Complex",
@@ -15255,7 +20028,44 @@
         "safetySensitive": "Calculated as 60% of the total site headcount."
       }
     },
-    "nci": 1
+    "nci": 1,
+    "workforceMatrix": {
+      "operations": {
+        "total": 326,
+        "employee": 323,
+        "contractor": 3
+      },
+      "maintenance": {
+        "total": 153,
+        "employee": 76,
+        "contractor": 76
+      },
+      "technical": {
+        "total": 84,
+        "employee": 75,
+        "contractor": 8
+      },
+      "logistics": {
+        "total": 45,
+        "employee": 36,
+        "contractor": 9
+      },
+      "hsse": {
+        "total": 27,
+        "employee": 23,
+        "contractor": 4
+      },
+      "support": {
+        "total": 126,
+        "employee": 88,
+        "contractor": 38
+      },
+      "turnaround": {
+        "total": 633,
+        "employee": 63,
+        "contractor": 570
+      }
+    }
   },
   {
     "name": "Cedar Bayou Chemical Complex",
@@ -15281,7 +20091,44 @@
         "safetySensitive": "Calculated as 60% of the total site headcount."
       }
     },
-    "nci": 1
+    "nci": 1,
+    "workforceMatrix": {
+      "operations": {
+        "total": 292,
+        "employee": 289,
+        "contractor": 3
+      },
+      "maintenance": {
+        "total": 137,
+        "employee": 68,
+        "contractor": 68
+      },
+      "technical": {
+        "total": 75,
+        "employee": 67,
+        "contractor": 7
+      },
+      "logistics": {
+        "total": 40,
+        "employee": 32,
+        "contractor": 8
+      },
+      "hsse": {
+        "total": 24,
+        "employee": 20,
+        "contractor": 4
+      },
+      "support": {
+        "total": 113,
+        "employee": 79,
+        "contractor": 34
+      },
+      "turnaround": {
+        "total": 567,
+        "employee": 57,
+        "contractor": 510
+      }
+    }
   },
   {
     "name": "Sweeny Complex",
@@ -15345,7 +20192,44 @@
       }
     ],
     "safetySummary": "Official OSHA data available for 2 years. Latest TRIR (2023): 0 (Industry Avg: ~0.6). Average TRIR: 0.04. Zero recordable incidents in latest reporting year.",
-    "hasRealOshaData": true
+    "hasRealOshaData": true,
+    "workforceMatrix": {
+      "operations": {
+        "total": 326,
+        "employee": 323,
+        "contractor": 3
+      },
+      "maintenance": {
+        "total": 153,
+        "employee": 76,
+        "contractor": 76
+      },
+      "technical": {
+        "total": 84,
+        "employee": 75,
+        "contractor": 8
+      },
+      "logistics": {
+        "total": 45,
+        "employee": 36,
+        "contractor": 9
+      },
+      "hsse": {
+        "total": 27,
+        "employee": 23,
+        "contractor": 4
+      },
+      "support": {
+        "total": 126,
+        "employee": 88,
+        "contractor": 38
+      },
+      "turnaround": {
+        "total": 633,
+        "employee": 63,
+        "contractor": 570
+      }
+    }
   },
   {
     "name": "Freeport Complex",
@@ -15371,7 +20255,44 @@
         "safetySensitive": "Calculated as 60% of the total site headcount."
       }
     },
-    "nci": 1
+    "nci": 1,
+    "workforceMatrix": {
+      "operations": {
+        "total": 550,
+        "employee": 544,
+        "contractor": 5
+      },
+      "maintenance": {
+        "total": 257,
+        "employee": 129,
+        "contractor": 129
+      },
+      "technical": {
+        "total": 141,
+        "employee": 127,
+        "contractor": 14
+      },
+      "logistics": {
+        "total": 75,
+        "employee": 60,
+        "contractor": 15
+      },
+      "hsse": {
+        "total": 45,
+        "employee": 38,
+        "contractor": 7
+      },
+      "support": {
+        "total": 212,
+        "employee": 148,
+        "contractor": 64
+      },
+      "turnaround": {
+        "total": 1067,
+        "employee": 107,
+        "contractor": 960
+      }
+    }
   },
   {
     "name": "Oyster Creek",
@@ -15397,7 +20318,44 @@
         "safetySensitive": "Calculated as 60% of the total site headcount."
       }
     },
-    "nci": 1
+    "nci": 1,
+    "workforceMatrix": {
+      "operations": {
+        "total": 258,
+        "employee": 255,
+        "contractor": 3
+      },
+      "maintenance": {
+        "total": 121,
+        "employee": 60,
+        "contractor": 60
+      },
+      "technical": {
+        "total": 66,
+        "employee": 59,
+        "contractor": 7
+      },
+      "logistics": {
+        "total": 35,
+        "employee": 28,
+        "contractor": 7
+      },
+      "hsse": {
+        "total": 21,
+        "employee": 18,
+        "contractor": 3
+      },
+      "support": {
+        "total": 99,
+        "employee": 70,
+        "contractor": 30
+      },
+      "turnaround": {
+        "total": 500,
+        "employee": 50,
+        "contractor": 450
+      }
+    }
   },
   {
     "name": "Point Comfort",
@@ -15423,7 +20381,44 @@
         "safetySensitive": "Calculated as 60% of the total site headcount."
       }
     },
-    "nci": 1
+    "nci": 1,
+    "workforceMatrix": {
+      "operations": {
+        "total": 481,
+        "employee": 476,
+        "contractor": 5
+      },
+      "maintenance": {
+        "total": 225,
+        "employee": 112,
+        "contractor": 112
+      },
+      "technical": {
+        "total": 123,
+        "employee": 111,
+        "contractor": 12
+      },
+      "logistics": {
+        "total": 66,
+        "employee": 53,
+        "contractor": 13
+      },
+      "hsse": {
+        "total": 39,
+        "employee": 34,
+        "contractor": 6
+      },
+      "support": {
+        "total": 185,
+        "employee": 130,
+        "contractor": 56
+      },
+      "turnaround": {
+        "total": 933,
+        "employee": 93,
+        "contractor": 840
+      }
+    }
   },
   {
     "name": "Corpus Christi Complex",
@@ -15555,7 +20550,44 @@
       }
     ],
     "safetySummary": "Official OSHA data available for 6 years. Latest TRIR (2021): 0.26 (Industry Avg: ~0.6). Average TRIR: 0.35. ",
-    "hasRealOshaData": true
+    "hasRealOshaData": true,
+    "workforceMatrix": {
+      "operations": {
+        "total": 189,
+        "employee": 187,
+        "contractor": 2
+      },
+      "maintenance": {
+        "total": 88,
+        "employee": 44,
+        "contractor": 44
+      },
+      "technical": {
+        "total": 48,
+        "employee": 44,
+        "contractor": 5
+      },
+      "logistics": {
+        "total": 26,
+        "employee": 21,
+        "contractor": 5
+      },
+      "hsse": {
+        "total": 16,
+        "employee": 13,
+        "contractor": 2
+      },
+      "support": {
+        "total": 73,
+        "employee": 51,
+        "contractor": 22
+      },
+      "turnaround": {
+        "total": 367,
+        "employee": 37,
+        "contractor": 330
+      }
+    }
   },
   {
     "name": "Port Arthur Chemicals",
@@ -15636,7 +20668,44 @@
       }
     ],
     "safetySummary": "Official OSHA data available for 3 years. Latest TRIR (2018): 0.42 (Industry Avg: ~0.6). Average TRIR: 0.35. ",
-    "hasRealOshaData": true
+    "hasRealOshaData": true,
+    "workforceMatrix": {
+      "operations": {
+        "total": 172,
+        "employee": 170,
+        "contractor": 2
+      },
+      "maintenance": {
+        "total": 80,
+        "employee": 40,
+        "contractor": 40
+      },
+      "technical": {
+        "total": 44,
+        "employee": 40,
+        "contractor": 4
+      },
+      "logistics": {
+        "total": 24,
+        "employee": 19,
+        "contractor": 5
+      },
+      "hsse": {
+        "total": 14,
+        "employee": 12,
+        "contractor": 2
+      },
+      "support": {
+        "total": 66,
+        "employee": 46,
+        "contractor": 20
+      },
+      "turnaround": {
+        "total": 333,
+        "employee": 33,
+        "contractor": 300
+      }
+    }
   },
   {
     "name": "Port Arthur Steam Cracker",
@@ -15717,7 +20786,44 @@
       }
     ],
     "safetySummary": "Official OSHA data available for 3 years. Latest TRIR (2018): 0.42 (Industry Avg: ~0.6). Average TRIR: 0.36. ",
-    "hasRealOshaData": true
+    "hasRealOshaData": true,
+    "workforceMatrix": {
+      "operations": {
+        "total": 109,
+        "employee": 108,
+        "contractor": 1
+      },
+      "maintenance": {
+        "total": 51,
+        "employee": 26,
+        "contractor": 26
+      },
+      "technical": {
+        "total": 28,
+        "employee": 25,
+        "contractor": 3
+      },
+      "logistics": {
+        "total": 15,
+        "employee": 12,
+        "contractor": 3
+      },
+      "hsse": {
+        "total": 9,
+        "employee": 8,
+        "contractor": 1
+      },
+      "support": {
+        "total": 42,
+        "employee": 29,
+        "contractor": 13
+      },
+      "turnaround": {
+        "total": 212,
+        "employee": 21,
+        "contractor": 191
+      }
+    }
   },
   {
     "name": "Deer Park",
@@ -15743,7 +20849,44 @@
         "safetySensitive": "Calculated as 60% of the total site headcount."
       }
     },
-    "nci": 1
+    "nci": 1,
+    "workforceMatrix": {
+      "operations": {
+        "total": 146,
+        "employee": 145,
+        "contractor": 1
+      },
+      "maintenance": {
+        "total": 68,
+        "employee": 34,
+        "contractor": 34
+      },
+      "technical": {
+        "total": 37,
+        "employee": 34,
+        "contractor": 4
+      },
+      "logistics": {
+        "total": 20,
+        "employee": 16,
+        "contractor": 4
+      },
+      "hsse": {
+        "total": 12,
+        "employee": 10,
+        "contractor": 2
+      },
+      "support": {
+        "total": 56,
+        "employee": 39,
+        "contractor": 17
+      },
+      "turnaround": {
+        "total": 283,
+        "employee": 28,
+        "contractor": 255
+      }
+    }
   },
   {
     "name": "Norco Manufacturing Complex",
@@ -15824,7 +20967,44 @@
       }
     ],
     "safetySummary": "Official OSHA data available for 3 years. Latest TRIR (2024): 0.76 (Industry Avg: ~0.6). Average TRIR: 0.39. ",
-    "hasRealOshaData": true
+    "hasRealOshaData": true,
+    "workforceMatrix": {
+      "operations": {
+        "total": 258,
+        "employee": 255,
+        "contractor": 3
+      },
+      "maintenance": {
+        "total": 121,
+        "employee": 60,
+        "contractor": 60
+      },
+      "technical": {
+        "total": 66,
+        "employee": 59,
+        "contractor": 7
+      },
+      "logistics": {
+        "total": 35,
+        "employee": 28,
+        "contractor": 7
+      },
+      "hsse": {
+        "total": 21,
+        "employee": 18,
+        "contractor": 3
+      },
+      "support": {
+        "total": 99,
+        "employee": 70,
+        "contractor": 30
+      },
+      "turnaround": {
+        "total": 500,
+        "employee": 50,
+        "contractor": 450
+      }
+    }
   },
   {
     "name": "Geismar Complex",
@@ -15850,7 +21030,44 @@
         "safetySensitive": "Calculated as 60% of the total site headcount."
       }
     },
-    "nci": 1
+    "nci": 1,
+    "workforceMatrix": {
+      "operations": {
+        "total": 152,
+        "employee": 151,
+        "contractor": 2
+      },
+      "maintenance": {
+        "total": 71,
+        "employee": 36,
+        "contractor": 36
+      },
+      "technical": {
+        "total": 39,
+        "employee": 35,
+        "contractor": 4
+      },
+      "logistics": {
+        "total": 21,
+        "employee": 17,
+        "contractor": 4
+      },
+      "hsse": {
+        "total": 12,
+        "employee": 11,
+        "contractor": 2
+      },
+      "support": {
+        "total": 59,
+        "employee": 41,
+        "contractor": 18
+      },
+      "turnaround": {
+        "total": 295,
+        "employee": 30,
+        "contractor": 266
+      }
+    }
   },
   {
     "name": "Plaquemine",
@@ -15876,7 +21093,44 @@
         "safetySensitive": "Calculated as 60% of the total site headcount."
       }
     },
-    "nci": 1
+    "nci": 1,
+    "workforceMatrix": {
+      "operations": {
+        "total": 172,
+        "employee": 170,
+        "contractor": 2
+      },
+      "maintenance": {
+        "total": 80,
+        "employee": 40,
+        "contractor": 40
+      },
+      "technical": {
+        "total": 44,
+        "employee": 40,
+        "contractor": 4
+      },
+      "logistics": {
+        "total": 24,
+        "employee": 19,
+        "contractor": 5
+      },
+      "hsse": {
+        "total": 14,
+        "employee": 12,
+        "contractor": 2
+      },
+      "support": {
+        "total": 66,
+        "employee": 46,
+        "contractor": 20
+      },
+      "turnaround": {
+        "total": 333,
+        "employee": 33,
+        "contractor": 300
+      }
+    }
   },
   {
     "name": "Lake Charles",
@@ -15902,7 +21156,44 @@
         "safetySensitive": "Calculated as 60% of the total site headcount."
       }
     },
-    "nci": 1
+    "nci": 1,
+    "workforceMatrix": {
+      "operations": {
+        "total": 172,
+        "employee": 170,
+        "contractor": 2
+      },
+      "maintenance": {
+        "total": 80,
+        "employee": 40,
+        "contractor": 40
+      },
+      "technical": {
+        "total": 44,
+        "employee": 40,
+        "contractor": 4
+      },
+      "logistics": {
+        "total": 24,
+        "employee": 19,
+        "contractor": 5
+      },
+      "hsse": {
+        "total": 14,
+        "employee": 12,
+        "contractor": 2
+      },
+      "support": {
+        "total": 66,
+        "employee": 46,
+        "contractor": 20
+      },
+      "turnaround": {
+        "total": 333,
+        "employee": 33,
+        "contractor": 300
+      }
+    }
   },
   {
     "name": "Sulphur",
@@ -15928,7 +21219,44 @@
         "safetySensitive": "Calculated as 60% of the total site headcount."
       }
     },
-    "nci": 1
+    "nci": 1,
+    "workforceMatrix": {
+      "operations": {
+        "total": 223,
+        "employee": 221,
+        "contractor": 2
+      },
+      "maintenance": {
+        "total": 104,
+        "employee": 52,
+        "contractor": 52
+      },
+      "technical": {
+        "total": 57,
+        "employee": 51,
+        "contractor": 6
+      },
+      "logistics": {
+        "total": 31,
+        "employee": 24,
+        "contractor": 6
+      },
+      "hsse": {
+        "total": 18,
+        "employee": 16,
+        "contractor": 3
+      },
+      "support": {
+        "total": 86,
+        "employee": 60,
+        "contractor": 26
+      },
+      "turnaround": {
+        "total": 433,
+        "employee": 43,
+        "contractor": 390
+      }
+    }
   },
   {
     "name": "Baton Rouge Chemical Plant",
@@ -16088,7 +21416,44 @@
         "safetySensitive": "Calculated as 60% of the total site headcount."
       }
     },
-    "nci": 1
+    "nci": 1,
+    "workforceMatrix": {
+      "operations": {
+        "total": 129,
+        "employee": 128,
+        "contractor": 1
+      },
+      "maintenance": {
+        "total": 60,
+        "employee": 30,
+        "contractor": 30
+      },
+      "technical": {
+        "total": 33,
+        "employee": 30,
+        "contractor": 3
+      },
+      "logistics": {
+        "total": 18,
+        "employee": 14,
+        "contractor": 4
+      },
+      "hsse": {
+        "total": 11,
+        "employee": 9,
+        "contractor": 2
+      },
+      "support": {
+        "total": 50,
+        "employee": 35,
+        "contractor": 15
+      },
+      "turnaround": {
+        "total": 250,
+        "employee": 25,
+        "contractor": 225
+      }
+    }
   },
   {
     "name": "Orange",
@@ -16114,7 +21479,44 @@
         "safetySensitive": "Calculated as 60% of the total site headcount."
       }
     },
-    "nci": 1
+    "nci": 1,
+    "workforceMatrix": {
+      "operations": {
+        "total": 112,
+        "employee": 111,
+        "contractor": 1
+      },
+      "maintenance": {
+        "total": 52,
+        "employee": 26,
+        "contractor": 26
+      },
+      "technical": {
+        "total": 29,
+        "employee": 26,
+        "contractor": 3
+      },
+      "logistics": {
+        "total": 15,
+        "employee": 12,
+        "contractor": 3
+      },
+      "hsse": {
+        "total": 9,
+        "employee": 8,
+        "contractor": 1
+      },
+      "support": {
+        "total": 43,
+        "employee": 30,
+        "contractor": 13
+      },
+      "turnaround": {
+        "total": 217,
+        "employee": 22,
+        "contractor": 195
+      }
+    }
   },
   {
     "name": "Longview",
@@ -16161,7 +21563,44 @@
       }
     ],
     "safetySummary": "Official OSHA data available for 1 years. Latest TRIR (2024): 0 (Industry Avg: ~0.6). Average TRIR: 0.00. Zero recordable incidents in latest reporting year.",
-    "hasRealOshaData": true
+    "hasRealOshaData": true,
+    "workforceMatrix": {
+      "operations": {
+        "total": 112,
+        "employee": 111,
+        "contractor": 1
+      },
+      "maintenance": {
+        "total": 52,
+        "employee": 26,
+        "contractor": 26
+      },
+      "technical": {
+        "total": 29,
+        "employee": 26,
+        "contractor": 3
+      },
+      "logistics": {
+        "total": 15,
+        "employee": 12,
+        "contractor": 3
+      },
+      "hsse": {
+        "total": 9,
+        "employee": 8,
+        "contractor": 1
+      },
+      "support": {
+        "total": 43,
+        "employee": 30,
+        "contractor": 13
+      },
+      "turnaround": {
+        "total": 217,
+        "employee": 22,
+        "contractor": 195
+      }
+    }
   },
   {
     "name": "Chocolate Bayou",
@@ -16187,7 +21626,44 @@
         "safetySensitive": "Calculated as 60% of the total site headcount."
       }
     },
-    "nci": 1
+    "nci": 1,
+    "workforceMatrix": {
+      "operations": {
+        "total": 309,
+        "employee": 306,
+        "contractor": 3
+      },
+      "maintenance": {
+        "total": 145,
+        "employee": 72,
+        "contractor": 72
+      },
+      "technical": {
+        "total": 79,
+        "employee": 71,
+        "contractor": 8
+      },
+      "logistics": {
+        "total": 42,
+        "employee": 34,
+        "contractor": 8
+      },
+      "hsse": {
+        "total": 25,
+        "employee": 22,
+        "contractor": 4
+      },
+      "support": {
+        "total": 119,
+        "employee": 83,
+        "contractor": 36
+      },
+      "turnaround": {
+        "total": 600,
+        "employee": 60,
+        "contractor": 540
+      }
+    }
   },
   {
     "name": "Battleground Manufacturing Complex",
@@ -16213,7 +21689,44 @@
         "safetySensitive": "Calculated as 60% of the total site headcount."
       }
     },
-    "nci": 1
+    "nci": 1,
+    "workforceMatrix": {
+      "operations": {
+        "total": 137,
+        "employee": 136,
+        "contractor": 1
+      },
+      "maintenance": {
+        "total": 64,
+        "employee": 32,
+        "contractor": 32
+      },
+      "technical": {
+        "total": 35,
+        "employee": 32,
+        "contractor": 4
+      },
+      "logistics": {
+        "total": 19,
+        "employee": 15,
+        "contractor": 4
+      },
+      "hsse": {
+        "total": 11,
+        "employee": 10,
+        "contractor": 2
+      },
+      "support": {
+        "total": 53,
+        "employee": 37,
+        "contractor": 16
+      },
+      "turnaround": {
+        "total": 267,
+        "employee": 27,
+        "contractor": 240
+      }
+    }
   },
   {
     "name": "Beaver County Complex",
@@ -16239,7 +21752,44 @@
         "safetySensitive": "Calculated as 60% of the total site headcount."
       }
     },
-    "nci": 1
+    "nci": 1,
+    "workforceMatrix": {
+      "operations": {
+        "total": 275,
+        "employee": 272,
+        "contractor": 3
+      },
+      "maintenance": {
+        "total": 129,
+        "employee": 64,
+        "contractor": 64
+      },
+      "technical": {
+        "total": 70,
+        "employee": 63,
+        "contractor": 7
+      },
+      "logistics": {
+        "total": 38,
+        "employee": 30,
+        "contractor": 8
+      },
+      "hsse": {
+        "total": 23,
+        "employee": 19,
+        "contractor": 3
+      },
+      "support": {
+        "total": 106,
+        "employee": 74,
+        "contractor": 32
+      },
+      "turnaround": {
+        "total": 533,
+        "employee": 53,
+        "contractor": 480
+      }
+    }
   },
   {
     "name": "Morris Complex",
@@ -16265,7 +21815,44 @@
         "safetySensitive": "Calculated as 60% of the total site headcount."
       }
     },
-    "nci": 1
+    "nci": 1,
+    "workforceMatrix": {
+      "operations": {
+        "total": 94,
+        "employee": 94,
+        "contractor": 1
+      },
+      "maintenance": {
+        "total": 44,
+        "employee": 22,
+        "contractor": 22
+      },
+      "technical": {
+        "total": 24,
+        "employee": 22,
+        "contractor": 2
+      },
+      "logistics": {
+        "total": 13,
+        "employee": 10,
+        "contractor": 3
+      },
+      "hsse": {
+        "total": 8,
+        "employee": 7,
+        "contractor": 1
+      },
+      "support": {
+        "total": 36,
+        "employee": 26,
+        "contractor": 11
+      },
+      "turnaround": {
+        "total": 183,
+        "employee": 18,
+        "contractor": 165
+      }
+    }
   },
   {
     "name": "Clinton Complex",
@@ -16291,7 +21878,44 @@
         "safetySensitive": "Calculated as 60% of the total site headcount."
       }
     },
-    "nci": 1
+    "nci": 1,
+    "workforceMatrix": {
+      "operations": {
+        "total": 77,
+        "employee": 77,
+        "contractor": 1
+      },
+      "maintenance": {
+        "total": 36,
+        "employee": 18,
+        "contractor": 18
+      },
+      "technical": {
+        "total": 20,
+        "employee": 18,
+        "contractor": 2
+      },
+      "logistics": {
+        "total": 11,
+        "employee": 8,
+        "contractor": 2
+      },
+      "hsse": {
+        "total": 6,
+        "employee": 5,
+        "contractor": 1
+      },
+      "support": {
+        "total": 30,
+        "employee": 21,
+        "contractor": 9
+      },
+      "turnaround": {
+        "total": 150,
+        "employee": 15,
+        "contractor": 135
+      }
+    }
   },
   {
     "name": "Calvert City",
@@ -16317,6 +21941,43 @@
         "safetySensitive": "Calculated as 60% of the total site headcount."
       }
     },
-    "nci": 1
+    "nci": 1,
+    "workforceMatrix": {
+      "operations": {
+        "total": 52,
+        "employee": 51,
+        "contractor": 1
+      },
+      "maintenance": {
+        "total": 24,
+        "employee": 12,
+        "contractor": 12
+      },
+      "technical": {
+        "total": 13,
+        "employee": 12,
+        "contractor": 1
+      },
+      "logistics": {
+        "total": 7,
+        "employee": 6,
+        "contractor": 1
+      },
+      "hsse": {
+        "total": 4,
+        "employee": 4,
+        "contractor": 1
+      },
+      "support": {
+        "total": 20,
+        "employee": 14,
+        "contractor": 6
+      },
+      "turnaround": {
+        "total": 100,
+        "employee": 10,
+        "contractor": 90
+      }
+    }
   }
 ]
