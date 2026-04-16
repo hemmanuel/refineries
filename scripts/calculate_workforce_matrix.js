@@ -29,8 +29,8 @@ function main() {
   const overallContractorRatio = routineContractorsCSB / totalRoutineCSB; // 0.40
   const overallEmployeeRatio = routineEmployeesCSB / totalRoutineCSB; // 0.60
 
-  // Turnaround multiplier based on CSB data (Turnaround Contractors / Routine Employees)
-  const turnaroundMultiplier = rawSources.csb.turnaroundContractors / routineEmployeesCSB;
+  // Turnaround multiplier based on CSB data (Turnaround Contractors / Total Routine Workforce)
+  const turnaroundMultiplier = rawSources.csb.turnaroundContractors / totalRoutineCSB;
 
   // Operations employee percentage from USW
   const opsEmployeePct = rawSources.usw.operationsEmployeePercentage || 0.95;

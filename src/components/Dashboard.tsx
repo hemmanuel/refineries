@@ -245,8 +245,8 @@ const Dashboard: React.FC<DashboardProps> = ({ padd, refineries, onPaddSelect, o
       return `This figure represents the estimated total workforce across all ${count} refineries in ${regionName}. \n\nIt is the sum of full-time employees (FTEs) and long-term contractors. \n\nAggregate Metric: ~${ratio} personnel per 1,000 bpd of capacity. This reflects the overall operational intensity of the region's refining infrastructure.`;
     }
     if (metric === 'turnaround') {
-       const multiplier = (stats.turnaround / stats.headcount).toFixed(1);
-      return `This figure represents the aggregated peak turnaround workforce opportunity in ${regionName}. \n\nIt is the sum of the estimated peak headcount required for major maintenance events. \n\nAggregate Metric: ~${multiplier}x the steady-state workforce. This represents the total size of the seasonal/contractor workforce pool.`;
+       const multiplier = (stats.turnaround / stats.headcount).toFixed(2);
+      return `This figure represents the aggregated peak turnaround workforce opportunity in ${regionName}. \n\nIt is the sum of the estimated peak headcount required for major maintenance events. \n\nAggregate Metric: ~${multiplier}x the total steady-state workforce (equivalent to ~1.08x the direct employee count). This represents the total size of the seasonal/contractor workforce pool.`;
     }
     if (metric === 'safety') {
        const percentage = ((stats.safety / stats.headcount) * 100).toFixed(0);
