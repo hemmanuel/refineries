@@ -5,9 +5,10 @@ import Dashboard from './components/Dashboard';
 import PricingStrategy from './components/PricingStrategy';
 import OperatorsExplorer from './components/OperatorsExplorer';
 import AIAnalyst from './components/AIAnalyst';
+import WorkforceExplorer from './components/WorkforceExplorer';
 import { Loader2 } from 'lucide-react';
 
-type View = 'map' | 'dashboard' | 'pricing' | 'operators' | 'analyst';
+type View = 'map' | 'dashboard' | 'pricing' | 'operators' | 'analyst' | 'workforce';
 
 function App() {
   const [refineries, setRefineries] = useState<ParsedRefinery[]>([]);
@@ -87,6 +88,13 @@ function App() {
           <span className="text-[10px] opacity-70">Research</span>
         </button>
         <button 
+          onClick={() => setView('workforce')}
+          className={`text-sm font-medium hover:text-blue-400 transition-colors whitespace-nowrap flex flex-col items-center ${view === 'workforce' ? 'text-blue-400' : 'text-gray-300'}`}
+        >
+          <span>Workforce Explorer</span>
+          <span className="text-[10px] opacity-70">BLS Data</span>
+        </button>
+        <button 
           onClick={() => { setSelectedPadd('all'); setView('dashboard'); }}
           className={`text-sm font-medium hover:text-blue-400 transition-colors whitespace-nowrap flex flex-col items-center ${view === 'dashboard' && selectedPadd === 'all' ? 'text-blue-400' : 'text-gray-300'}`}
         >
@@ -120,6 +128,8 @@ function App() {
           />
         ) : view === 'analyst' ? (
           <AIAnalyst refineries={refineries} />
+        ) : view === 'workforce' ? (
+          <WorkforceExplorer />
         ) : (
           <Dashboard 
             padd={selectedPadd!} 
