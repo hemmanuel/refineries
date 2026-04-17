@@ -66,7 +66,7 @@ const AIAnalyst: React.FC<AIAnalystProps> = ({ refineries }) => {
         2. CRITICAL: When you mention a specific refinery by name, you MUST enclose it in TRIPLE CURLY BRACES like this: {{{Refinery Name}}}. This allows the user to click and view its details.
            Example: "The {{{Marathon Garyville Refinery}}} has a significant capacity..."
         3. Do NOT include Markdown links or other citation formats inside the braces. Just the plain name.
-        4. You can perform calculations (e.g., total capacity for a specific company, average headcount in a region).
+        4. You can perform calculations (e.g., total capacity for a specific company, average routine workforce in a region).
         5. If the user asks about "safety sensitive" or "turnaround" numbers, use the estimates provided in the data.
         6. If the data doesn't contain the answer, state that clearly based on the available dataset.
         7. Format your responses with clear headings, bullet points, or tables if appropriate for readability.

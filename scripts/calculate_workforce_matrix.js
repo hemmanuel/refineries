@@ -32,9 +32,6 @@ function main() {
   // Turnaround multiplier based on CSB data (Turnaround Contractors / Total Routine Workforce)
   const turnaroundMultiplier = rawSources.csb.turnaroundContractors / totalRoutineCSB;
 
-  // Operations employee percentage from USW
-  const opsEmployeePct = rawSources.usw.operationsEmployeePercentage || 0.95;
-
   facilitiesData.forEach(props => {
     if (!props.estimate || !props.estimate.totalHeadcount) return;
 
@@ -46,74 +43,103 @@ function main() {
 
     // 2. Distribute employees based on BLS occupational data
     const emp = {
-      operations: Math.round(totalEmployees * normalizedFunc.operations),
+      production: Math.round(totalEmployees * normalizedFunc.production),
       maintenance: Math.round(totalEmployees * normalizedFunc.maintenance),
-      technical: Math.round(totalEmployees * normalizedFunc.technical),
-      logistics: Math.round(totalEmployees * normalizedFunc.logistics),
-      hsse: Math.round(totalEmployees * normalizedFunc.hsse),
-      support: 0 // Will calculate as remainder to ensure exact sum
+      construction: Math.round(totalEmployees * normalizedFunc.construction),
+      logistics: 0 // Will calculate as remainder to ensure exact sum
     };
-    emp.support = totalEmployees - (emp.operations + emp.maintenance + emp.technical + emp.logistics + emp.hsse);
+    emp.logistics = totalEmployees - (emp.production + emp.maintenance + emp.construction);
 
-    // 3. Calculate contractors based on WWU report for maintenance, USW for operations, and estimates for the rest
-    // WWU report: 1027 contractors / (164 employees + 1027 contractors) = ~86.2% contractors in maintenance
-    // Using the WWU ratio directly: contractors = employees * (1027 / 164) = employees * 6.262
-    const maintContractorRatio = 1027 / 164;
-
+    // 3. Calculate contractors based on specified ratios for production (2%) and logistics (5%), 
+    // and distribute the rest to Maintenance and Construction to hit the 40% site-wide average.
     const cont = {
-      operations: Math.round(emp.operations * ((1 - opsEmployeePct) / opsEmployeePct)),
-      maintenance: Math.round(emp.maintenance * maintContractorRatio),
-      technical: Math.round(emp.technical * (0.10 / 0.90)), // Estimate: 10% contractors
-      logistics: Math.round(emp.logistics * (0.20 / 0.80)), // Estimate: 20% contractors
-      hsse: Math.round(emp.hsse * (0.15 / 0.85)), // Estimate: 15% contractors
-      support: 0 // Will calculate as remainder to ensure totalContractors matches the 40% site-wide average
+      production: Math.round(emp.production * (0.02 / 0.98)),
+      logistics: Math.round(emp.logistics * (0.05 / 0.95)),
+      maintenance: 0,
+      construction: 0
     };
 
-    // 4. Assign all remaining contractors to support to ensure the site-wide 40% contractor average is maintained
-    const nonSupportContractors = cont.operations + cont.maintenance + cont.technical + cont.logistics + cont.hsse;
-    cont.support = Math.max(0, totalContractors - nonSupportContractors);
+    // 4. Assign all remaining contractors to maintenance and construction proportionally
+    const remainingContractors = Math.max(0, totalContractors - (cont.production + cont.logistics));
+    const maintConstEmpTotal = emp.maintenance + emp.construction;
+    
+    if (maintConstEmpTotal > 0) {
+      cont.maintenance = Math.round(remainingContractors * (emp.maintenance / maintConstEmpTotal));
+      cont.construction = remainingContractors - cont.maintenance;
+    } else {
+      cont.maintenance = Math.round(remainingContractors / 2);
+      cont.construction = remainingContractors - cont.maintenance;
+    }
 
     const matrix = {
-      operations: {
-        total: emp.operations + cont.operations,
-        employee: emp.operations,
-        contractor: cont.operations
+      production: {
+        total: emp.production + cont.production,
+        employee: emp.production,
+        contractor: cont.production
       },
       maintenance: {
         total: emp.maintenance + cont.maintenance,
         employee: emp.maintenance,
         contractor: cont.maintenance
       },
-      technical: {
-        total: emp.technical + cont.technical,
-        employee: emp.technical,
-        contractor: cont.technical
+      construction: {
+        total: emp.construction + cont.construction,
+        employee: emp.construction,
+        contractor: cont.construction
       },
       logistics: {
         total: emp.logistics + cont.logistics,
         employee: emp.logistics,
         contractor: cont.logistics
       },
-      hsse: {
-        total: emp.hsse + cont.hsse,
-        employee: emp.hsse,
-        contractor: cont.hsse
-      },
-      support: {
-        total: emp.support + cont.support,
-        employee: emp.support,
-        contractor: cont.support
-      },
       turnaround: {
         // Turnaround is heavily contractor based (10% employee, 90% contractor)
-        total: Math.round(baseHeadcount * turnaroundMultiplier),
-        employee: Math.round(baseHeadcount * turnaroundMultiplier * 0.1),
-        contractor: Math.round(baseHeadcount * turnaroundMultiplier * 0.9)
+        total: Math.round(totalEmployees * 1.5),
+        employee: Math.round(totalEmployees * 1.5 * 0.1),
+        contractor: Math.round(totalEmployees * 1.5 * 0.9)
       }
     };
 
     props.workforceMatrix = matrix;
   });
+
+  // Fix rounding errors to exactly match BLS targets
+  const targetBLS = {
+    production: 42150,
+    maintenance: 8640,
+    construction: 8060,
+    logistics: 9620
+  };
+
+  let currentSum = { production: 0, maintenance: 0, construction: 0, logistics: 0 };
+  facilitiesData.forEach(f => {
+    if (f.type === 'Oil Refinery' && f.workforceMatrix) {
+      currentSum.production += f.workforceMatrix.production.employee;
+      currentSum.maintenance += f.workforceMatrix.maintenance.employee;
+      currentSum.construction += f.workforceMatrix.construction.employee;
+      currentSum.logistics += f.workforceMatrix.logistics.employee;
+    }
+  });
+
+  const largest = facilitiesData.filter(f => f.type === 'Oil Refinery').sort((a,b) => b.capacity - a.capacity)[0];
+  if (largest && largest.workforceMatrix) {
+    const diffProd = targetBLS.production - currentSum.production;
+    const diffMaint = targetBLS.maintenance - currentSum.maintenance;
+    const diffConst = targetBLS.construction - currentSum.construction;
+    const diffLog = targetBLS.logistics - currentSum.logistics;
+
+    largest.workforceMatrix.production.employee += diffProd;
+    largest.workforceMatrix.production.total += diffProd;
+    
+    largest.workforceMatrix.maintenance.employee += diffMaint;
+    largest.workforceMatrix.maintenance.total += diffMaint;
+    
+    largest.workforceMatrix.construction.employee += diffConst;
+    largest.workforceMatrix.construction.total += diffConst;
+    
+    largest.workforceMatrix.logistics.employee += diffLog;
+    largest.workforceMatrix.logistics.total += diffLog;
+  }
 
   fs.writeFileSync(FACILITIES_FILE, JSON.stringify(facilitiesData, null, 2));
   console.log(`Successfully updated ${FACILITIES_FILE} with workforce matrices.`);

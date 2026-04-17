@@ -104,7 +104,7 @@ const OperatorsExplorer: React.FC<OperatorsExplorerProps> = ({ refineries, onBac
                         <Droplet className="w-4 h-4" /> {(op.capacity / 1000).toFixed(0)}k bpd
                       </span>
                       <span className="flex items-center gap-1">
-                        <Users className="w-4 h-4" /> ~{op.headcount.toLocaleString()} Employees
+                        <Users className="w-4 h-4" /> ~{op.headcount.toLocaleString()} Routine Workforce
                       </span>
                     </div>
                   </div>

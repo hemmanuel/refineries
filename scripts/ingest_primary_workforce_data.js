@@ -65,21 +65,34 @@ async function extractBLSData() {
     refineryData = data.filter(row => row.NAICS === '324100' || row.NAICS === 324100);
   }
 
-  const totalEmpRow = refineryData.find(row => row.O_GROUP === 'total');
-  const totalEmp = totalEmpRow ? parseFloat(totalEmpRow.TOT_EMP) : 1;
+  // Filter for the 4 major labor categories
+  const laborData = refineryData.filter(row => 
+    row.O_GROUP === 'major' && 
+    (row.OCC_CODE.startsWith('47-') || // Construction
+     row.OCC_CODE.startsWith('49-') || // Maintenance
+     row.OCC_CODE.startsWith('51-') || // Production
+     row.OCC_CODE.startsWith('53-'))   // Logistics
+  );
 
-  const getGroupPercentage = (socPrefix) => {
-    const groupRow = refineryData.find(row => row.O_GROUP === 'major' && row.OCC_CODE.startsWith(socPrefix));
-    return groupRow ? (parseFloat(groupRow.TOT_EMP) / totalEmp) : 0;
+  const getGroupEmp = (socPrefix) => {
+    const groupRow = laborData.find(row => row.OCC_CODE.startsWith(socPrefix));
+    return groupRow ? (parseFloat(groupRow.TOT_EMP) || 0) : 0;
   };
 
+  const emp = {
+    construction: getGroupEmp('47-'),
+    maintenance: getGroupEmp('49-'),
+    production: getGroupEmp('51-'),
+    logistics: getGroupEmp('53-')
+  };
+
+  const totalLaborEmp = emp.construction + emp.maintenance + emp.production + emp.logistics;
+
   const ratios = {
-    operations: getGroupPercentage('51-'), // Production Occupations
-    maintenance: getGroupPercentage('49-'), // Installation, Maintenance, and Repair
-    technical: getGroupPercentage('17-'), // Architecture and Engineering
-    logistics: getGroupPercentage('53-'), // Transportation and Material Moving
-    hsse: getGroupPercentage('19-'), // Life, Physical, and Social Science
-    support: getGroupPercentage('43-') + getGroupPercentage('11-') // Office/Admin + Management
+    construction: emp.construction / totalLaborEmp,
+    maintenance: emp.maintenance / totalLaborEmp,
+    production: emp.production / totalLaborEmp,
+    logistics: emp.logistics / totalLaborEmp
   };
 
   return ratios;
@@ -120,59 +133,35 @@ async function extractSB54Data() {
   return JSON.parse(jsonStr);
 }
 
-async function extractUSWData() {
-  console.log('Extracting USW NOBP Data...');
-  const url = 'https://en.wikipedia.org/wiki/2015_United_Steel_Workers_Oil_Refinery_strike';
-  const response = await axios.get(url, { headers: { 'User-Agent': 'Mozilla/5.0' } });
-  const $ = cheerio.load(response.data);
-  const text = $('body').text().replace(/\s+/g, ' ');
-
-  const prompt = `
-  Based on the provided text about the USW refinery strike, extract the approximate percentage of direct employees (vs contractors) legally required or practically enforced for daily process operations. If the exact percentage is not stated, infer it based on the union's stance on contractors in operations vs maintenance.
-  
-  Return ONLY a JSON object with the key "operationsEmployeePercentage" and the numerical value (e.g., 0.95). Do not include any other text.
-  
-  Text:
-  ${text.substring(0, 30000)}
-  `;
-
-  const aiResponse = await ai.models.generateContent({
-    model: 'gemini-2.5-flash',
-    contents: prompt,
-  });
-
-  let jsonStr = aiResponse.text.replace(/```json/g, '').replace(/```/g, '').trim();
-  try {
-    return JSON.parse(jsonStr);
-  } catch (e) {
-    console.error("Failed to parse USW LLM response:", jsonStr);
-    return { operationsEmployeePercentage: 0.95 };
-  }
-}
-
 async function main() {
   try {
     const blsRatios = await extractBLSData();
     const csbData = await extractCSBData();
     const sb54Data = await extractSB54Data();
-    const uswData = await extractUSWData();
 
     const primaryRatios = {
       functionalBreakdown: {
-        operations: blsRatios.operations || 0.30,
-        maintenance: blsRatios.maintenance || 0.30,
-        technical: blsRatios.technical || 0.15,
-        logistics: blsRatios.logistics || 0.10,
-        hsse: blsRatios.hsse || 0.05,
-        support: blsRatios.support || 0.10
+        production: blsRatios.production || 0.60,
+        maintenance: blsRatios.maintenance || 0.15,
+        construction: blsRatios.construction || 0.10,
+        logistics: blsRatios.logistics || 0.15
       },
       contractorSplits: {
-        operations: {
-          employee: uswData.operationsEmployeePercentage || 0.95,
-          contractor: 1 - (uswData.operationsEmployeePercentage || 0.95)
+        production: {
+          employee: 1.0,
+          contractor: 0.0
+        },
+        logistics: {
+          employee: 1.0,
+          contractor: 0.0
         },
         maintenance: {
           // Derived dynamically in calculate_workforce_matrix.js based on CSB 40% overall contractor rate
+          employee: 0.4,
+          contractor: 0.6
+        },
+        construction: {
+          // Derived dynamically in calculate_workforce_matrix.js
           employee: 0.4,
           contractor: 0.6
         },
@@ -184,8 +173,7 @@ async function main() {
       rawSources: {
         bls: blsRatios,
         csb: csbData,
-        sb54: sb54Data,
-        usw: uswData
+        sb54: sb54Data
       }
     };
 

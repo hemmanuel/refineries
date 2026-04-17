@@ -12,7 +12,7 @@ interface MetricExplanationProps {
 
 const MetricExplanation: React.FC<MetricExplanationProps> = ({ refinery, metric, value, explanation, onClose }) => {
   const metricTitles = {
-    headcount: "Total Headcount Analysis",
+    headcount: "Total Routine Workforce Analysis",
     turnaround: "Turnaround Peak Analysis",
     safety: "Safety Sensitive Roles Analysis",
     count: "Refinery Count Analysis",

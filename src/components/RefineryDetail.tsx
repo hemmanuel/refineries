@@ -209,7 +209,7 @@ const RefineryDetail: React.FC<RefineryDetailProps> = ({ refinery, onClose, mode
                     <div className="flex items-center justify-between mb-2">
                       <span className="text-sm text-gray-600 flex items-center gap-2">
                         <Users className="w-4 h-4 text-gray-400 group-hover:text-blue-500 transition-colors" />
-                        Total Headcount
+                        Total Routine Workforce
                       </span>
                       <span className="text-xl font-bold text-gray-900 group-hover:text-blue-600 transition-colors">
                         ~{estimate.totalHeadcount.toLocaleString()}
@@ -325,7 +325,7 @@ const RefineryDetail: React.FC<RefineryDetailProps> = ({ refinery, onClose, mode
                   <h4 className="text-sm font-semibold text-indigo-900 mb-2">Methodology & Primary Sources</h4>
                   <p className="text-xs text-indigo-800 space-y-2">
                     <span className="block">Functional headcount distributions are derived directly from <strong>BLS OEWS NAICS 324100</strong> occupational data for direct employees.</span>
-                    <span className="block mt-1">Based on the <strong>WWU Washington State Refinery Study</strong>, routine contractor utilization is allocated heavily to the Maintenance function (86% contractors), with Technical, Logistics, HSSE, and Support modeled as direct-hire functions based on BLS OEWS distributions. <strong>USW</strong> labor records inform the near-100% direct employee requirement for core operations.</span>
+                    <span className="block mt-1">Based on the <strong>CSB BP Texas City Report</strong>, routine contractors comprise approximately 40% of the site-wide workforce. Production and Logistics roles are modeled with minimal contractor utilization (2% and 5% respectively). The remainder of the 40% contractor pool is allocated exclusively to Maintenance and Construction, aligning with <strong>California SB 54</strong> definitions of the contracted refinery workforce.</span>
                     <span className="block mt-1">Turnaround contractor surges are derived from verified federal disaster investigations, specifically the <strong>CSB BP Texas City Report</strong>.</span>
                   </p>
                 </div>

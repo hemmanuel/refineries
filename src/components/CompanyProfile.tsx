@@ -79,7 +79,7 @@ const CompanyProfile: React.FC<CompanyProfileProps> = ({ companyName, refineries
                 <div className="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
                   <ChevronRight className="w-3 h-3 text-green-600" />
                 </div>
-                <p className="text-xs text-green-600 font-medium mb-1">Total Headcount</p>
+                <p className="text-xs text-green-600 font-medium mb-1">Total Routine Workforce</p>
                 <p className="text-lg font-bold text-green-900">~{totalHeadcount.toLocaleString()}</p>
               </button>
 

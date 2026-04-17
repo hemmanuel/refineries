@@ -67,9 +67,11 @@ const Dashboard: React.FC<DashboardProps> = ({ padd, refineries, onPaddSelect, o
       if (wm) {
         Object.keys(wm).forEach(key => {
           const k = key as keyof typeof wm;
-          acc.workforceMatrix[k].total += wm[k].total;
-          acc.workforceMatrix[k].employee += wm[k].employee;
-          acc.workforceMatrix[k].contractor += wm[k].contractor;
+          if (acc.workforceMatrix[k]) {
+            acc.workforceMatrix[k].total += wm[k].total;
+            acc.workforceMatrix[k].employee += wm[k].employee;
+            acc.workforceMatrix[k].contractor += wm[k].contractor;
+          }
         });
       }
       
@@ -92,12 +94,10 @@ const Dashboard: React.FC<DashboardProps> = ({ padd, refineries, onPaddSelect, o
       edc: 0,
       nciSum: 0,
       workforceMatrix: {
-        operations: { total: 0, employee: 0, contractor: 0 },
+        production: { total: 0, employee: 0, contractor: 0 },
         maintenance: { total: 0, employee: 0, contractor: 0 },
-        technical: { total: 0, employee: 0, contractor: 0 },
+        construction: { total: 0, employee: 0, contractor: 0 },
         logistics: { total: 0, employee: 0, contractor: 0 },
-        hsse: { total: 0, employee: 0, contractor: 0 },
-        support: { total: 0, employee: 0, contractor: 0 },
         turnaround: { total: 0, employee: 0, contractor: 0 }
       }
     });
@@ -246,7 +246,7 @@ const Dashboard: React.FC<DashboardProps> = ({ padd, refineries, onPaddSelect, o
     }
     if (metric === 'turnaround') {
        const multiplier = (stats.turnaround / stats.headcount).toFixed(2);
-      return `This figure represents the aggregated peak turnaround workforce opportunity in ${regionName}. \n\nIt is the sum of the estimated peak headcount required for major maintenance events. \n\nAggregate Metric: ~${multiplier}x the total steady-state workforce (equivalent to ~1.08x the direct employee count). This represents the total size of the seasonal/contractor workforce pool.`;
+      return `This figure represents the aggregated peak turnaround workforce opportunity in ${regionName}. \n\nIt is the sum of the estimated peak headcount required for major maintenance events. \n\nAggregate Metric: ~${multiplier}x the total routine workforce (equivalent to ~1.5x the direct employee count). This represents the total size of the seasonal/contractor workforce pool.`;
     }
     if (metric === 'safety') {
        const percentage = ((stats.safety / stats.headcount) * 100).toFixed(0);
@@ -373,7 +373,7 @@ const Dashboard: React.FC<DashboardProps> = ({ padd, refineries, onPaddSelect, o
             </div>
             <div className="flex items-center gap-2 mb-2 text-blue-600">
               <Users className="w-4 h-4" />
-              <span className="text-sm font-medium">Headcount</span>
+              <span className="text-sm font-medium">Routine Workforce</span>
             </div>
             <div className="text-xl font-bold text-gray-900 group-hover:text-blue-600 transition-colors">{stats.headcount.toLocaleString()}</div>
             <div className="text-[10px] text-gray-400 mt-1">FTE + Contractors</div>
@@ -458,7 +458,7 @@ const Dashboard: React.FC<DashboardProps> = ({ padd, refineries, onPaddSelect, o
             <h4 className="text-sm font-semibold text-indigo-900 mb-2">Methodology & Primary Sources</h4>
               <p className="text-xs text-indigo-800 space-y-2">
                 <span className="block">Functional headcount distributions are derived directly from <strong>BLS OEWS NAICS 324100</strong> occupational data for direct employees.</span>
-                <span className="block mt-1">Based on the <strong>WWU Washington State Refinery Study</strong>, routine contractor utilization is allocated heavily to the Maintenance function (86% contractors), with Technical, Logistics, HSSE, and Support modeled as direct-hire functions based on BLS OEWS distributions. <strong>USW</strong> labor records inform the near-100% direct employee requirement for core operations.</span>
+                <span className="block mt-1">Based on the <strong>CSB BP Texas City Report</strong>, routine contractors comprise approximately 40% of the site-wide workforce. Production and Logistics roles are modeled with minimal contractor utilization (2% and 5% respectively). The remainder of the 40% contractor pool is allocated exclusively to Maintenance and Construction, aligning with <strong>California SB 54</strong> definitions of the contracted refinery workforce.</span>
                 <span className="block mt-1">Turnaround contractor surges are derived from verified federal disaster investigations, specifically the <strong>CSB BP Texas City Report</strong>.</span>
               </p>
           </div>
@@ -736,7 +736,7 @@ const Dashboard: React.FC<DashboardProps> = ({ padd, refineries, onPaddSelect, o
                           </div>
                         </div>
                         <div className="flex justify-between items-center text-sm">
-                          <span className="text-gray-500">Headcount</span>
+                          <span className="text-gray-500">Routine Workforce</span>
                           <span className="font-medium text-blue-600">{data.headcount.toLocaleString()}</span>
                         </div>
                         <div className="flex justify-between items-center text-sm">
@@ -769,7 +769,7 @@ const Dashboard: React.FC<DashboardProps> = ({ padd, refineries, onPaddSelect, o
                   <th className="px-6 py-4">Company</th>
                   <th className="px-6 py-4">State</th>
                   <th className="px-6 py-4 text-right">Capacity (bpd)</th>
-                  <th className="px-6 py-4 text-right">Est. Headcount</th>
+                  <th className="px-6 py-4 text-right">Est. Routine Workforce</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-gray-100">

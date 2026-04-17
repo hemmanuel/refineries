@@ -81,9 +81,31 @@ function main() {
       node.children.forEach(cleanTree);
     }
   }
+
+  // Skip broad categories that only have one detailed category underneath
+  function simplifyTree(node) {
+    if (!node.children) return;
+
+    // Process children first (bottom-up)
+    for (let i = 0; i < node.children.length; i++) {
+      simplifyTree(node.children[i]);
+    }
+
+    // Now check if any child is a 'broad' category with exactly 1 child
+    for (let i = 0; i < node.children.length; i++) {
+      const child = node.children[i];
+      if (child.attributes && child.attributes.group === 'broad') {
+        if (child.children && child.children.length === 1) {
+          // Replace this broad child with its single detailed child
+          node.children[i] = child.children[0];
+        }
+      }
+    }
+  }
   
   if (root) {
     cleanTree(root);
+    simplifyTree(root);
     fs.writeFileSync(OUTPUT_FILE, JSON.stringify(root, null, 2));
     console.log(`Successfully wrote hierarchy to ${OUTPUT_FILE}`);
   } else {
