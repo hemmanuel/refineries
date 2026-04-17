@@ -36,15 +36,7 @@ export default function WorkforceExplorer() {
   }, []);
 
   return (
-    <div className="flex flex-col h-screen bg-gray-50 p-6">
-      <div className="bg-white shadow px-6 py-4 rounded-lg mb-4">
-        <h1 className="text-2xl font-bold text-gray-900">BLS Workforce Hierarchy Explorer</h1>
-        <p className="text-gray-600 mt-1">
-          Interactive visualization of the Bureau of Labor Statistics Occupational Employment and Wage Statistics (OEWS) for NAICS 324100 (Petroleum and Coal Products Manufacturing).
-          Click on nodes to expand or collapse categories.
-        </p>
-      </div>
-      
+    <div className="flex flex-col h-screen bg-gray-50 p-4">
       <div 
         ref={containerRef}
         className="flex-grow w-full bg-white rounded-lg shadow border border-gray-200 overflow-hidden"

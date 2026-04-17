@@ -17,11 +17,24 @@ function main() {
   const worksheet = workbook.Sheets[sheetName];
   const data = xlsx.utils.sheet_to_json(worksheet);
 
-  const refData = data.filter(row => row.NAICS === '324100' || row.NAICS === 324100);
+  const refData = data.filter(row => 
+    (row.NAICS === '324100' || row.NAICS === 324100) && 
+    row.OCC_CODE >= '47-0000'
+  );
 
-  console.log(`Found ${refData.length} rows for NAICS 324100.`);
+  console.log(`Found ${refData.length} labor/operations rows for NAICS 324100.`);
 
-  let root = null;
+  // Create a custom root node since we filtered out the 'total' row
+  let root = {
+    name: "Refinery Labor & Operations",
+    attributes: {
+      code: "Custom",
+      employees: refData.filter(r => r.O_GROUP === 'major').reduce((sum, r) => sum + (parseFloat(r.TOT_EMP) || 0), 0),
+      group: "total"
+    },
+    children: []
+  };
+
   let currentMajor = null;
   let currentMinor = null;
   let currentBroad = null;
@@ -37,11 +50,9 @@ function main() {
       children: []
     };
 
-    if (row.O_GROUP === 'total') {
-      root = node;
-    } else if (row.O_GROUP === 'major') {
+    if (row.O_GROUP === 'major') {
       currentMajor = node;
-      if (root) root.children.push(currentMajor);
+      root.children.push(currentMajor);
     } else if (row.O_GROUP === 'minor') {
       currentMinor = node;
       if (currentMajor) currentMajor.children.push(currentMinor);
