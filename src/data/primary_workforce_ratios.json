@@ -1,18 +1,24 @@
 {
   "functionalBreakdown": {
-    "operations": 0.3891248153618907,
-    "maintenance": 0.07976366322008863,
-    "technical": 0.07551698670605612,
-    "logistics": 0.0888109305760709,
-    "hsse": 0.039604874446085674,
-    "support": 0.14549483013293946
+    "production": 0.6155980721483861,
+    "maintenance": 0.12618665108806776,
+    "construction": 0.11771578793632248,
+    "logistics": 0.1404994888272236
   },
   "contractorSplits": {
-    "operations": {
-      "employee": 0.95,
-      "contractor": 0.050000000000000044
+    "production": {
+      "employee": 1,
+      "contractor": 0
+    },
+    "logistics": {
+      "employee": 1,
+      "contractor": 0
     },
     "maintenance": {
+      "employee": 0.4,
+      "contractor": 0.6
+    },
+    "construction": {
       "employee": 0.4,
       "contractor": 0.6
     },
@@ -23,12 +29,10 @@
   },
   "rawSources": {
     "bls": {
-      "operations": 0.3891248153618907,
-      "maintenance": 0.07976366322008863,
-      "technical": 0.07551698670605612,
-      "logistics": 0.0888109305760709,
-      "hsse": 0.039604874446085674,
-      "support": 0.14549483013293946
+      "construction": 0.11771578793632248,
+      "maintenance": 0.12618665108806776,
+      "production": 0.6155980721483861,
+      "logistics": 0.1404994888272236
     },
     "csb": {
       "routineEmployees": 1200,
@@ -37,9 +41,6 @@
     },
     "sb54": {
       "skilledWorkforcePercentage": 0.6
-    },
-    "usw": {
-      "operationsEmployeePercentage": 0.95
     }
   }
 }

@@ -25,20 +25,10 @@
             {
               "name": "First-Line Supervisors of Construction Trades and Extraction Workers",
               "attributes": {
-                "code": "47-1010",
+                "code": "47-1011",
                 "employees": 970,
-                "group": "broad"
-              },
-              "children": [
-                {
-                  "name": "First-Line Supervisors of Construction Trades and Extraction Workers",
-                  "attributes": {
-                    "code": "47-1011",
-                    "employees": 970,
-                    "group": "detailed"
-                  }
-                }
-              ]
+                "group": "detailed"
+              }
             }
           ]
         },
@@ -53,56 +43,26 @@
             {
               "name": "Boilermakers",
               "attributes": {
-                "code": "47-2010",
+                "code": "47-2011",
                 "employees": 110,
-                "group": "broad"
-              },
-              "children": [
-                {
-                  "name": "Boilermakers",
-                  "attributes": {
-                    "code": "47-2011",
-                    "employees": 110,
-                    "group": "detailed"
-                  }
-                }
-              ]
+                "group": "detailed"
+              }
             },
             {
-              "name": "Cement Masons, Concrete Finishers, and Terrazzo Workers",
+              "name": "Cement Masons and Concrete Finishers",
               "attributes": {
-                "code": "47-2050",
+                "code": "47-2051",
                 "employees": 80,
-                "group": "broad"
-              },
-              "children": [
-                {
-                  "name": "Cement Masons and Concrete Finishers",
-                  "attributes": {
-                    "code": "47-2051",
-                    "employees": 80,
-                    "group": "detailed"
-                  }
-                }
-              ]
+                "group": "detailed"
+              }
             },
             {
               "name": "Construction Laborers",
               "attributes": {
-                "code": "47-2060",
+                "code": "47-2061",
                 "employees": 1740,
-                "group": "broad"
-              },
-              "children": [
-                {
-                  "name": "Construction Laborers",
-                  "attributes": {
-                    "code": "47-2061",
-                    "employees": 1740,
-                    "group": "detailed"
-                  }
-                }
-              ]
+                "group": "detailed"
+              }
             },
             {
               "name": "Construction Equipment Operators",
@@ -133,38 +93,18 @@
             {
               "name": "Electricians",
               "attributes": {
-                "code": "47-2110",
+                "code": "47-2111",
                 "employees": 1250,
-                "group": "broad"
-              },
-              "children": [
-                {
-                  "name": "Electricians",
-                  "attributes": {
-                    "code": "47-2111",
-                    "employees": 1250,
-                    "group": "detailed"
-                  }
-                }
-              ]
+                "group": "detailed"
+              }
             },
             {
-              "name": "Pipelayers, Plumbers, Pipefitters, and Steamfitters",
+              "name": "Plumbers, Pipefitters, and Steamfitters",
               "attributes": {
-                "code": "47-2150",
+                "code": "47-2152",
                 "employees": 710,
-                "group": "broad"
-              },
-              "children": [
-                {
-                  "name": "Plumbers, Pipefitters, and Steamfitters",
-                  "attributes": {
-                    "code": "47-2152",
-                    "employees": 710,
-                    "group": "detailed"
-                  }
-                }
-              ]
+                "group": "detailed"
+              }
             }
           ]
         },
@@ -181,18 +121,8 @@
               "attributes": {
                 "code": "47-4090",
                 "employees": 70,
-                "group": "broad"
-              },
-              "children": [
-                {
-                  "name": "Miscellaneous Construction and Related Workers",
-                  "attributes": {
-                    "code": "47-4090",
-                    "employees": 70,
-                    "group": "detailed"
-                  }
-                }
-              ]
+                "group": "detailed"
+              }
             }
           ]
         },
@@ -213,22 +143,12 @@
               }
             },
             {
-              "name": "Surface Mining Machine Operators and Earth Drillers",
+              "name": "Excavating and Loading Machine and Dragline Operators, Surface Mining",
               "attributes": {
-                "code": "47-5020",
+                "code": "47-5022",
                 "employees": 50,
-                "group": "broad"
-              },
-              "children": [
-                {
-                  "name": "Excavating and Loading Machine and Dragline Operators, Surface Mining",
-                  "attributes": {
-                    "code": "47-5022",
-                    "employees": 50,
-                    "group": "detailed"
-                  }
-                }
-              ]
+                "group": "detailed"
+              }
             }
           ]
         }
@@ -253,20 +173,10 @@
             {
               "name": "First-Line Supervisors of Mechanics, Installers, and Repairers",
               "attributes": {
-                "code": "49-1010",
+                "code": "49-1011",
                 "employees": 1420,
-                "group": "broad"
-              },
-              "children": [
-                {
-                  "name": "First-Line Supervisors of Mechanics, Installers, and Repairers",
-                  "attributes": {
-                    "code": "49-1011",
-                    "employees": 1420,
-                    "group": "detailed"
-                  }
-                }
-              ]
+                "group": "detailed"
+              }
             }
           ]
         },
@@ -279,22 +189,12 @@
           },
           "children": [
             {
-              "name": "Miscellaneous Electrical and Electronic Equipment Mechanics, Installers, and Repairers",
+              "name": "Electrical and Electronics Repairers, Commercial and Industrial Equipment",
               "attributes": {
-                "code": "49-2090",
-                "employees": 890,
-                "group": "broad"
-              },
-              "children": [
-                {
-                  "name": "Electrical and Electronics Repairers, Commercial and Industrial Equipment",
-                  "attributes": {
-                    "code": "49-2094",
-                    "employees": 850,
-                    "group": "detailed"
-                  }
-                }
-              ]
+                "code": "49-2094",
+                "employees": 850,
+                "group": "detailed"
+              }
             }
           ]
         },
@@ -309,38 +209,18 @@
             {
               "name": "Bus and Truck Mechanics and Diesel Engine Specialists",
               "attributes": {
-                "code": "49-3030",
+                "code": "49-3031",
                 "employees": 260,
-                "group": "broad"
-              },
-              "children": [
-                {
-                  "name": "Bus and Truck Mechanics and Diesel Engine Specialists",
-                  "attributes": {
-                    "code": "49-3031",
-                    "employees": 260,
-                    "group": "detailed"
-                  }
-                }
-              ]
+                "group": "detailed"
+              }
             },
             {
-              "name": "Heavy Vehicle and Mobile Equipment Service Technicians and Mechanics",
+              "name": "Mobile Heavy Equipment Mechanics, Except Engines",
               "attributes": {
-                "code": "49-3040",
+                "code": "49-3042",
                 "employees": 170,
-                "group": "broad"
-              },
-              "children": [
-                {
-                  "name": "Mobile Heavy Equipment Mechanics, Except Engines",
-                  "attributes": {
-                    "code": "49-3042",
-                    "employees": 170,
-                    "group": "detailed"
-                  }
-                }
-              ]
+                "group": "detailed"
+              }
             }
           ]
         },
@@ -353,22 +233,12 @@
           },
           "children": [
             {
-              "name": "Control and Valve Installers and Repairers",
+              "name": "Control and Valve Installers and Repairers, Except Mechanical Door",
               "attributes": {
-                "code": "49-9010",
+                "code": "49-9012",
                 "employees": 30,
-                "group": "broad"
-              },
-              "children": [
-                {
-                  "name": "Control and Valve Installers and Repairers, Except Mechanical Door",
-                  "attributes": {
-                    "code": "49-9012",
-                    "employees": 30,
-                    "group": "detailed"
-                  }
-                }
-              ]
+                "group": "detailed"
+              }
             },
             {
               "name": "Industrial Machinery Installation, Repair, and Maintenance Workers",
@@ -405,40 +275,20 @@
               ]
             },
             {
-              "name": "Precision Instrument and Equipment Repairers",
+              "name": "Precision Instrument and Equipment Repairers, All Other",
               "attributes": {
-                "code": "49-9060",
+                "code": "49-9069",
                 "employees": 50,
-                "group": "broad"
-              },
-              "children": [
-                {
-                  "name": "Precision Instrument and Equipment Repairers, All Other",
-                  "attributes": {
-                    "code": "49-9069",
-                    "employees": 50,
-                    "group": "detailed"
-                  }
-                }
-              ]
+                "group": "detailed"
+              }
             },
             {
               "name": "Maintenance and Repair Workers, General",
               "attributes": {
-                "code": "49-9070",
+                "code": "49-9071",
                 "employees": 1510,
-                "group": "broad"
-              },
-              "children": [
-                {
-                  "name": "Maintenance and Repair Workers, General",
-                  "attributes": {
-                    "code": "49-9071",
-                    "employees": 1510,
-                    "group": "detailed"
-                  }
-                }
-              ]
+                "group": "detailed"
+              }
             },
             {
               "name": "Miscellaneous Installation, Maintenance, and Repair Workers",
@@ -489,20 +339,10 @@
             {
               "name": "First-Line Supervisors of Production and Operating Workers",
               "attributes": {
-                "code": "51-1010",
+                "code": "51-1011",
                 "employees": 5550,
-                "group": "broad"
-              },
-              "children": [
-                {
-                  "name": "First-Line Supervisors of Production and Operating Workers",
-                  "attributes": {
-                    "code": "51-1011",
-                    "employees": 5550,
-                    "group": "detailed"
-                  }
-                }
-              ]
+                "group": "detailed"
+              }
             }
           ]
         },
@@ -519,18 +359,8 @@
               "attributes": {
                 "code": "51-2090",
                 "employees": 940,
-                "group": "broad"
-              },
-              "children": [
-                {
-                  "name": "Miscellaneous Assemblers and Fabricators",
-                  "attributes": {
-                    "code": "51-2090",
-                    "employees": 940,
-                    "group": "detailed"
-                  }
-                }
-              ]
+                "group": "detailed"
+              }
             }
           ]
         },
@@ -545,56 +375,26 @@
             {
               "name": "Machinists",
               "attributes": {
-                "code": "51-4040",
+                "code": "51-4041",
                 "employees": 1150,
-                "group": "broad"
-              },
-              "children": [
-                {
-                  "name": "Machinists",
-                  "attributes": {
-                    "code": "51-4041",
-                    "employees": 1150,
-                    "group": "detailed"
-                  }
-                }
-              ]
+                "group": "detailed"
+              }
             },
             {
               "name": "Multiple Machine Tool Setters, Operators, and Tenders, Metal and Plastic",
               "attributes": {
-                "code": "51-4080",
+                "code": "51-4081",
                 "employees": 260,
-                "group": "broad"
-              },
-              "children": [
-                {
-                  "name": "Multiple Machine Tool Setters, Operators, and Tenders, Metal and Plastic",
-                  "attributes": {
-                    "code": "51-4081",
-                    "employees": 260,
-                    "group": "detailed"
-                  }
-                }
-              ]
+                "group": "detailed"
+              }
             },
             {
-              "name": "Welding, Soldering, and Brazing Workers",
+              "name": "Welders, Cutters, Solderers, and Brazers",
               "attributes": {
-                "code": "51-4120",
+                "code": "51-4121",
                 "employees": 610,
-                "group": "broad"
-              },
-              "children": [
-                {
-                  "name": "Welders, Cutters, Solderers, and Brazers",
-                  "attributes": {
-                    "code": "51-4121",
-                    "employees": 610,
-                    "group": "detailed"
-                  }
-                }
-              ]
+                "group": "detailed"
+              }
             }
           ]
         },
@@ -609,20 +409,10 @@
             {
               "name": "Stationary Engineers and Boiler Operators",
               "attributes": {
-                "code": "51-8020",
+                "code": "51-8021",
                 "employees": 230,
-                "group": "broad"
-              },
-              "children": [
-                {
-                  "name": "Stationary Engineers and Boiler Operators",
-                  "attributes": {
-                    "code": "51-8021",
-                    "employees": 230,
-                    "group": "detailed"
-                  }
-                }
-              ]
+                "group": "detailed"
+              }
             },
             {
               "name": "Miscellaneous Plant and System Operators",
@@ -723,92 +513,42 @@
             {
               "name": "Extruding, Forming, Pressing, and Compacting Machine Setters, Operators, and Tenders",
               "attributes": {
-                "code": "51-9040",
+                "code": "51-9041",
                 "employees": 300,
-                "group": "broad"
-              },
-              "children": [
-                {
-                  "name": "Extruding, Forming, Pressing, and Compacting Machine Setters, Operators, and Tenders",
-                  "attributes": {
-                    "code": "51-9041",
-                    "employees": 300,
-                    "group": "detailed"
-                  }
-                }
-              ]
+                "group": "detailed"
+              }
             },
             {
               "name": "Furnace, Kiln, Oven, Drier, and Kettle Operators and Tenders",
               "attributes": {
-                "code": "51-9050",
+                "code": "51-9051",
                 "employees": 550,
-                "group": "broad"
-              },
-              "children": [
-                {
-                  "name": "Furnace, Kiln, Oven, Drier, and Kettle Operators and Tenders",
-                  "attributes": {
-                    "code": "51-9051",
-                    "employees": 550,
-                    "group": "detailed"
-                  }
-                }
-              ]
+                "group": "detailed"
+              }
             },
             {
               "name": "Inspectors, Testers, Sorters, Samplers, and Weighers",
               "attributes": {
-                "code": "51-9060",
+                "code": "51-9061",
                 "employees": 2190,
-                "group": "broad"
-              },
-              "children": [
-                {
-                  "name": "Inspectors, Testers, Sorters, Samplers, and Weighers",
-                  "attributes": {
-                    "code": "51-9061",
-                    "employees": 2190,
-                    "group": "detailed"
-                  }
-                }
-              ]
+                "group": "detailed"
+              }
             },
             {
               "name": "Packaging and Filling Machine Operators and Tenders",
               "attributes": {
-                "code": "51-9110",
+                "code": "51-9111",
                 "employees": 1460,
-                "group": "broad"
-              },
-              "children": [
-                {
-                  "name": "Packaging and Filling Machine Operators and Tenders",
-                  "attributes": {
-                    "code": "51-9111",
-                    "employees": 1460,
-                    "group": "detailed"
-                  }
-                }
-              ]
+                "group": "detailed"
+              }
             },
             {
-              "name": "Painting Workers",
+              "name": "Coating, Painting, and Spraying Machine Setters, Operators, and Tenders",
               "attributes": {
-                "code": "51-9120",
-                "employees": 70,
-                "group": "broad"
-              },
-              "children": [
-                {
-                  "name": "Coating, Painting, and Spraying Machine Setters, Operators, and Tenders",
-                  "attributes": {
-                    "code": "51-9124",
-                    "employees": 60,
-                    "group": "detailed"
-                  }
-                }
-              ]
+                "code": "51-9124",
+                "employees": 60,
+                "group": "detailed"
+              }
             },
             {
               "name": "Miscellaneous Production Workers",
@@ -857,22 +597,12 @@
           },
           "children": [
             {
-              "name": "First-Line Supervisors of Transportation and Material Moving Workers",
+              "name": "First-Line Supervisors of Transportation and Material Moving Workers, Except Aircraft Cargo Handling Supervisors",
               "attributes": {
-                "code": "53-1040",
+                "code": "53-1047",
                 "employees": 550,
-                "group": "broad"
-              },
-              "children": [
-                {
-                  "name": "First-Line Supervisors of Transportation and Material Moving Workers, Except Aircraft Cargo Handling Supervisors",
-                  "attributes": {
-                    "code": "53-1047",
-                    "employees": 550,
-                    "group": "detailed"
-                  }
-                }
-              ]
+                "group": "detailed"
+              }
             }
           ]
         },
@@ -923,38 +653,18 @@
             {
               "name": "Conveyor Operators and Tenders",
               "attributes": {
-                "code": "53-7010",
+                "code": "53-7011",
                 "employees": 100,
-                "group": "broad"
-              },
-              "children": [
-                {
-                  "name": "Conveyor Operators and Tenders",
-                  "attributes": {
-                    "code": "53-7011",
-                    "employees": 100,
-                    "group": "detailed"
-                  }
-                }
-              ]
+                "group": "detailed"
+              }
             },
             {
               "name": "Industrial Truck and Tractor Operators",
               "attributes": {
-                "code": "53-7050",
+                "code": "53-7051",
                 "employees": 1450,
-                "group": "broad"
-              },
-              "children": [
-                {
-                  "name": "Industrial Truck and Tractor Operators",
-                  "attributes": {
-                    "code": "53-7051",
-                    "employees": 1450,
-                    "group": "detailed"
-                  }
-                }
-              ]
+                "group": "detailed"
+              }
             },
             {
               "name": "Laborers and Material Movers",
@@ -983,40 +693,20 @@
               ]
             },
             {
-              "name": "Pumping Station Operators",
+              "name": "Pump Operators, Except Wellhead Pumpers",
               "attributes": {
-                "code": "53-7070",
-                "employees": 280,
-                "group": "broad"
-              },
-              "children": [
-                {
-                  "name": "Pump Operators, Except Wellhead Pumpers",
-                  "attributes": {
-                    "code": "53-7072",
-                    "employees": 80,
-                    "group": "detailed"
-                  }
-                }
-              ]
+                "code": "53-7072",
+                "employees": 80,
+                "group": "detailed"
+              }
             },
             {
               "name": "Tank Car, Truck, and Ship Loaders",
               "attributes": {
-                "code": "53-7120",
+                "code": "53-7121",
                 "employees": 290,
-                "group": "broad"
-              },
-              "children": [
-                {
-                  "name": "Tank Car, Truck, and Ship Loaders",
-                  "attributes": {
-                    "code": "53-7121",
-                    "employees": 290,
-                    "group": "detailed"
-                  }
-                }
-              ]
+                "group": "detailed"
+              }
             }
           ]
         }
