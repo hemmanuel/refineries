@@ -1,6 +1,6 @@
 import React, { useMemo, useState, useRef, useEffect } from 'react';
 import { type ParsedRefinery, PADD_NAMES, WORKFORCE_CATEGORY_LABELS, type WorkforceMatrix } from '../utils/data';
-import { Users, Factory, Calendar, HardHat, TrendingUp, Filter, Map, ChevronRight, AlertTriangle } from 'lucide-react';
+import { Users, Factory, Calendar, TrendingUp, Filter, Map, ChevronRight, AlertTriangle } from 'lucide-react';
 import RefineryDetail from './RefineryDetail';
 import CompanyProfile from './CompanyProfile';
 import MetricExplanation from './MetricExplanation';
@@ -301,7 +301,7 @@ const Dashboard: React.FC<DashboardProps> = ({ padd, refineries, onPaddSelect, o
         </div>
 
         {/* Stats Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-7 gap-4 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-4 mb-12">
           <button 
             onClick={() => setSelectedAggregateMetric('count')}
             className="bg-white p-4 rounded-xl shadow-sm border border-gray-200 hover:border-gray-400 hover:shadow-md transition-all text-left group relative"
@@ -399,20 +399,6 @@ const Dashboard: React.FC<DashboardProps> = ({ padd, refineries, onPaddSelect, o
             <div className="text-[10px] text-gray-400 mt-1">Seasonal Workers</div>
           </button>
 
-          <button 
-            onClick={() => setSelectedAggregateMetric('safety')}
-            className="bg-white p-4 rounded-xl shadow-sm border border-gray-200 hover:border-green-400 hover:shadow-md transition-all text-left group relative"
-          >
-            <div className="absolute top-3 right-3 opacity-0 group-hover:opacity-100 transition-opacity">
-              <ChevronRight className="w-4 h-4 text-green-400" />
-            </div>
-            <div className="flex items-center gap-2 mb-2 text-green-600">
-              <HardHat className="w-4 h-4" />
-              <span className="text-sm font-medium">Safety</span>
-            </div>
-            <div className="text-xl font-bold text-gray-900 group-hover:text-green-600 transition-colors">{stats.safety.toLocaleString()}</div>
-            <div className="text-[10px] text-gray-400 mt-1">Critical Roles</div>
-          </button>
         </div>
 
         {/* Industry Workforce Matrix */}
