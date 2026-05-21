@@ -15,6 +15,11 @@ interface DashboardProps {
   onViewOperators?: () => void;
 }
 
+const formatContractorPercent = (contractor: number, total: number) => {
+  if (total <= 0) return '-';
+  return `${((contractor / total) * 100).toFixed(0)}%`;
+};
+
 const Dashboard: React.FC<DashboardProps> = ({ padd, refineries, onPaddSelect, onViewOperators }) => {
   const [selectedRefinery, setSelectedRefinery] = useState<ParsedRefinery | null>(null);
   const [selectedCompanyProfile, setSelectedCompanyProfile] = useState<string | null>(null);
@@ -424,6 +429,7 @@ const Dashboard: React.FC<DashboardProps> = ({ padd, refineries, onPaddSelect, o
                   <th scope="col" className="px-6 py-4 text-left font-semibold text-gray-700 uppercase tracking-wider">Function</th>
                   <th scope="col" className="px-6 py-4 text-right font-semibold text-gray-700 uppercase tracking-wider">Employees</th>
                   <th scope="col" className="px-6 py-4 text-right font-semibold text-gray-700 uppercase tracking-wider">Contractors</th>
+                  <th scope="col" className="px-6 py-4 text-right font-semibold text-gray-700 uppercase tracking-wider">% Contractors</th>
                   <th scope="col" className="px-6 py-4 text-right font-semibold text-gray-900 uppercase tracking-wider bg-gray-100">Total</th>
                 </tr>
               </thead>
@@ -433,6 +439,7 @@ const Dashboard: React.FC<DashboardProps> = ({ padd, refineries, onPaddSelect, o
                       <td className="px-6 py-4 whitespace-nowrap font-medium text-gray-900">{WORKFORCE_CATEGORY_LABELS[key as keyof WorkforceMatrix]}</td>
                       <td className="px-6 py-4 whitespace-nowrap text-right text-gray-600">{data.employee.toLocaleString()}</td>
                       <td className="px-6 py-4 whitespace-nowrap text-right text-gray-600">{data.contractor.toLocaleString()}</td>
+                      <td className="px-6 py-4 whitespace-nowrap text-right text-gray-600">{formatContractorPercent(data.contractor, data.total)}</td>
                       <td className="px-6 py-4 whitespace-nowrap text-right font-bold text-gray-900 bg-gray-50/50">{data.total.toLocaleString()}</td>
                     </tr>
                   ))}
@@ -445,6 +452,12 @@ const Dashboard: React.FC<DashboardProps> = ({ padd, refineries, onPaddSelect, o
                   </td>
                   <td className="px-6 py-4 whitespace-nowrap text-right font-bold text-gray-900">
                     {Object.entries(stats.workforceMatrix).filter(([k]) => k !== 'turnaround').reduce((sum, [, d]) => sum + d.contractor, 0).toLocaleString()}
+                  </td>
+                  <td className="px-6 py-4 whitespace-nowrap text-right font-bold text-gray-900">
+                    {formatContractorPercent(
+                      Object.entries(stats.workforceMatrix).filter(([k]) => k !== 'turnaround').reduce((sum, [, d]) => sum + d.contractor, 0),
+                      Object.entries(stats.workforceMatrix).filter(([k]) => k !== 'turnaround').reduce((sum, [, d]) => sum + d.total, 0)
+                    )}
                   </td>
                   <td className="px-6 py-4 whitespace-nowrap text-right font-black text-gray-900">
                     {Object.entries(stats.workforceMatrix).filter(([k]) => k !== 'turnaround').reduce((sum, [, d]) => sum + d.total, 0).toLocaleString()}
